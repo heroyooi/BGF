@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SmileGift- Admin</title>
+  <link rel="stylesheet" href="css/common.css">
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-ui.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/ui.js"></script>
+</head>
+<body class="c-scrollbar">
+  <div id="wrap">
+    <div id="header">
+      <h1><a href="#"><img src="img/common/logo.svg" alt="" /></a></h1>
+      <ul class="utils">
+        <li>
+          <span class="my"><em>홍길동</em>님</span>
+          <div class="utils-tip">
+            <ul>
+              <li><a href="#">로그아웃</a></li>
+              <li><a href="#">비밀번호 변경</a></li>
+            </ul>
+          </div>
+        </li>
+        <li><a href="#" class="btn-logout">로그아웃</a></li>
+      </ul>
+    </div><!-- #header -->
+    <div id="container">
+      <div class="lnb-wrap c-scrollbar">
+        <ul class="lnb" data-dp1="2" data-dp2="3">
+          <li class="user-group">
+            <dl>
+              <dt>회원관리</dt>
+              <dd>
+                <ul>
+                  <li><a href="#">일반회원</a></li>
+                  <li><a href="#">탈퇴회원</a></li>
+                </ul>
+              </dd>
+            </dl>
+          </li>
+          <li class="gift">
+            <dl>
+              <dt>기프트샵 상품 관리</dt>
+              <dd>
+                <ul>
+                  <li><a href="#">브랜드/카테고리 관리</a></li>
+                  <li><a href="#">연동상품 관리</a></li>
+                  <li><a href="#">판매상품 관리</a></li>
+                </ul>
+              </dd>
+            </dl>
+          </li>
+          <li class="gift-1">
+            <dl>
+              <dt>기프트샵 전시 관리</dt>
+              <dd>
+                <ul>
+                  <li><a href="#">메인 상품 진열</a></li>
+                  <li><a href="#">추천 검색어 관리</a></li>
+                  <li><a href="#">샵 메인 배너 관리</a></li>
+                  <li><a href="#">샵 서브 배너 관리</a></li>
+                </ul>
+              </dd>
+            </dl>
+          </li>
+          <li class="desktop-computer">
+            <dl>
+              <dt>메인 관리</dt>
+              <dd>
+                <ul>
+                  <li><a href="#">메인 배너 관리</a></li>
+                  <li><a href="#">메인 서브 배너 관리</a></li>
+                  <li><a href="#">팝업 관리</a></li>
+                  <li><a href="#">매장 사용 브랜드</a></li>
+                </ul>
+              </dd>
+            </dl>
+          </li>
+          <li class="event">
+            <dl>
+              <dt>기획전/이벤트</dt>
+              <dd>
+                <ul>
+                  <li><a href="#">기획전/이벤트 관리</a></li>
+                </ul>
+              </dd>
+            </dl>
+          </li>
+          <li class="cash">
+            <dl>
+              <dt>캐시 충전 관리</dt>
+              <dd>
+                <ul>
+                  <li><a href="#">캐시 충전 내역</a></li>
+                </ul>
+              </dd>
+            </dl>
+          </li>
+          <li class="order">
+            <dl>
+              <dt>주문 내역</dt>
+              <dd>
+                <ul>
+                  <li><a href="#">기프트샵</a></li>
+                  <li><a href="#">매장 결제</a></li>
+                </ul>
+              </dd>
+            </dl>
+          </li>
+          <li class="receipt-refund">
+            <dl>
+              <dt>캐시잔액 환불</dt>
+              <dd>
+                <ul>
+                  <li><a href="#">스마일기프트 쿠폰</a></li>
+                </ul>
+              </dd>
+            </dl>
+          </li>
+          <li class="coupon">
+            <dl>
+              <dt>쿠폰환불</dt>
+              <dd>
+                <ul>
+                  <li><a href="#">환불 접수</a></li>
+                  <li><a href="#">환불 확정</a></li>
+                  <li><a href="#">환불 완료</a></li>
+                </ul>
+              </dd>
+            </dl>
+          </li>
+          <li class="management">
+            <dl>
+              <dt>회계 관리</dt>
+              <dd>
+                <ul>
+                  <li><a href="#">캐시 현황</a></li>
+                  <li><a href="#">수익 현황</a></li>
+                  <li><a href="#">비용 현황</a></li>
+                  <li><a href="#">선수금</a></li>
+                  <li><a href="#">낙전</a></li>
+                </ul>
+              </dd>
+            </dl>
+          </li>
+          <li class="phone">
+            <dl>
+              <dt>고객센터</dt>
+              <dd>
+                <ul>
+                  <li><a href="#">공지사항</a></li>
+                  <li><a href="#">문의내역</a></li>
+                  <li><a href="#">문의 템플릿 관리</a></li>
+                  <li><a href="#">문의 유형 관리</a></li>
+                  <li><a href="#">FAQ 분류 관리</a></li>
+                  <li><a href="#">FAQ 등록 관리</a></li>
+                  <li><a href="#">제휴 문의 관리</a></li>
+                </ul>
+              </dd>
+            </dl>
+          </li>
+          <li class="device-mobile">
+            <dl>
+              <dt>앱 관리</dt>
+              <dd>
+                <ul>
+                  <li><a href="#">앱 회원관리</a></li>
+                  <li><a href="#">앱 푸쉬관리</a></li>
+                  <li><a href="#">스플래시 설정</a></li>
+                </ul>
+              </dd>
+            </dl>
+          </li>
+          <li class="pencil-alt">
+            <dl>
+              <dt>사이트/관리자 설정</dt>
+              <dd>
+                <ul>
+                  <li><a href="#">약관 관리</a></li>
+                  <li><a href="#">관리자 그룹 관리</a></li>
+                  <li><a href="#">관리자 계정 관리</a></li>
+                  <li><a href="#">관리자 접속이력</a></li>
+                </ul>
+              </dd>
+            </dl>
+          </li>
+        </ul>
+      </div><!-- .lnb-wrap -->
+      <div class="content-wrap c-scrollbar">
+        <div class="tit-area">
+          <h3>판매상품 관리</h3>
+        </div><!-- .tit-area -->
+        <div class="con-area">
+          <div class="tb-input-wrap">
+            <table class="tb-input">
+              <colgroup>
+                <col width="15%" />
+                <col width="35%" />
+                <col width="15%" />
+                <col width="*" />
+              </colgroup>
+              <tbody>
+                <tr>
+                  <th scope="row">판매 상품명</th>
+                  <td>
+                    <input type="text" class="input-base" />
+                  </td>
+                  <th scope="row">브랜드명</th>
+                  <td>
+                    <input type="text" class="input-base" />
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">상품 코드</th>
+                  <td colspan="3">
+                    <div class="f-row y-center">
+                      <div class="f-col" style="width: 103px;">
+                        <ul class="radio-list vertical">
+                          <li>
+                            <span class="radio-base">
+                              <input type="radio" id="radio-code-1" name="radio-code" checked />
+                              <label for="radio-code-1">판매상품코드</label>
+                            </span>
+                          </li>
+                          <li>
+                            <span class="radio-base">
+                              <input type="radio" id="radio-code-2" name="radio-code" />
+                              <label for="radio-code-2">연동상품 ID <br />(스마일콘)</label>
+                            </span>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="f-col">
+                        <textarea class="textarea-base" placeholder="복수 검색 (ENTER 또는 , 로 구분) / 최대 100개까지 검색 가능" style="height: 91px;"></textarea>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">카테고리</th>
+                  <td>
+                    <span class="select-base">
+                      <span class="value"></span>
+                      <select>
+                        <option value="0" selected>전체</option>
+                        <option value="1">Value 1</option>
+                        <option value="2">Value 2</option>
+                        <option value="3">Value 3</option>
+                      </select>
+                    </span>
+                  </td>
+                  <th scope="row">상품 타입</th>
+                  <td>
+                    <ul class="radio-list">
+                      <li>
+                        <span class="radio-base">
+                          <input type="radio" id="radio-ptype-1" name="radio-ptype" checked />
+                          <label for="radio-ptype-1">전체</label>
+                        </span>
+                      </li>
+                      <li>
+                        <span class="radio-base">
+                          <input type="radio" id="radio-ptype-2" name="radio-ptype" />
+                          <label for="radio-ptype-2">BARCODE: 기본상품</label>
+                        </span>
+                      </li>
+                      <li>
+                        <span class="radio-base">
+                          <input type="radio" id="radio-ptype-3" name="radio-ptype" />
+                          <label for="radio-ptype-3">AMOUNT: 잔액관리권</label>
+                        </span>
+                      </li>
+                    </ul>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">전시 여부</th>
+                  <td>
+                    <ul class="radio-list">
+                      <li>
+                        <span class="radio-base">
+                          <input type="radio" id="radio-pdisplay-1" name="radio-pdisplay" checked />
+                          <label for="radio-pdisplay-1">전체</label>
+                        </span>
+                      </li>
+                      <li>
+                        <span class="radio-base">
+                          <input type="radio" id="radio-pdisplay-2" name="radio-pdisplay" />
+                          <label for="radio-pdisplay-2">비전시</label>
+                        </span>
+                      </li>
+                      <li>
+                        <span class="radio-base">
+                          <input type="radio" id="radio-pdisplay-3" name="radio-pdisplay" />
+                          <label for="radio-pdisplay-3">전시</label>
+                        </span>
+                      </li>
+                    </ul>
+                  </td>
+                  <th scope="row">판매 상태</th>
+                  <td>
+                    <ul class="chk-list horizon">
+                      <li>
+                        <span class="chk-base">
+                          <input type="checkbox" id="chk-pstate-1" checked />
+                          <label for="chk-pstate-1">판매중</label>
+                        </span>
+                      </li>
+                      <li>
+                        <span class="chk-base">
+                          <input type="checkbox" id="chk-pstate-2" />
+                          <label for="chk-pstate-2">품절</label>
+                        </span>
+                      </li>
+                      <li>
+                        <span class="chk-base">
+                          <input type="checkbox" id="chk-pstate-3" />
+                          <label for="chk-pstate-3">판매 종료</label>
+                        </span>
+                      </li>
+                      <li>
+                        <span class="chk-base">
+                          <input type="checkbox" id="chk-pstate-4" />
+                          <label for="chk-pstate-4">판매 대기</label>
+                        </span>
+                      </li>
+                    </ul>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div><!-- .tb-input-wrap -->
+          <div class="btns-wrap t-right mt15">
+            <span class="btn-base tp2 lg purple"><a href="#"><em class="search">검색</em></a></span>
+          </div>
+          <div class="total-area mt25">
+            <span class="total">
+              [총 <em>6</em>건] 판매 중 <em>XXX</em>건 / 품절 <em>XXX</em>건 / 판매 종료 <em>XXX</em>건 / 판매 대기 <em>XXX</em>건
+            </span>
+            <div class="btns-wrap">
+              <span class="btn-base tp2 lg"><a href="#">엑셀 다운</a></span>
+              <span class="btn-base tp2 lg"><a href="#">신규 등록</a></span>
+            </div>
+          </div>
+          <div class="tb-list-wrap c-scrollbar mt10">
+            <table class="tb-list">
+              <colgroup>
+                <col width="64" />
+                <col width="64" />
+                <col width="132" />
+                <col width="124" />
+                <col width="124" />
+                <col width="124" />
+                <col width="124" />
+                <col width="132" />
+                <col width="132" />
+                <col width="124" />
+                <col width="124" />
+                <col width="124" />
+                <col width="124" />
+
+                <col width="130" />
+                <col width="130" />
+                <col width="130" />
+                <col width="130" />
+                <col width="130" />
+                <col width="130" />
+                <col width="130" />
+              </colgroup>
+              <thead>
+                <tr>
+                  <th colspan="20" class="t-left">
+                    <span>
+                      <div class="input-wrap">
+                        <span class="select-base sm" style="width: 92px;">
+                          <span class="value"></span>
+                          <select>
+                            <option value="0" selected>선택</option>
+                            <option value="1">판매상태</option>
+                            <option value="2">전시상태</option>
+                          </select>
+                        </span>
+                        <span class="btn-base tp5 ml6" id="btnChangePopup"><a href="#popup-change-pinfo">상품정보 일괄 변경</a></span>
+                      </div>
+                    </span>
+                  </th>
+                </tr>
+                <tr>
+                  <th scope="col">
+                    <span>
+                      <span class="chk-base chk-only">
+                        <input type="checkbox" id="chk-tb-all" />
+                        <label for="chk-tb-all">전체 체크</label>
+                      </span>
+                    </span>
+                  </th>
+                  <th scope="col"><span>No.</span></th>
+                  <th scope="col"><span>변경이력</span></th>
+                  <th scope="col"><span>URL주소</span></th>
+                  <th scope="col"><span>판매 상품코드</span></th>
+                  <th scope="col"><span>전시 상태</span></th>
+                  <th scope="col"><span>판매 상태</span></th>
+                  <th scope="col"><span>이미지</span></th>
+                  <th scope="col"><span>판매 상품명</span></th>
+                  <th scope="col"><span>정가</span></th>
+                  <th scope="col"><span>판매가</span></th>
+                  <th scope="col"><span>브랜드</span></th>
+                  <th scope="col"><span>상품 타입</span></th>
+
+                  <th scope="col"><span>재고수량</span></th>
+                  <th scope="col"><span>ID당 구매 수량</span></th>
+                  <th scope="col"><span>카테고리</span></th>
+                  <th scope="col"><span>연동상품 ID</span></th>
+                  <th scope="col"><span>연동상품 사용 여부</span></th>
+                  <th scope="col"><span>등록자(아이디)</span></th>
+                  <th scope="col"><span>상품 등록일시</span></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <span class="chk-base chk-only">
+                      <input type="checkbox" id="chk-tb-1" />
+                      <label for="chk-tb-1">체크1</label>
+                    </span>
+                  </td>
+                  <td>99</td>
+                  <td><a href="#popup-change-history" class="primary btn-popup-anim-1">보기</a></td>
+                  <td><span class="primary">복사</span></td>
+                  <td>PRO000001</td>
+                  <td>전시</td>
+                  <td>판매 중</td>
+                  <td>
+                    <img width="40" src="./img/mockup/logo.png" alt="스타벅스 로고" />
+                  </td>
+                  <td>아이스 아메리카노</td>
+                  <td>4,500</td>
+                  <td>4,000</td>
+                  <td>스타벅스</td>
+                  <td>BARCODE: <br />기본상품</td>
+
+                  <td><span class="primary">무제한</span></td>
+                  <td><span class="primary">1</span></td>
+                  <td>커피/음료</td>
+                  <td>0000068601</td>
+                  <td>Y</td>
+                  <td>홍길동(djdj22)</td>
+                  <td>YYYY.MM.DD <br />HH:MM</td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="chk-base chk-only">
+                      <input type="checkbox" id="chk-tb-2" />
+                      <label for="chk-tb-2">체크2</label>
+                    </span>
+                  </td>
+                  <td>99</td>
+                  <td><a href="#popup-change-history" class="primary btn-popup-anim-1">보기</a></td>
+                  <td><span class="primary">복사</span></td>
+                  <td>PRO000001</td>
+                  <td>전시</td>
+                  <td>판매 중</td>
+                  <td><img width="40" src="./img/mockup/logo.png" alt="스타벅스 로고" /></td>
+                  <td>아이스 아메리카노</td>
+                  <td>4,500</td>
+                  <td>4,000</td>
+                  <td>스타벅스</td>
+                  <td>BARCODE: <br />기본상품</td>
+
+                  <td><span class="primary">무제한</span></td>
+                  <td><span class="primary">1</span></td>
+                  <td>커피/음료</td>
+                  <td>0000068601</td>
+                  <td>Y</td>
+                  <td>홍길동(djdj22)</td>
+                  <td>YYYY.MM.DD <br />HH:MM</td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="chk-base chk-only">
+                      <input type="checkbox" id="chk-tb-3" />
+                      <label for="chk-tb-3">체크3</label>
+                    </span>
+                  </td>
+                  <td>99</td>
+                  <td><a href="#popup-change-history" class="primary btn-popup-anim-1">보기</a></td>
+                  <td><span class="primary">복사</span></td>
+                  <td>PRO000001</td>
+                  <td>전시</td>
+                  <td>판매 중</td>
+                  <td><img width="40" src="./img/mockup/logo.png" alt="스타벅스 로고" /></td>
+                  <td>아이스 아메리카노</td>
+                  <td>4,500</td>
+                  <td>4,000</td>
+                  <td>스타벅스</td>
+                  <td>BARCODE: <br />기본상품</td>
+
+                  <td><span class="primary">무제한</span></td>
+                  <td><span class="primary">1</span></td>
+                  <td>커피/음료</td>
+                  <td>0000068601</td>
+                  <td>Y</td>
+                  <td>홍길동(djdj22)</td>
+                  <td>YYYY.MM.DD <br />HH:MM</td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="chk-base chk-only">
+                      <input type="checkbox" id="chk-tb-4" />
+                      <label for="chk-tb-4">체크4</label>
+                    </span>
+                  </td>
+                  <td>99</td>
+                  <td><a href="#popup-change-history" class="primary btn-popup-anim-1">보기</a></td>
+                  <td><span class="primary">복사</span></td>
+                  <td>PRO000001</td>
+                  <td>전시</td>
+                  <td>판매 중</td>
+                  <td><img width="40" src="./img/mockup/logo.png" alt="스타벅스 로고" /></td>
+                  <td>아이스 아메리카노</td>
+                  <td>4,500</td>
+                  <td>4,000</td>
+                  <td>스타벅스</td>
+                  <td>BARCODE: <br />기본상품</td>
+
+                  <td><span class="primary">무제한</span></td>
+                  <td><span class="primary">1</span></td>
+                  <td>커피/음료</td>
+                  <td>0000068601</td>
+                  <td>Y</td>
+                  <td>홍길동(djdj22)</td>
+                  <td>YYYY.MM.DD <br />HH:MM</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="pagination">
+            <a href="#" class="btn btn-first">처음</a>
+            <a href="#" class="btn btn-prev">이전</a>
+            <a href="#" class="on">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#">5</a>
+            <a href="#">6</a>
+            <a href="#">7</a>
+            <a href="#">8</a>
+            <a href="#">9</a>
+            <a href="#">10</a>
+            <a href="#" class="btn btn-next">다음</a>
+            <a href="#" class="btn btn-last">마지막</a>
+          </div>
+        </div><!-- .con-area -->
+      </div><!-- .content-wrap -->
+    </div><!-- #container -->
+
+    <div class="popup-wrap z-anim mfp-hide" id="popup-change-history" data-width="1000">
+      <div class="popup-inner">
+        <div class="tit-wrap">
+          <p class="tit">상품 정보 변경 이력</p>
+        </div>
+        <div class="con-area">
+          <div class="tb-list-wrap">
+            <table class="tb-list">
+              <colgroup>
+                <col width="64" />
+                <col width="107" />
+                <col width="107" />
+                <col width="107" />
+                <col width="107" />
+                <col width="117" />
+                <col width="*" />
+              </colgroup>
+              <thead>
+                <tr>
+                  <th scope="col"><span>No.</span></th>
+                  <th scope="col"><span>연동상품 ID</span></th>
+                  <th scope="col"><span>판매 상품코드</span></th>
+                  <th scope="col"><span>유형</span></th>
+                  <th scope="col"><span>판매가</span></th>
+                  <th scope="col"><span>재고</span></th>
+                  <th scope="col"><span>수정자(아이디)</span></th>
+                  <th scope="col"><span>상품 수정일시</span></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>3</td>
+                  <td>0000068601</td>
+                  <td>PRO000001</td>
+                  <td>수정</td>
+                  <td>40,000</td>
+                  <td>무제한</td>
+                  <td>즐거운(dkwk3)</td>
+                  <td>YYYY.MM.DD HH:MM</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>0000068601</td>
+                  <td>PRO000001</td>
+                  <td>수정</td>
+                  <td>40,000</td>
+                  <td>무제한</td>
+                  <td>즐거운(dkwk3)</td>
+                  <td>YYYY.MM.DD HH:MM</td>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>0000068601</td>
+                  <td>PRO000001</td>
+                  <td>수정</td>
+                  <td>40,000</td>
+                  <td>무제한</td>
+                  <td>즐거운(dkwk3)</td>
+                  <td>YYYY.MM.DD HH:MM</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="pagination">
+            <a href="#" class="btn btn-first">처음</a>
+            <a href="#" class="btn btn-prev">이전</a>
+            <a href="#" class="on">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#">5</a>
+            <a href="#">6</a>
+            <a href="#">7</a>
+            <a href="#">8</a>
+            <a href="#">9</a>
+            <a href="#">10</a>
+            <a href="#" class="btn btn-next">다음</a>
+            <a href="#" class="btn btn-last">마지막</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="popup-wrap z-anim mfp-hide popup-alert" id="popup-alert1" data-width="410">
+      <div class="popup-inner">
+        <div class="con-area">
+          <p class="msg">변경할 항목을 선택해 주세요.</p>
+          <div class="btns-wrap t-center mt24">
+            <span class="btn-base tp2 purple lg b-mfp-close"><a href="#">확인</a></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="popup-wrap z-anim mfp-hide popup-alert" id="popup-alert2" data-width="410">
+      <div class="popup-inner">
+        <div class="con-area">
+          <p class="msg">변경할 상품을 선택해 주세요.</p>
+          <div class="btns-wrap t-center mt24">
+            <span class="btn-base tp2 purple lg b-mfp-close"><a href="#">확인</a></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="popup-wrap z-anim mfp-hide popup-alert" id="popup-alert3" data-width="410">
+      <div class="popup-inner">
+        <div class="con-area">
+          <p class="msg">이미 등록된 판매 상품이 존재합니다.</p>
+          <div class="btns-wrap t-center mt24">
+            <span class="btn-base tp2 purple lg b-mfp-close"><a href="#">확인</a></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="popup-wrap z-anim mfp-hide popup-alert" id="popup-alert4" data-width="410">
+      <div class="popup-inner">
+        <div class="con-area">
+          <p class="msg">검색 결과가 없습니다.</p>
+          <div class="btns-wrap t-center mt24">
+            <span class="btn-base tp2 purple lg b-mfp-close"><a href="#">확인</a></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="popup-wrap z-anim mfp-hide popup-alert" id="popup-alert5" data-width="410">
+      <div class="popup-inner">
+        <div class="con-area">
+          <p class="msg">연동 상품 ID를 입력해 주세요.</p>
+          <div class="btns-wrap t-center mt24">
+            <span class="btn-base tp2 purple lg b-mfp-close"><a href="#">확인</a></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="popup-wrap z-anim mfp-hide popup-confirm" id="popup-confirm" data-width="410">
+      <div class="popup-inner">
+        <div class="con-area">
+          <p class="msg">#{검색한 연동상품ID 출력}의 판매상품 <br />등록을 진행 하시겠습니까?</p>
+          <div class="btns-wrap t-center mt24">
+            <span class="btn-base tp2 lg b-mfp-close"><a href="#">취소</a></span>
+            <span class="btn-base tp2 purple lg b-mfp-close"><a href="#">확인</a></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="popup-wrap z-anim mfp-hide" id="popup-change-pinfo" data-width="611">
+      <div class="popup-inner">
+        <div class="tit-wrap">
+          <p class="tit">판매상태 변경</p>
+        </div>
+        <div class="con-area">
+          <div class="tb-input-wrap">
+            <table class="tb-input">
+              <colgroup>
+                <col width="150" />
+                <col width="*" />
+              </colgroup>
+              <tbody>
+                <tr>
+                  <th scope="row">판매 상태</th>
+                  <td>
+                    <span class="select-base">
+                      <span class="value"></span>
+                      <select>
+                        <option value="0" selected>판매 종료</option>
+                        <option value="1">비전시</option>
+                      </select>
+                    </span>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="btns-wrap t-center mt15">
+            <span class="btn-base tp2 lg purple"><a href="#">저장</a></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="popup-wrap z-anim mfp-hide" id="popup-change-dinfo" data-width="611">
+      <div class="popup-inner">
+        <div class="tit-wrap">
+          <p class="tit">전시상태 변경</p>
+        </div>
+        <div class="con-area">
+          <div class="tb-input-wrap">
+            <table class="tb-input">
+              <colgroup>
+                <col width="150" />
+                <col width="*" />
+              </colgroup>
+              <tbody>
+                <tr>
+                  <th scope="row">판매 상태</th>
+                  <td>
+                    <span class="select-base">
+                      <span class="value"></span>
+                      <select>
+                        <option value="0" selected>비전시</option>
+                        <option value="1">전시</option>
+                      </select>
+                    </span>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="btns-wrap t-center mt15">
+            <span class="btn-base tp2 lg purple"><a href="#">저장</a></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div><!-- #wrap -->
+  <script>
+    var checkCb = function(checked){
+      console.log('테이블 전체체크 유무 : ', checked)
+    };
+
+    GUI.checkAllUI('#chk-tb-all', 'table', checkCb);
+
+    $('#btnChangePopup').on('click', function(e){
+      e.preventDefault();
+      var selectedValue = $(this).prev('.select-base').find('select option:selected').val();
+      if (selectedValue == '0') {
+        $.magnificPopup.open(getOptions('#popup-alert1'));
+      } else if (selectedValue == '1') {
+        $.magnificPopup.open(getOptions('#popup-change-pinfo'));
+      } else if (selectedValue == '2') {
+        $.magnificPopup.open(getOptions('#popup-change-dinfo'));
+      }
+    });
+
+    var Qpopup = $.urlParam('popup');
+    if (Qpopup) {
+      setTimeout(function(){
+        if (Qpopup === 'changeHistory') {
+          $('[href*=#popup-change-history]').click();
+        } else if (Qpopup === 'changePinfo') {
+          $.magnificPopup.open(getOptions('#popup-change-pinfo'));
+        } else if (Qpopup === 'changeDinfo') {
+          $.magnificPopup.open(getOptions('#popup-change-dinfo'));
+        }
+        if (Qpopup.indexOf('alert') != -1) {
+          $.magnificPopup.open(getOptions('#popup-' + Qpopup));
+        }
+        if (Qpopup === 'confirm') {
+          $.magnificPopup.open(getOptions('#popup-confirm'));
+        }
+      }, 250);
+    }
+  </script>
+</body>
+
+</html>
+ 

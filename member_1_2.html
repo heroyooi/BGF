@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SmileGift- Admin</title>
+  <link rel="stylesheet" href="css/common.css">
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-ui.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/ui.js"></script>
+</head>
+<body class="c-scrollbar">
+  <div id="wrap">
+    <div id="s-header">
+      <h2>회원 상세 정보</h2>
+      <ul class="items">
+        <li class="mini"><a href="#">최소화</a></li>
+        <li class="maximize"><a href="#">최대화</a></li>
+        <li class="close"><a href="#">닫기</a></li>
+      </ul>
+    </div><!-- #header -->
+    <div id="s-container">
+      <div class="lnb-wrap c-scrollbar">
+        <div class="user-info">
+          <span class="name"><em>홍길동</em>님</span>
+          <ul class="s-info">
+            <li>#아이디</li>
+            <li>(#회원번호)</li>
+          </ul>
+        </div><!-- .user-info -->
+        <div class="cash-info">
+          <dl>
+            <dt>
+              <span class="label">총 보유 캐시</span>
+              <span class="result">1,548,000</span>
+            </dt>
+            <dd>
+              <ul>
+                <li>
+                  <span class="label">- 유상</span>
+                  <span class="result">0</span>
+                </li>
+                <li>
+                  <span class="label">- 무상</span>
+                  <span class="result">0</span>
+                </li>
+              </ul>
+            </dd>
+          </dl>
+        </div><!-- .cash-info -->
+        <ul class="s-lnb">
+          <li class="member on"><a href="#">회원 기본 정보</a></li>
+          <li class="cash"><a href="#">캐시 이용 내역</a></li>
+          <li class="billing"><a href="#">스마일기프트 이용 내역</a></li>
+          <li class="memo"><a href="#">회원 메모</a></li>
+        </ul>
+        <div class="s-myinfo">
+          <ul>
+            <li>
+              <dl>
+                <dt class="last">마지막 로그인</dt>
+                <dd>2024.05.31 18:45</dd>
+              </dl>
+            </li>
+            <li>
+              <dl>
+                <dt class="join">가입일시</dt>
+                <dd>2020.12.05 04:40</dd>
+              </dl>
+            </li>
+          </ul>
+        </div>
+      </div><!-- .lnb-wrap -->
+      <div class="content-wrap c-scrollbar">
+        <div class="tit-area">
+          <h3>회원 기본 정보</h3>
+        </div><!-- .tit-area -->
+        <div class="con-area">
+          <h4 class="s-tit">기본 정보</h4>
+          <div class="tb-input-wrap">
+            <table class="tb-input viewer">
+              <colgroup>
+                <col width="15%" />
+                <col width="35%" />
+                <col width="15%" />
+                <col width="*" />
+              </colgroup>
+              <tbody>
+                <tr>
+                  <th scope="row">회원번호</th>
+                  <td colspan="3">MEM######</td>
+                </tr>
+                <tr>
+                  <th scope="row">회원명</th>
+                  <td>홍*동</td>
+                  <th scope="row">아이디</th>
+                  <td>r**ehd12</td>
+                </tr>
+                <tr>
+                  <th scope="row">휴대 번호</th>
+                  <td>
+                    <div class="secret-input">
+                      <span>010-0245-****</span>
+                      <a href="#" class="btn-lock"></a>
+                    </div>
+                  </td>
+                  <th scope="row">이메일 주소</th>
+                  <td>rlfehd12@naver.com</td>
+                </tr>
+                <tr>
+                  <th scope="row">출생년도</th>
+                  <td>1994</td>
+                  <th scope="row">성별</th>
+                  <td>남성</td>
+                </tr>
+                <tr>
+                  <th scope="row">회원 상태</th>
+                  <td>활성</td>
+                  <th scope="row">가입일시</th>
+                  <td>2020.12.05 04:40:11</td>
+                </tr>
+                <tr>
+                  <th scope="row">휴면전환일시</th>
+                  <td></td>
+                  <th scope="row">탈퇴일시</th>
+                  <td>-</td>
+                </tr>
+              </tbody>
+            </table>
+          </div><!-- .tb-input-wrap -->
+
+          <h4 class="s-tit mt25">캐시 사용 정보</h4>
+          <div class="tb-input-wrap">
+            <table class="tb-input viewer">
+              <colgroup>
+                <col width="15%" />
+                <col width="35%" />
+                <col width="15%" />
+                <col width="*" />
+              </colgroup>
+              <tbody>
+                <tr>
+                  <th scope="row">캐시 상태</th>
+                  <td>MEM가용 (사용기한: 2023.05.31)</td>
+                  <th scope="row">간편 비번 설정</th>
+                  <td>Y</td>
+                </tr>
+                <tr>
+                  <th scope="row">총 보유 캐시</th>
+                  <td colspan="3">1,000,000</td>
+                </tr>
+                <tr>
+                  <th scope="row">유상 캐시</th>
+                  <td>1,000,000</td>
+                  <th scope="row">무상 캐시</th>
+                  <td>0</td>
+                </tr>
+                <tr>
+                  <th scope="row">충전 한도 잔액(일 한도 30만)</th>
+                  <td>300,000 / 300,000</td>
+                  <th scope="row">캐시 보유 한도 잔액 <br />(유+무상 합산 100만)</th>
+                  <td>0 / 1,000,000</td>
+                </tr>
+              </tbody>
+            </table>
+          </div><!-- .tb-input-wrap -->
+
+          <h4 class="s-tit mt25">수신 동의 정보</h4>
+          <div class="tb-input-wrap">
+            <table class="tb-input viewer">
+              <colgroup>
+                <col width="15%" />
+                <col width="*" />
+              </colgroup>
+              <tbody>
+                <tr>
+                  <th scope="row">마케팅 수신 동의</th>
+                  <td>
+                    <ul class="chk-list horizon">
+                      <li>
+                        <span class="chk-base">
+                          <input type="checkbox" id="chk-1" />
+                          <label for="chk-1">SMS (동의/거부일 : 2022.06.10 18:01)</label>
+                        </span>
+                      </li>
+                      <li>
+                        <span class="chk-base">
+                          <input type="checkbox" id="chk-2" />
+                          <label for="chk-2">이메일 (동의/거부일 : 2022.06.10 18:01)</label>
+                        </span>
+                      </li>
+                    </ul>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div><!-- .tb-input-wrap -->
+
+          <h4 class="s-tit mt25">특별회원 관리 정보</h4>
+          <div class="tb-input-wrap">
+            <table class="tb-input viewer">
+              <colgroup>
+                <col width="15%" />
+                <col width="35%" />
+                <col width="15%" />
+                <col width="*" />
+              </colgroup>
+              <tbody>
+                <tr>
+                  <th scope="row">설정 여부</th>
+                  <td>
+                    <ul class="radio-list">
+                      <li>
+                        <span class="radio-base">
+                          <input type="radio" id="radio-setting-1" name="radio-setting" checked />
+                          <label for="radio-setting-1">미설정</label>
+                        </span>
+                      </li>
+                      <li>
+                        <span class="radio-base">
+                          <input type="radio" id="radio-setting-2" name="radio-setting" />
+                          <label for="radio-setting-2">설정</label>
+                        </span>
+                      </li>
+                    </ul>
+                  </td>
+                  <th scope="row">관리 항목</th>
+                  <td>
+                    <ul class="radio-list">
+                      <li>
+                        <span class="radio-base">
+                          <input type="radio" id="radio-manage-1" name="radio-manage" checked />
+                          <label for="radio-manage-1">로그인 차단</label>
+                        </span>
+                      </li>
+                      <li>
+                        <span class="radio-base">
+                          <input type="radio" id="radio-manage-2" name="radio-manage" />
+                          <label for="radio-manage-2">충전 차단</label>
+                        </span>
+                      </li>
+                    </ul>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">설정 기간</th>
+                  <td colspan="3">
+                    <div class="input-wrap fix-width">
+                      <span class="s-datepicker">
+                        <input type="text" class="input-base datepicker" />
+                      </span>
+                      <span class="select-base ml6" style="width: 100px;">
+                        <span class="value"></span>
+                        <select>
+                          <option value="0" selected>00시</option>
+                          <option value="1">01시</option>
+                          <option value="2">02시</option>
+                          <option value="3">03시</option>
+                        </select>
+                      </span>
+                      <span class="bridge">~</span>
+                      <span class="s-datepicker">
+                        <input type="text" class="input-base datepicker" />
+                      </span>
+                      <span class="select-base ml6" style="width: 100px;">
+                        <span class="value"></span>
+                        <select>
+                          <option value="0" selected>00시</option>
+                          <option value="1">01시</option>
+                          <option value="2">02시</option>
+                          <option value="3">03시</option>
+                        </select>
+                      </span>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div><!-- .tb-input-wrap -->
+
+          <p class="s-tip mt10">로그인 차단: 해당 회원 로그인 불가 / * 충전 차단 : 스마일기프트 쿠폰 조회/등록 불가</p>
+
+          <div class="btns-wrap t-right mt11">
+            <span class="btn-base tp2 lg purple"><a href="#">저장</a></span>
+          </div>
+        </div><!-- .con-area -->
+      </div><!-- .content-wrap -->
+    </div><!-- #container -->
+  </div><!-- #wrap -->
+</body>
+
+</html>
+ 

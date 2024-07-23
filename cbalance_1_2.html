@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SmileGift- Admin</title>
+  <link rel="stylesheet" href="css/common.css">
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-ui.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/ui.js"></script>
+</head>
+<body class="c-scrollbar">
+  <div id="wrap">
+    <div id="header">
+      <h1><a href="#"><img src="img/common/logo.svg" alt="" /></a></h1>
+      <ul class="utils">
+        <li>
+          <span class="my"><em>홍길동</em>님</span>
+          <div class="utils-tip">
+            <ul>
+              <li><a href="#">로그아웃</a></li>
+              <li><a href="#">비밀번호 변경</a></li>
+            </ul>
+          </div>
+        </li>
+        <li><a href="#" class="btn-logout">로그아웃</a></li>
+      </ul>
+    </div><!-- #header -->
+    <div id="container">
+      <div class="lnb-wrap c-scrollbar">
+        <ul class="lnb" data-dp1="8" data-dp2="1">
+          <li class="user-group">
+            <dl>
+              <dt>회원관리</dt>
+              <dd>
+                <ul>
+                  <li><a href="#">일반회원</a></li>
+                  <li><a href="#">탈퇴회원</a></li>
+                </ul>
+              </dd>
+            </dl>
+          </li>
+          <li class="gift">
+            <dl>
+              <dt>기프트샵 상품 관리</dt>
+              <dd>
+                <ul>
+                  <li><a href="#">브랜드/카테고리 관리</a></li>
+                  <li><a href="#">연동상품 관리</a></li>
+                  <li><a href="#">판매상품 관리</a></li>
+                </ul>
+              </dd>
+            </dl>
+          </li>
+          <li class="gift-1">
+            <dl>
+              <dt>기프트샵 전시 관리</dt>
+              <dd>
+                <ul>
+                  <li><a href="#">메인 상품 진열</a></li>
+                  <li><a href="#">추천 검색어 관리</a></li>
+                  <li><a href="#">샵 메인 배너 관리</a></li>
+                  <li><a href="#">샵 서브 배너 관리</a></li>
+                </ul>
+              </dd>
+            </dl>
+          </li>
+          <li class="desktop-computer">
+            <dl>
+              <dt>메인 관리</dt>
+              <dd>
+                <ul>
+                  <li><a href="#">메인 배너 관리</a></li>
+                  <li><a href="#">메인 서브 배너 관리</a></li>
+                  <li><a href="#">팝업 관리</a></li>
+                  <li><a href="#">매장 사용 브랜드</a></li>
+                </ul>
+              </dd>
+            </dl>
+          </li>
+          <li class="event">
+            <dl>
+              <dt>기획전/이벤트</dt>
+              <dd>
+                <ul>
+                  <li><a href="#">기획전/이벤트 관리</a></li>
+                </ul>
+              </dd>
+            </dl>
+          </li>
+          <li class="cash">
+            <dl>
+              <dt>캐시 충전 관리</dt>
+              <dd>
+                <ul>
+                  <li><a href="#">캐시 충전 내역</a></li>
+                </ul>
+              </dd>
+            </dl>
+          </li>
+          <li class="order">
+            <dl>
+              <dt>주문 내역</dt>
+              <dd>
+                <ul>
+                  <li><a href="#">기프트샵</a></li>
+                  <li><a href="#">매장 결제</a></li>
+                </ul>
+              </dd>
+            </dl>
+          </li>
+          <li class="receipt-refund">
+            <dl>
+              <dt>캐시잔액 환불</dt>
+              <dd>
+                <ul>
+                  <li><a href="#">스마일기프트 쿠폰</a></li>
+                </ul>
+              </dd>
+            </dl>
+          </li>
+          <li class="coupon">
+            <dl>
+              <dt>쿠폰환불</dt>
+              <dd>
+                <ul>
+                  <li><a href="#">환불 접수</a></li>
+                  <li><a href="#">환불 확정</a></li>
+                  <li><a href="#">환불 완료</a></li>
+                </ul>
+              </dd>
+            </dl>
+          </li>
+          <li class="management">
+            <dl>
+              <dt>회계 관리</dt>
+              <dd>
+                <ul>
+                  <li><a href="#">캐시 현황</a></li>
+                  <li><a href="#">수익 현황</a></li>
+                  <li><a href="#">비용 현황</a></li>
+                  <li><a href="#">선수금</a></li>
+                  <li><a href="#">낙전</a></li>
+                </ul>
+              </dd>
+            </dl>
+          </li>
+          <li class="phone">
+            <dl>
+              <dt>고객센터</dt>
+              <dd>
+                <ul>
+                  <li><a href="#">공지사항</a></li>
+                  <li><a href="#">문의내역</a></li>
+                  <li><a href="#">문의 템플릿 관리</a></li>
+                  <li><a href="#">문의 유형 관리</a></li>
+                  <li><a href="#">FAQ 분류 관리</a></li>
+                  <li><a href="#">FAQ 등록 관리</a></li>
+                  <li><a href="#">제휴 문의 관리</a></li>
+                </ul>
+              </dd>
+            </dl>
+          </li>
+          <li class="device-mobile">
+            <dl>
+              <dt>앱 관리</dt>
+              <dd>
+                <ul>
+                  <li><a href="#">앱 회원관리</a></li>
+                  <li><a href="#">앱 푸쉬관리</a></li>
+                  <li><a href="#">스플래시 설정</a></li>
+                </ul>
+              </dd>
+            </dl>
+          </li>
+          <li class="pencil-alt">
+            <dl>
+              <dt>사이트/관리자 설정</dt>
+              <dd>
+                <ul>
+                  <li><a href="#">약관 관리</a></li>
+                  <li><a href="#">관리자 그룹 관리</a></li>
+                  <li><a href="#">관리자 계정 관리</a></li>
+                  <li><a href="#">관리자 접속이력</a></li>
+                </ul>
+              </dd>
+            </dl>
+          </li>
+        </ul>
+      </div><!-- .lnb-wrap -->
+      <div class="content-wrap c-scrollbar">
+        <div class="tit-area">
+          <h3>환불 접수 상세</h3>
+        </div><!-- .tit-area -->
+        <div class="con-area">
+          <h4 class="s-tit">환불 신청 내용</h4>
+          <div class="tb-input-wrap viewer mt10">
+            <table class="tb-input">
+              <colgroup>
+                <col width="15%" />
+                <col width="35%" />
+                <col width="15%" />
+                <col width="*" />
+              </colgroup>
+              <tbody>
+                <tr>
+                  <th scope="row">환불 상태</th>
+                  <td>환불 접수</td>
+                  <th scope="row">환불 접수 번호</th>
+                  <td>CAR0001</td>
+                </tr>
+                <tr>
+                  <th scope="row">환불 접수 일시</th>
+                  <td>YYYY.MM.DD HH:MM:SS</td>
+                  <th scope="row">회원명 (아이디)</th>
+                  <td><span class="purple">홍*동(g**ife13)</span></td>
+                </tr>
+                <tr>
+                  <th scope="row">환불 기준 금액</th>
+                  <td>7,000 원 (보유 유상 캐시 15,500원)</td>
+                  <th scope="row">환불 확정 금액</th>
+                  <td>5,850 원 (6,850 - 1,000)</td>
+                </tr>
+                <tr>
+                  <th scope="row">예금주</th>
+                  <td>홍*동</td>
+                  <th scope="row">은행 및 계좌번호</th>
+                  <td>신한은행 / ********3838</td>
+                </tr>
+              </tbody>
+            </table>
+          </div><!-- .tb-input-wrap -->
+          <div class="total-area mt25">
+            <h4 class="s-tit">환불 접수 내역</h4>
+            <div class="btns-wrap t-right">
+              <span class="btn-base tp2 purple lg"><a href="#">환불 상태 변경</a></span>
+            </div>
+          </div>
+          <div class="tb-list-wrap c-scrollbar mt10">
+            <table class="tb-list">
+              <colgroup>
+                <col width="48" />
+                <col width="102" />
+                <col width="50" />
+                <col width="60" />
+                <col width="67" />
+                <col width="71" />
+                <col width="70" />
+                <col width="65" />
+                <col width="101" />
+                <col width="100" />
+                <col width="100" />
+                <col width="66" />
+                <col width="82" />
+                <col width="101" />
+                <col width="105" />
+                <col width="101" />
+                <col width="77" />
+                <col width="83" />
+              </colgroup>
+              <thead>
+                <tr>
+                  <th scope="col"><span>상세</span></th>
+                  <th scope="col"><span>쿠폰번호</span></th>
+                  <th scope="col"><span>판매<br />유형</span></th>
+                  <th scope="col"><span>액면가</span></th>
+                  <th scope="col"><span>사용금액</span></th>
+                  <th scope="col"><span>사용률(%)</span></th>
+                  <th scope="col"><span>잔액</span></th>
+                  <th scope="col"><span>실판매가</span></th>
+                  <th scope="col"><span>할인율(%)</span></th>
+                  <th scope="col"><span>캐시 소멸기한</span></th>
+                  <th scope="col"><span>캐시 충전 일시</span></th>
+                  <th scope="col"><span>환불이력</span></th>
+                  <th scope="col"><span>환불률(%)</span></th>
+                  <th scope="col"><span>환불예상금액</span></th>
+                  <th scope="col"><span>최초 유효기간</span></th>
+                  <th scope="col"><span>이벤트명<br />(이벤트ID)</span></th>
+                  <th scope="col"><span>판매상품명</span></th>
+                  <th scope="col"><span>판매상품ID</span></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <a href="#" class="btn-arrow"></a>
+                  </td>
+                  <td>9321****1234</td>
+                  <td>판매<br />유형</td>
+                  <td>액면가</td>
+                  <td>사용금액</td>
+                  <td>사용률(%)</td>
+                  <td>잔액</td>
+                  <td>실판매가</td>
+                  <td>할인율(%)</td>
+                  <td>캐시 소멸기한</td>
+                  <td>캐시 충전 일시</td>
+                  <td>N</td>
+                  <td>환불률(%)</td>
+                  <td>환불예상금액</td>
+                  <td>2023.06.18</td>
+                  <td>이벤트명<br />(이벤트ID)</td>
+                  <td>판매상품명</td>
+                  <td>판매상품ID</td>
+                </tr>
+                <tr class="in-table">
+                  <td colspan="18">
+                    <table class="tb-list">
+                      <colgroup>
+                        <col width="4%" />
+                        <col width="16%" />
+                        <col width="16%" />
+                        <col width="16%" />
+                        <col width="16%" />
+                        <col width="16%" />
+                        <col width="16%" />
+                      </colgroup>
+                      <thead>
+                        <tr>
+                          <th scope="col"><span>No.</span></th>
+                          <th scope="col"><span>사용 일시</span></th>
+                          <th scope="col"><span>항목</span></th>
+                          <th scope="col"><span>상세 내용</span></th>
+                          <th scope="col"><span>사용(취소)금액</span></th>
+                          <th scope="col"><span>잔액</span></th>
+                          <th scope="col"><span>관련 주문 정보</span></th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>5</td>
+                          <td>2023.06.20 07:52:37</td>
+                          <td>사용</td>
+                          <td class="t-left">이디야 건설회관점</td>
+                          <td>18,000</td>
+                          <td>9,000</td>
+                          <td>매장결제 주문번호 출력</td>
+                        </tr>
+                        <tr>
+                          <td>4</td>
+                          <td>2023.06.20 07:52:37</td>
+                          <td>사용</td>
+                          <td class="t-left">이디야 건설회관점</td>
+                          <td>18,000</td>
+                          <td>9,000</td>
+                          <td>매장결제 주문번호 출력</td>
+                        </tr>
+                        <tr>
+                          <td>3</td>
+                          <td>2023.06.20 07:52:37</td>
+                          <td>사용</td>
+                          <td class="t-left">이디야 건설회관점</td>
+                          <td>18,000</td>
+                          <td>9,000</td>
+                          <td>매장결제 주문번호 출력</td>
+                        </tr>
+                        <tr>
+                          <td>2</td>
+                          <td>2023.06.20 07:52:37</td>
+                          <td>사용</td>
+                          <td class="t-left">이디야 건설회관점</td>
+                          <td>18,000</td>
+                          <td>9,000</td>
+                          <td>매장결제 주문번호 출력</td>
+                        </tr>
+                        <tr>
+                          <td>1</td>
+                          <td>2023.06.20 07:52:37</td>
+                          <td>사용</td>
+                          <td class="t-left">이디야 건설회관점</td>
+                          <td>18,000</td>
+                          <td>9,000</td>
+                          <td>매장결제 주문번호 출력</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <div class="pagination-wrap">
+                      <div class="pagination tp2">
+                        <a href="#" class="btn btn-first">처음</a>
+                        <a href="#" class="btn btn-prev">이전</a>
+                        <a href="#" class="on">1</a>
+                        <a href="#">2</a>
+                        <a href="#">3</a>
+                        <a href="#">4</a>
+                        <a href="#">5</a>
+                        <a href="#" class="btn btn-next">다음</a>
+                        <a href="#" class="btn btn-last">마지막</a>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="#" class="btn-arrow"></a>
+                  </td>
+                  <td>9321****1234</td>
+                  <td>판매<br />유형</td>
+                  <td>액면가</td>
+                  <td>사용금액</td>
+                  <td>사용률(%)</td>
+                  <td>잔액</td>
+                  <td>실판매가</td>
+                  <td>할인율(%)</td>
+                  <td>캐시 소멸기한</td>
+                  <td>캐시 충전 일시</td>
+                  <td><span class="red">Y</span></td>
+                  <td><span class="red">100</span></td>
+                  <td><span class="red">8,550</span></td>
+                  <td>2023.06.18</td>
+                  <td>이벤트명<br />(이벤트ID)</td>
+                  <td>판매상품명</td>
+                  <td>판매상품ID</td>
+                </tr>
+                <tr class="in-table">
+                  <td colspan="18">
+                    <table class="tb-list">
+                      <colgroup>
+                        <col width="4%" />
+                        <col width="16%" />
+                        <col width="16%" />
+                        <col width="16%" />
+                        <col width="16%" />
+                        <col width="16%" />
+                        <col width="16%" />
+                      </colgroup>
+                      <thead>
+                        <tr>
+                          <th scope="col"><span>No.</span></th>
+                          <th scope="col"><span>사용 일시</span></th>
+                          <th scope="col"><span>항목</span></th>
+                          <th scope="col"><span>상세 내용</span></th>
+                          <th scope="col"><span>사용(취소)금액</span></th>
+                          <th scope="col"><span>잔액</span></th>
+                          <th scope="col"><span>관련 주문 정보</span></th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>5</td>
+                          <td>2023.06.20 07:52:37</td>
+                          <td>사용</td>
+                          <td class="t-left">이디야 건설회관점</td>
+                          <td>18,000</td>
+                          <td>9,000</td>
+                          <td>매장결제 주문번호 출력</td>
+                        </tr>
+                        <tr>
+                          <td>4</td>
+                          <td>2023.06.20 07:52:37</td>
+                          <td>사용</td>
+                          <td class="t-left">이디야 건설회관점</td>
+                          <td>18,000</td>
+                          <td>9,000</td>
+                          <td>매장결제 주문번호 출력</td>
+                        </tr>
+                        <tr>
+                          <td>3</td>
+                          <td>2023.06.20 07:52:37</td>
+                          <td>사용</td>
+                          <td class="t-left">이디야 건설회관점</td>
+                          <td>18,000</td>
+                          <td>9,000</td>
+                          <td>매장결제 주문번호 출력</td>
+                        </tr>
+                        <tr>
+                          <td>2</td>
+                          <td>2023.06.20 07:52:37</td>
+                          <td>사용</td>
+                          <td class="t-left">이디야 건설회관점</td>
+                          <td>18,000</td>
+                          <td>9,000</td>
+                          <td>매장결제 주문번호 출력</td>
+                        </tr>
+                        <tr>
+                          <td>1</td>
+                          <td>2023.06.20 07:52:37</td>
+                          <td>사용</td>
+                          <td class="t-left">이디야 건설회관점</td>
+                          <td>18,000</td>
+                          <td>9,000</td>
+                          <td>매장결제 주문번호 출력</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <div class="pagination-wrap">
+                      <div class="pagination tp2">
+                        <a href="#" class="btn btn-first">처음</a>
+                        <a href="#" class="btn btn-prev">이전</a>
+                        <a href="#" class="on">1</a>
+                        <a href="#">2</a>
+                        <a href="#">3</a>
+                        <a href="#">4</a>
+                        <a href="#">5</a>
+                        <a href="#" class="btn btn-next">다음</a>
+                        <a href="#" class="btn btn-last">마지막</a>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="#" class="btn-arrow on"></a>
+                  </td>
+                  <td>9321****1234</td>
+                  <td>판매<br />유형</td>
+                  <td>액면가</td>
+                  <td>사용금액</td>
+                  <td>사용률(%)</td>
+                  <td>잔액</td>
+                  <td>실판매가</td>
+                  <td>할인율(%)</td>
+                  <td>캐시 소멸기한</td>
+                  <td>캐시 충전 일시</td>
+                  <td><span class="red">Y</span></td>
+                  <td><span class="red">100</span></td>
+                  <td><span class="red">8,550</span></td>
+                  <td>2023.06.18</td>
+                  <td>이벤트명<br />(이벤트ID)</td>
+                  <td>판매상품명</td>
+                  <td>판매상품ID</td>
+                </tr>
+                <tr class="in-table on">
+                  <td colspan="18">
+                    <table class="tb-list">
+                      <colgroup>
+                        <col width="4%" />
+                        <col width="16%" />
+                        <col width="16%" />
+                        <col width="16%" />
+                        <col width="16%" />
+                        <col width="16%" />
+                        <col width="16%" />
+                      </colgroup>
+                      <thead>
+                        <tr>
+                          <th scope="col"><span>No.</span></th>
+                          <th scope="col"><span>사용 일시</span></th>
+                          <th scope="col"><span>항목</span></th>
+                          <th scope="col"><span>상세 내용</span></th>
+                          <th scope="col"><span>사용(취소)금액</span></th>
+                          <th scope="col"><span>잔액</span></th>
+                          <th scope="col"><span>관련 주문 정보</span></th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>5</td>
+                          <td>2023.06.20 07:52:37</td>
+                          <td>사용</td>
+                          <td class="t-left">이디야 건설회관점</td>
+                          <td>18,000</td>
+                          <td>9,000</td>
+                          <td>매장결제 주문번호 출력</td>
+                        </tr>
+                        <tr>
+                          <td>4</td>
+                          <td>2023.06.20 07:52:37</td>
+                          <td>사용</td>
+                          <td class="t-left">이디야 건설회관점</td>
+                          <td>18,000</td>
+                          <td>9,000</td>
+                          <td>매장결제 주문번호 출력</td>
+                        </tr>
+                        <tr>
+                          <td>3</td>
+                          <td>2023.06.20 07:52:37</td>
+                          <td>사용</td>
+                          <td class="t-left">이디야 건설회관점</td>
+                          <td>18,000</td>
+                          <td>9,000</td>
+                          <td>매장결제 주문번호 출력</td>
+                        </tr>
+                        <tr>
+                          <td>2</td>
+                          <td>2023.06.20 07:52:37</td>
+                          <td>사용</td>
+                          <td class="t-left">이디야 건설회관점</td>
+                          <td>18,000</td>
+                          <td>9,000</td>
+                          <td>매장결제 주문번호 출력</td>
+                        </tr>
+                        <tr>
+                          <td>1</td>
+                          <td>2023.06.20 07:52:37</td>
+                          <td>사용</td>
+                          <td class="t-left">이디야 건설회관점</td>
+                          <td>18,000</td>
+                          <td>9,000</td>
+                          <td>매장결제 주문번호 출력</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <div class="pagination-wrap">
+                      <div class="pagination tp2">
+                        <a href="#" class="btn btn-first">처음</a>
+                        <a href="#" class="btn btn-prev">이전</a>
+                        <a href="#" class="on">1</a>
+                        <a href="#">2</a>
+                        <a href="#">3</a>
+                        <a href="#">4</a>
+                        <a href="#">5</a>
+                        <a href="#" class="btn btn-next">다음</a>
+                        <a href="#" class="btn btn-last">마지막</a>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="#" class="btn-arrow"></a>
+                  </td>
+                  <td>9321****1234</td>
+                  <td>판매<br />유형</td>
+                  <td>액면가</td>
+                  <td>사용금액</td>
+                  <td>사용률(%)</td>
+                  <td>잔액</td>
+                  <td>실판매가</td>
+                  <td>할인율(%)</td>
+                  <td>캐시 소멸기한</td>
+                  <td>캐시 충전 일시</td>
+                  <td><span class="red">Y</span></td>
+                  <td><span class="red">100</span></td>
+                  <td><span class="red">8,550</span></td>
+                  <td>2023.06.20</td>
+                  <td>이벤트명<br />(이벤트ID)</td>
+                  <td>판매상품명</td>
+                  <td>판매상품ID</td>
+                </tr>
+                <tr class="in-table">
+                  <td colspan="18">
+                    <table class="tb-list">
+                      <colgroup>
+                        <col width="4%" />
+                        <col width="16%" />
+                        <col width="16%" />
+                        <col width="16%" />
+                        <col width="16%" />
+                        <col width="16%" />
+                        <col width="16%" />
+                      </colgroup>
+                      <thead>
+                        <tr>
+                          <th scope="col"><span>No.</span></th>
+                          <th scope="col"><span>사용 일시</span></th>
+                          <th scope="col"><span>항목</span></th>
+                          <th scope="col"><span>상세 내용</span></th>
+                          <th scope="col"><span>사용(취소)금액</span></th>
+                          <th scope="col"><span>잔액</span></th>
+                          <th scope="col"><span>관련 주문 정보</span></th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>5</td>
+                          <td>2023.06.20 07:52:37</td>
+                          <td>사용</td>
+                          <td class="t-left">이디야 건설회관점</td>
+                          <td>18,000</td>
+                          <td>9,000</td>
+                          <td>매장결제 주문번호 출력</td>
+                        </tr>
+                        <tr>
+                          <td>4</td>
+                          <td>2023.06.20 07:52:37</td>
+                          <td>사용</td>
+                          <td class="t-left">이디야 건설회관점</td>
+                          <td>18,000</td>
+                          <td>9,000</td>
+                          <td>매장결제 주문번호 출력</td>
+                        </tr>
+                        <tr>
+                          <td>3</td>
+                          <td>2023.06.20 07:52:37</td>
+                          <td>사용</td>
+                          <td class="t-left">이디야 건설회관점</td>
+                          <td>18,000</td>
+                          <td>9,000</td>
+                          <td>매장결제 주문번호 출력</td>
+                        </tr>
+                        <tr>
+                          <td>2</td>
+                          <td>2023.06.20 07:52:37</td>
+                          <td>사용</td>
+                          <td class="t-left">이디야 건설회관점</td>
+                          <td>18,000</td>
+                          <td>9,000</td>
+                          <td>매장결제 주문번호 출력</td>
+                        </tr>
+                        <tr>
+                          <td>1</td>
+                          <td>2023.06.20 07:52:37</td>
+                          <td>사용</td>
+                          <td class="t-left">이디야 건설회관점</td>
+                          <td>18,000</td>
+                          <td>9,000</td>
+                          <td>매장결제 주문번호 출력</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <div class="pagination-wrap">
+                      <div class="pagination tp2">
+                        <a href="#" class="btn btn-first">처음</a>
+                        <a href="#" class="btn btn-prev">이전</a>
+                        <a href="#" class="on">1</a>
+                        <a href="#">2</a>
+                        <a href="#">3</a>
+                        <a href="#">4</a>
+                        <a href="#">5</a>
+                        <a href="#" class="btn btn-next">다음</a>
+                        <a href="#" class="btn btn-last">마지막</a>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <td colspan="18">
+                    <div class="tail-item">
+                      <div></div>
+                      <div class="t-info">
+                        <span class="txt bold gray">환불 확정 금액 (수수료 반영)</span>
+                        <span class="txt bold purple ml10">5,850 원(6,850 - 1,000)</span>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+              </tfoot>
+            </table>
+          </div><!-- .tb-list-wrap -->
+          <h4 class="s-tit mt25">답변 처리</h4>
+          <div class="tb-input-wrap mt10">
+            <table class="tb-input">
+              <colgroup>
+                <col width="15%">
+                <col width="*">
+              </colgroup>
+              <tbody>
+                <tr>
+                  <th scope="row">환불 상태 변경</th>
+                  <td>
+                    <ul class="radio-list">
+                      <li>
+                        <span class="radio-base">
+                          <input type="radio" id="radio-refund-1" name="radio-refund" checked />
+                          <label for="radio-refund-1">환불 확정</label>
+                        </span>
+                      </li>
+                      <li>
+                        <span class="radio-base">
+                          <input type="radio" id="radio-refund-2" name="radio-refund" />
+                          <label for="radio-refund-2">환불 불가</label>
+                        </span>
+                      </li>
+                    </ul>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">운영자 답변 <em>*</em></th>
+                  <td>
+                    <textarea class="textarea-base" style="height: 125px;" id="adminReply" disabled></textarea>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="btns-wrap mt15">
+            <span class="btn-base tp2 lg purple"><a href="#">목록</a></span>
+          </div>
+        </div><!-- .con-area -->
+      </div><!-- .content-wrap -->
+    </div><!-- #container -->
+  </div><!-- #wrap -->
+  <script>
+    $('.tb-list .btn-arrow').on('click', function(e){
+      e.preventDefault();
+      if (!$(this).hasClass('on')) {
+        $(this).addClass('on');
+        $(this).closest('tr').next('tr.in-table').addClass('on');
+      } else {
+        $(this).removeClass('on');
+        $(this).closest('tr').next('tr.in-table').removeClass('on');
+      }
+    });
+    $('#radio-refund-1').on('change', function(){
+      if ($(this).is(':checked')) {
+        $('#adminReply').prop('disabled', true);
+      }
+    });
+    $('#radio-refund-2').on('change', function(){
+      if ($(this).is(':checked')) {
+        $('#adminReply').prop('disabled', false);
+      }
+    });
+  </script>
+</body>
+
+</html>
+ 

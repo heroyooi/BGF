@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SmileGift- Admin</title>
+  <link rel="stylesheet" href="css/common.css">
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-ui.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/ui.js"></script>
+</head>
+<body class="c-scrollbar">
+  <div id="wrap">
+    <div id="header">
+      <h1><a href="#"><img src="img/common/logo.svg" alt="" /></a></h1>
+      <ul class="utils">
+        <li>
+          <span class="my"><em>홍길동</em>님</span>
+          <div class="utils-tip">
+            <ul>
+              <li><a href="#">로그아웃</a></li>
+              <li><a href="#">비밀번호 변경</a></li>
+            </ul>
+          </div>
+        </li>
+        <li><a href="#" class="btn-logout">로그아웃</a></li>
+      </ul>
+    </div><!-- #header -->
+    <div id="container">
+      <div class="lnb-wrap c-scrollbar">
+        <ul class="lnb" data-dp1="2" data-dp2="1">
+          <li class="user-group">
+            <dl>
+              <dt>회원관리</dt>
+              <dd>
+                <ul>
+                  <li><a href="#">일반회원</a></li>
+                  <li><a href="#">탈퇴회원</a></li>
+                </ul>
+              </dd>
+            </dl>
+          </li>
+          <li class="gift">
+            <dl>
+              <dt>기프트샵 상품 관리</dt>
+              <dd>
+                <ul>
+                  <li><a href="#">브랜드/카테고리 관리</a></li>
+                  <li><a href="#">연동상품 관리</a></li>
+                  <li><a href="#">판매상품 관리</a></li>
+                </ul>
+              </dd>
+            </dl>
+          </li>
+          <li class="gift-1">
+            <dl>
+              <dt>기프트샵 전시 관리</dt>
+              <dd>
+                <ul>
+                  <li><a href="#">메인 상품 진열</a></li>
+                  <li><a href="#">추천 검색어 관리</a></li>
+                  <li><a href="#">샵 메인 배너 관리</a></li>
+                  <li><a href="#">샵 서브 배너 관리</a></li>
+                </ul>
+              </dd>
+            </dl>
+          </li>
+          <li class="desktop-computer">
+            <dl>
+              <dt>메인 관리</dt>
+              <dd>
+                <ul>
+                  <li><a href="#">메인 배너 관리</a></li>
+                  <li><a href="#">메인 서브 배너 관리</a></li>
+                  <li><a href="#">팝업 관리</a></li>
+                  <li><a href="#">매장 사용 브랜드</a></li>
+                </ul>
+              </dd>
+            </dl>
+          </li>
+          <li class="event">
+            <dl>
+              <dt>기획전/이벤트</dt>
+              <dd>
+                <ul>
+                  <li><a href="#">기획전/이벤트 관리</a></li>
+                </ul>
+              </dd>
+            </dl>
+          </li>
+          <li class="cash">
+            <dl>
+              <dt>캐시 충전 관리</dt>
+              <dd>
+                <ul>
+                  <li><a href="#">캐시 충전 내역</a></li>
+                </ul>
+              </dd>
+            </dl>
+          </li>
+          <li class="order">
+            <dl>
+              <dt>주문 내역</dt>
+              <dd>
+                <ul>
+                  <li><a href="#">기프트샵</a></li>
+                  <li><a href="#">매장 결제</a></li>
+                </ul>
+              </dd>
+            </dl>
+          </li>
+          <li class="receipt-refund">
+            <dl>
+              <dt>캐시잔액 환불</dt>
+              <dd>
+                <ul>
+                  <li><a href="#">스마일기프트 쿠폰</a></li>
+                </ul>
+              </dd>
+            </dl>
+          </li>
+          <li class="coupon">
+            <dl>
+              <dt>쿠폰환불</dt>
+              <dd>
+                <ul>
+                  <li><a href="#">환불 접수</a></li>
+                  <li><a href="#">환불 확정</a></li>
+                  <li><a href="#">환불 완료</a></li>
+                </ul>
+              </dd>
+            </dl>
+          </li>
+          <li class="management">
+            <dl>
+              <dt>회계 관리</dt>
+              <dd>
+                <ul>
+                  <li><a href="#">캐시 현황</a></li>
+                  <li><a href="#">수익 현황</a></li>
+                  <li><a href="#">비용 현황</a></li>
+                  <li><a href="#">선수금</a></li>
+                  <li><a href="#">낙전</a></li>
+                </ul>
+              </dd>
+            </dl>
+          </li>
+          <li class="phone">
+            <dl>
+              <dt>고객센터</dt>
+              <dd>
+                <ul>
+                  <li><a href="#">공지사항</a></li>
+                  <li><a href="#">문의내역</a></li>
+                  <li><a href="#">문의 템플릿 관리</a></li>
+                  <li><a href="#">문의 유형 관리</a></li>
+                  <li><a href="#">FAQ 분류 관리</a></li>
+                  <li><a href="#">FAQ 등록 관리</a></li>
+                  <li><a href="#">제휴 문의 관리</a></li>
+                </ul>
+              </dd>
+            </dl>
+          </li>
+          <li class="device-mobile">
+            <dl>
+              <dt>앱 관리</dt>
+              <dd>
+                <ul>
+                  <li><a href="#">앱 회원관리</a></li>
+                  <li><a href="#">앱 푸쉬관리</a></li>
+                  <li><a href="#">스플래시 설정</a></li>
+                </ul>
+              </dd>
+            </dl>
+          </li>
+          <li class="pencil-alt">
+            <dl>
+              <dt>사이트/관리자 설정</dt>
+              <dd>
+                <ul>
+                  <li><a href="#">약관 관리</a></li>
+                  <li><a href="#">관리자 그룹 관리</a></li>
+                  <li><a href="#">관리자 계정 관리</a></li>
+                  <li><a href="#">관리자 접속이력</a></li>
+                </ul>
+              </dd>
+            </dl>
+          </li>
+        </ul>
+      </div><!-- .lnb-wrap -->
+      <div class="content-wrap c-scrollbar">
+        <div class="tab-base w-auto">
+          <ul>
+            <li><a href="#tab1">브랜드 관리</a></li>
+            <li class="on"><a href="#tab2">카테고리 관리</a></li>
+          </ul>
+        </div>
+        <div class="tit-area mt26">
+          <h3>카테고리 관리</h3>
+        </div><!-- .tit-area -->
+        <div class="con-area">
+          <div class="f-row">
+            <div class="f-col" style="padding-top:22px;">
+              <h4 class="s-tit">카테고리 분류</h4>
+              <div class="cate-box">
+                <div class="cate-row btns">
+                  <div class="btns-wrap s-between">
+                    <span class="btn-base tp2 add"><a href="#">추가</a></span>
+                    <span class="btn-base tp2 purple"><a href="#">이동 저장</a></span>
+                  </div>
+                </div>
+
+                <div class="cate-row input c-scrollbar">
+                  <ul id="sortable">
+                    <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>커피/음료 (10개)</li>
+                    <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>베이커리 (10개)</li>
+                    <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>치킨/피자 (XXX개)</li>
+                    <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>버거/샌드위치 (XXX개)</li>
+                    <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>빙수/아이스크림 (XXX개)</li>
+                    <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>한식/중식 (XXX개)</li>
+                    <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>레스토랑/퓨전 (XXX개)</li>
+                    <li class="ui-state-default zero"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>상품권 (0개)</li>
+                    <li class="ui-state-default zero"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>마트/편의점 (0개)</li>
+                    <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>레저 (XXX개) </li>
+                  </ul>
+                  <input type="text" class="input-base input-cate" placeholder="새 카테고리" />
+                </div>
+
+                <div class="cate-row btns">
+                  <div class="btns-wrap s-between">
+                    <span class="btn-base tp2 add"><a href="#">추가</a></span>
+                    <span class="btn-base tp2 purple"><a href="#">이동 저장</a></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="f-col" id="f-detail">
+              <div class="total-area">
+                <h4 class="s-tit">카테고리 상세 설정</h4>
+                <div class="btns-wrap t-right">
+                  <span class="btn-base tp2 purple lg"><a href="#">저장</a></span>
+                </div>
+              </div>
+              <div class="tb-input-wrap mt10">
+                <table class="tb-input">
+                  <colgroup>
+                    <col width="15%" />
+                    <col width="*" />
+                  </colgroup>
+                  <tbody>
+                    <tr>
+                      <th scope="row">카테고리 코드</th>
+                      <td>CAT0001</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">선택 카테고리</th>
+                      <td>커피/음료</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">카테고리 명칭 <em>*</em></th>
+                      <td>
+                        <input type="text" class="input-base" value="커피/음료" />
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">카테고리 설명</th>
+                      <td>
+                        <input type="text" class="input-base" />
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">전시 상태</th>
+                      <td>
+                        <ul class="radio-list">
+                          <li>
+                            <span class="radio-base">
+                              <input type="radio" id="radio-display-1" name="radio-display" checked />
+                              <label for="radio-display-1">비전시</label>
+                            </span>
+                          </li>
+                          <li>
+                            <span class="radio-base">
+                              <input type="radio" id="radio-display-2" name="radio-display" />
+                              <label for="radio-display-2">전시</label>
+                            </span>
+                          </li>
+                        </ul>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">카테고리 상품 정렬</th>
+                      <td>
+                        <ul class="radio-list">
+                          <li>
+                            <span class="radio-base">
+                              <input type="radio" id="radio-sort-1" name="radio-sort" checked />
+                              <label for="radio-sort-1">최신순</label>
+                            </span>
+                          </li>
+                          <li>
+                            <span class="radio-base">
+                              <input type="radio" id="radio-sort-2" name="radio-sort" />
+                              <label for="radio-sort-2">낮은 가격순</label>
+                            </span>
+                          </li>
+                          <li>
+                            <span class="radio-base">
+                              <input type="radio" id="radio-sort-3" name="radio-sort" />
+                              <label for="radio-sort-3">높은 가격순</label>
+                            </span>
+                          </li>
+                          <li>
+                            <span class="radio-base">
+                              <input type="radio" id="radio-sort-4" name="radio-sort" />
+                              <label for="radio-sort-4">인기순</label>
+                            </span>
+                          </li>
+                        </ul>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">카테고리 아이콘 이미지</th>
+                      <td>
+                        <div class="input-wrapper">
+                          <div class="input-wrap input-btn input-file" style="width: 475px;">
+                            <input type="text" class="input-base" placeholder="사이즈 80 * 80 권장" readonly />
+                            <input type="file" accept="image/*" />
+                            <span class="btn-base tp2"><a href="#"><em class="upload">이미지 등록</em></a></span>
+                          </div>
+                          <span class="file-info">※ jpg, png, jpeg</span>
+                        </div>
+                        <div class="preview-area">
+                          <span class="tit">[아이콘 이미지 미리 보기]</span>
+                          <div class="thumb"><span class="txt">아이콘 <br />썸넬</span></div>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div><!-- .tb-input-wrap -->
+            </div>
+          </div>
+          
+        </div><!-- .con-area -->
+      </div><!-- .content-wrap -->
+    </div><!-- #container -->
+
+    <div class="popup-wrap z-anim mfp-hide popup-alert" id="popup-alert1" data-width="410">
+      <div class="popup-inner">
+        <div class="con-area">
+          <p class="msg">카테고리 명칭을 입력해주세요.</p>
+          <div class="btns-wrap t-center mt24">
+            <span class="btn-base tp2 purple lg b-mfp-close"><a href="#">확인</a></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="popup-wrap z-anim mfp-hide popup-alert" id="popup-alert2" data-width="410">
+      <div class="popup-inner">
+        <div class="con-area">
+          <p class="msg">저장되었습니다.</p>
+          <div class="btns-wrap t-center mt24">
+            <span class="btn-base tp2 purple lg b-mfp-close"><a href="#">확인</a></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="popup-wrap z-anim mfp-hide popup-alert" id="popup-alert3" data-width="410">
+      <div class="popup-inner">
+        <div class="con-area">
+          <p class="msg">새 카테고리가 저장되었습니다.</p>
+          <div class="btns-wrap t-center mt24">
+            <span class="btn-base tp2 purple lg b-mfp-close"><a href="#">확인</a></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="popup-wrap z-anim mfp-hide popup-alert" id="popup-alert4" data-width="410">
+      <div class="popup-inner">
+        <div class="con-area">
+          <p class="msg">카테고리명을 입력해 주세요.</p>
+          <div class="btns-wrap t-center mt24">
+            <span class="btn-base tp2 purple lg b-mfp-close"><a href="#">확인</a></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="popup-wrap z-anim mfp-hide popup-alert" id="popup-alert5" data-width="410">
+      <div class="popup-inner">
+        <div class="con-area">
+          <p class="msg">이미지는 PNG, JPG, jpeg 형식만 <br />등록 가능합니다.</p>
+          <div class="btns-wrap t-center mt24">
+            <span class="btn-base tp2 purple lg b-mfp-close"><a href="#">확인</a></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="popup-wrap z-anim mfp-hide popup-confirm" id="popup-confirm" data-width="410">
+      <div class="popup-inner">
+        <div class="con-area">
+          <p class="msg">변경사항이 저장되지 않았습니다. <br />페이지에서 나가시겠습니까?</p>
+          <div class="btns-wrap t-center mt24">
+            <span class="btn-base tp2 lg b-mfp-close"><a href="#">취소</a></span>
+            <span class="btn-base tp2 purple lg b-mfp-close"><a href="#">확인</a></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div><!-- #wrap -->
+
+  <script src="js/load-image.all.min.js"></script>
+  <script>
+    $('.input-file').find('input[type="file"]').on('change', function(e){
+      var $input = $(this).closest('.input-file').find('.input-base');
+      var $thumb = $(this).closest('.input-wrapper').next('.preview-area').find('.thumb');
+      var fileValue = this.value.split('\\');  
+      $input.val(fileValue[fileValue.length-1]);
+
+      loadImage(
+        e.target.files[0],
+        function (img) {
+          $thumb.css('background-image', 'url(' + img.toDataURL() + ')');
+          $thumb.find('.txt').hide();          
+        },
+        {
+          canvas: true,
+          crop: false,
+          downsamplingRatio: 0.5,
+          maxWidth: 80,
+          maxHeight: 80,
+          orientation: true
+        }
+      );
+    });
+
+    // https://jqueryui.com/sortable
+    $("#sortable").sortable();
+    $('.cate-row.input').animate({scrollTop: $('#sortable').outerHeight()}, 0);
+
+    $('.cate-box .cate-row.btns .btn-base.add').on('click', function(e){
+      e.preventDefault();
+      var $cateInput = $('.cate-row.input');
+      var resultValue = $cateInput.find('.input-base.input-cate').val();
+      if (resultValue.trim() == '') {
+        $('#sortable').append(`<li class="ui-state-default ui-sortable-handle"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>새 카테고리</li>`);
+      } else {
+        $('#sortable').append(`<li class="ui-state-default ui-sortable-handle"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>${resultValue}</li>`);
+      }
+      
+      $cateInput.find('.input-base.input-cate').val('').focus();
+      $cateInput.animate({scrollTop: $('#sortable').outerHeight()}, 0);
+    });
+
+    var Qsample = $.urlParam('sample');
+    var Qpopup = $.urlParam('popup');
+
+	  if (Qsample === 'noData') {
+      $('#sortable, #f-detail').empty();
+    }
+    if (Qpopup) {
+      setTimeout(function(){
+        if (Qpopup.indexOf('alert') != -1) {
+          $.magnificPopup.open(getOptions('#popup-' + Qpopup));
+        }
+        if (Qpopup === 'confirm') {
+          $.magnificPopup.open(getOptions('#popup-confirm'));
+        }
+      }, 250);
+    }
+  </script>
+</body>
+
+</html>
+ 

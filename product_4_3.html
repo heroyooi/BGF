@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SmileGift- Admin</title>
+  <link rel="stylesheet" href="css/common.css">
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-ui.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/ui.js"></script>
+</head>
+<body class="c-scrollbar">
+  <div id="wrap">
+    <div id="header">
+      <h1><a href="#"><img src="img/common/logo.svg" alt="" /></a></h1>
+      <ul class="utils">
+        <li>
+          <span class="my"><em>홍길동</em>님</span>
+          <div class="utils-tip">
+            <ul>
+              <li><a href="#">로그아웃</a></li>
+              <li><a href="#">비밀번호 변경</a></li>
+            </ul>
+          </div>
+        </li>
+        <li><a href="#" class="btn-logout">로그아웃</a></li>
+      </ul>
+    </div><!-- #header -->
+    <div id="container">
+      <div class="lnb-wrap c-scrollbar">
+        <ul class="lnb" data-dp1="2" data-dp2="3">
+          <li class="user-group">
+            <dl>
+              <dt>회원관리</dt>
+              <dd>
+                <ul>
+                  <li><a href="#">일반회원</a></li>
+                  <li><a href="#">탈퇴회원</a></li>
+                </ul>
+              </dd>
+            </dl>
+          </li>
+          <li class="gift">
+            <dl>
+              <dt>기프트샵 상품 관리</dt>
+              <dd>
+                <ul>
+                  <li><a href="#">브랜드/카테고리 관리</a></li>
+                  <li><a href="#">연동상품 관리</a></li>
+                  <li><a href="#">판매상품 관리</a></li>
+                </ul>
+              </dd>
+            </dl>
+          </li>
+          <li class="gift-1">
+            <dl>
+              <dt>기프트샵 전시 관리</dt>
+              <dd>
+                <ul>
+                  <li><a href="#">메인 상품 진열</a></li>
+                  <li><a href="#">추천 검색어 관리</a></li>
+                  <li><a href="#">샵 메인 배너 관리</a></li>
+                  <li><a href="#">샵 서브 배너 관리</a></li>
+                </ul>
+              </dd>
+            </dl>
+          </li>
+          <li class="desktop-computer">
+            <dl>
+              <dt>메인 관리</dt>
+              <dd>
+                <ul>
+                  <li><a href="#">메인 배너 관리</a></li>
+                  <li><a href="#">메인 서브 배너 관리</a></li>
+                  <li><a href="#">팝업 관리</a></li>
+                  <li><a href="#">매장 사용 브랜드</a></li>
+                </ul>
+              </dd>
+            </dl>
+          </li>
+          <li class="event">
+            <dl>
+              <dt>기획전/이벤트</dt>
+              <dd>
+                <ul>
+                  <li><a href="#">기획전/이벤트 관리</a></li>
+                </ul>
+              </dd>
+            </dl>
+          </li>
+          <li class="cash">
+            <dl>
+              <dt>캐시 충전 관리</dt>
+              <dd>
+                <ul>
+                  <li><a href="#">캐시 충전 내역</a></li>
+                </ul>
+              </dd>
+            </dl>
+          </li>
+          <li class="order">
+            <dl>
+              <dt>주문 내역</dt>
+              <dd>
+                <ul>
+                  <li><a href="#">기프트샵</a></li>
+                  <li><a href="#">매장 결제</a></li>
+                </ul>
+              </dd>
+            </dl>
+          </li>
+          <li class="receipt-refund">
+            <dl>
+              <dt>캐시잔액 환불</dt>
+              <dd>
+                <ul>
+                  <li><a href="#">스마일기프트 쿠폰</a></li>
+                </ul>
+              </dd>
+            </dl>
+          </li>
+          <li class="coupon">
+            <dl>
+              <dt>쿠폰환불</dt>
+              <dd>
+                <ul>
+                  <li><a href="#">환불 접수</a></li>
+                  <li><a href="#">환불 확정</a></li>
+                  <li><a href="#">환불 완료</a></li>
+                </ul>
+              </dd>
+            </dl>
+          </li>
+          <li class="management">
+            <dl>
+              <dt>회계 관리</dt>
+              <dd>
+                <ul>
+                  <li><a href="#">캐시 현황</a></li>
+                  <li><a href="#">수익 현황</a></li>
+                  <li><a href="#">비용 현황</a></li>
+                  <li><a href="#">선수금</a></li>
+                  <li><a href="#">낙전</a></li>
+                </ul>
+              </dd>
+            </dl>
+          </li>
+          <li class="phone">
+            <dl>
+              <dt>고객센터</dt>
+              <dd>
+                <ul>
+                  <li><a href="#">공지사항</a></li>
+                  <li><a href="#">문의내역</a></li>
+                  <li><a href="#">문의 템플릿 관리</a></li>
+                  <li><a href="#">문의 유형 관리</a></li>
+                  <li><a href="#">FAQ 분류 관리</a></li>
+                  <li><a href="#">FAQ 등록 관리</a></li>
+                  <li><a href="#">제휴 문의 관리</a></li>
+                </ul>
+              </dd>
+            </dl>
+          </li>
+          <li class="device-mobile">
+            <dl>
+              <dt>앱 관리</dt>
+              <dd>
+                <ul>
+                  <li><a href="#">앱 회원관리</a></li>
+                  <li><a href="#">앱 푸쉬관리</a></li>
+                  <li><a href="#">스플래시 설정</a></li>
+                </ul>
+              </dd>
+            </dl>
+          </li>
+          <li class="pencil-alt">
+            <dl>
+              <dt>사이트/관리자 설정</dt>
+              <dd>
+                <ul>
+                  <li><a href="#">약관 관리</a></li>
+                  <li><a href="#">관리자 그룹 관리</a></li>
+                  <li><a href="#">관리자 계정 관리</a></li>
+                  <li><a href="#">관리자 접속이력</a></li>
+                </ul>
+              </dd>
+            </dl>
+          </li>
+        </ul>
+      </div><!-- .lnb-wrap -->
+      <div class="content-wrap c-scrollbar">
+        <div class="tit-area">
+          <h3>판매상품 등록 정보</h3>
+        </div><!-- .tit-area -->
+        <div class="con-area">
+          <div class="btns-wrap t-right">
+            <span class="btn-base tp2 lg"><a href="#">취소</a></span>
+            <span class="btn-base tp2 purple lg"><a href="#">저장</a></span>
+          </div>
+          <div class="tb-input-wrap mt10">
+            <table class="tb-input">
+              <colgroup>
+                <col width="15%" />
+                <col width="35%" />
+                <col width="15%" />
+                <col width="*" />
+              </colgroup>
+              <tbody>
+                <tr>
+                  <th scope="row">판매 상품코드</th>
+                  <td>CAT0001</td>
+                  <th scope="row">판매상태</th>
+                  <td>
+                    <span class="select-base" style="width: 250px;">
+                      <span class="value"></span>
+                      <select>
+                        <option value="1" selected>판매 중</option>
+                        <option value="2">판매 대기</option>
+                        <option value="3">판매 종료</option>
+                        <option value="4">품절</option>
+                      </select>
+                    </span>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div><!-- .tb-input-wrap -->
+          <h4 class="s-tit mt25">기본 정보</h4>
+          <div class="tb-input-wrap mt10">
+            <table class="tb-input">
+              <colgroup>
+                <col width="15%" />
+                <col width="35%" />
+                <col width="15%" />
+                <col width="*" />
+              </colgroup>
+              <tbody>
+                <tr>
+                  <th scope="row">연동 상품 ID</th>
+                  <td class="viewer">CAT0001</td>
+                  <th scope="row">연동상품 사용 여부</th>
+                  <td class="viewer">Y</td>
+                </tr>
+                <tr>
+                  <th scope="row">연동 상품 브랜드명</th>
+                  <td class="viewer">파리크라상(섹타나인_해피콘)</td>
+                  <th scope="row">연동 상품 브랜드 ID</th>
+                  <td class="viewer">EC2619</td>
+                </tr>
+                <tr>
+                  <th scope="row">상품명</th>
+                  <td class="viewer">초코케이크 냠냠</td>
+                  <th scope="row">상품 타입</th>
+                  <td class="viewer">BARCODE: 기본상품</td>
+                </tr>
+                <tr>
+                  <th scope="row">상품명</th>
+                  <td class="viewer" colspan="3">주문일로부터 91일까지</td>
+                </tr>
+                <tr>
+                  <th scope="row">카테고리 <em>*</em></th>
+                  <td>
+                    <span class="select-base" style="width: 250px;">
+                      <span class="value"></span>
+                      <select>
+                        <option value="0" selected>선택</option>
+                        <option value="1">Value 1</option>
+                        <option value="2">Value 2</option>
+                        <option value="3">Value 3</option>
+                      </select>
+                    </span>
+                  </td>
+                  <th scope="row">브랜드 <em>*</em></th>
+                  <td>
+                    <span class="select-base" style="width: 250px;">
+                      <span class="value"></span>
+                      <select>
+                        <option value="0" selected>선택</option>
+                        <option value="1">Value 1</option>
+                        <option value="2">Value 2</option>
+                        <option value="3">Value 3</option>
+                      </select>
+                    </span>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">교환처 <em>*</em></th>
+                  <td>
+                    <span class="select-base" style="width: 250px;">
+                      <span class="value"></span>
+                      <select>
+                        <option value="0" selected>선택</option>
+                        <option value="1">Value 1</option>
+                        <option value="2">Value 2</option>
+                        <option value="3">Value 3</option>
+                      </select>
+                    </span>
+                  </td>
+                  <th scope="row">거래처(공급사) <em>*</em></th>
+                  <td>
+                    <span class="select-base" style="width: 250px;">
+                      <span class="value"></span>
+                      <select>
+                        <option value="0" selected>선택</option>
+                        <option value="1">Value 1</option>
+                        <option value="2">Value 2</option>
+                        <option value="3">Value 3</option>
+                      </select>
+                    </span>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">판매상품명 <em>*</em></th>
+                  <td colspan="3">
+                    <div class="input-wrap w-count">
+                      <input type="text" class="input-base" />
+                      <span class="tx-count"><em>0</em>/100</span>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">판매 기간</th>
+                  <td colspan="3">
+                    <div class="input-wrap fix-width">
+                      <ul class="radio-list">
+                        <li>
+                          <span class="radio-base">
+                            <input type="radio" id="radio-speriod-1" name="radio-speriod" checked />
+                            <label for="radio-speriod-1">미설정</label>
+                          </span>
+                        </li>
+                        <li>
+                          <span class="radio-base">
+                            <input type="radio" id="radio-speriod-2" name="radio-speriod" />
+                            <label for="radio-speriod-2">설정</label>
+                          </span>
+                        </li>
+                      </ul>
+                      <span class="s-datepicker disabled ml10">
+                        <input type="text" class="input-base datepicker" />
+                      </span>
+                      <span class="select-base disabled ml6" style="width: 100px;">
+                        <span class="value"></span>
+                        <select>
+                          <option value="0" selected>00시</option>
+                          <option value="1">01시</option>
+                          <option value="2">02시</option>
+                          <option value="3">03시</option>
+                        </select>
+                      </span>
+                      <span class="select-base disabled ml6" style="width: 100px;">
+                        <span class="value"></span>
+                        <select>
+                          <option value="0" selected="">00분</option>
+                          <option value="1">01시</option>
+                          <option value="2">02시</option>
+                          <option value="3">03시</option>
+                        </select>
+                      </span>
+                      <span class="bridge">~</span>
+                      <span class="s-datepicker disabled">
+                        <input type="text" class="input-base datepicker" readonly="">
+                      </span>
+                      <span class="select-base disabled ml6" style="width: 100px;">
+                        <span class="value"></span>
+                        <select>
+                          <option value="0" selected="">00시</option>
+                          <option value="1">01시</option>
+                          <option value="2">02시</option>
+                          <option value="3">03시</option>
+                        </select>
+                      </span>
+                      <span class="select-base disabled ml6" style="width: 100px;">
+                        <span class="value"></span>
+                        <select>
+                          <option value="0" selected="">00분</option>
+                          <option value="1">01시</option>
+                          <option value="2">02시</option>
+                          <option value="3">03시</option>
+                        </select>
+                      </span>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">전시 상태</th>
+                  <td colspan="3">
+                    <ul class="radio-list">
+                      <li>
+                        <span class="radio-base">
+                          <input type="radio" id="radio-display-1" name="radio-display" checked />
+                          <label for="radio-display-1">비전시</label>
+                        </span>
+                      </li>
+                      <li>
+                        <span class="radio-base">
+                          <input type="radio" id="radio-display-2" name="radio-display" />
+                          <label for="radio-display-2">전시</label>
+                        </span>
+                      </li>
+                    </ul>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">유효기간 연장 서비스</th>
+                  <td>
+                    <ul class="radio-list">
+                      <li>
+                        <span class="radio-base">
+                          <input type="radio" id="radio-expiry-1" name="radio-expiry" checked />
+                          <label for="radio-expiry-1">제공</label>
+                        </span>
+                      </li>
+                      <li>
+                        <span class="radio-base">
+                          <input type="radio" id="radio-expiry-2" name="radio-expiry" />
+                          <label for="radio-expiry-2">미제공</label>
+                        </span>
+                      </li>
+                    </ul>
+                  </td>
+                  <th scope="row">리워드 상품 여부</th>
+                  <td>
+                    <ul class="radio-list">
+                      <li>
+                        <span class="radio-base">
+                          <input type="radio" id="radio-reward-1" name="radio-reward" checked />
+                          <label for="radio-reward-1">N</label>
+                        </span>
+                      </li>
+                      <li>
+                        <span class="radio-base">
+                          <input type="radio" id="radio-reward-2" name="radio-reward" />
+                          <label for="radio-reward-2">Y</label>
+                        </span>
+                      </li>
+                    </ul>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">상품 이미지</th>
+                  <td colspan="3">
+                    <ul class="file-list">
+                      <li>
+                        <div class="thumb-area">
+                          <span class="thumb-ico"></span>
+                          <a href="#" class="btn-delete"></a>
+                        </div>
+                        <span class="btn-base tp3"><a href="#">이미지 등록</a></span>
+                        <input type="file" accept="image/*" />
+                      </li>
+                      <li>
+                        <div class="thumb-area">
+                          <span class="thumb-ico"></span>
+                          <a href="#" class="btn-delete"></a>
+                        </div>
+                        <span class="btn-base tp3"><a href="#">이미지 등록</a></span>
+                        <input type="file" accept="image/*" />
+                      </li>
+                      <li>
+                        <div class="thumb-area">
+                          <span class="thumb-ico"></span>
+                          <a href="#" class="btn-delete"></a>
+                        </div>
+                        <span class="btn-base tp3"><a href="#">이미지 등록</a></span>
+                        <input type="file" accept="image/*" />
+                      </li>
+                    </ul>
+                    <ul class="info-list mt10">
+                      <li>※ 권장 사이즈 최소 750*750 ~ 1,000*1000 / 5MB이하 / 지원 파일 형식 png, jpg, jpeg</li>
+                      <li>※ 왼쪽부터 등록된 이미지 순서대로 프론트에 출력됩니다.</li>
+                    </ul>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div><!-- .tb-input-wrap -->
+          <h4 class="s-tit mt25">구매 정보</h4>
+          <div class="tb-input-wrap mt10">
+            <table class="tb-input">
+              <colgroup>
+                <col width="15%" />
+                <col width="35%" />
+                <col width="15%" />
+                <col width="*" />
+              </colgroup>
+              <tbody>
+                <tr>
+                  <th scope="row">상품가격 (정가)</th>
+                  <td class="viewer">42,000</td>
+                  <th scope="row">할인/할증 적용 <em>*</em></th>
+                  <td>
+                    <div class="input-wrap fix-width">
+                      <ul class="radio-list mr10">
+                        <li>
+                          <span class="radio-base">
+                            <input type="radio" id="radio-discount-1" name="radio-discount" checked />
+                            <label for="radio-discount-1">미적용</label>
+                          </span>
+                        </li>
+                        <li>
+                          <span class="radio-base">
+                            <input type="radio" id="radio-discount-2" name="radio-discount" />
+                            <label for="radio-discount-2">적용</label>
+                          </span>
+                        </li>
+                      </ul>
+                      <input type="text" class="input-base mr10" style="width: 174px;" />
+                      <span class="select-base mr10" style="width: 100px;">
+                        <span class="value"></span>
+                        <select>
+                          <option value="0" selected>KRW</option>
+                          <option value="1">Value 1</option>
+                          <option value="2">Value 2</option>
+                          <option value="3">Value 3</option>
+                        </select>
+                      </span>
+                      <span class="select-base" style="width: 100px;">
+                        <span class="value"></span>
+                        <select>
+                          <option value="0" selected>할증</option>
+                          <option value="1">Value 1</option>
+                          <option value="2">Value 2</option>
+                          <option value="3">Value 3</option>
+                        </select>
+                      </span>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">판매가 <em>*</em></th>
+                  <td colspan="3"><input type="text" class="input-base" /></td>
+                </tr>
+              </tbody>
+            </table>
+          </div><!-- .tb-input-wrap -->
+          <h4 class="s-tit mt25">재고 정보</h4>
+          <div class="tb-input-wrap mt10">
+            <table class="tb-input">
+              <colgroup>
+                <col width="15%" />
+                <col width="*" />
+              </colgroup>
+              <tbody>
+                <tr>
+                  <th scope="row">재고 수량</th>
+                  <td>
+                    <div class="input-wrap fix-width">
+                      <ul class="radio-list mr10">
+                        <li>
+                          <span class="radio-base">
+                            <input type="radio" id="radio-recon-1" name="radio-recon" checked />
+                            <label for="radio-recon-1">미적용</label>
+                          </span>
+                        </li>
+                        <li>
+                          <span class="radio-base">
+                            <input type="radio" id="radio-recon-2" name="radio-recon" />
+                            <label for="radio-recon-2">적용</label>
+                          </span>
+                        </li>
+                      </ul>
+                      <input type="text" class="input-base mr10" style="width: 150px;" />
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div><!-- .tb-input-wrap -->
+
+          <h4 class="s-tit mt25">검색 키워드</h4>
+          <div class="tb-input-wrap mt10">
+            <table class="tb-input">
+              <colgroup>
+                <col width="15%" />
+                <col width="*" />
+              </colgroup>
+              <tbody>
+                <tr>
+                  <th scope="row">검색 키워드</th>
+                  <td>
+                    <ul class="info-list ">
+                      <li>※ 구분자 콤마( , )를 사용해 검색 키워드를 입력해주세요 (예: 커피,음료,아이스커피)</li>
+                    </ul>
+                    <input type="text" class="input-base mt10" />
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div><!-- .tb-input-wrap -->
+
+          <h4 class="s-tit mt25">세부 정보</h4>
+          <div class="tb-input-wrap mt10">
+            <table class="tb-input">
+              <colgroup>
+                <col width="15%" />
+                <col width="*" />
+              </colgroup>
+              <tbody>
+                <tr>
+                  <th scope="row">상품 정보 <em>* </em></th>
+                  <td>
+                    <textarea class="textarea-base" placeholder="내용" style="height: 195px;"></textarea>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">판매자 정보</th>
+                  <td>
+                    <textarea class="textarea-base" placeholder="내용" style="height: 93px;"></textarea>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">취소/환불/유의사항</th>
+                  <td>
+                    <textarea class="textarea-base" placeholder="내용" style="height: 93px;"></textarea>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">상품 고시 정보</th>
+                  <td>
+                    <textarea class="textarea-base" placeholder="내용" style="height: 93px;"></textarea>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">거래조건에 관한 정보</th>
+                  <td>
+                    <textarea class="textarea-base" placeholder="내용" style="height: 93px;"></textarea>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div><!-- .tb-input-wrap -->
+
+          <div class="btns-wrap mt15">
+            <span class="btn-base tp2 lg purple"><a href="#">목록</a></span>
+          </div>
+        </div><!-- .con-area -->
+      </div><!-- .content-wrap -->
+    </div><!-- #container -->
+  </div><!-- #wrap -->
+  <script src="js/load-image.all.min.js"></script>
+  <script>
+    $('#radio-speriod-1').on('change', function(){
+      if ($(this).is(':checked')) {
+        $(this).closest('.radio-list').siblings('.s-datepicker, .select-base').addClass('disabled');
+      }
+    });
+    $('#radio-speriod-2').on('change', function(){
+      if ($(this).is(':checked')) {
+        $(this).closest('.radio-list').siblings('.disabled').removeClass('disabled');
+      }
+    });
+    $('.file-list').on('click', 'li .btn-delete', function(e){
+      e.preventDefault();
+      // $(this).closest('li').remove();
+      var $thumb = $(this).closest('li').find('.thumb-area');
+      $thumb.attr('style', null);
+      $thumb.find('.thumb-ico').show();
+    });
+    $('.file-list').on('change', 'li input[type="file"]', function(e){
+      var $thumb = $(this).closest('li').find('.thumb-area');
+      loadImage(
+        e.target.files[0],
+        function (img) {
+          $thumb.css('background-image', 'url(' + img.toDataURL() + ')');
+          $thumb.find('.thumb-ico').hide();
+        },
+        {
+          canvas: true,
+          crop: false,
+          downsamplingRatio: 0.5,
+          maxWidth: 207,
+          maxHeight: 161,
+          orientation: true
+        }
+      );
+    });
+  </script>
+</body>
+
+</html>
+ 

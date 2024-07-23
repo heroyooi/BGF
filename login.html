@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SmileGift- Admin</title>
+  <link rel="stylesheet" href="css/common.css">
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-ui.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/ui.js"></script>
+</head>
+<body>
+  <div class="login-wrap">
+    <div class="login-area" data-aos="fade">
+      <div class="bg_area"><img src="img/bg/login.png" alt="" /></div>
+      <div class="form_area">
+        <div class="form_inner">
+          <div class="general_area">
+            <h1 class="en">ADMIN</h1>
+            <ul class="form_list">
+              <li class="user_id">
+                <input type="text" class="input-base" placeholder="아이디" />
+              </li>
+              <li class="user_pw">
+                <input type="password" class="input-base" placeholder="비밀번호" />
+              </li>
+              <li class="item">
+                <span class="chk-base">
+                  <input type="checkbox" id="chk-save-id" checked />
+                  <label for="chk-save-id">아이디 저장</label>
+                </span>
+                <a href="#" class="btn-text">비밀번호 재설정</a>
+              </li>
+              <li>
+                <span class="btn-base tp1"><a href="#">로그인</a></span>
+              </li>
+            </ul>
+          </div><!-- .general_area -->
+
+          <div class="certify_area" style="display: none;">
+            <h2>인증번호 확인</h2>
+            <ul class="info_list">
+              <li>인증번호가 전송되었습니다.</li>
+              <li>인증번호는 <strong>3분 동안</strong> 유효 합니다.</li>
+            </ul>
+            <ul class="form_list">
+              <li class="user_pw">
+                <input type="number" class="input-base" placeholder="인증번호" />
+              </li>
+              <li class="item">
+                <span class="time">02:09</span>
+                <span class="btn-base tp2"><a href="#">인증번호 다시 받기</a></span>
+              </li>
+              <li>
+                <span class="btn-base tp1"><a href="#">확인</a></span>
+              </li>
+            </ul>
+          </div><!-- .certify_area -->
+
+          <div class="confirm_area" style="display: none;">
+            <h1>계정 확인</h1>
+            <ul class="form_list">
+              <li class="user_id">
+                <input type="text" class="input-base" placeholder="아이디" />
+              </li>
+              <li class="user_phone">
+                <input type="number" class="input-base" placeholder="휴대폰번호" />
+              </li>
+              <li>
+                <span class="btn-base tp1"><a href="#">운영자 계정 확인</a></span>
+              </li>
+            </ul>
+          </div><!-- .confirm_area -->
+
+          <div class="certify_number_area" style="display: none;">
+            <h2>인증번호 확인</h2>
+            <ul class="info_list">
+              <li>인증번호가 전송되었습니다.</li>
+              <li>인증번호는 <strong>3분 동안</strong> 유효 합니다.</li>
+            </ul>
+            <ul class="form_list">
+              <li class="user_pw">
+                <input type="number" class="input-base" placeholder="인증번호" />
+              </li>
+              <li class="item">
+                <span class="time">02:09</span>
+                <span class="btn-base tp2"><a href="#">인증번호 다시 받기</a></span>
+              </li>
+              <li>
+                <span class="btn-base tp1"><a href="#">확인</a></span>
+              </li>
+            </ul>
+          </div><!-- .certify_number_area -->
+
+          <div class="reset_password_area" style="display: none;">
+            <h2>비밀번호 재설정/변경</h2>
+            <ul class="form_list">
+              <li class="user_pw">
+                <input type="password" class="input-base" placeholder="비밀번호" />
+                <ul class="info-valid">
+                  <li>√영문</li>
+                  <li>√숫자</li>
+                  <li>√특수문자</li>
+                  <li>√11-20자리</li>
+                </ul>
+              </li>
+              <li class="user_pw">
+                <input type="password" class="input-base" placeholder="비밀번호 확인" />
+                <ul class="info-valid">
+                  <li>√영문</li>
+                  <li>√숫자</li>
+                  <li>√특수문자</li>
+                  <li>√11-20자리</li>
+                </ul>
+                <span class="info error">비밀번호가 일치하지 않습니다.</span>
+              </li>
+              <li>
+                <span class="btn-base tp1"><a href="#">비밀 번호 변경</a></span>
+              </li>
+              <li>
+                <span class="btn-base tp1 reverse"><a href="#">취소</a></span>
+              </li>
+            </ul>
+            <div class="info-box">
+              <p class="tit">※ 비밀번호 설정 조건</p>
+              <ul>
+                <li>- 11자리 이상, 20자 이하</li>
+                <li>- 영문, 특수문자, 숫자 3가지 조합</li>
+                <li>- 3자 이상 연속되거나 중복되는 문자, 숫자 설정 불가</li>
+                <li>- 이전 비밀번호와 동일한 비밀번호 설정 불가</li>
+              </ul>
+            </div>
+          </div><!-- .reset_password_area -->
+        </div><!-- .form_inner -->
+      </div><!-- .form_area -->
+    </div><!-- .login-area -->
+  </div><!-- .login-wrap -->
+
+  <script>
+    var query = $.urlParam('sample');
+	  if (query === 'certify') {
+      $('.general_area').hide();
+      $('.certify_area').show();
+    } else if (query === 'confirm') {
+      $('.general_area').hide();
+      $('.confirm_area').show();
+    } else if (query === 'certify_number') {
+      $('.general_area').hide();
+      $('.certify_number_area').show();
+    } else if (query === 'reset_password' || query === 'validation') {
+      $('.general_area, .bg_area').hide();
+      $('.reset_password_area').show();
+      if (query === 'validation') {
+        $('.reset_password_area .form_list > li.user_pw .input-base').each(function(index){
+          if (index == 0) {
+            $(this).val('qwert');
+          } else {
+            $(this).val('qwert09!@#');
+          }
+        });
+        $('.reset_password_area .form_list > li.user_pw .info-valid').each(function(index){
+          if (index == 0) {
+            $(this).find('li:eq(0)').addClass('on');
+          } else {
+            $(this).find('li:eq(0), li:eq(1), li:eq(2)').addClass('on');
+          }
+        });
+      }
+    }
+  </script>
+</body>
+</html>

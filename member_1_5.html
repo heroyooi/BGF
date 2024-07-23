@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SmileGift- Admin</title>
+  <link rel="stylesheet" href="css/common.css">
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-ui.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/ui.js"></script>
+</head>
+<body class="c-scrollbar">
+  <div id="wrap">
+    <div id="s-header">
+      <h2>회원 상세 정보</h2>
+      <ul class="items">
+        <li class="mini"><a href="#">최소화</a></li>
+        <li class="maximize"><a href="#">최대화</a></li>
+        <li class="close"><a href="#">닫기</a></li>
+      </ul>
+    </div><!-- #header -->
+    <div id="s-container">
+      <div class="lnb-wrap c-scrollbar">
+        <div class="user-info">
+          <span class="name"><em>홍길동</em>님</span>
+          <ul class="s-info">
+            <li>#아이디</li>
+            <li>(#회원번호)</li>
+          </ul>
+        </div><!-- .user-info -->
+        <div class="cash-info">
+          <dl>
+            <dt>
+              <span class="label">총 보유 캐시</span>
+              <span class="result">1,548,000</span>
+            </dt>
+            <dd>
+              <ul>
+                <li>
+                  <span class="label">- 유상</span>
+                  <span class="result">0</span>
+                </li>
+                <li>
+                  <span class="label">- 무상</span>
+                  <span class="result">0</span>
+                </li>
+              </ul>
+            </dd>
+          </dl>
+        </div><!-- .cash-info -->
+        <ul class="s-lnb">
+          <li class="member"><a href="#">회원 기본 정보</a></li>
+          <li class="cash"><a href="#">캐시 이용 내역</a></li>
+          <li class="billing"><a href="#">스마일기프트 이용 내역</a></li>
+          <li class="memo on"><a href="#">회원 메모</a></li>
+        </ul>
+        <div class="s-myinfo">
+          <ul>
+            <li>
+              <dl>
+                <dt class="last">마지막 로그인</dt>
+                <dd>2024.05.31 18:45</dd>
+              </dl>
+            </li>
+            <li>
+              <dl>
+                <dt class="join">가입일시</dt>
+                <dd>2020.12.05 04:40</dd>
+              </dl>
+            </li>
+          </ul>
+        </div>
+      </div><!-- .lnb-wrap -->
+      <div class="content-wrap c-scrollbar">
+        <div class="tit-area">
+          <h3>회원 메모</h3>
+        </div><!-- .tit-area -->
+        <div class="con-area">
+          <h4 class="s-tit">메모 작성</h4>
+          <div class="textarea-wrap">
+            <textarea class="textarea-base" placeholder="내용"></textarea>
+            <span class="tx-count"><em>0</em>/300</span>
+          </div>
+          <div class="btns-wrap t-right">
+            <span class="btn-base tp2 lg purple"><a href="#">저장</a></span>
+          </div>
+          <h4 class="s-tit mt25">메모 목록</h4>
+          <div class="tb-list-wrap mt10">
+            <table class="tb-list">
+              <colgroup>
+                <col width="4%" />
+                <col width="24%" />
+                <col width="28%" />
+                <col width="24%" />
+                <col width="20%" />
+              </colgroup>
+              <thead>
+                <tr>
+                  <th scope="col"><span>No.</span></th>
+                  <th scope="col"><span>최초 작성 일시</span></th>
+                  <th scope="col"><span>메모 내용</span></th>
+                  <th scope="col"><span>작성자(아이디)</span></th>
+                  <th scope="col"><span>관리</span></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>2</td>
+                  <td>YYYY.MM.DD HH:MM</td>
+                  <td>비정상적인 로그인, 충전 시도 확인 됨에 따라 3일간 충전 정지 처리</td>
+                  <td>김즐거운(gjeg23)</td>
+                  <td>
+                    <div class="btns-wrap t-center">
+                      <span class="btn-base tp3"><a href="#">수정</a></span>
+                      <span class="btn-base tp3 orange"><a href="#">삭제</a></span>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>YYYY.MM.DD HH:MM</td>
+                  <td>비정상적인 로그인, 충전 시도 확인 됨에 따라 3일간 충전 정지 처리</td>
+                  <td>김즐거운(gjeg23)</td>
+                  <td>
+                    <div class="btns-wrap t-center">
+                      <span class="btn-base tp3"><a href="#">수정</a></span>
+                      <span class="btn-base tp3 orange"><a href="#">삭제</a></span>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div><!-- .con-area -->
+      </div><!-- .content-wrap -->
+    </div><!-- #container -->
+  </div><!-- #wrap -->
+  <script>
+    $('.tb-list .btn-arrow').on('click', function(e){
+      e.preventDefault();
+      if (!$(this).hasClass('on')) {
+        $(this).addClass('on');
+        $(this).closest('tr').next('tr.in-table').addClass('on');
+      } else {
+        $(this).removeClass('on');
+        $(this).closest('tr').next('tr.in-table').removeClass('on');
+      }
+    })
+  </script>
+</body>
+
+</html>
+ 

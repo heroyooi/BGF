@@ -1,0 +1,896 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SmileGift- Admin</title>
+  <link rel="stylesheet" href="css/common.css">
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-ui.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/ui.js"></script>
+</head>
+<body class="c-scrollbar">
+  <div id="wrap">
+    <div id="header">
+      <h1><a href="#"><img src="img/common/logo.svg" alt="" /></a></h1>
+      <ul class="utils">
+        <li>
+          <span class="my"><em>홍길동</em>님</span>
+          <div class="utils-tip">
+            <ul>
+              <li><a href="#">로그아웃</a></li>
+              <li><a href="#">비밀번호 변경</a></li>
+            </ul>
+          </div>
+        </li>
+        <li><a href="#" class="btn-logout">로그아웃</a></li>
+      </ul>
+    </div><!-- #header -->
+    <div id="container">
+      <div class="lnb-wrap c-scrollbar">
+        <ul class="lnb" data-dp1="5" data-dp2="1">
+          <li class="user-group">
+            <dl>
+              <dt>회원관리</dt>
+              <dd>
+                <ul>
+                  <li><a href="#">일반회원</a></li>
+                  <li><a href="#">탈퇴회원</a></li>
+                </ul>
+              </dd>
+            </dl>
+          </li>
+          <li class="gift">
+            <dl>
+              <dt>기프트샵 상품 관리</dt>
+              <dd>
+                <ul>
+                  <li><a href="#">브랜드/카테고리 관리</a></li>
+                  <li><a href="#">연동상품 관리</a></li>
+                  <li><a href="#">판매상품 관리</a></li>
+                </ul>
+              </dd>
+            </dl>
+          </li>
+          <li class="gift-1">
+            <dl>
+              <dt>기프트샵 전시 관리</dt>
+              <dd>
+                <ul>
+                  <li><a href="#">메인 상품 진열</a></li>
+                  <li><a href="#">추천 검색어 관리</a></li>
+                  <li><a href="#">샵 메인 배너 관리</a></li>
+                  <li><a href="#">샵 서브 배너 관리</a></li>
+                </ul>
+              </dd>
+            </dl>
+          </li>
+          <li class="desktop-computer">
+            <dl>
+              <dt>메인 관리</dt>
+              <dd>
+                <ul>
+                  <li><a href="#">메인 배너 관리</a></li>
+                  <li><a href="#">메인 서브 배너 관리</a></li>
+                  <li><a href="#">팝업 관리</a></li>
+                  <li><a href="#">매장 사용 브랜드</a></li>
+                </ul>
+              </dd>
+            </dl>
+          </li>
+          <li class="event">
+            <dl>
+              <dt>기획전/이벤트</dt>
+              <dd>
+                <ul>
+                  <li><a href="#">기획전/이벤트 관리</a></li>
+                </ul>
+              </dd>
+            </dl>
+          </li>
+          <li class="cash">
+            <dl>
+              <dt>캐시 충전 관리</dt>
+              <dd>
+                <ul>
+                  <li><a href="#">캐시 충전 내역</a></li>
+                </ul>
+              </dd>
+            </dl>
+          </li>
+          <li class="order">
+            <dl>
+              <dt>주문 내역</dt>
+              <dd>
+                <ul>
+                  <li><a href="#">기프트샵</a></li>
+                  <li><a href="#">매장 결제</a></li>
+                </ul>
+              </dd>
+            </dl>
+          </li>
+          <li class="receipt-refund">
+            <dl>
+              <dt>캐시잔액 환불</dt>
+              <dd>
+                <ul>
+                  <li><a href="#">스마일기프트 쿠폰</a></li>
+                </ul>
+              </dd>
+            </dl>
+          </li>
+          <li class="coupon">
+            <dl>
+              <dt>쿠폰환불</dt>
+              <dd>
+                <ul>
+                  <li><a href="#">환불 접수</a></li>
+                  <li><a href="#">환불 확정</a></li>
+                  <li><a href="#">환불 완료</a></li>
+                </ul>
+              </dd>
+            </dl>
+          </li>
+          <li class="management">
+            <dl>
+              <dt>회계 관리</dt>
+              <dd>
+                <ul>
+                  <li><a href="#">캐시 현황</a></li>
+                  <li><a href="#">수익 현황</a></li>
+                  <li><a href="#">비용 현황</a></li>
+                  <li><a href="#">선수금</a></li>
+                  <li><a href="#">낙전</a></li>
+                </ul>
+              </dd>
+            </dl>
+          </li>
+          <li class="phone">
+            <dl>
+              <dt>고객센터</dt>
+              <dd>
+                <ul>
+                  <li><a href="#">공지사항</a></li>
+                  <li><a href="#">문의내역</a></li>
+                  <li><a href="#">문의 템플릿 관리</a></li>
+                  <li><a href="#">문의 유형 관리</a></li>
+                  <li><a href="#">FAQ 분류 관리</a></li>
+                  <li><a href="#">FAQ 등록 관리</a></li>
+                  <li><a href="#">제휴 문의 관리</a></li>
+                </ul>
+              </dd>
+            </dl>
+          </li>
+          <li class="device-mobile">
+            <dl>
+              <dt>앱 관리</dt>
+              <dd>
+                <ul>
+                  <li><a href="#">앱 회원관리</a></li>
+                  <li><a href="#">앱 푸쉬관리</a></li>
+                  <li><a href="#">스플래시 설정</a></li>
+                </ul>
+              </dd>
+            </dl>
+          </li>
+          <li class="pencil-alt">
+            <dl>
+              <dt>사이트/관리자 설정</dt>
+              <dd>
+                <ul>
+                  <li><a href="#">약관 관리</a></li>
+                  <li><a href="#">관리자 그룹 관리</a></li>
+                  <li><a href="#">관리자 계정 관리</a></li>
+                  <li><a href="#">관리자 접속이력</a></li>
+                </ul>
+              </dd>
+            </dl>
+          </li>
+        </ul>
+      </div><!-- .lnb-wrap -->
+      <div class="content-wrap c-scrollbar">
+        <div class="tit-area">
+          <h3>기획전/이벤트 등록</h3>
+        </div><!-- .tit-area -->
+        <div class="con-area">
+          <div class="btns-wrap t-right">
+            <span class="btn-base tp2 lg"><a href="#">취소</a></span>
+            <span class="btn-base tp2 lg"><a href="#">미리보기</a></span>
+            <span class="btn-base tp2 purple lg"><a href="#">저장</a></span>
+          </div> 
+          <div class="tb-input-wrap mt10">
+            <table class="tb-input">
+              <colgroup>
+                <col width="15%" />
+                <col width="35%" />
+                <col width="15%" />
+                <col width="*" />
+              </colgroup>
+              <tbody>
+                <tr>
+                  <th scope="row">기획전/이벤트 URL</th>
+                  <td colspan="3">* 기획전 저장 시 자동으로 생성됩니다.</td>
+                </tr>
+                <tr>
+                  <th scope="row">유형</th>
+                  <td>
+                    <ul class="radio-list">
+                      <li>
+                        <span class="radio-base">
+                          <input type="radio" id="radio-etype-1" name="radio-etype" checked />
+                          <label for="radio-etype-1">이벤트</label>
+                        </span>
+                      </li>
+                      <li>
+                        <span class="radio-base">
+                          <input type="radio" id="radio-etype-2" name="radio-etype" />
+                          <label for="radio-etype-2">상품 기획</label>
+                        </span>
+                      </li>
+                    </ul> 
+                  </td>
+                  <th scope="row">전시 여부</th>
+                  <td>
+                    <ul class="radio-list">
+                      <li>
+                        <span class="radio-base">
+                          <input type="radio" id="radio-display-1" name="radio-display" checked />
+                          <label for="radio-display-1">비전시</label>
+                        </span>
+                      </li>
+                      <li>
+                        <span class="radio-base">
+                          <input type="radio" id="radio-display-2" name="radio-display" />
+                          <label for="radio-display-2">전시</label>
+                        </span>
+                      </li>
+                    </ul>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">기획전명(관리용)</th>
+                  <td>
+                    <input type="text" class="input-base" />
+                  </td>
+                  <th scope="row">댓글 여부</th>
+                  <td>
+                    <ul class="radio-list">
+                      <li>
+                        <span class="radio-base">
+                          <input type="radio" id="radio-comment-1" name="radio-comment" checked />
+                          <label for="radio-comment-1">미사용</label>
+                        </span>
+                      </li>
+                      <li>
+                        <span class="radio-base">
+                          <input type="radio" id="radio-comment-2" name="radio-comment" />
+                          <label for="radio-comment-2">사용</label>
+                        </span>
+                      </li>
+                    </ul>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">기획전명(대제목) <em>*</em></th>
+                  <td colspan="3">
+                    <input type="text" class="input-base" />
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">기획전명(소제목) <em>*</em></th>
+                  <td colspan="3">
+                    <input type="text" class="input-base" />
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">이벤트/기획전 기간 <em>*</em></th>
+                  <td colspan="3">
+                    <div class="input-wrap fix-width">
+                      <span class="s-datepicker">
+                        <input type="text" class="input-base datepicker" />
+                      </span>
+                      <span class="select-base ml10" style="width: 100px;">
+                        <span class="value"></span>
+                        <select>
+                          <option value="0" selected>00시</option>
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                        </select>
+                      </span>
+                      <span class="select-base ml10" style="width: 100px;">
+                        <span class="value"></span>
+                        <select>
+                          <option value="0" selected>00분</option>
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                        </select>
+                      </span>
+                      <span class="bridge">~</span>
+                      <span class="s-datepicker">
+                        <input type="text" class="input-base datepicker" />
+                      </span>
+                      <span class="select-base ml10" style="width: 100px;">
+                        <span class="value"></span>
+                        <select>
+                          <option value="0" selected>00시</option>
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                        </select>
+                      </span>
+                      <span class="select-base ml10" style="width: 100px;">
+                        <span class="value"></span>
+                        <select>
+                          <option value="0" selected>00분</option>
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                        </select>
+                      </span>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">썸네일 이미지 <em>*</em></th>
+                  <td>
+                    <div class="input-wrapper">
+                      <div class="input-wrap input-btn input-file mr6" style="max-width: 475px;">
+                        <input type="text" class="input-base" readonly>
+                        <input type="file" accept="image/*">
+                        <span class="btn-base tp2"><a href="#"><em class="upload">이미지 등록</em></a></span>
+                      </div>
+                      <span class="file-info ml0">※ jpg, png, jpeg</span>
+                    </div>
+                    <div class="preview-area">
+                      <span class="tit">[이미지 미리 보기]</span>
+                      <div class="thumb" style="width: 320px; height: 170px;"><span class="txt">썸넬</span></div>
+                    </div>
+                  </td>
+                  <th scope="row">Open Graph Tag 이미지</th>
+                  <td>
+                    <div class="input-wrapper">
+                      <div class="input-wrap input-btn input-file mr6" style="max-width: 475px;">
+                        <input type="text" class="input-base" readonly>
+                        <input type="file" accept="image/*">
+                        <span class="btn-base tp2"><a href="#"><em class="upload">이미지 등록</em></a></span>
+                      </div>
+                      <span class="file-info ml0">※ jpg, png, jpeg</span>
+                    </div>
+                    <div class="preview-area">
+                      <span class="tit">[이미지 미리 보기]</span>
+                      <div class="thumb" style="width: 320px; height: 170px;"><span class="txt">썸넬</span></div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">본문 내용 <em>*</em></th>
+                  <td colspan="3">
+                    <textarea class="textarea-base text-editor" style="height: 213px;"></textarea>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">유의 사항</th>
+                  <td colspan="3">
+                    <textarea class="textarea-base text-editor" style="height: 213px;"></textarea>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">연결 버튼 설정</th>
+                  <td colspan="3">
+                    <div class="input-wrap">
+                      <ul class="radio-list vertical mr30">
+                        <li>
+                          <span class="radio-base">
+                            <input type="radio" id="radio-cbtn-1" name="radio-cbtn" checked />
+                            <label for="radio-cbtn-1">미사용</label>
+                          </span>
+                        </li>
+                        <li>
+                          <span class="radio-base">
+                            <input type="radio" id="radio-cbtn-2" name="radio-cbtn" />
+                            <label for="radio-cbtn-2">사용</label>
+                          </span>
+                        </li>
+                      </ul>
+                      <ul class="input-list" style="width: 558px;">
+                        <li>
+                          <span class="label">버튼 명칭</span>
+                          <input type="text" class="input-base" disabled />
+                        </li>
+                        <li>
+                          <span class="label">연결 url</span>
+                          <div class="input-wrap select-input">
+                            <span class="select-base disabled">
+                              <span class="value"></span>
+                              <select>
+                                <option value="0" selected>현재창</option>
+                                <option value="1">1</option>
+                              </select>
+                            </span>
+                            <input type="text" class="input-base" disabled />
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div><!-- .tb-input-wrap -->
+
+          <div class="tb-input-wrap mt30">
+            <table class="tb-input">
+              <colgroup>
+                <col width="15%" />
+                <col width="35%" />
+                <col width="15%" />
+                <col width="*" />
+              </colgroup>
+              <tbody>
+                <tr>
+                  <th colspan="4" class="t-left th-title">
+                    <span>
+                      <div class="input-wrap flex">
+                        <div class="fl">
+                          <span class="label">상품 전시 섹션</span>
+                          <span class="btn-base tp5"><a href="#">섹션 추가 +</a></span>
+                        </div>
+                        <div class="fr">
+                          <div class="tail-item">
+                            <div class="t-info">
+                              <a href="#" class="arrow down"></a>
+                              <a href="#" class="arrow up"></a>
+                              <span class="btn-base tp6"><a href="#">접기</a></span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </span>
+                  </th>
+                </tr>
+                <tr class="no-view on">
+                  <th scope="row">섹션명</th>
+                  <td>
+                    <input type="text" class="input-base" />
+                  </td>
+                  <th scope="row">전시 여부</th>
+                  <td>
+                    <ul class="radio-list">
+                      <li>
+                        <span class="radio-base">
+                          <input type="radio" id="radio-pdisplay1-1" name="radio-pdisplay1" checked />
+                          <label for="radio-pdisplay1-1">비전시</label>
+                        </span>
+                      </li>
+                      <li>
+                        <span class="radio-base">
+                          <input type="radio" id="radio-pdisplay1-2" name="radio-pdisplay1" />
+                          <label for="radio-pdisplay1-2">전시</label>
+                        </span>
+                      </li>
+                    </ul>
+                  </td>
+                </tr>
+                <tr class="in-table no-view on">
+                  <th scope="row">전시 상품</th>
+                  <td colspan="3">
+                    <table class="tb-list">
+                      <colgroup>
+                        <col width="*" />
+                        <col width="14%" />
+                        <col width="12%" />
+                        <col width="14%" />
+                        <col width="14%" />
+                        <col width="14%" />
+                        <col width="14%" />
+                        <col width="12%" />
+                      </colgroup>
+                      <thead>
+                        <tr>
+                          <th colspan="8" class="t-left">
+                            <span>
+                              <span class="btn-base tp6"><a href="#">상품 검색</a></span>
+                            </span>
+                          </th>
+                        </tr>
+                        <tr>
+                          <th scope="col">
+                            <span>
+                              <span class="chk-base chk-only">
+                                <input type="checkbox" id="chk-tb1-all" />
+                                <label for="chk-tb1-all">전체 체크</label>
+                              </span>
+                            </span>
+                          </th>
+                          <th scope="col"><span>판매상품코드</span></th>
+                          <th scope="col"><span>브랜드명</span></th>
+                          <th scope="col"><span>상품명</span></th>
+                          <th scope="col"><span>정가</span></th>
+                          <th scope="col"><span>판매가</span></th>
+                          <th scope="col"><span>판매상태</span></th>
+                          <th scope="col"><span>전시상태</span></th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>
+                            <span class="chk-base chk-only">
+                              <input type="checkbox" id="chk-tb1-1" />
+                              <label for="chk-tb1-1">체크1</label>
+                            </span>
+                          </td>
+                          <td>판매상품코드</td>
+                          <td>브랜드명</td>
+                          <td>상품명</td>
+                          <td>정가</td>
+                          <td>판매가</td>
+                          <td>판매상태</td>
+                          <td>전시상태</td>
+                        </tr>
+                      </tbody>
+                      <tfoot>
+                        <tr>
+                          <td colspan="8">
+                            <div class="tail-item">
+                              <div class="t-info">
+                                <a href="#" class="arrow down"></a>
+                                <a href="#" class="arrow up"></a>
+                                <span class="txt">선택상품의 전시 순서를 변경할 수 있습니다.</span>
+                              </div>
+                              <span class="btn-base tp6"><a href="#">상품 삭제</a></span>
+                            </div>
+                          </td>
+                        </tr>
+                      </tfoot>
+                    </table>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div><!-- .tb-input-wrap -->
+
+          <div class="tb-input-wrap mt25">
+            <table class="tb-input">
+              <colgroup>
+                <col width="15%" />
+                <col width="35%" />
+                <col width="15%" />
+                <col width="*" />
+              </colgroup>
+              <tbody>
+                <tr>
+                  <th colspan="4" class="t-left th-title">
+                    <span>
+                      <div class="input-wrap flex">
+                        <div class="fl">
+                          <span class="label">상품 전시 섹션</span>
+                          <span class="btn-base tp5"><a href="#">섹션 추가 +</a></span>
+                        </div>
+                        <div class="fr">
+                          <div class="tail-item">
+                            <div class="t-info">
+                              <a href="#" class="arrow down"></a>
+                              <a href="#" class="arrow up"></a>
+                              <span class="btn-base tp6"><a href="#">펴기</a></span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </span>
+                  </th>
+                </tr>
+                <tr class="no-view">
+                  <th scope="row">섹션명</th>
+                  <td>
+                    <input type="text" class="input-base" />
+                  </td>
+                  <th scope="row">전시 여부</th>
+                  <td>
+                    <ul class="radio-list">
+                      <li>
+                        <span class="radio-base">
+                          <input type="radio" id="radio-pdisplay2-1" name="radio-pdisplay2" checked />
+                          <label for="radio-pdisplay2-1">비전시</label>
+                        </span>
+                      </li>
+                      <li>
+                        <span class="radio-base">
+                          <input type="radio" id="radio-pdisplay2-2" name="radio-pdisplay2" />
+                          <label for="radio-pdisplay2-2">전시</label>
+                        </span>
+                      </li>
+                    </ul>
+                  </td>
+                </tr>
+                <tr class="in-table no-view">
+                  <th scope="row">전시 상품</th>
+                  <td colspan="3">
+                    <table class="tb-list">
+                      <colgroup>
+                        <col width="*" />
+                        <col width="14%" />
+                        <col width="12%" />
+                        <col width="14%" />
+                        <col width="14%" />
+                        <col width="14%" />
+                        <col width="14%" />
+                        <col width="12%" />
+                      </colgroup>
+                      <thead>
+                        <tr>
+                          <th colspan="8" class="t-left">
+                            <span>
+                              <span class="btn-base tp6"><a href="#">상품 검색</a></span>
+                            </span>
+                          </th>
+                        </tr>
+                        <tr>
+                          <th scope="col">
+                            <span>
+                              <span class="chk-base chk-only">
+                                <input type="checkbox" id="chk-tb2-all" />
+                                <label for="chk-tb2-all">전체 체크</label>
+                              </span>
+                            </span>
+                          </th>
+                          <th scope="col"><span>판매상품코드</span></th>
+                          <th scope="col"><span>브랜드명</span></th>
+                          <th scope="col"><span>상품명</span></th>
+                          <th scope="col"><span>정가</span></th>
+                          <th scope="col"><span>판매가</span></th>
+                          <th scope="col"><span>판매상태</span></th>
+                          <th scope="col"><span>전시상태</span></th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>
+                            <span class="chk-base chk-only">
+                              <input type="checkbox" id="chk-tb2-1" />
+                              <label for="chk-tb2-1">체크1</label>
+                            </span>
+                          </td>
+                          <td>판매상품코드</td>
+                          <td>브랜드명</td>
+                          <td>상품명</td>
+                          <td>정가</td>
+                          <td>판매가</td>
+                          <td>판매상태</td>
+                          <td>전시상태</td>
+                        </tr>
+                      </tbody>
+                      <tfoot>
+                        <tr>
+                          <td colspan="8">
+                            <div class="tail-item">
+                              <div class="t-info">
+                                <a href="#" class="arrow down"></a>
+                                <a href="#" class="arrow up"></a>
+                                <span class="txt">선택상품의 전시 순서를 변경할 수 있습니다.</span>
+                              </div>
+                              <span class="btn-base tp6"><a href="#">상품 삭제</a></span>
+                            </div>
+                          </td>
+                        </tr>
+                      </tfoot>
+                    </table>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div><!-- .tb-input-wrap -->
+        </div><!-- .con-area -->
+      </div><!-- .content-wrap -->
+    </div><!-- #container -->
+  </div><!-- #wrap -->
+  <script src="js/load-image.all.min.js"></script>
+  <script>
+    $('.input-file').find('input[type="file"]').on('change', function(e){
+      var $input = $(this).closest('.input-file').find('.input-base');
+      var $thumb = $(this).closest('.input-wrapper').next('.preview-area').find('.thumb');
+      var fileValue = this.value.split('\\');  
+      $input.val(fileValue[fileValue.length-1]);
+
+      loadImage(
+        e.target.files[0],
+        function (img) {
+          $thumb.css('background-image', 'url(' + img.toDataURL() + ')');
+          $thumb.find('.txt').hide();
+        },
+        {
+          canvas: true,
+          crop: false, // 전체 수정
+          // crop: true,
+          downsamplingRatio: 0.5,
+          maxWidth: 320,
+          maxHeight: 170,
+          orientation: true
+        }
+      );
+    });
+
+    $('#radio-cbtn-1').on('change', function(){
+      if ($(this).is(':checked')) {
+        $(this).closest('.radio-list').next('.input-list').find('.input-base').prop('disabled', true);
+        $(this).closest('.radio-list').next('.input-list').find('.select-base').addClass('disabled');
+      }
+    });
+    $('#radio-cbtn-2').on('change', function(){
+      if ($(this).is(':checked')) {
+        $(this).closest('.radio-list').next('.input-list').find('.input-base').prop('disabled', false);
+        $(this).closest('.radio-list').next('.input-list').find('.select-base').removeClass('disabled');
+      }
+    })
+
+    $(document).on('click', '.tb-input .th-title .tail-item .btn-base.tp6 a', function(e){ // 수정
+      e.preventDefault();
+      if ($(this).text() == '접기') {
+        $(this).text('펴기');
+        $(this).closest('tr').siblings('.no-view').removeClass('on');
+      } else {
+        $(this).text('접기');
+        $(this).closest('tr').siblings('.no-view').addClass('on');
+      }
+    });
+
+    var checkCb1 = function(checked){
+      console.log('테이블 전체체크 유무 : ', checked)
+    };
+    var checkCb2 = function(checked){
+      console.log('테이블 전체체크 유무 : ', checked)
+    };
+    GUI.checkAllUI('#chk-tb1-all', 'table', checkCb1);
+    GUI.checkAllUI('#chk-tb2-all', 'table', checkCb2);
+
+    // 섹션 추가 기능
+    let lastId = 3;
+    const checkCb = function(checked, lastId){
+      console.log(`${lastId}번째 테이블 전체체크 유무 : ${checked}`)
+    };
+    const displayTable = (id) => `<div class="tb-input-wrap mt25">
+      <table class="tb-input">
+        <colgroup>
+          <col width="15%" />
+          <col width="35%" />
+          <col width="15%" />
+          <col width="*" />
+        </colgroup>
+        <tbody>
+          <tr>
+            <th colspan="4" class="t-left th-title">
+              <span>
+                <div class="input-wrap flex">
+                  <div class="fl">
+                    <span class="label">상품 전시 섹션</span>
+                    <span class="btn-base tp5"><a href="#">섹션 추가 +</a></span>
+                  </div>
+                  <div class="fr">
+                    <div class="tail-item">
+                      <div class="t-info">
+                        <a href="#" class="arrow down"></a>
+                        <a href="#" class="arrow up"></a>
+                        <span class="btn-base tp6"><a href="#">펴기</a></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </span>
+            </th>
+          </tr>
+          <tr class="no-view">
+            <th scope="row">섹션명</th>
+            <td>
+              <input type="text" class="input-base" />
+            </td>
+            <th scope="row">전시 여부</th>
+            <td>
+              <ul class="radio-list">
+                <li>
+                  <span class="radio-base">
+                    <input type="radio" id="radio-pdisplay${lastId}-1" name="radio-pdisplay${lastId}" checked />
+                    <label for="radio-pdisplay${lastId}-1">비전시</label>
+                  </span>
+                </li>
+                <li>
+                  <span class="radio-base">
+                    <input type="radio" id="radio-pdisplay${lastId}-2" name="radio-pdisplay${lastId}" />
+                    <label for="radio-pdisplay${lastId}-2">전시</label>
+                  </span>
+                </li>
+              </ul>
+            </td>
+          </tr>
+          <tr class="in-table no-view">
+            <th scope="row">전시 상품</th>
+            <td colspan="3">
+              <table class="tb-list">
+                <colgroup>
+                  <col width="*" />
+                  <col width="14%" />
+                  <col width="12%" />
+                  <col width="14%" />
+                  <col width="14%" />
+                  <col width="14%" />
+                  <col width="14%" />
+                  <col width="12%" />
+                </colgroup>
+                <thead>
+                  <tr>
+                    <th colspan="8" class="t-left">
+                      <span>
+                        <span class="btn-base tp6"><a href="#">상품 검색</a></span>
+                      </span>
+                    </th>
+                  </tr>
+                  <tr>
+                    <th scope="col">
+                      <span>
+                        <span class="chk-base chk-only">
+                          <input type="checkbox" id="chk-tb${lastId}-all" />
+                          <label for="chk-tb${lastId}-all">전체 체크</label>
+                        </span>
+                      </span>
+                    </th>
+                    <th scope="col"><span>판매상품코드</span></th>
+                    <th scope="col"><span>브랜드명</span></th>
+                    <th scope="col"><span>상품명</span></th>
+                    <th scope="col"><span>정가</span></th>
+                    <th scope="col"><span>판매가</span></th>
+                    <th scope="col"><span>판매상태</span></th>
+                    <th scope="col"><span>전시상태</span></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <span class="chk-base chk-only">
+                        <input type="checkbox" id="chk-tb${lastId}-1" />
+                        <label for="chk-tb${lastId}-1">체크1</label>
+                      </span>
+                    </td>
+                    <td>판매상품코드</td>
+                    <td>브랜드명</td>
+                    <td>상품명</td>
+                    <td>정가</td>
+                    <td>판매가</td>
+                    <td>판매상태</td>
+                    <td>전시상태</td>
+                  </tr>
+                </tbody>
+                <tfoot>
+                  <tr>
+                    <td colspan="8">
+                      <div class="tail-item">
+                        <div class="t-info">
+                          <a href="#" class="arrow down"></a>
+                          <a href="#" class="arrow up"></a>
+                          <span class="txt">선택상품의 전시 순서를 변경할 수 있습니다.</span>
+                        </div>
+                        <span class="btn-base tp6"><a href="#">상품 삭제</a></span>
+                      </div>
+                    </td>
+                  </tr>
+                </tfoot>
+              </table>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>`;
+
+    $(document).on('click', 'a:contains("섹션 추가 +")', function(e){
+      e.preventDefault();
+      $(this).closest('.tb-input-wrap').after(displayTable(lastId));
+      GUI.checkAllUI(`#chk-tb${lastId}-all`, 'table', checkCb);
+      lastId += 1;
+    })
+  </script>
+</body>
+
+</html>
+ 

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>퍼블리싱 - 코딩맵</title>
+  <link rel="stylesheet" type="text/css" href="./_guide/guide.css" />
+	<script type="text/javascript" src="./_guide/dtree.js"></script>
+</head>
+<body>
+  <div class="guide-wrapper">
+    <div id="content_guide_list">
+      <h1>퍼블리싱 진행표</h1>
+      <h2>진행 표시</h2>
+      <ul>
+  			<li><span style="color:#aeaeae;">■ 작업전</span></li>
+  			<li><span style="color:green;">■ 작업중</span></li>
+  			<li><span style="color:#5727ff;">■ 완료</span></li>
+  			<li><span style="color:#37b4e7;">■ 신규</span></li>
+  			<li><span style="color:#f55;">■ 수정</span></li>
+      </ul>
+      <span id="t_title"></span>
+    </div>
+    <div class="dtree">
+  		<div class="area_btn">
+  			<a href="javascript: b.openAll();"><img src="./_guide/img/btn_expand.gif" alt="Expand All" /></a>
+  			<a href="javascript: b.closeAll();"><img src="./_guide/img/btn_collapse.gif" alt="Collapse All" /></a>
+  		</div>
+  		<script type="text/javascript">
+			//<![CDATA[
+			b = new dTree('b');
+
+			b.add(0, -1, '스마일기프트 - Admin');
+			b.add(1, 0, '1. 로그인 & 메인 & 회원관리' );
+			b.add(1.011, 1, '1-1) 로그인','login.html', '완료', '_blank');
+			b.add(1.012, 1, '1-2) 로그인 - 인증번호','login.html?sample=certify', '완료', '_blank');
+			b.add(1.013, 1, '1-3) 로그인 - 계정 확인','login.html?sample=confirm', '완료', '_blank');
+			b.add(1.014, 1, '1-4) 로그인 - 인증번호 확인','login.html?sample=certify_number', '완료', '_blank');
+			b.add(1.015, 1, '1-5) 로그인 - 비밀번호 재설정/변경','login.html?sample=reset_password', '완료', '_blank');
+			b.add(1.016, 1, '1-6) 로그인 - 유효성 검사','login.html?sample=validation', '완료', '_blank');
+			b.add(1.02, 1, '2) 메인', 'main.html', '완료', '_blank');
+			b.add(1.031, 1, '3-1) 일반회원','member_1_1.html', '완료', '_blank');
+			b.add(1.032, 1, '3-2) 일반회원 - 회원 기본 정보(새창 페이지)','member_1_2.html', '완료', '_blank');
+			b.add(1.033, 1, '3-3) 일반회원 - 캐시 이용 내역(새창 페이지)','member_1_3.html', '완료', '_blank');
+			b.add(1.034, 1, '3-4) 일반회원 - 스마일기프트 이용 내역/사용 중(새창 페이지)','member_1_4.html', '완료', '_blank');
+			b.add(1.035, 1, '3-5) 일반회원 - 회원 메모(새창 페이지)','member_1_5.html', '완료', '_blank');
+			b.add(1.041, 1, '4-1) 탈퇴회원','member_2_1.html', '완료', '_blank');
+			b.add(1.042, 1, '4-2) 탈퇴회원 - 캐시 이용 내역(새창 페이지)','member_2_2.html', '완료', '_blank');
+
+			b.add(2, 0, '2. 기프트샵 상품 관리' );
+			b.add(2.011, 2, '1-1) 브랜드/카테고리 관리 - 브랜드 관리','product_1_1.html', '완료', '_blank');
+			b.add(2.012, 2, '1-2) 브랜드/카테고리 관리 - 브랜드 등록','product_1_2.html', '완료', '_blank');
+			b.add(2.0211, 2, '2-1-1) 브랜드/카테고리 관리 - 카테고리 관리','product_2_1.html', '완료', '_blank');
+			b.add(2.0212, 2, '2-1-2) 브랜드/카테고리 관리 - 카테고리 관리 - 데이터 없음','product_2_1.html?sample=noData', '완료', '_blank');
+			b.add(2.0213, 2, '2-1-3) 브랜드/카테고리 관리 - 카테고리 관리 - 얼럿 팝업(카테고리 명칭을 입력해주세요.)','product_2_1.html?popup=alert1', '완료', '_blank');
+			b.add(2.0214, 2, '2-1-4) 브랜드/카테고리 관리 - 카테고리 관리 - 얼럿 팝업(저장되었습니다.)','product_2_1.html?popup=alert2', '완료', '_blank');
+			b.add(2.0215, 2, '2-1-5) 브랜드/카테고리 관리 - 카테고리 관리 - 얼럿 팝업(새 카테고리가 저장되었습니다.)','product_2_1.html?popup=alert3', '완료', '_blank');
+			b.add(2.0215, 2, '2-1-5) 브랜드/카테고리 관리 - 카테고리 관리 - 얼럿 팝업(카테고리명을 입력해 주세요.)','product_2_1.html?popup=alert4', '완료', '_blank');
+			b.add(2.0216, 2, '2-1-6) 브랜드/카테고리 관리 - 카테고리 관리 - 얼럿 팝업(이미지는 PNG, JPG, jpeg 형식만 등록 가능합니다.)','product_2_1.html?popup=alert5', '완료', '_blank');
+			b.add(2.0217, 2, '2-1-7) 브랜드/카테고리 관리 - 카테고리 관리 - 컨펌 팝업','product_2_1.html?popup=confirm', '완료', '_blank');
+			b.add(2.031, 2, '3-1) 연동상품 관리','product_3_1.html', '완료', '_blank');
+			b.add(2.032, 2, '3-2) 연동상품 상세 정보','product_3_2.html', '완료', '_blank');
+			b.add(2.0411, 2, '4-1-1) 판매상품 관리','product_4_1.html', '완료', '_blank');
+			b.add(2.0412, 2, '4-1-2) 판매상품 관리 - 상품 정보 변경 이력 팝업','product_4_1.html?popup=changeHistory', '완료', '_blank');
+			b.add(2.0413, 2, '4-1-3) 판매상품 관리 - 판매상태 변경 팝업','product_4_1.html?popup=changePinfo', '완료', '_blank');
+			b.add(2.0414, 2, '4-1-4) 판매상품 관리 - 전시상태 변경 팝업','product_4_1.html?popup=changeDinfo', '완료', '_blank');
+			b.add(2.0415, 2, '4-1-5) 판매상품 관리 - 얼럿 팝업(변경 항목을 선택해 주세요.)','product_4_1.html?popup=alert1', '완료', '_blank');
+			b.add(2.0416, 2, '4-1-6) 판매상품 관리 - 얼럿 팝업(변경할 상품을 선택해 주세요.)','product_4_1.html?popup=alert2', '완료', '_blank');
+			b.add(2.04211, 2, '4-2-1-1) 판매상품 등록 - 검색 전','product_4_2.html', '완료', '_blank');
+			b.add(2.04212, 2, '4-2-1-2) 판매상품 등록 - 검색 후','product_4_2.html?search=true', '완료', '_blank');
+			b.add(2.0422, 2, '4-2-2) 판매상품 관리 - 얼럿 팝업(이미 등록된 판매 상품이 존재합니다.)','product_4_2.html?popup=alert3', '완료', '_blank');
+			b.add(2.0423, 2, '4-2-3) 판매상품 관리 - 얼럿 팝업(검색 결과가 없습니다.)','product_4_2.html?popup=alert4', '완료', '_blank');
+			b.add(2.0424, 2, '4-2-4) 판매상품 관리 - 얼럿 팝업(연동 상품 ID를 입력해 주세요.)','product_4_2.html?popup=alert5', '완료', '_blank');
+			b.add(2.0425, 2, '4-2-5) 판매상품 관리 - 컨펌','product_4_2.html?popup=confirm', '완료', '_blank');
+			b.add(2.043, 2, '4-3) 판매상품 등록 정보','product_4_3.html', '완료', '_blank');
+
+			b.add(3, 0, '3. 기프트샵 전시 관리' );
+			b.add(3.011, 3, '1-1) 메인 상품 진열','display_1_1.html', '완료', '_blank');
+			b.add(3.012, 3, '1-2) 메인 상품 진열 - 진열 상품 등록','display_1_2.html', '완료', '_blank');
+			b.add(3.013, 3, '1-3) 메인 상품 진열 - 상품 검색/등록(새창 페이지)','display_1_3.html', '완료', '_blank');
+			b.add(3.0211, 3, '2-1-1) 추천 검색어 관리','display_2.html', '완료', '_blank');
+			b.add(3.0212, 3, '2-1-2) 추천 검색어 관리 - 추천 검색어 등록 팝업','display_2.html?popup=registKeyword', '완료', '_blank');
+			b.add(3.0311, 3, '3-1-1) 샵 메인 배너 관리','display_3_1.html', '완료', '_blank');
+			b.add(3.0312, 3, '3-1-2) 샵 메인 배너 등록','display_3_2.html', '완료', '_blank');
+			b.add(3.0411, 3, '4-1-1) 샵 서브 배너 관리','display_4_1.html', '완료', '_blank');
+			b.add(3.0412, 3, '4-1-2) 샵 서브 배너 등록','display_4_2.html', '완료', '_blank');
+			b.add(3.04121, 3, '4-1-2-1) 샵 서브 배너 등록 - 얼럿 팝업(이미지는 PNG, JPG, jpeg 형식만 등록 가능합니다.)','display_4_2.html?popup=alert1', '완료', '_blank');
+			b.add(3.04122, 3, '4-1-2-2) 샵 서브 배너 등록 - 얼럿 팝업(등록을 취소 하시겠습니까?)','display_4_2.html?popup=alert2', '완료', '_blank');
+			b.add(3.04123, 3, '4-1-2-3) 샵 서브 배너 등록 - 얼럿 팝업(저장되었습니다.)','display_4_2.html?popup=alert3', '완료', '_blank');
+			b.add(3.04124, 3, '4-1-2-4) 샵 서브 배너 등록 - 얼럿 팝업(선택한 내용이 없습니다.)','display_4_2.html?popup=alert4', '완료', '_blank');
+
+			b.add(4, 0, '4. 메인 관리' );
+			b.add(4.011, 4, '1-1) 메인 배너 관리','main_1_1.html', '완료', '_blank');
+			b.add(4.012, 4, '1-2) 메인 배너 등록','main_1_2.html', '완료', '_blank');
+			b.add(4.021, 4, '2-1) 메인 서브 배너 관리','main_2_1.html', '완료', '_blank');
+			b.add(4.022, 4, '2-2) 메인 서브 배너 등록','main_2_2.html', '완료', '_blank');
+			b.add(4.031, 4, '3-1) 팝업 관리','main_3_1.html', '완료', '_blank');
+			b.add(4.032, 4, '3-2) 팝업 등록','main_3_2.html', '완료', '_blank');
+			b.add(4.041, 4, '4-1) 매장 사용 브랜드','main_4_1.html', '완료', '_blank');
+			b.add(4.042, 4, '4-2) 매장 사용 브랜드 등록','main_4_2.html', '완료', '_blank');
+			b.add(4.0431, 4, '4-3-1) 매장 사용 브랜드 - 카테고리 관리','main_4_3.html', '완료', '_blank');
+			b.add(4.0432, 4, '4-3-2) 매장 사용 브랜드 - 카테고리 관리 - 등록 내용 있는 상태','main_4_3.html?regist=true', '완료', '_blank');
+
+			b.add(5, 0, '5. 기획전/이벤트' );
+			b.add(5.011, 5, '1-1) 기획전/이벤트 관리','event_1_1.html', '완료', '_blank');
+			b.add(5.012, 5, '1-2) 기획전/이벤트 등록','event_1_2.html', '완료', '_blank');
+			b.add(5.013, 5, '1-3) 기획전/이벤트 등록 - 상품 검색/등록(새창 페이지)','event_1_3.html', '완료', '_blank');
+			b.add(5.0141, 5, '1-4-1) 기획전/이벤트 등록 - 댓글 관리(새창 페이지)','event_1_4.html', '완료', '_blank');
+			b.add(5.0142, 5, '1-4-2) 기획전/이벤트 등록 - 댓글 관리(새창 페이지) - 당첨자 관리 팝업','event_1_4.html?popup=winner', '완료', '_blank');
+			b.add(5.0143, 5, '1-4-3) 기획전/이벤트 등록 - 댓글 관리(새창 페이지) - 컨펌 팝업','event_1_4.html?popup=confirm', '완료', '_blank');
+			b.add(5.0144, 5, '1-4-4) 기획전/이벤트 등록 - 댓글 관리(새창 페이지) - 얼럿 팝업','event_1_4.html?popup=alert', '완료', '_blank');
+
+			b.add(6, 0, '6. 캐시 충전 관리' );
+			b.add(6.01, 6, '1-1) 캐시 충전 내역','cash_1.html', '완료', '_blank');
+
+			b.add(7, 0, '7. 주문내역' );
+			b.add(7.011, 7, '1-1) 기프트샵','order_1.html', '완료', '_blank');
+			b.add(7.012, 7, '1-2) 기프트샵 - 쿠폰 유효기간 연장 팝업','order_1.html?popup=coupon', '완료', '_blank');
+			b.add(7.02, 7, '2) 매장결제','order_2.html', '완료 ', '_blank');
+
+			b.add(8, 0, '8. 캐시잔액 환불' );
+			b.add(8.011, 8, '1-1) 스마일기프트 쿠폰 - 환불 접수','cbalance_1_1.html', '완료', '_blank');
+			b.add(8.012, 8, '1-2) 환불 접수 상세','cbalance_1_2.html', '완료', '_blank');
+			b.add(8.021, 8, '2-1) 스마일기프트 쿠폰 - 환불 확정','cbalance_2.html', '완료', '_blank');
+			b.add(8.022, 8, '2-2) 스마일기프트 쿠폰 - 환불 확정 - 환불 상태 변경 팝업','cbalance_2.html?popup=changeRefund', '완료', '_blank');
+			b.add(8.03, 8, '3) 스마일기프트 쿠폰 - 환불 완료','cbalance_3.html', '완료', '_blank');
+
+			b.add(9, 0, '9. 쿠폰 환불' );
+			b.add(9.011, 9, '1-1) 환불 접수','crefund_1.html', '완료', '_blank');
+			b.add(9.012, 9, '1-2) 환불 접수 - 환불 상태 변경 팝업','crefund_1.html?popup=changeRefund', '완료', '_blank');
+			b.add(9.021, 9, '2-1) 환불 확정','crefund_2.html', '완료', '_blank');
+			b.add(9.022, 9, '2-2) 환불 확정 - 환불 상태 변경 팝업','crefund_2.html?popup=changeRefund', '완료', '_blank');
+			b.add(9.03, 9, '3) 환불 완료','crefund_3.html', '완료', '_blank');
+
+			b.add(10, 0, '10. 회계 관리' );
+			b.add(10.01, 10, '1) 캐시 현황','account_1.html', '완료', '_blank');
+			b.add(10.02, 10, '2) 수익 현황','account_2.html', '완료', '_blank');
+			b.add(10.03, 10, '3) 비용 현황','account_3.html', '완료', '_blank');
+			b.add(10.041, 10, '4-1) 선수금','account_4_1.html', '완료', '_blank');
+			b.add(10.042, 10, '4-2) 선수금 상세','account_4_2.html', '완료', '_blank');
+			b.add(10.051, 10, '5-1) 낙전','account_5_1.html', '완료', '_blank');
+			b.add(10.052, 10, '5-2) 낙전 상세','account_5_2.html', '완료', '_blank');
+
+			b.add(11, 0, '11. 고객센터' );
+			b.add(11.011, 11, '1-1) 공지사항','cscenter_1_1.html', '완료', '_blank');
+			b.add(11.012, 11, '1-2) 공지사항 등록','cscenter_1_2.html', '완료', '_blank');
+			b.add(11.021, 11, '2-1) 문의내역','cscenter_2_1.html', '완료', '_blank');
+			b.add(11.0221, 11, '2-2-1) 문의내역 상세','cscenter_2_2.html', '완료', '_blank');
+			b.add(11.0222, 11, '2-2-2) 문의내역 상세 - 답변 등록 팝업','cscenter_2_2.html?popup=registAnswer', '완료', '_blank');
+			b.add(11.031, 11, '3-1) 문의답변 템플릿 관리','cscenter_3.html', '완료', '_blank');
+			b.add(11.032, 11, '3-2) 문의답변 템플릿 관리 - 문의답변 템플릿 등록 팝업','cscenter_3.html?popup=registQna', '완료', '_blank');
+			b.add(11.041, 11, '4-1) 문의 유형 관리','cscenter_4.html', '완료', '_blank');
+			b.add(11.042, 11, '4-2) 문의 유형 관리 - 문의 유형 설정 팝업','cscenter_4.html?popup=setQna', '완료', '_blank');
+			b.add(11.051, 11, '5-1) FAQ 분류','cscenter_5.html', '완료', '_blank');
+			b.add(11.052, 11, '5-2) FAQ 분류 - FAQ 분류 설정 팝업','cscenter_5.html?popup=setFaq', '완료', '_blank');
+			b.add(11.061, 11, '6-1) FAQ 등록 관리','cscenter_6_1.html', '완료', '_blank');
+			b.add(11.062, 11, '6-2) FAQ 등록','cscenter_6_2.html', '완료', '_blank');
+			b.add(11.071, 11, '7-1) 제휴 문의 관리','cscenter_7_1.html', '완료', '_blank');
+			b.add(11.072, 11, '7-2) 제휴 문의내용 상세','cscenter_7_2.html', '완료', '_blank');
+
+			b.add(12, 0, '12. 앱 관리' ); 
+			b.add(12.011, 12, '1-1) 앱 회원 관리','app_1.html', '완료', '_blank');
+			b.add(12.012, 12, '1-2) 앱 회원 관리 - 앱 회원정보 수정 팝업','app_1.html?popup=modify', '완료', '_blank');
+			b.add(12.0211, 12, '2-1-1) 앱 푸시 관리','app_2_1.html', '완료', '_blank');
+			b.add(12.0212, 12, '2-1-2) 앱 푸시 관리 - 앱 푸시 발송 로그 팝업','app_2_1.html?popup=pushLog', '완료', '_blank');
+			b.add(12.022, 12, '2-2) 앱 푸시 관리 - 푸시 메시지 등록','app_2_2.html', '완료', '_blank');
+			b.add(12.023, 12, '2-3) 앱 푸시 관리 - 회원 검색(새창 페이지)','app_2_3.html', '완료', '_blank');
+			b.add(12.03, 12, '3) 스플래시 설정','app_3.html', '완료', '_blank');
+
+			b.add(13, 0, '13. 사이트/관리자 설정' ); 
+			b.add(13.0111, 13, '1-1-1) 약관 관리 - 서비스 이용약관', 'menagement_1_1.html', '완료', '_blank');
+			b.add(13.0112, 13, '1-1-2) 약관 관리 - 서비스 이용약관 - 신규 등록', 'menagement_1_2.html', '완료', '_blank');
+			b.add(13.0121, 13, '1-2-1) 약관 관리 - 개인정보처리방침', 'menagement_1_1.html?tab=2', '완료', '_blank');
+			b.add(13.0122, 13, '1-2-2) 약관 관리 - 개인정보처리방침 - 신규 등록', 'menagement_1_2.html?tab=2', '완료', '_blank');
+			b.add(13.0131, 13, '1-3-1) 약관 관리 - 캐시이용약관', 'menagement_1_1.html?tab=3', '완료', '_blank');
+			b.add(13.0132, 13, '1-3-2) 약관 관리 - 캐시이용약관 - 신규 등록', 'menagement_1_2.html?tab=3', '완료', '_blank');
+			b.add(13.021, 13, '2-1) 관리자 그룹 관리', 'menagement_2.html', '완료', '_blank');
+			b.add(13.022, 13, '2-2) 관리자 그룹 관리 - 관리자 그룹 설정', 'menagement_2.html?popup=modifyGroup', '완료', '_blank');
+			b.add(13.031, 13, '3-1) 관리자 계정 관리', 'menagement_3_1.html', '완료', '_blank');
+			b.add(13.0321, 13, '3-2-1) 관리자 계정 등록', 'menagement_3_2.html', '완료', '_blank');
+			b.add(13.0322, 13, '3-2-2) 관리자 계정 등록 - 컨펌창', 'menagement_3_2.html?popup=confirm', '완료', '_blank');
+			b.add(13.04, 13, '4) 관리자 접속 이력', 'menagement_4.html', '완료', '_blank');
+
+			b.add(14, 0, '14. 컴포넌트');  
+			b.add(14.01, 14, '1) 컴포넌트 가이드', 'component.html', '완료', '_blank');
+			b.add(14.021, 14, '2-1) MODAL - 엑셀다운로드 팝업', 'modal.html?popup=downloadExcel', '완료', '_blank');
+			b.add(14.022, 14, '2-2) MODAL - 마스킹 해제 팝업', 'modal.html?popup=unMask', '완료', '_blank');
+
+			b.add(15, 0, '15. 에러 페이지');  
+			b.add(15.01, 15, '1) 404 not found - 타입1', 'error1.html', '완료', '_blank');
+			b.add(15.02, 15, '2) 404 not found - 타입2', 'error2.html', '완료', '_blank');
+
+			b.add(16, 0, '16. 퍼블리싱 수정 내역_0405');
+			b.add(16.01, 16, '1) 회계관리 > 선수금 > 검색영역', 'account_4_1.html', '수정', '_blank');
+
+			b.add(17, 0, '17. 퍼블리싱 수정 내역_0421');
+			b.add(17.01, 17, '1) 기프트샵상품관리 - 판매상품관리', 'product_4_2.html?search=true', '수정', '_blank');
+
+			document.write(b);
+			//]]>
+  		</script>
+  	</div>
+  </div>
+</body>
+</html>

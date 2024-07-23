@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SmileGift- Admin</title>
+  <link rel="stylesheet" href="css/common.css">
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-ui.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/ui.js"></script>
+</head>
+<body class="c-scrollbar">
+  <div id="wrap">
+    <div id="s-header">
+      <h2>댓글 관리</h2>
+      <ul class="items">
+        <li class="mini"><a href="#">최소화</a></li>
+        <li class="maximize"><a href="#">최대화</a></li>
+        <li class="close"><a href="#">닫기</a></li>
+      </ul>
+    </div><!-- #header -->
+    <div id="s-container" class="no-lnb">
+      <div class="content-wrap c-scrollbar">
+        <div class="tit-area origin">
+          <h3>기획전(이벤트) : <span>#{기획전의 대제목 출력}</span></h3>
+        </div>
+        <div class="con-area">
+          <div class="tb-input-wrap">
+            <table class="tb-input">
+              <colgroup>
+                <col width="15%" />
+                <col width="35%" />
+                <col width="15%" />
+                <col width="*" />
+              </colgroup>
+              <tbody>
+                <tr>
+                  <th scope="row">검색 조건</th>
+                  <td>
+                    <div class="input-wrap select-input">
+                      <span class="select-base" style="width: 150px;">
+                        <span class="value"></span>
+                        <select>
+                          <option value="0" selected>전체</option>
+                          <option value="1">1</option>
+                        </select>
+                      </span>
+                      <input type="text" class="input-base" />
+                    </div>
+                  </td>
+                  <th scope="row">당첨 여부</th>
+                  <td>
+                    <ul class="radio-list">
+                      <li>
+                        <span class="radio-base">
+                          <input type="radio" id="radio-display-1" name="radio-display" checked />
+                          <label for="radio-display-1">전체</label>
+                        </span>
+                      </li>
+                      <li>
+                        <span class="radio-base">
+                          <input type="radio" id="radio-display-2" name="radio-display" />
+                          <label for="radio-display-2">Y</label>
+                        </span>
+                      </li>
+                      <li>
+                        <span class="radio-base">
+                          <input type="radio" id="radio-display-3" name="radio-display" />
+                          <label for="radio-display-3">N</label>
+                        </span>
+                      </li>
+                    </ul>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div><!-- .tb-input-wrap -->
+
+          <div class="btns-wrap t-right mt15">
+            <span class="btn-base tp2 lg purple"><a href="#"><em class="search">검색</em></a></span>
+          </div>
+
+          <div class="total-area mt25">
+            <span class="total">
+              [총 <em>6</em>건]
+            </span>
+            <div class="btns-wrap">
+              <span class="btn-base tp2 lg"><a href="#">엑셀다운</a></span>
+              <span class="btn-base tp2 lg purple btn-popup-anim-1"><a href="#popup-winner">당첨자 관리</a></span>
+            </div>
+          </div>
+          <div class="tb-list-wrap c-scrollbar mt10">
+            <table class="tb-list">
+              <colgroup>
+                <col width="64" />
+                <col width="64" />
+                <col width="*" />
+                <col width="272" />
+                <col width="272" />
+                <col width="272" />
+              </colgroup>
+              <thead>
+                <tr>
+                  <th scope="col">
+                    <span>
+                      <span class="chk-base chk-only">
+                        <input type="checkbox" id="chk-tb-all" />
+                        <label for="chk-tb-all">전체 체크</label>
+                      </span>
+                    </span>
+                  </th>
+                  <th scope="col"><span>No.</span></th>
+                  <th scope="col"><span>댓글 내용</span></th>
+                  <th scope="col"><span>작성일시</span></th>
+                  <th scope="col"><span>회원명(아이디)</span></th>
+                  <th scope="col"><span>당첨여부</span></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <span class="chk-base chk-only">
+                      <input type="checkbox" id="chk-tb-1" />
+                      <label for="chk-tb-1">체크1</label>
+                    </span>
+                  </td>
+                  <td>48</td>
+                  <td class="t-left">참여합니다. 참여합니다. 참여합니다. 참여합니다.참여합</td>
+                  <td>YYYY.MM.DD HH:MM</td>
+                  <td>홍길동(gde13)</td>
+                  <td>Y</td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="chk-base chk-only">
+                      <input type="checkbox" id="chk-tb-1" />
+                      <label for="chk-tb-1">체크1</label>
+                    </span>
+                  </td>
+                  <td>48</td>
+                  <td class="t-left"><span class="s-label tp3">삭제</span> 참여합니다. 참여합니다. 참여합니다. 참여합니다.참여합</td>
+                  <td>YYYY.MM.DD HH:MM</td>
+                  <td>홍길동(gde13)</td>
+                  <td>Y</td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="chk-base chk-only">
+                      <input type="checkbox" id="chk-tb-1" />
+                      <label for="chk-tb-1">체크1</label>
+                    </span>
+                  </td>
+                  <td>48</td>
+                  <td class="t-left">참여합니다. 참여합니다. 참여합니다. 참여합니다.참여합</td>
+                  <td>YYYY.MM.DD HH:MM</td>
+                  <td>홍길동(gde13)</td>
+                  <td>Y</td>
+                </tr>
+              </tbody>
+            </table>
+          </div><!-- .tb-list-wrap -->
+          <div class="btns-wrap w-pagination">
+            <span class="btn-base tp2 lg purple"><a href="#">댓글 삭제</a></span>
+            <div class="pagination">
+              <a href="#" class="btn btn-first">처음</a>
+              <a href="#" class="btn btn-prev">이전</a>
+              <a href="#" class="on">1</a>
+              <a href="#">2</a>
+              <a href="#">3</a>
+              <a href="#">4</a>
+              <a href="#">5</a>
+              <a href="#">6</a>
+              <a href="#">7</a>
+              <a href="#">8</a>
+              <a href="#">9</a>
+              <a href="#">10</a>
+              <a href="#" class="btn btn-next">다음</a>
+              <a href="#" class="btn btn-last">마지막</a>
+            </div>
+          </div>
+        </div><!-- .con-area -->
+      </div><!-- .content-wrap -->
+    </div><!-- #container -->
+
+    <div class="popup-wrap z-anim mfp-hide" id="popup-winner" data-width="410">
+      <div class="popup-inner">
+        <div class="tit-wrap">
+          <p class="tit">당첨자 관리</p>
+        </div>
+        <div class="con-area">
+          <p class="msg">이벤트 당첨자를 지정/해제 할 수 있습니다.</p>
+          <div class="input-box mt25">
+            <ul class="radio-list">
+              <li>
+                <span class="radio-base">
+                  <input type="radio" id="radio-winner-1" name="radio-winner" checked />
+                  <label for="radio-winner-1">당첨</label>
+                </span>
+              </li>
+              <li>
+                <span class="radio-base">
+                  <input type="radio" id="radio-winner-2" name="radio-winner" />
+                  <label for="radio-winner-2">미당첨</label>
+                </span>
+              </li>
+            </ul>
+          </div>
+          <div class="btns-wrap t-center mt24">
+            <span class="btn-base tp2 purple lg b-mfp-close"><a href="#">확인</a></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="popup-wrap z-anim mfp-hide popup-confirm" id="popup-confirm" data-width="410">
+      <div class="popup-inner">
+        <div class="con-area">
+          <p class="msg">선택 내용을 삭제 하시겠습니까?</p>
+          <div class="btns-wrap t-center mt24">
+            <span class="btn-base tp2 lg b-mfp-close"><a href="#">취소</a></span>
+            <span class="btn-base tp2 purple lg b-mfp-close"><a href="#">확인</a></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="popup-wrap z-anim mfp-hide popup-alert" id="popup-alert" data-width="410">
+      <div class="popup-inner">
+        <div class="con-area">
+          <p class="msg">선택한 내용이 없습니다.</p>
+          <div class="btns-wrap t-center mt24">
+            <span class="btn-base tp2 purple lg b-mfp-close"><a href="#">확인</a></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div><!-- #wrap -->
+  <script>
+    var checkCb = function(checked){
+      console.log('테이블 전체체크 유무 : ', checked)
+    };
+    GUI.checkAllUI('#chk-tb-all', 'table', checkCb);
+
+    var Qpopup = $.urlParam('popup');
+
+    if (Qpopup) {
+      setTimeout(function(){
+        if (Qpopup === 'winner') {
+          $('[href*=#popup-winner]').click();
+        }
+        if (Qpopup === 'confirm') {
+          $.magnificPopup.open(getOptions('#popup-confirm'));
+        }
+        if (Qpopup === 'alert') {
+          $.magnificPopup.open(getOptions('#popup-alert'));
+        }
+      }, 250);
+    }
+  </script>
+</body>
+
+</html>
+ 

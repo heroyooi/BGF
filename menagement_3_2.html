@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SmileGift- Admin</title>
+  <link rel="stylesheet" href="css/common.css">
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-ui.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/ui.js"></script>
+</head>
+<body class="c-scrollbar">
+  <div id="wrap">
+    <div id="header">
+      <h1><a href="#"><img src="img/common/logo.svg" alt="" /></a></h1>
+      <ul class="utils">
+        <li>
+          <span class="my"><em>홍길동</em>님</span>
+          <div class="utils-tip">
+            <ul>
+              <li><a href="#">로그아웃</a></li>
+              <li><a href="#">비밀번호 변경</a></li>
+            </ul>
+          </div>
+        </li>
+        <li><a href="#" class="btn-logout">로그아웃</a></li>
+      </ul>
+    </div><!-- #header -->
+    <div id="container">
+      <div class="lnb-wrap c-scrollbar">
+        <ul class="lnb" data-dp1="13" data-dp2="3">
+          <li class="user-group">
+            <dl>
+              <dt>회원관리</dt>
+              <dd>
+                <ul>
+                  <li><a href="#">일반회원</a></li>
+                  <li><a href="#">탈퇴회원</a></li>
+                </ul>
+              </dd>
+            </dl>
+          </li>
+          <li class="gift">
+            <dl>
+              <dt>기프트샵 상품 관리</dt>
+              <dd>
+                <ul>
+                  <li><a href="#">브랜드/카테고리 관리</a></li>
+                  <li><a href="#">연동상품 관리</a></li>
+                  <li><a href="#">판매상품 관리</a></li>
+                </ul>
+              </dd>
+            </dl>
+          </li>
+          <li class="gift-1">
+            <dl>
+              <dt>기프트샵 전시 관리</dt>
+              <dd>
+                <ul>
+                  <li><a href="#">메인 상품 진열</a></li>
+                  <li><a href="#">추천 검색어 관리</a></li>
+                  <li><a href="#">샵 메인 배너 관리</a></li>
+                  <li><a href="#">샵 서브 배너 관리</a></li>
+                </ul>
+              </dd>
+            </dl>
+          </li>
+          <li class="desktop-computer">
+            <dl>
+              <dt>메인 관리</dt>
+              <dd>
+                <ul>
+                  <li><a href="#">메인 배너 관리</a></li>
+                  <li><a href="#">메인 서브 배너 관리</a></li>
+                  <li><a href="#">팝업 관리</a></li>
+                  <li><a href="#">매장 사용 브랜드</a></li>
+                </ul>
+              </dd>
+            </dl>
+          </li>
+          <li class="event">
+            <dl>
+              <dt>기획전/이벤트</dt>
+              <dd>
+                <ul>
+                  <li><a href="#">기획전/이벤트 관리</a></li>
+                </ul>
+              </dd>
+            </dl>
+          </li>
+          <li class="cash">
+            <dl>
+              <dt>캐시 충전 관리</dt>
+              <dd>
+                <ul>
+                  <li><a href="#">캐시 충전 내역</a></li>
+                </ul>
+              </dd>
+            </dl>
+          </li>
+          <li class="order">
+            <dl>
+              <dt>주문 내역</dt>
+              <dd>
+                <ul>
+                  <li><a href="#">기프트샵</a></li>
+                  <li><a href="#">매장 결제</a></li>
+                </ul>
+              </dd>
+            </dl>
+          </li>
+          <li class="receipt-refund">
+            <dl>
+              <dt>캐시잔액 환불</dt>
+              <dd>
+                <ul>
+                  <li><a href="#">스마일기프트 쿠폰</a></li>
+                </ul>
+              </dd>
+            </dl>
+          </li>
+          <li class="coupon">
+            <dl>
+              <dt>쿠폰환불</dt>
+              <dd>
+                <ul>
+                  <li><a href="#">환불 접수</a></li>
+                  <li><a href="#">환불 확정</a></li>
+                  <li><a href="#">환불 완료</a></li>
+                </ul>
+              </dd>
+            </dl>
+          </li>
+          <li class="management">
+            <dl>
+              <dt>회계 관리</dt>
+              <dd>
+                <ul>
+                  <li><a href="#">캐시 현황</a></li>
+                  <li><a href="#">수익 현황</a></li>
+                  <li><a href="#">비용 현황</a></li>
+                  <li><a href="#">선수금</a></li>
+                  <li><a href="#">낙전</a></li>
+                </ul>
+              </dd>
+            </dl>
+          </li>
+          <li class="phone">
+            <dl>
+              <dt>고객센터</dt>
+              <dd>
+                <ul>
+                  <li><a href="#">공지사항</a></li>
+                  <li><a href="#">문의내역</a></li>
+                  <li><a href="#">문의 템플릿 관리</a></li>
+                  <li><a href="#">문의 유형 관리</a></li>
+                  <li><a href="#">FAQ 분류 관리</a></li>
+                  <li><a href="#">FAQ 등록 관리</a></li>
+                  <li><a href="#">제휴 문의 관리</a></li>
+                </ul>
+              </dd>
+            </dl>
+          </li>
+          <li class="device-mobile">
+            <dl>
+              <dt>앱 관리</dt>
+              <dd>
+                <ul>
+                  <li><a href="#">앱 회원관리</a></li>
+                  <li><a href="#">앱 푸쉬관리</a></li>
+                  <li><a href="#">스플래시 설정</a></li>
+                </ul>
+              </dd>
+            </dl>
+          </li>
+          <li class="pencil-alt">
+            <dl>
+              <dt>사이트/관리자 설정</dt>
+              <dd>
+                <ul>
+                  <li><a href="#">약관 관리</a></li>
+                  <li><a href="#">관리자 그룹 관리</a></li>
+                  <li><a href="#">관리자 계정 관리</a></li>
+                  <li><a href="#">관리자 접속이력</a></li>
+                </ul>
+              </dd>
+            </dl>
+          </li>
+        </ul>
+      </div><!-- .lnb-wrap -->
+      <div class="content-wrap c-scrollbar">
+        <div class="tit-area">
+          <h3>관리자 계정 등록</h3>
+        </div><!-- .tit-area -->
+        <div class="btns-wrap t-right mt25">
+          <span class="btn-base tp2 lg btn-popup-anim-1"><a href="#popup-confirm">취소</a></span>
+          <span class="btn-base tp2 purple lg"><a href="#">저장</a></span>
+        </div>
+        <div class="tb-input-wrap mt10">
+          <table class="tb-input">
+            <colgroup>
+              <col width="15%" />
+              <col width="35%" />
+              <col width="15%" />
+              <col width="*" />
+            </colgroup>
+            <tbody>
+              <tr>
+                <th scope="row">관리자명(이름) <em>*</em></th>
+                <td>
+                  <input type="text" class="input-base" />
+                </td>
+                <th scope="row">휴대번호 <em>*</em></th>
+                <td>
+                  <input type="text" class="input-base" />
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">아이디 <em>*</em></th>
+                <td>
+                  <div class="input-wrap input-btn">
+                    <input type="text" class="input-base" />
+                    <span class="btn-base tp4"><a href="#">중복 확인</a></span>
+                  </div>
+                  <span class="input-info">6자 이상 15자 이하의 영어 소문자 또는 영소문자/숫자 조합</span>
+                </td>
+                <th scope="row">이메일 주소 <em>*</em></th>
+                <td>
+                  <input type="text" class="input-base" />
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">관리자 그룹 <em>*</em></th>
+                <td>
+                  <span class="select-base" style="width: 250px;">
+                    <span class="value"></span>
+                    <select>
+                      <option value="0" selected>선택</option>
+                      <option value="1">전체</option>
+                      <option value="2">Option 2</option>
+                      <option value="3">Option 3</option>
+                    </select>
+                  </span>
+                </td>
+                <th scope="row">계정 사용 여부 <em>*</em></th>
+                <td>
+                  <ul class="radio-list">
+                    <li>
+                      <span class="radio-base">
+                        <input type="radio" id="radio-account-use-1" name="radio-account-use" checked />
+                        <label for="radio-account-use-1">사용</label>
+                      </span>
+                    </li>
+                    <li>
+                      <span class="radio-base">
+                        <input type="radio" id="radio-account-use-2" name="radio-account-use" />
+                        <label for="radio-account-use-2">중지</label>
+                      </span>
+                    </li>
+                    <li>
+                      <span class="radio-base">
+                        <input type="radio" id="radio-account-use-3" name="radio-account-use" />
+                        <label for="radio-account-use-3">휴면</label>
+                      </span>
+                    </li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">엑셀다운 권한</th>
+                <td>
+                  <ul class="radio-list">
+                    <li>
+                      <span class="radio-base">
+                        <input type="radio" id="radio-excel-author-1" name="radio-excel-author" checked />
+                        <label for="radio-excel-author-1">제한</label>
+                      </span>
+                    </li>
+                    <li>
+                      <span class="radio-base">
+                        <input type="radio" id="radio-excel-author-2" name="radio-excel-author" />
+                        <label for="radio-excel-author-2">사용</label>
+                      </span>
+                    </li>
+                  </ul>
+                </td>
+                <th scope="row">마스킹 해제 권한 <em>*</em></th>
+                <td>
+                  <ul class="radio-list">
+                    <li>
+                      <span class="radio-base">
+                        <input type="radio" id="radio-masking-author-1" name="radio-masking-author" checked />
+                        <label for="radio-masking-author-1">제한</label>
+                      </span>
+                    </li>
+                    <li>
+                      <span class="radio-base">
+                        <input type="radio" id="radio-masking-author-2" name="radio-masking-author" />
+                        <label for="radio-masking-author-2">사용</label>
+                      </span>
+                    </li>
+                  </ul>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="btns-wrap mt15">
+          <span class="btn-base tp2 purple lg"><a href="#">목록</a></span>
+        </div>
+      </div><!-- .content-wrap -->
+    </div><!-- #container -->
+
+    <div class="popup-wrap z-anim mfp-hide popup-confirm" id="popup-confirm" data-width="410">
+      <div class="popup-inner">
+        <div class="con-area">
+          <p class="msg">등록을 취소 하시겠습니까?</p>
+          <div class="btns-wrap t-center mt24">
+            <span class="btn-base tp2 lg b-mfp-close"><a href="#">취소</a></span>
+            <span class="btn-base tp2 purple lg b-mfp-close"><a href="#">확인</a></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div><!-- #wrap -->
+
+  <script>
+    var QPopup = $.urlParam('popup');
+    if (QPopup === 'confirm') {
+      setTimeout(function(){
+        $(`[href*=#popup-confirm]`).click();
+      }, 250);
+    }
+	  
+  </script>
+</body>
+</html>

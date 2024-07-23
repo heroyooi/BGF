@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SmileGift- Admin</title>
+  <link rel="stylesheet" href="css/common.css">
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-ui.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/ui.js"></script>
+</head>
+<body class="c-scrollbar">
+  <div id="wrap">
+    <div id="s-header">
+      <h2>회원 검색</h2>
+      <ul class="items">
+        <li class="mini"><a href="#">최소화</a></li>
+        <li class="maximize"><a href="#">최대화</a></li>
+        <li class="close"><a href="#">닫기</a></li>
+      </ul>
+    </div><!-- #header -->
+    <div id="s-container" class="no-lnb">
+      <div class="content-wrap c-scrollbar">
+        <div class="con-area">
+          <div class="tb-input-wrap">
+            <table class="tb-input">
+              <colgroup>
+                <col width="15%" />
+                <col width="*" />
+              </colgroup>
+              <tbody>
+                <tr>
+                  <th scope="row">검색 조건</th>
+                  <td>
+                    <div class="f-row y-center" style="gap: 0 10px;">
+                      <div class="f-col" style="width: 65px;">
+                        <ul class="radio-list vertical">
+                          <li>
+                            <span class="radio-base">
+                              <input type="radio" id="radio-code-1" name="radio-code" checked />
+                              <label for="radio-code-1">아이디</label>
+                            </span>
+                          </li>
+                          <li>
+                            <span class="radio-base">
+                              <input type="radio" id="radio-code-2" name="radio-code" />
+                              <label for="radio-code-2">회원명</label>
+                            </span>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="f-col">
+                        <textarea class="textarea-base" placeholder="복수 검색 (ENTER 또는 , 로 구분) / 최대 100개까지 검색 가능" style="height: 91px;"></textarea>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div><!-- .tb-input-wrap -->
+
+          <div class="btns-wrap t-right mt15">
+            <span class="btn-base tp2 lg purple"><a href="#"><em class="search">검색</em></a></span>
+          </div>
+
+          <div class="btns-wrap t-right mt25">
+            <span class="btn-base tp2 lg purple"><a href="#">저장</a></span>
+          </div>
+
+          <div class="tb-list-wrapper mt10">
+            <div class="tb-list-wrap-l">
+              <div class="tb-list-wrap">
+                <p class="s-tit">[검색 회원 <em>XX</em>명]</p>
+                <table class="tb-list">
+                  <colgroup>
+                    <col width="*" />
+                    <col width="23%" />
+                    <col width="23%" />
+                    <col width="23%" />
+                    <col width="23%" />
+                  </colgroup>
+                  <thead>
+                    <tr>
+                      <th scope="col">
+                        <span>
+                          <span class="chk-base chk-only">
+                            <input type="checkbox" id="chk-tbl-all" />
+                            <label for="chk-tbl-all">전체 체크</label>
+                          </span>
+                        </span>
+                      </th>
+                      <th scope="col"><span>회원명</span></th>
+                      <th scope="col"><span>회원 아이디</span></th>
+                      <th scope="col"><span>회원 상태</span></th>
+                      <th scope="col"><span>푸시 수신 동의(광고/정보)</span></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <span class="chk-base chk-only">
+                          <input type="checkbox" id="chk-tbl-1" />
+                          <label for="chk-tbl-1">체크1</label>
+                        </span>
+                      </td>
+                      <td>생략</td>
+                      <td>생략</td>
+                      <td>활성</td>
+                      <td>Y/N</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <span class="chk-base chk-only">
+                          <input type="checkbox" id="chk-tbl-2" />
+                          <label for="chk-tbl-2">체크2</label>
+                        </span>
+                      </td>
+                      <td>생략</td>
+                      <td>생략</td>
+                      <td>활성</td>
+                      <td>Y/N</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <span class="chk-base chk-only">
+                          <input type="checkbox" id="chk-tbl-3" />
+                          <label for="chk-tbl-3">체크3</label>
+                        </span>
+                      </td>
+                      <td>생략</td>
+                      <td>생략</td>
+                      <td>활성</td>
+                      <td>Y/N</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <span class="chk-base chk-only">
+                          <input type="checkbox" id="chk-tbl-4" />
+                          <label for="chk-tbl-4">체크4</label>
+                        </span>
+                      </td>
+                      <td>생략</td>
+                      <td>생략</td>
+                      <td>활성</td>
+                      <td>Y/N</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <span class="chk-base chk-only">
+                          <input type="checkbox" id="chk-tbl-5" />
+                          <label for="chk-tbl-5">체크5</label>
+                        </span>
+                      </td>
+                      <td>생략</td>
+                      <td>생략</td>
+                      <td>활성</td>
+                      <td>Y/N</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <span class="chk-base chk-only">
+                          <input type="checkbox" id="chk-tbl-6" />
+                          <label for="chk-tbl-6">체크6</label>
+                        </span>
+                      </td>
+                      <td>생략</td>
+                      <td>생략</td>
+                      <td>활성</td>
+                      <td>Y/N</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <span class="chk-base chk-only">
+                          <input type="checkbox" id="chk-tbl-7" />
+                          <label for="chk-tbl-7">체크7</label>
+                        </span>
+                      </td>
+                      <td>생략</td>
+                      <td>생략</td>
+                      <td>활성</td>
+                      <td>Y/N</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <span class="chk-base chk-only">
+                          <input type="checkbox" id="chk-tbl-8" />
+                          <label for="chk-tbl-8">체크8</label>
+                        </span>
+                      </td>
+                      <td>생략</td>
+                      <td>생략</td>
+                      <td>활성</td>
+                      <td>Y/N</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <span class="chk-base chk-only">
+                          <input type="checkbox" id="chk-tbl-9" />
+                          <label for="chk-tbl-9">체크9</label>
+                        </span>
+                      </td>
+                      <td>생략</td>
+                      <td>생략</td>
+                      <td>활성</td>
+                      <td>Y/N</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <span class="chk-base chk-only">
+                          <input type="checkbox" id="chk-tbl-10" />
+                          <label for="chk-tbl-10">체크10</label>
+                        </span>
+                      </td>
+                      <td>생략</td>
+                      <td>생략</td>
+                      <td>활성</td>
+                      <td>Y/N</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div><!-- .tb-list-wrap -->
+              <div class="pagination tp2">
+                <a href="#" class="btn btn-first">처음</a>
+                <a href="#" class="btn btn-prev">이전</a>
+                <a href="#" class="on">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <a href="#">4</a>
+                <a href="#">5</a>
+                <a href="#" class="btn btn-next">다음</a>
+                <a href="#" class="btn btn-last">마지막</a>
+              </div>
+            </div><!-- .tb-list-wrap-l -->
+            <div class="btns-wrap vertical">
+              <span class="btn-base tp2 sm"><a href="#">추가</a></span>
+              <span class="btn-base tp2 sm"><a href="#">삭제</a></span>
+            </div>
+            <div class="tb-list-wrap-r">
+              <div class="tb-list-wrap">
+                <p class="s-tit">[선택 회원 <em>XX</em>명 / 100명]</p>
+                <table class="tb-list">
+                  <colgroup>
+                    <col width="*" />
+                    <col width="23%" />
+                    <col width="23%" />
+                    <col width="23%" />
+                    <col width="23%" />
+                  </colgroup>
+                  <thead>
+                    <tr>
+                      <th scope="col">
+                        <span>
+                          <span class="chk-base chk-only">
+                            <input type="checkbox" id="chk-tbr-all" />
+                            <label for="chk-tbr-all">전체 체크</label>
+                          </span>
+                        </span>
+                      </th>
+                      <th scope="col"><span>회원명</span></th>
+                      <th scope="col"><span>회원 아이디</span></th>
+                      <th scope="col"><span>회원 상태</span></th>
+                      <th scope="col"><span>푸시 수신 동의(광고/정보)</span></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <span class="chk-base chk-only">
+                          <input type="checkbox" id="chk-tbr-1" />
+                          <label for="chk-tbr-1">체크1</label>
+                        </span>
+                      </td>
+                      <td>생략</td>
+                      <td>생략</td>
+                      <td>활성</td>
+                      <td>Y/N</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <span class="chk-base chk-only">
+                          <input type="checkbox" id="chk-tbr-2" />
+                          <label for="chk-tbr-2">체크2</label>
+                        </span>
+                      </td>
+                      <td>생략</td>
+                      <td>생략</td>
+                      <td>활성</td>
+                      <td>Y/N</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <span class="chk-base chk-only">
+                          <input type="checkbox" id="chk-tbr-3" />
+                          <label for="chk-tbr-3">체크3</label>
+                        </span>
+                      </td>
+                      <td>생략</td>
+                      <td>생략</td>
+                      <td>활성</td>
+                      <td>Y/N</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <span class="chk-base chk-only">
+                          <input type="checkbox" id="chk-tbr-4" />
+                          <label for="chk-tbr-4">체크4</label>
+                        </span>
+                      </td>
+                      <td>생략</td>
+                      <td>생략</td>
+                      <td>활성</td>
+                      <td>Y/N</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <span class="chk-base chk-only">
+                          <input type="checkbox" id="chk-tbr-5" />
+                          <label for="chk-tbr-5">체크5</label>
+                        </span>
+                      </td>
+                      <td>생략</td>
+                      <td>생략</td>
+                      <td>활성</td>
+                      <td>Y/N</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <span class="chk-base chk-only">
+                          <input type="checkbox" id="chk-tbr-6" />
+                          <label for="chk-tbr-6">체크6</label>
+                        </span>
+                      </td>
+                      <td>생략</td>
+                      <td>생략</td>
+                      <td>활성</td>
+                      <td>Y/N</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div><!-- .tb-list-wrap -->
+              <div class="pagination tp2">
+                <a href="#" class="btn btn-first">처음</a>
+                <a href="#" class="btn btn-prev">이전</a>
+                <a href="#" class="on">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <a href="#">4</a>
+                <a href="#">5</a>
+                <a href="#" class="btn btn-next">다음</a>
+                <a href="#" class="btn btn-last">마지막</a>
+              </div>
+            </div><!-- .tb-list-wrap-r -->
+          </div><!-- .tb-list-wrapper -->
+        </div><!-- .con-area -->
+      </div><!-- .content-wrap -->
+    </div><!-- #container -->
+
+    <div class="popup-wrap z-anim mfp-hide" id="popup-winner" data-width="410">
+      <div class="popup-inner">
+        <div class="tit-wrap">
+          <p class="tit">당첨자 관리</p>
+        </div>
+        <div class="con-area">
+          <p class="msg">이벤트 당첨자를 지정/해제 할 수 있습니다.</p>
+          <div class="input-box mt25">
+            <ul class="radio-list">
+              <li>
+                <span class="radio-base">
+                  <input type="radio" id="radio-winner-1" name="radio-winner" checked />
+                  <label for="radio-winner-1">당첨</label>
+                </span>
+              </li>
+              <li>
+                <span class="radio-base">
+                  <input type="radio" id="radio-winner-2" name="radio-winner" />
+                  <label for="radio-winner-2">미당첨</label>
+                </span>
+              </li>
+            </ul>
+          </div>
+          <div class="btns-wrap t-center mt24">
+            <span class="btn-base tp2 purple lg b-mfp-close"><a href="#">확인</a></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="popup-wrap z-anim mfp-hide popup-confirm" id="popup-confirm" data-width="410">
+      <div class="popup-inner">
+        <div class="con-area">
+          <p class="msg">선택 내용을 삭제 하시겠습니까?</p>
+          <div class="btns-wrap t-center mt24">
+            <span class="btn-base tp2 lg b-mfp-close"><a href="#">취소</a></span>
+            <span class="btn-base tp2 purple lg b-mfp-close"><a href="#">확인</a></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="popup-wrap z-anim mfp-hide popup-alert" id="popup-alert" data-width="410">
+      <div class="popup-inner">
+        <div class="con-area">
+          <p class="msg">선택한 내용이 없습니다.</p>
+          <div class="btns-wrap t-center mt24">
+            <span class="btn-base tp2 purple lg b-mfp-close"><a href="#">확인</a></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div><!-- #wrap -->
+  <script>
+    var checkCbl = function(checked){
+      console.log('테이블 전체체크 유무 : ', checked)
+    };
+    var checkCbr = function(checked){
+      console.log('테이블 전체체크 유무 : ', checked)
+    };
+    GUI.checkAllUI('#chk-tbl-all', 'table', checkCbl);
+    GUI.checkAllUI('#chk-tbr-all', 'table', checkCbr);
+
+    var Qpopup = $.urlParam('popup');
+
+    if (Qpopup) {
+      setTimeout(function(){
+        if (Qpopup === 'winner') {
+          $('[href*=#popup-winner]').click();
+        }
+        if (Qpopup === 'confirm') {
+          $.magnificPopup.open(getOptions('#popup-confirm'));
+        }
+        if (Qpopup === 'alert') {
+          $.magnificPopup.open(getOptions('#popup-alert'));
+        }
+      }, 250);
+    }
+  </script>
+</body>
+
+</html>
+ 

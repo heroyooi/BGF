@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SmileGift- Admin</title>
+  <link rel="stylesheet" href="css/common.css">
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-ui.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/ui.js"></script>
+</head>
+<body class="c-scrollbar">
+  <div id="wrap">
+    <div id="header">
+      <h1><a href="#"><img src="img/common/logo.svg" alt="" /></a></h1>
+      <ul class="utils">
+        <li>
+          <span class="my"><em>홍길동</em>님</span>
+          <div class="utils-tip">
+            <ul>
+              <li><a href="#">로그아웃</a></li>
+              <li><a href="#">비밀번호 변경</a></li>
+            </ul>
+          </div>
+        </li>
+        <li><a href="#" class="btn-logout">로그아웃</a></li>
+      </ul>
+    </div><!-- #header -->
+    <div id="container">
+      <div class="lnb-wrap c-scrollbar">
+        <ul class="lnb" data-dp1="4" data-dp2="2">
+          <li class="user-group">
+            <dl>
+              <dt>회원관리</dt>
+              <dd>
+                <ul>
+                  <li><a href="#">일반회원</a></li>
+                  <li><a href="#">탈퇴회원</a></li>
+                </ul>
+              </dd>
+            </dl>
+          </li>
+          <li class="gift">
+            <dl>
+              <dt>기프트샵 상품 관리</dt>
+              <dd>
+                <ul>
+                  <li><a href="#">브랜드/카테고리 관리</a></li>
+                  <li><a href="#">연동상품 관리</a></li>
+                  <li><a href="#">판매상품 관리</a></li>
+                </ul>
+              </dd>
+            </dl>
+          </li>
+          <li class="gift-1">
+            <dl>
+              <dt>기프트샵 전시 관리</dt>
+              <dd>
+                <ul>
+                  <li><a href="#">메인 상품 진열</a></li>
+                  <li><a href="#">추천 검색어 관리</a></li>
+                  <li><a href="#">샵 메인 배너 관리</a></li>
+                  <li><a href="#">샵 서브 배너 관리</a></li>
+                </ul>
+              </dd>
+            </dl>
+          </li>
+          <li class="desktop-computer">
+            <dl>
+              <dt>메인 관리</dt>
+              <dd>
+                <ul>
+                  <li><a href="#">메인 배너 관리</a></li>
+                  <li><a href="#">메인 서브 배너 관리</a></li>
+                  <li><a href="#">팝업 관리</a></li>
+                  <li><a href="#">매장 사용 브랜드</a></li>
+                </ul>
+              </dd>
+            </dl>
+          </li>
+          <li class="event">
+            <dl>
+              <dt>기획전/이벤트</dt>
+              <dd>
+                <ul>
+                  <li><a href="#">기획전/이벤트 관리</a></li>
+                </ul>
+              </dd>
+            </dl>
+          </li>
+          <li class="cash">
+            <dl>
+              <dt>캐시 충전 관리</dt>
+              <dd>
+                <ul>
+                  <li><a href="#">캐시 충전 내역</a></li>
+                </ul>
+              </dd>
+            </dl>
+          </li>
+          <li class="order">
+            <dl>
+              <dt>주문 내역</dt>
+              <dd>
+                <ul>
+                  <li><a href="#">기프트샵</a></li>
+                  <li><a href="#">매장 결제</a></li>
+                </ul>
+              </dd>
+            </dl>
+          </li>
+          <li class="receipt-refund">
+            <dl>
+              <dt>캐시잔액 환불</dt>
+              <dd>
+                <ul>
+                  <li><a href="#">스마일기프트 쿠폰</a></li>
+                </ul>
+              </dd>
+            </dl>
+          </li>
+          <li class="coupon">
+            <dl>
+              <dt>쿠폰환불</dt>
+              <dd>
+                <ul>
+                  <li><a href="#">환불 접수</a></li>
+                  <li><a href="#">환불 확정</a></li>
+                  <li><a href="#">환불 완료</a></li>
+                </ul>
+              </dd>
+            </dl>
+          </li>
+          <li class="management">
+            <dl>
+              <dt>회계 관리</dt>
+              <dd>
+                <ul>
+                  <li><a href="#">캐시 현황</a></li>
+                  <li><a href="#">수익 현황</a></li>
+                  <li><a href="#">비용 현황</a></li>
+                  <li><a href="#">선수금</a></li>
+                  <li><a href="#">낙전</a></li>
+                </ul>
+              </dd>
+            </dl>
+          </li>
+          <li class="phone">
+            <dl>
+              <dt>고객센터</dt>
+              <dd>
+                <ul>
+                  <li><a href="#">공지사항</a></li>
+                  <li><a href="#">문의내역</a></li>
+                  <li><a href="#">문의 템플릿 관리</a></li>
+                  <li><a href="#">문의 유형 관리</a></li>
+                  <li><a href="#">FAQ 분류 관리</a></li>
+                  <li><a href="#">FAQ 등록 관리</a></li>
+                  <li><a href="#">제휴 문의 관리</a></li>
+                </ul>
+              </dd>
+            </dl>
+          </li>
+          <li class="device-mobile">
+            <dl>
+              <dt>앱 관리</dt>
+              <dd>
+                <ul>
+                  <li><a href="#">앱 회원관리</a></li>
+                  <li><a href="#">앱 푸쉬관리</a></li>
+                  <li><a href="#">스플래시 설정</a></li>
+                </ul>
+              </dd>
+            </dl>
+          </li>
+          <li class="pencil-alt">
+            <dl>
+              <dt>사이트/관리자 설정</dt>
+              <dd>
+                <ul>
+                  <li><a href="#">약관 관리</a></li>
+                  <li><a href="#">관리자 그룹 관리</a></li>
+                  <li><a href="#">관리자 계정 관리</a></li>
+                  <li><a href="#">관리자 접속이력</a></li>
+                </ul>
+              </dd>
+            </dl>
+          </li>
+        </ul>
+      </div><!-- .lnb-wrap -->
+      <div class="content-wrap c-scrollbar">
+        <div class="tit-area">
+          <h3>메인 서브 배너 관리</h3>
+        </div><!-- .tit-area -->
+        <div class="con-area">
+          <div class="tb-input-wrap">
+            <table class="tb-input">
+              <colgroup>
+                <col width="15%" />
+                <col width="35%" />
+                <col width="15%" />
+                <col width="*" />
+              </colgroup>
+              <tbody>
+                <tr>
+                  <th scope="row">배너명(관리용)</th>
+                  <td colspan="3">
+                    <input type="text" class="input-base" />
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">진행 상태</th>
+                  <td>
+                    <ul class="chk-list horizon">
+                      <li>
+                        <span class="chk-base">
+                          <input type="checkbox" id="chk-state-1" checked />
+                          <label for="chk-state-1">진행중</label>
+                        </span>
+                      </li>
+                      <li>
+                        <span class="chk-base">
+                          <input type="checkbox" id="chk-state-2" />
+                          <label for="chk-state-2">대기</label>
+                        </span>
+                      </li>
+                      <li>
+                        <span class="chk-base">
+                          <input type="checkbox" id="chk-state-3" />
+                          <label for="chk-state-3">종료</label>
+                        </span>
+                      </li>
+                    </ul>
+                  </td>
+                  <th scope="row">전시 여부</th>
+                  <td>
+                    <ul class="radio-list">
+                      <li>
+                        <span class="radio-base">
+                          <input type="radio" id="radio-display-all" name="radio-display" checked />
+                          <label for="radio-display-all">전체</label>
+                        </span>
+                      </li>
+                      <li>
+                        <span class="radio-base">
+                          <input type="radio" id="radio-display-1" name="radio-display" />
+                          <label for="radio-display-1">비전시</label>
+                        </span>
+                      </li>
+                      <li>
+                        <span class="radio-base">
+                          <input type="radio" id="radio-display-2" name="radio-display" />
+                          <label for="radio-display-2">전시</label>
+                        </span>
+                      </li>
+                    </ul>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">전시 일자</th>
+                  <td colspan="3">
+                    <div class="input-wrap fix-width">
+                      <span class="select-base ml6" style="width: 150px;">
+                        <span class="value"></span>
+                        <select>
+                          <option value="0" selected>시작일</option>
+                          <option value="1">1일</option>
+                          <option value="2">2일</option>
+                          <option value="3">3일</option>
+                        </select>
+                      </span>
+                      <span class="s-datepicker ml10">
+                        <input type="text" class="input-base datepicker" />
+                      </span>
+                      <span class="bridge">~</span>
+                      <span class="s-datepicker">
+                        <input type="text" class="input-base datepicker" />
+                      </span>
+                      <div class="btns-wrap ml10">
+                        <span class="btn-base tp3 yymd"><a href="#">7일</a></span>
+                        <span class="btn-base tp3 yymd"><a href="#">15일</a></span>
+                        <span class="btn-base tp3 yymd"><a href="#">1개월</a></span>
+                        <span class="btn-base tp3 yymd"><a href="#">6개월</a></span>
+                        <span class="btn-base tp3 yymd"><a href="#">1년</a></span>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div><!-- .tb-input-wrap -->
+          <div class="btns-wrap t-right mt15">
+            <span class="btn-base tp2 lg purple"><a href="#"><em class="search">검색</em></a></span>
+          </div>
+          <div class="total-area mt25">
+            <span class="total">
+              [총 <em>6</em>건]
+            </span>
+            <span class="btn-base tp2 lg"><a href="#">신규 등록</a></span>
+          </div>
+          <div class="tb-list-wrap c-scrollbar mt10">
+            <table class="tb-list">
+              <colgroup>
+                <col width="64" />
+                <col width="203" />
+                <col width="203" />
+                <col width="80" />
+                <col width="80" />
+                <col width="203" />
+                <col width="203" />
+                <col width="80" />
+                <col width="203" />
+                <col width="203" />
+              </colgroup>
+              <thead>
+                <tr>
+                  <th scope="col"><span>No.</span></th>
+                  <th scope="col"><span>배너명 (관리용)</span></th>
+                  <th scope="col"><span>미리보기</span></th>
+                  <th scope="col"><span>진행 상태</span></th>
+                  <th scope="col"><span>전시 여부</span></th>
+                  <th scope="col"><span>전시 시작일</span></th>
+                  <th scope="col"><span>전시 종료일</span></th>
+                  <th scope="col"><span>순서</span></th>
+                  <th scope="col"><span>등록일시</span></th>
+                  <th scope="col"><span>등록일자(아이디)</span></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>11</td>
+                  <td class="t-left">여름맞이 이벤트</td>
+                  <td>
+                    <img src="./img/mockup/horizon.png" alt="" />
+                  </td>
+                  <td>
+                    <span class="s-label tp1">진행중</span>
+                  </td>
+                  <td>전시</td>
+                  <td>YYYY.MM.DD <br />HH:MM</td>
+                  <td>YYYY.MM.DD <br />HH:MM</td>
+                  <td>무상 캐시</td>
+                  <td>YYYY.MM.DD <br />HH:MM</td>
+                  <td>#{이름(아이디)}</td>
+                </tr>
+                <tr>
+                  <td>10</td>
+                  <td class="t-left">여름맞이 이벤트</td>
+                  <td>
+                    <img src="./img/mockup/horizon.png" alt="" />
+                  </td>
+                  <td>
+                    <span class="s-label tp2">대기</span>
+                  </td>
+                  <td>전시</td>
+                  <td>YYYY.MM.DD <br />HH:MM</td>
+                  <td>YYYY.MM.DD <br />HH:MM</td>
+                  <td>무상 캐시</td>
+                  <td>YYYY.MM.DD <br />HH:MM</td>
+                  <td>#{이름(아이디)}</td>
+                </tr>
+                <tr>
+                  <td>9</td>
+                  <td class="t-left">여름맞이 이벤트</td>
+                  <td>
+                    <img src="./img/mockup/horizon.png" alt="" />
+                  </td>
+                  <td>
+                    <span class="s-label tp1">진행중</span>
+                  </td>
+                  <td>전시</td>
+                  <td>YYYY.MM.DD <br />HH:MM</td>
+                  <td>YYYY.MM.DD <br />HH:MM</td>
+                  <td>무상 캐시</td>
+                  <td>YYYY.MM.DD <br />HH:MM</td>
+                  <td>#{이름(아이디)}</td>
+                </tr>
+                <tr>
+                  <td>8</td>
+                  <td class="t-left">여름맞이 이벤트</td>
+                  <td>
+                    <img src="./img/mockup/horizon.png" alt="" />
+                  </td>
+                  <td>
+                    <span class="s-label tp1">진행중</span>
+                  </td>
+                  <td>전시</td>
+                  <td>YYYY.MM.DD <br />HH:MM</td>
+                  <td>YYYY.MM.DD <br />HH:MM</td>
+                  <td>무상 캐시</td>
+                  <td>YYYY.MM.DD <br />HH:MM</td>
+                  <td>#{이름(아이디)}</td>
+                </tr>
+                <tr>
+                  <td>7</td>
+                  <td class="t-left">여름맞이 이벤트</td>
+                  <td>
+                    <img src="./img/mockup/horizon.png" alt="" />
+                  </td>
+                  <td>
+                    <span class="s-label tp1">진행중</span>
+                  </td>
+                  <td>전시</td>
+                  <td>YYYY.MM.DD <br />HH:MM</td>
+                  <td>YYYY.MM.DD <br />HH:MM</td>
+                  <td>무상 캐시</td>
+                  <td>YYYY.MM.DD <br />HH:MM</td>
+                  <td>#{이름(아이디)}</td>
+                </tr>
+              </tbody>
+            </table>
+          </div><!-- .tb-list-wrap -->
+          <div class="pagination">
+            <a href="#" class="btn btn-first">처음</a>
+            <a href="#" class="btn btn-prev">이전</a>
+            <a href="#" class="on">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#">5</a>
+            <a href="#">6</a>
+            <a href="#">7</a>
+            <a href="#">8</a>
+            <a href="#">9</a>
+            <a href="#">10</a>
+            <a href="#" class="btn btn-next">다음</a>
+            <a href="#" class="btn btn-last">마지막</a>
+          </div>
+        </div><!-- .con-area -->
+      </div><!-- .content-wrap -->
+    </div><!-- #container -->
+  </div><!-- #wrap -->
+</body>
+
+</html>
+ 

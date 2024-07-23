@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SmileGift- Admin</title>
+  <link rel="stylesheet" href="css/common.css">
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-ui.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/ui.js"></script>
+</head>
+<body class="c-scrollbar">
+  <div id="wrap">
+    <div id="s-header">
+      <h2>회원 상세 정보</h2>
+      <ul class="items">
+        <li class="mini"><a href="#">최소화</a></li>
+        <li class="maximize"><a href="#">최대화</a></li>
+        <li class="close"><a href="#">닫기</a></li>
+      </ul>
+    </div><!-- #header -->
+    <div id="s-container">
+      <div class="lnb-wrap c-scrollbar">
+        <div class="user-info">
+          <span class="name"><em>홍길동</em>님</span>
+          <ul class="s-info">
+            <li>#아이디</li>
+            <li>(#회원번호)</li>
+          </ul>
+        </div><!-- .user-info -->
+        <div class="cash-info">
+          <dl>
+            <dt>
+              <span class="label">총 보유 캐시</span>
+              <span class="result">1,548,000</span>
+            </dt>
+            <dd>
+              <ul>
+                <li>
+                  <span class="label">- 유상</span>
+                  <span class="result">0</span>
+                </li>
+                <li>
+                  <span class="label">- 무상</span>
+                  <span class="result">0</span>
+                </li>
+              </ul>
+            </dd>
+          </dl>
+        </div><!-- .cash-info -->
+        <ul class="s-lnb">
+          <li class="member"><a href="#">회원 기본 정보</a></li>
+          <li class="cash"><a href="#">캐시 이용 내역</a></li>
+          <li class="billing on"><a href="#">스마일기프트 이용 내역</a></li>
+          <li class="memo"><a href="#">회원 메모</a></li>
+        </ul>
+        <div class="s-myinfo">
+          <ul>
+            <li>
+              <dl>
+                <dt class="last">마지막 로그인</dt>
+                <dd>2024.05.31 18:45</dd>
+              </dl>
+            </li>
+            <li>
+              <dl>
+                <dt class="join">가입일시</dt>
+                <dd>2020.12.05 04:40</dd>
+              </dl>
+            </li>
+          </ul>
+        </div>
+      </div><!-- .lnb-wrap -->
+      <div class="content-wrap c-scrollbar">
+        <div class="tit-area">
+          <h3>스마일기프트 이용 내역</h3>
+        </div><!-- .tit-area -->
+        <div class="con-area">
+          <div class="tab-base w-auto">
+            <ul>
+              <li class="on"><a href="#tab1">사용 중</a></li>
+              <li><a href="#tab2">사용완료</a></li>
+            </ul>
+          </div>
+
+          <div class="total-area mt25 only-btn">
+            <span class="btn-base tp2 lg"><a href="#">엑셀 다운</a></span>
+          </div>
+          <div class="tb-list-wrap c-scrollbar mt10">
+            <table class="tb-list">
+              <colgroup>
+                <col width="48" />
+                <col width="49" />
+                <col width="102" />
+                <col width="50" />
+                <col width="60" />
+                <col width="67" />
+                <col width="71" />
+                <col width="70" />
+                <col width="65" />
+                <col width="101" />
+                <col width="100" />
+                <col width="100" />
+                <col width="66" />
+                <col width="82" />
+                <col width="101" />
+                <col width="105" />
+                <col width="101" />
+                <col width="77" />
+                <col width="83" />
+              </colgroup>
+              <thead>
+                <tr>
+                  <th scope="col"><span>상세</span></th>
+                  <th scope="col"><span>사용<br />순서</span></th>
+                  <th scope="col"><span>쿠폰번호</span></th>
+                  <th scope="col"><span>판매<br />유형</span></th>
+                  <th scope="col"><span>액면가</span></th>
+                  <th scope="col"><span>사용금액</span></th>
+                  <th scope="col"><span>사용률(%)</span></th>
+                  <th scope="col"><span>잔액</span></th>
+                  <th scope="col"><span>실판매가</span></th>
+                  <th scope="col"><span>할인율(%)</span></th>
+                  <th scope="col"><span>캐시 소멸기한</span></th>
+                  <th scope="col"><span>캐시 충전 일시</span></th>
+                  <th scope="col"><span>환불이력</span></th>
+                  <th scope="col"><span>환불률(%)</span></th>
+                  <th scope="col"><span>환불예상금액</span></th>
+                  <th scope="col"><span>최초 유효기간</span></th>
+                  <th scope="col"><span>이벤트명<br />(이벤트ID)</span></th>
+                  <th scope="col"><span>판매상품명</span></th>
+                  <th scope="col"><span>판매상품ID</span></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <a href="#" class="btn-arrow"></a>
+                  </td>
+                  <td>1</td>
+                  <td>9321****1234</td>
+                  <td>판매<br />유형</td>
+                  <td>액면가</td>
+                  <td>사용금액</td>
+                  <td>사용률(%)</td>
+                  <td>잔액</td>
+                  <td>실판매가</td>
+                  <td>할인율(%)</td>
+                  <td>캐시 소멸기한</td>
+                  <td>캐시 충전 일시</td>
+                  <td>N</td>
+                  <td>환불률(%)</td>
+                  <td>환불예상금액</td>
+                  <td>2023.06.18</td>
+                  <td>이벤트명<br />(이벤트ID)</td>
+                  <td>판매상품명</td>
+                  <td>판매상품ID</td>
+                </tr>
+                <tr class="in-table">
+                  <td colspan="19">
+                    <table class="tb-list">
+                      <colgroup>
+                        <col width="4%" />
+                        <col width="16%" />
+                        <col width="16%" />
+                        <col width="16%" />
+                        <col width="16%" />
+                        <col width="16%" />
+                        <col width="16%" />
+                      </colgroup>
+                      <thead>
+                        <tr>
+                          <th scope="col"><span>No.</span></th>
+                          <th scope="col"><span>사용 일시</span></th>
+                          <th scope="col"><span>항목</span></th>
+                          <th scope="col"><span>상세 내용</span></th>
+                          <th scope="col"><span>사용(취소)금액</span></th>
+                          <th scope="col"><span>잔액</span></th>
+                          <th scope="col"><span>관련 주문 정보</span></th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>5</td>
+                          <td>2023.06.20 07:52:37</td>
+                          <td>사용</td>
+                          <td>이디야 건설회관점</td>
+                          <td>18,000</td>
+                          <td>9,000</td>
+                          <td>매장결제 주문번호 출력</td>
+                        </tr>
+                        <tr>
+                          <td>4</td>
+                          <td>2023.06.20 07:52:37</td>
+                          <td>사용</td>
+                          <td>이디야 건설회관점</td>
+                          <td>18,000</td>
+                          <td>9,000</td>
+                          <td>매장결제 주문번호 출력</td>
+                        </tr>
+                        <tr>
+                          <td>3</td>
+                          <td>2023.06.20 07:52:37</td>
+                          <td>사용</td>
+                          <td>이디야 건설회관점</td>
+                          <td>18,000</td>
+                          <td>9,000</td>
+                          <td>매장결제 주문번호 출력</td>
+                        </tr>
+                        <tr>
+                          <td>2</td>
+                          <td>2023.06.20 07:52:37</td>
+                          <td>사용</td>
+                          <td>이디야 건설회관점</td>
+                          <td>18,000</td>
+                          <td>9,000</td>
+                          <td>매장결제 주문번호 출력</td>
+                        </tr>
+                        <tr>
+                          <td>1</td>
+                          <td>2023.06.20 07:52:37</td>
+                          <td>사용</td>
+                          <td>이디야 건설회관점</td>
+                          <td>18,000</td>
+                          <td>9,000</td>
+                          <td>매장결제 주문번호 출력</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <div class="pagination-wrap">
+                      <div class="pagination tp2">
+                        <a href="#" class="btn btn-first">처음</a>
+                        <a href="#" class="btn btn-prev">이전</a>
+                        <a href="#" class="on">1</a>
+                        <a href="#">2</a>
+                        <a href="#">3</a>
+                        <a href="#">4</a>
+                        <a href="#">5</a>
+                        <a href="#" class="btn btn-next">다음</a>
+                        <a href="#" class="btn btn-last">마지막</a>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="#" class="btn-arrow"></a>
+                  </td>
+                  <td>2</td>
+                  <td>9321****1234</td>
+                  <td>판매<br />유형</td>
+                  <td>액면가</td>
+                  <td>사용금액</td>
+                  <td>사용률(%)</td>
+                  <td>잔액</td>
+                  <td>실판매가</td>
+                  <td>할인율(%)</td>
+                  <td>캐시 소멸기한</td>
+                  <td>캐시 충전 일시</td>
+                  <td><span class="red">Y</span></td>
+                  <td><span class="red">100</span></td>
+                  <td><span class="red">8,550</span></td>
+                  <td>2023.06.18</td>
+                  <td>이벤트명<br />(이벤트ID)</td>
+                  <td>판매상품명</td>
+                  <td>판매상품ID</td>
+                </tr>
+                <tr class="in-table">
+                  <td colspan="19">
+                    <table class="tb-list">
+                      <colgroup>
+                        <col width="4%" />
+                        <col width="16%" />
+                        <col width="16%" />
+                        <col width="16%" />
+                        <col width="16%" />
+                        <col width="16%" />
+                        <col width="16%" />
+                      </colgroup>
+                      <thead>
+                        <tr>
+                          <th scope="col"><span>No.</span></th>
+                          <th scope="col"><span>사용 일시</span></th>
+                          <th scope="col"><span>항목</span></th>
+                          <th scope="col"><span>상세 내용</span></th>
+                          <th scope="col"><span>사용(취소)금액</span></th>
+                          <th scope="col"><span>잔액</span></th>
+                          <th scope="col"><span>관련 주문 정보</span></th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>5</td>
+                          <td>2023.06.20 07:52:37</td>
+                          <td>사용</td>
+                          <td>이디야 건설회관점</td>
+                          <td>18,000</td>
+                          <td>9,000</td>
+                          <td>매장결제 주문번호 출력</td>
+                        </tr>
+                        <tr>
+                          <td>4</td>
+                          <td>2023.06.20 07:52:37</td>
+                          <td>사용</td>
+                          <td>이디야 건설회관점</td>
+                          <td>18,000</td>
+                          <td>9,000</td>
+                          <td>매장결제 주문번호 출력</td>
+                        </tr>
+                        <tr>
+                          <td>3</td>
+                          <td>2023.06.20 07:52:37</td>
+                          <td>사용</td>
+                          <td>이디야 건설회관점</td>
+                          <td>18,000</td>
+                          <td>9,000</td>
+                          <td>매장결제 주문번호 출력</td>
+                        </tr>
+                        <tr>
+                          <td>2</td>
+                          <td>2023.06.20 07:52:37</td>
+                          <td>사용</td>
+                          <td>이디야 건설회관점</td>
+                          <td>18,000</td>
+                          <td>9,000</td>
+                          <td>매장결제 주문번호 출력</td>
+                        </tr>
+                        <tr>
+                          <td>1</td>
+                          <td>2023.06.20 07:52:37</td>
+                          <td>사용</td>
+                          <td>이디야 건설회관점</td>
+                          <td>18,000</td>
+                          <td>9,000</td>
+                          <td>매장결제 주문번호 출력</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <div class="pagination-wrap">
+                      <div class="pagination tp2">
+                        <a href="#" class="btn btn-first">처음</a>
+                        <a href="#" class="btn btn-prev">이전</a>
+                        <a href="#" class="on">1</a>
+                        <a href="#">2</a>
+                        <a href="#">3</a>
+                        <a href="#">4</a>
+                        <a href="#">5</a>
+                        <a href="#" class="btn btn-next">다음</a>
+                        <a href="#" class="btn btn-last">마지막</a>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="#" class="btn-arrow on"></a>
+                  </td>
+                  <td>3</td>
+                  <td>9321****1234</td>
+                  <td>판매<br />유형</td>
+                  <td>액면가</td>
+                  <td>사용금액</td>
+                  <td>사용률(%)</td>
+                  <td>잔액</td>
+                  <td>실판매가</td>
+                  <td>할인율(%)</td>
+                  <td>캐시 소멸기한</td>
+                  <td>캐시 충전 일시</td>
+                  <td><span class="red">Y</span></td>
+                  <td><span class="red">100</span></td>
+                  <td><span class="red">8,550</span></td>
+                  <td>2023.06.18</td>
+                  <td>이벤트명<br />(이벤트ID)</td>
+                  <td>판매상품명</td>
+                  <td>판매상품ID</td>
+                </tr>
+                <tr class="in-table on">
+                  <td colspan="19">
+                    <table class="tb-list">
+                      <colgroup>
+                        <col width="4%" />
+                        <col width="16%" />
+                        <col width="16%" />
+                        <col width="16%" />
+                        <col width="16%" />
+                        <col width="16%" />
+                        <col width="16%" />
+                      </colgroup>
+                      <thead>
+                        <tr>
+                          <th scope="col"><span>No.</span></th>
+                          <th scope="col"><span>사용 일시</span></th>
+                          <th scope="col"><span>항목</span></th>
+                          <th scope="col"><span>상세 내용</span></th>
+                          <th scope="col"><span>사용(취소)금액</span></th>
+                          <th scope="col"><span>잔액</span></th>
+                          <th scope="col"><span>관련 주문 정보</span></th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>5</td>
+                          <td>2023.06.20 07:52:37</td>
+                          <td>사용</td>
+                          <td>이디야 건설회관점</td>
+                          <td>18,000</td>
+                          <td>9,000</td>
+                          <td>매장결제 주문번호 출력</td>
+                        </tr>
+                        <tr>
+                          <td>4</td>
+                          <td>2023.06.20 07:52:37</td>
+                          <td>사용</td>
+                          <td>이디야 건설회관점</td>
+                          <td>18,000</td>
+                          <td>9,000</td>
+                          <td>매장결제 주문번호 출력</td>
+                        </tr>
+                        <tr>
+                          <td>3</td>
+                          <td>2023.06.20 07:52:37</td>
+                          <td>사용</td>
+                          <td>이디야 건설회관점</td>
+                          <td>18,000</td>
+                          <td>9,000</td>
+                          <td>매장결제 주문번호 출력</td>
+                        </tr>
+                        <tr>
+                          <td>2</td>
+                          <td>2023.06.20 07:52:37</td>
+                          <td>사용</td>
+                          <td>이디야 건설회관점</td>
+                          <td>18,000</td>
+                          <td>9,000</td>
+                          <td>매장결제 주문번호 출력</td>
+                        </tr>
+                        <tr>
+                          <td>1</td>
+                          <td>2023.06.20 07:52:37</td>
+                          <td>사용</td>
+                          <td>이디야 건설회관점</td>
+                          <td>18,000</td>
+                          <td>9,000</td>
+                          <td>매장결제 주문번호 출력</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <div class="pagination-wrap">
+                      <div class="pagination tp2">
+                        <a href="#" class="btn btn-first">처음</a>
+                        <a href="#" class="btn btn-prev">이전</a>
+                        <a href="#" class="on">1</a>
+                        <a href="#">2</a>
+                        <a href="#">3</a>
+                        <a href="#">4</a>
+                        <a href="#">5</a>
+                        <a href="#" class="btn btn-next">다음</a>
+                        <a href="#" class="btn btn-last">마지막</a>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="#" class="btn-arrow"></a>
+                  </td>
+                  <td>4</td>
+                  <td>9321****1234</td>
+                  <td>판매<br />유형</td>
+                  <td>액면가</td>
+                  <td>사용금액</td>
+                  <td>사용률(%)</td>
+                  <td>잔액</td>
+                  <td>실판매가</td>
+                  <td>할인율(%)</td>
+                  <td>캐시 소멸기한</td>
+                  <td>캐시 충전 일시</td>
+                  <td><span class="red">Y</span></td>
+                  <td><span class="red">100</span></td>
+                  <td><span class="red">8,550</span></td>
+                  <td>2023.06.20</td>
+                  <td>이벤트명<br />(이벤트ID)</td>
+                  <td>판매상품명</td>
+                  <td>판매상품ID</td>
+                </tr>
+                <tr class="in-table">
+                  <td colspan="19">
+                    <table class="tb-list">
+                      <colgroup>
+                        <col width="4%" />
+                        <col width="16%" />
+                        <col width="16%" />
+                        <col width="16%" />
+                        <col width="16%" />
+                        <col width="16%" />
+                        <col width="16%" />
+                      </colgroup>
+                      <thead>
+                        <tr>
+                          <th scope="col"><span>No.</span></th>
+                          <th scope="col"><span>사용 일시</span></th>
+                          <th scope="col"><span>항목</span></th>
+                          <th scope="col"><span>상세 내용</span></th>
+                          <th scope="col"><span>사용(취소)금액</span></th>
+                          <th scope="col"><span>잔액</span></th>
+                          <th scope="col"><span>관련 주문 정보</span></th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>5</td>
+                          <td>2023.06.20 07:52:37</td>
+                          <td>사용</td>
+                          <td>이디야 건설회관점</td>
+                          <td>18,000</td>
+                          <td>9,000</td>
+                          <td>매장결제 주문번호 출력</td>
+                        </tr>
+                        <tr>
+                          <td>4</td>
+                          <td>2023.06.20 07:52:37</td>
+                          <td>사용</td>
+                          <td>이디야 건설회관점</td>
+                          <td>18,000</td>
+                          <td>9,000</td>
+                          <td>매장결제 주문번호 출력</td>
+                        </tr>
+                        <tr>
+                          <td>3</td>
+                          <td>2023.06.20 07:52:37</td>
+                          <td>사용</td>
+                          <td>이디야 건설회관점</td>
+                          <td>18,000</td>
+                          <td>9,000</td>
+                          <td>매장결제 주문번호 출력</td>
+                        </tr>
+                        <tr>
+                          <td>2</td>
+                          <td>2023.06.20 07:52:37</td>
+                          <td>사용</td>
+                          <td>이디야 건설회관점</td>
+                          <td>18,000</td>
+                          <td>9,000</td>
+                          <td>매장결제 주문번호 출력</td>
+                        </tr>
+                        <tr>
+                          <td>1</td>
+                          <td>2023.06.20 07:52:37</td>
+                          <td>사용</td>
+                          <td>이디야 건설회관점</td>
+                          <td>18,000</td>
+                          <td>9,000</td>
+                          <td>매장결제 주문번호 출력</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <div class="pagination-wrap">
+                      <div class="pagination tp2">
+                        <a href="#" class="btn btn-first">처음</a>
+                        <a href="#" class="btn btn-prev">이전</a>
+                        <a href="#" class="on">1</a>
+                        <a href="#">2</a>
+                        <a href="#">3</a>
+                        <a href="#">4</a>
+                        <a href="#">5</a>
+                        <a href="#" class="btn btn-next">다음</a>
+                        <a href="#" class="btn btn-last">마지막</a>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div><!-- .tb-list-wrap -->
+          <div class="pagination">
+            <a href="#" class="btn btn-first">처음</a>
+            <a href="#" class="btn btn-prev">이전</a>
+            <a href="#" class="on">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#">5</a>
+            <a href="#">6</a>
+            <a href="#">7</a>
+            <a href="#">8</a>
+            <a href="#">9</a>
+            <a href="#">10</a>
+            <a href="#" class="btn btn-next">다음</a>
+            <a href="#" class="btn btn-last">마지막</a>
+          </div>
+        </div><!-- .con-area -->
+      </div><!-- .content-wrap -->
+    </div><!-- #container -->
+  </div><!-- #wrap -->
+  <script>
+    $('.tb-list .btn-arrow').on('click', function(e){
+      e.preventDefault();
+      if (!$(this).hasClass('on')) {
+        $(this).addClass('on');
+        $(this).closest('tr').next('tr.in-table').addClass('on');
+      } else {
+        $(this).removeClass('on');
+        $(this).closest('tr').next('tr.in-table').removeClass('on');
+      }
+    })
+  </script>
+</body>
+
+</html>
+ 

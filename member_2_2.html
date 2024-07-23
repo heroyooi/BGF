@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SmileGift- Admin</title>
+  <link rel="stylesheet" href="css/common.css">
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-ui.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/ui.js"></script>
+</head>
+<body class="c-scrollbar">
+  <div id="wrap">
+    <div id="s-header">
+      <h2>회원 상세 정보</h2>
+      <ul class="items">
+        <li class="mini"><a href="#">최소화</a></li>
+        <li class="maximize"><a href="#">최대화</a></li>
+        <li class="close"><a href="#">닫기</a></li>
+      </ul>
+    </div><!-- #header -->
+    <div id="s-container">
+      <div class="lnb-wrap c-scrollbar">
+        <div class="user-info">
+          <!-- <span class="name"><em>홍길동</em>님</span> -->
+          <ul class="s-info">
+            <li>#아이디</li>
+            <li>(#회원번호)</li>
+          </ul>
+        </div><!-- .user-info -->
+        <div class="cash-info">
+          <dl>
+            <dt>
+              <span class="label">총 보유 캐시</span>
+              <span class="result">1,548,000</span>
+            </dt>
+            <dd>
+              <ul>
+                <li>
+                  <span class="label">- 유상</span>
+                  <span class="result">0</span>
+                </li>
+                <li>
+                  <span class="label">- 무상</span>
+                  <span class="result">0</span>
+                </li>
+              </ul>
+            </dd>
+          </dl>
+        </div><!-- .cash-info -->
+        <ul class="s-lnb">
+          <li class="cash on"><a href="#">캐시 이용 내역</a></li>
+          <li class="billing"><a href="#">스마일기프트 이용 내역</a></li>
+        </ul>
+        <div class="s-myinfo">
+          <ul>
+            <li>
+              <dl>
+                <dt class="last">마지막 로그인</dt>
+                <dd>2024.05.31 18:45</dd>
+              </dl>
+            </li>
+            <li>
+              <dl>
+                <dt class="join">가입일시</dt>
+                <dd>2020.12.05 04:40</dd>
+              </dl>
+            </li>
+          </ul>
+        </div>
+      </div><!-- .lnb-wrap -->
+      <div class="content-wrap c-scrollbar">
+        <div class="tit-area">
+          <h3>캐시 이용 내역</h3>
+        </div><!-- .tit-area -->
+        <div class="con-area">
+          <div class="total-area mt25 only-btn">
+            <span class="btn-base tp2 lg"><a href="#">엑셀 다운</a></span>
+          </div>
+          <div class="tb-list-wrap c-scrollbar mt10">
+            <table class="tb-list">
+              <colgroup>
+                <col width="64" />
+                <col width="182" />
+                <col width="182" />
+                <col width="182" />
+                <col width="182" />
+                <col width="182" />
+                <col width="182" />
+                <col width="182" />
+                <col width="182" />
+              </colgroup>
+              <thead>
+                <tr>
+                  <th scope="col"><span>No.</span></th>
+                  <th scope="col"><span>사용일시</span></th>
+                  <th scope="col"><span>항목</span></th>
+                  <th scope="col"><span>상세 내용</span></th>
+                  <th scope="col"><span>충전</span></th>
+                  <th scope="col"><span>사용</span></th>
+                  <th scope="col"><span>잔액</span></th>
+                  <th scope="col"><span>주문 정보</span></th>
+                  <th scope="col"><span>캐시 유형/소멸기한</span></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>10</td>
+                  <td>YYYY.MM.DD HH:MM:SS</td>
+                  <td>소멸</td>
+                  <td>서비스 탈퇴</td>
+                  <td>-</td>
+                  <td>10,000</td>
+                  <td>0</td>
+                  <td>-</td>
+                  <td>-</td>
+                </tr>
+                <tr>
+                  <td>9</td>
+                  <td>YYYY.MM.DD HH:MM:SS</td>
+                  <td>소멸</td>
+                  <td>서비스 탈퇴</td>
+                  <td>-</td>
+                  <td>10,000</td>
+                  <td>0</td>
+                  <td>-</td>
+                  <td>-</td>
+                </tr>
+                <tr>
+                  <td>8</td>
+                  <td>YYYY.MM.DD HH:MM:SS</td>
+                  <td>소멸</td>
+                  <td>서비스 탈퇴</td>
+                  <td>-</td>
+                  <td>10,000</td>
+                  <td>0</td>
+                  <td>-</td>
+                  <td>-</td>
+                </tr>
+                <tr>
+                  <td>7</td>
+                  <td>YYYY.MM.DD HH:MM:SS</td>
+                  <td>소멸</td>
+                  <td>서비스 탈퇴</td>
+                  <td>-</td>
+                  <td>10,000</td>
+                  <td>0</td>
+                  <td>-</td>
+                  <td>-</td>
+                </tr>
+                <tr>
+                  <td>6</td>
+                  <td>YYYY.MM.DD HH:MM:SS</td>
+                  <td>소멸</td>
+                  <td>서비스 탈퇴</td>
+                  <td>-</td>
+                  <td>10,000</td>
+                  <td>0</td>
+                  <td>-</td>
+                  <td>-</td>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td>YYYY.MM.DD HH:MM:SS</td>
+                  <td>소멸</td>
+                  <td>서비스 탈퇴</td>
+                  <td>-</td>
+                  <td>10,000</td>
+                  <td>0</td>
+                  <td>-</td>
+                  <td>-</td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>YYYY.MM.DD HH:MM:SS</td>
+                  <td>소멸</td>
+                  <td>서비스 탈퇴</td>
+                  <td>-</td>
+                  <td>10,000</td>
+                  <td>0</td>
+                  <td>-</td>
+                  <td>-</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>YYYY.MM.DD HH:MM:SS</td>
+                  <td>소멸</td>
+                  <td>서비스 탈퇴</td>
+                  <td>-</td>
+                  <td>10,000</td>
+                  <td>0</td>
+                  <td>-</td>
+                  <td>-</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>YYYY.MM.DD HH:MM:SS</td>
+                  <td>소멸</td>
+                  <td>서비스 탈퇴</td>
+                  <td>-</td>
+                  <td>10,000</td>
+                  <td>0</td>
+                  <td>-</td>
+                  <td>-</td>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>YYYY.MM.DD HH:MM:SS</td>
+                  <td>소멸</td>
+                  <td>서비스 탈퇴</td>
+                  <td>-</td>
+                  <td>10,000</td>
+                  <td>0</td>
+                  <td>-</td>
+                  <td>-</td>
+                </tr>
+              </tbody>
+            </table>
+          </div><!-- .tb-list-wrap -->
+          <div class="pagination">
+            <a href="#" class="btn btn-first">처음</a>
+            <a href="#" class="btn btn-prev">이전</a>
+            <a href="#" class="on">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#">5</a>
+            <a href="#">6</a>
+            <a href="#">7</a>
+            <a href="#">8</a>
+            <a href="#">9</a>
+            <a href="#">10</a>
+            <a href="#" class="btn btn-next">다음</a>
+            <a href="#" class="btn btn-last">마지막</a>
+          </div>
+        </div><!-- .con-area -->
+      </div><!-- .content-wrap -->
+    </div><!-- #container -->
+  </div><!-- #wrap -->
+</body>
+
+</html>
+ 

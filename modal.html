@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SmileGift- Admin</title>
+  <link rel="stylesheet" href="css/common.css">
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-ui.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/ui.js"></script>
+</head>
+<body class="c-scrollbar">
+  <div id="wrap">
+    <div class="popup-wrap z-anim mfp-hide" id="popup-download-excel" data-width="611">
+      <div class="popup-inner">
+        <div class="tit-wrap">
+          <p class="tit">엑셀 다운로드</p>
+        </div>
+        <div class="con-area">
+          <div class="tb-input-wrap">
+            <table class="tb-input">
+              <colgroup>
+                <col width="150" />
+                <col width="*" />
+              </colgroup>
+              <tbody>
+                <tr>
+                  <th scope="row">사유 <em>*</em></th>
+                  <td>
+                    <input type="text" class="input-base" />
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">비밀번호 <em>*</em></th>
+                  <td>
+                    <input type="password" class="input-base" />
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="btns-wrap t-center mt24">
+            <span class="btn-base tp2 purple lg b-mfp-close"><a href="#">확인</a></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="popup-wrap z-anim mfp-hide" id="popup-unmask" data-width="611">
+      <div class="popup-inner">
+        <div class="tit-wrap">
+          <p class="tit">마스킹 해제</p>
+        </div>
+        <div class="con-area">
+          <div class="tb-input-wrap">
+            <table class="tb-input">
+              <colgroup>
+                <col width="150" />
+                <col width="*" />
+              </colgroup>
+              <tbody>
+                <tr>
+                  <th scope="row">사유 <em>*</em></th>
+                  <td>
+                    <input type="text" class="input-base" />
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">비밀번호 <em>*</em></th>
+                  <td>
+                    <input type="password" class="input-base" />
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="btns-wrap t-center mt24">
+            <span class="btn-base tp2 purple lg b-mfp-close"><a href="#">확인</a></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="popup-wrap z-anim mfp-hide popup-alert" id="popup-alert" data-width="410">
+      <div class="popup-inner">
+        <div class="con-area">
+          <p class="msg">선택한 내용이 없습니다.</p>
+          <div class="btns-wrap t-center mt24">
+            <span class="btn-base tp2 purple lg b-mfp-close"><a href="#">확인</a></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div><!-- #wrap -->
+  <script>
+    var checkCb = function(checked){
+      console.log('테이블 전체체크 유무 : ', checked)
+    };
+    GUI.checkAllUI('#chk-tb-all', 'table', checkCb);
+
+    var Qpopup = $.urlParam('popup');
+
+    if (Qpopup) {
+      setTimeout(function(){
+        if (Qpopup === 'downloadExcel') {
+          $.magnificPopup.open(getOptions('#popup-download-excel'));
+        }
+        if (Qpopup === 'unMask') {
+          $.magnificPopup.open(getOptions('#popup-unmask', false));
+        }
+        if (Qpopup === 'alert') {
+          $.magnificPopup.open(getOptions('#popup-alert'));
+        }
+      }, 250);
+    }
+  </script>
+</body>
+
+</html>
+ 

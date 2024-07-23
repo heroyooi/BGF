@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SmileGift- Admin</title>
+  <link rel="stylesheet" href="css/common.css">
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-ui.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/ui.js"></script>
+</head>
+<body class="c-scrollbar">
+  <div id="wrap">
+    <div id="header">
+      <h1><a href="#"><img src="img/common/logo.svg" alt="" /></a></h1>
+      <ul class="utils">
+        <li>
+          <span class="my"><em>홍길동</em>님</span>
+          <div class="utils-tip">
+            <ul>
+              <li><a href="#">로그아웃</a></li>
+              <li><a href="#">비밀번호 변경</a></li>
+            </ul>
+          </div>
+        </li>
+        <li><a href="#" class="btn-logout">로그아웃</a></li>
+      </ul>
+    </div><!-- #header -->
+    <div id="container">
+      <div class="lnb-wrap c-scrollbar">
+        <ul class="lnb" data-dp1="10" data-dp2="4">
+          <li class="user-group">
+            <dl>
+              <dt>회원관리</dt>
+              <dd>
+                <ul>
+                  <li><a href="#">일반회원</a></li>
+                  <li><a href="#">탈퇴회원</a></li>
+                </ul>
+              </dd>
+            </dl>
+          </li>
+          <li class="gift">
+            <dl>
+              <dt>기프트샵 상품 관리</dt>
+              <dd>
+                <ul>
+                  <li><a href="#">브랜드/카테고리 관리</a></li>
+                  <li><a href="#">연동상품 관리</a></li>
+                  <li><a href="#">판매상품 관리</a></li>
+                </ul>
+              </dd>
+            </dl>
+          </li>
+          <li class="gift-1">
+            <dl>
+              <dt>기프트샵 전시 관리</dt>
+              <dd>
+                <ul>
+                  <li><a href="#">메인 상품 진열</a></li>
+                  <li><a href="#">추천 검색어 관리</a></li>
+                  <li><a href="#">샵 메인 배너 관리</a></li>
+                  <li><a href="#">샵 서브 배너 관리</a></li>
+                </ul>
+              </dd>
+            </dl>
+          </li>
+          <li class="desktop-computer">
+            <dl>
+              <dt>메인 관리</dt>
+              <dd>
+                <ul>
+                  <li><a href="#">메인 배너 관리</a></li>
+                  <li><a href="#">메인 서브 배너 관리</a></li>
+                  <li><a href="#">팝업 관리</a></li>
+                  <li><a href="#">매장 사용 브랜드</a></li>
+                </ul>
+              </dd>
+            </dl>
+          </li>
+          <li class="event">
+            <dl>
+              <dt>기획전/이벤트</dt>
+              <dd>
+                <ul>
+                  <li><a href="#">기획전/이벤트 관리</a></li>
+                </ul>
+              </dd>
+            </dl>
+          </li>
+          <li class="cash">
+            <dl>
+              <dt>캐시 충전 관리</dt>
+              <dd>
+                <ul>
+                  <li><a href="#">캐시 충전 내역</a></li>
+                </ul>
+              </dd>
+            </dl>
+          </li>
+          <li class="order">
+            <dl>
+              <dt>주문 내역</dt>
+              <dd>
+                <ul>
+                  <li><a href="#">기프트샵</a></li>
+                  <li><a href="#">매장 결제</a></li>
+                </ul>
+              </dd>
+            </dl>
+          </li>
+          <li class="receipt-refund">
+            <dl>
+              <dt>캐시잔액 환불</dt>
+              <dd>
+                <ul>
+                  <li><a href="#">스마일기프트 쿠폰</a></li>
+                </ul>
+              </dd>
+            </dl>
+          </li>
+          <li class="coupon">
+            <dl>
+              <dt>쿠폰환불</dt>
+              <dd>
+                <ul>
+                  <li><a href="#">환불 접수</a></li>
+                  <li><a href="#">환불 확정</a></li>
+                  <li><a href="#">환불 완료</a></li>
+                </ul>
+              </dd>
+            </dl>
+          </li>
+          <li class="management">
+            <dl>
+              <dt>회계 관리</dt>
+              <dd>
+                <ul>
+                  <li><a href="#">캐시 현황</a></li>
+                  <li><a href="#">수익 현황</a></li>
+                  <li><a href="#">비용 현황</a></li>
+                  <li><a href="#">선수금</a></li>
+                  <li><a href="#">낙전</a></li>
+                </ul>
+              </dd>
+            </dl>
+          </li>
+          <li class="phone">
+            <dl>
+              <dt>고객센터</dt>
+              <dd>
+                <ul>
+                  <li><a href="#">공지사항</a></li>
+                  <li><a href="#">문의내역</a></li>
+                  <li><a href="#">문의 템플릿 관리</a></li>
+                  <li><a href="#">문의 유형 관리</a></li>
+                  <li><a href="#">FAQ 분류 관리</a></li>
+                  <li><a href="#">FAQ 등록 관리</a></li>
+                  <li><a href="#">제휴 문의 관리</a></li>
+                </ul>
+              </dd>
+            </dl>
+          </li>
+          <li class="device-mobile">
+            <dl>
+              <dt>앱 관리</dt>
+              <dd>
+                <ul>
+                  <li><a href="#">앱 회원관리</a></li>
+                  <li><a href="#">앱 푸쉬관리</a></li>
+                  <li><a href="#">스플래시 설정</a></li>
+                </ul>
+              </dd>
+            </dl>
+          </li>
+          <li class="pencil-alt">
+            <dl>
+              <dt>사이트/관리자 설정</dt>
+              <dd>
+                <ul>
+                  <li><a href="#">약관 관리</a></li>
+                  <li><a href="#">관리자 그룹 관리</a></li>
+                  <li><a href="#">관리자 계정 관리</a></li>
+                  <li><a href="#">관리자 접속이력</a></li>
+                </ul>
+              </dd>
+            </dl>
+          </li>
+        </ul>
+      </div><!-- .lnb-wrap -->
+      <div class="content-wrap c-scrollbar">
+        <div class="tit-area">
+          <h3>선수금</h3>
+        </div><!-- .tit-area -->
+        <div class="con-area">
+          <div class="tb-input-wrap">
+            <table class="tb-input">
+              <colgroup>
+                <col width="12.5%" />
+                <col width="12.5%" />
+                <col width="12.5%" />
+                <col width="12.5%" />
+                <col width="12.5%" />
+                <col width="12.5%" />
+                <col width="12.5%" />
+                <col width="*" />
+              </colgroup>
+              <tbody>
+                <!--
+                <tr>
+                  <th scope="row">조회년월</th>
+                  <td colspan="7">
+                    <div class="input-wrap fix-width">
+                      <span class="s-datepicker">
+                        <input type="text" class="input-base datepicker" />
+                      </span>
+                      <div class="btns-wrap ml10">
+                        <span class="btn-base tp3 yymd"><a href="#">당월</a></span>
+                        <span class="btn-base tp3 yymd"><a href="#">전월</a></span>
+                        <span class="btn-base tp3 yymd"><a href="#">전전월</a></span>
+                      </div>
+                      <p class="s-tip ml10">전월 데이터에 대해 매월 15일 이후 확인 가능합니다.</p>
+                    </div>
+                  </td>
+                </tr>
+                -->
+                <tr>
+                  <th scope="row">조회년월</th>
+                  <td colspan="7">
+                    <div class="input-wrap">
+                      <span class="select-base" style="width: 150px;">
+                        <span class="value"></span>
+                        <select>
+                          <option value="0">년 선택</option>
+                          <option value="2017">2017년</option>
+                          <option value="2018">2018년</option>
+                          <option value="2019">2019년</option>
+                          <option value="2020">2020년</option>
+                          <option value="2021">2021년</option>
+                          <option value="2022">2022년</option>
+                          <option value="2023">2023년</option>
+                          <option value="2024" selected>2024년</option>
+                        </select>
+                      </span>
+                      <span class="select-base ml10" style="width: 150px;">
+                        <span class="value"></span>
+                        <select>
+                          <option value="0">월 선택</option>
+                          <option value="1" selected>1월</option>
+                          <option value="2">2월</option>
+                          <option value="3">3월</option>
+                          <option value="4">4월</option>
+                          <option value="5">5월</option>
+                          <option value="6">6월</option>
+                          <option value="7">7월</option>
+                          <option value="8">8월</option>
+                          <option value="9">9월</option>
+                          <option value="10">10월</option>
+                          <option value="11">11월</option>
+                          <option value="12">12월</option>
+                        </select>
+                      </span>
+                    </div>
+                  </td>
+                </tr>
+
+
+                <tr>
+                  <th scope="row">공급사</th>
+                  <td colspan="3">
+                    <div class="input-wrap select-input col2">
+                      <span class="select-base">
+                        <span class="value"></span>
+                        <select>
+                          <option value="0" selected>공급사를 검색해주세요</option>
+                          <option value="1">1</option>
+                        </select>
+                      </span>
+                      <input type="text" class="input-base" placeholder="공급사ID(명) 검색어 입력" />
+                    </div>
+                  </td>
+                  <th scope="row">브랜드명</th>
+                  <td colspan="3">
+                    <div class="input-wrap select-input col2">
+                      <span class="select-base">
+                        <span class="value"></span>
+                        <select>
+                          <option value="0" selected>브랜드를 검색해주세요</option>
+                          <option value="1">1</option>
+                        </select>
+                      </span>
+                      <input type="text" class="input-base" placeholder="브랜드ID(명) 검색어 입력" />
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">거래처</th>
+                  <td colspan="3">
+                    <div class="input-wrap select-input col2">
+                      <span class="select-base">
+                        <span class="value"></span>
+                        <select>
+                          <option value="0" selected>거래처를 검색해주세요</option>
+                          <option value="1">1</option>
+                        </select>
+                      </span>
+                      <input type="text" class="input-base" placeholder="거래처ID(명) 검색어 입력" />
+                    </div>
+                  </td>
+                  <th scope="row">이벤트</th>
+                  <td colspan="3">
+                    <div class="input-wrap select-input col2">
+                      <span class="select-base">
+                        <span class="value"></span>
+                        <select>
+                          <option value="0" selected>이벤트를 검색해주세요</option>
+                          <option value="1">1</option>
+                        </select>
+                      </span>
+                      <input type="text" class="input-base" placeholder="이벤트ID(명) 검색어 입력" />
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">판매상품</th>
+                  <td colspan="3">
+                    <div class="input-wrap select-input col2">
+                      <span class="select-base">
+                        <span class="value"></span>
+                        <select>
+                          <option value="0" selected>판매상품를 검색해주세요</option>
+                          <option value="1">1</option>
+                        </select>
+                      </span>
+                      <input type="text" class="input-base" placeholder="판매상품ID(명) 검색어 입력" />
+                    </div>
+                  </td>
+                  <th scope="row">이벤트그룹</th>
+                  <td colspan="3">
+                    <div class="input-wrap select-input col2">
+                      <span class="select-base">
+                        <span class="value"></span>
+                        <select>
+                          <option value="0" selected>이벤트그룹를 검색해주세요</option>
+                          <option value="1">1</option>
+                        </select>
+                      </span>
+                      <input type="text" class="input-base" placeholder="이벤트그룹ID(명) 검색어 입력" />
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">판매부서</th>
+                  <td>
+                    <!-- 0405 수정 -->
+                    <div class="dropdown-base">
+                      <a href="#">전체</a>
+                      <ul class="chk-list">
+                        <li>
+                          <span class="chk-base">
+                            <input type="checkbox" id="chk-1-1">
+                            <label for="chk-1-1">Option 1</label>
+                          </span>
+                        </li>
+                        <li>
+                          <span class="chk-base">
+                            <input type="checkbox" id="chk-1-2">
+                            <label for="chk-1-2">Option 2</label>
+                          </span>
+                        </li>
+                      </ul>
+                    </div>
+                  </td>
+                  <th scope="row">판매부서</th>
+                  <td>
+                    <!-- 0405 수정 -->
+                    <div class="dropdown-base">
+                      <a href="#">전체</a>
+                      <ul class="chk-list">
+                        <li>
+                          <span class="chk-base">
+                            <input type="checkbox" id="chk-2-1">
+                            <label for="chk-2-1">Option 1</label>
+                          </span>
+                        </li>
+                        <li>
+                          <span class="chk-base">
+                            <input type="checkbox" id="chk-2-2">
+                            <label for="chk-2-2">Option 2</label>
+                          </span>
+                        </li>
+                        <li>
+                          <span class="chk-base">
+                            <input type="checkbox" id="chk-2-3">
+                            <label for="chk-2-3">Option 3</label>
+                          </span>
+                        </li>
+                        <li>
+                          <span class="chk-base">
+                            <input type="checkbox" id="chk-2-4">
+                            <label for="chk-2-4">Option 4</label>
+                          </span>
+                        </li>
+                        <li>
+                          <span class="chk-base">
+                            <input type="checkbox" id="chk-2-5">
+                            <label for="chk-2-5">Option 5</label>
+                          </span>
+                        </li>
+                        <li>
+                          <span class="chk-base">
+                            <input type="checkbox" id="chk-2-6">
+                            <label for="chk-2-6">Option 6</label>
+                          </span>
+                        </li>
+                        <li>
+                          <span class="chk-base">
+                            <input type="checkbox" id="chk-2-7">
+                            <label for="chk-2-7">Option 7</label>
+                          </span>
+                        </li>
+                        <li>
+                          <span class="chk-base">
+                            <input type="checkbox" id="chk-2-8">
+                            <label for="chk-2-8">Option 8</label>
+                          </span>
+                        </li>
+                      </ul>
+                    </div>
+                  </td>
+                  <th scope="row">상품타입</th>
+                  <td>
+                    <!-- 0405 수정 -->
+                    <div class="dropdown-base">
+                      <a href="#">전체</a>
+                      <ul class="chk-list">
+                        <li>
+                          <span class="chk-base">
+                            <input type="checkbox" id="chk-3-1">
+                            <label for="chk-3-1">Option 1</label>
+                          </span>
+                        </li>
+                        <li>
+                          <span class="chk-base">
+                            <input type="checkbox" id="chk-3-2">
+                            <label for="chk-3-2">Option 2</label>
+                          </span>
+                        </li>
+                      </ul>
+                    </div>
+                  </td>
+                  <th scope="row">정산구분</th>
+                  <td>
+                    <!-- 0405 수정 -->
+                    <div class="dropdown-base">
+                      <a href="#">전체</a>
+                      <ul class="chk-list">
+                        <li>
+                          <span class="chk-base">
+                            <input type="checkbox" id="chk-4-1">
+                            <label for="chk-4-1">Option 1</label>
+                          </span>
+                        </li>
+                        <li>
+                          <span class="chk-base">
+                            <input type="checkbox" id="chk-4-2">
+                            <label for="chk-4-2">Option 2</label>
+                          </span>
+                        </li>
+                      </ul>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div><!-- .tb-input-wrap -->
+          <div class="btns-wrap t-right mt15">
+            <span class="btn-base tp2 lg purple"><a href="#"><em class="search">검색</em></a></span>
+          </div>
+          <div class="total-area mt25">
+            <span class="total">
+              [총 <em>00</em>건]
+            </span>
+            <span class="btn-base tp2 lg"><a href="#">엑셀다운</a></span>
+          </div>
+          <div class="tb-list-wrap c-scrollbar mt10">
+            <table class="tb-list">
+              <colgroup>
+                <!-- 14 -->
+                <col width="93" />
+                <col width="107" />
+                <col width="107" />
+                <col width="107" />
+                <col width="107" />
+                <col width="107" />
+                <col width="107" />
+                <col width="107" />
+                <col width="107" />
+                <col width="134" />
+                <col width="107" />
+                <col width="107" />
+                <col width="107" />
+                <col width="107" />
+              </colgroup>
+              <thead>
+                <tr>
+                  <th scope="col"><span>판매유형</span></th>
+                  <th scope="col"><span>판매 부서명</span></th>
+                  <th scope="col"><span>이벤트명 (ID)</span></th>
+                  <th scope="col"><span>거래처명 (ID)</span></th>
+                  <th scope="col"><span>브랜드명 (ID)</span></th>
+                  <th scope="col"><span>조회년/월</span></th>
+                  <th scope="col"><span>발행총액</span></th>
+                  <th scope="col"><span>전월선수금</span></th>
+                  <th scope="col"><span>판매 당월정산액</span></th>
+                  <th scope="col"><span>상품 당월정산액</span></th>
+                  <th scope="col"><span>본사지원금</span></th>
+                  <th scope="col"><span>환불</span></th>
+                  <th scope="col"><span>낙전</span></th>
+                  <th scope="col"><span>선수금</span></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>B2C</td>
+                  <td>스마일기프트 앱</td>
+                  <td>스마일기프트 샵 (20XX)</td>
+                  <td>스마일기프트 플랫폼 (BC00XX)</td>
+                  <td>스타벅스 <br />(EC00XX)</td>
+                  <td>2023-07</td>
+                  <td>410,000</td>
+                  <td>424,500</td>
+                  <td>364,900</td>
+                  <td>511,300</td>
+                  <td>0</td>
+                  <td>0</td>
+                  <td>-25,300</td>
+                  <td>303,400</td>
+                </tr>
+                <tr>
+                  <td>B2C</td>
+                  <td>스마일기프트 앱</td>
+                  <td>스마일기프트 샵 (20XX)</td>
+                  <td>스마일기프트 플랫폼 (BC00XX)</td>
+                  <td>스타벅스 <br />(EC00XX)</td>
+                  <td>2023-07</td>
+                  <td>410,000</td>
+                  <td>424,500</td>
+                  <td>364,900</td>
+                  <td>511,300</td>
+                  <td>0</td>
+                  <td>0</td>
+                  <td>-25,300</td>
+                  <td>303,400</td>
+                </tr>
+                <tr>
+                  <td>B2C</td>
+                  <td>스마일기프트 앱</td>
+                  <td>스마일기프트 샵 (20XX)</td>
+                  <td>스마일기프트 플랫폼 (BC00XX)</td>
+                  <td>스타벅스 <br />(EC00XX)</td>
+                  <td>2023-07</td>
+                  <td>410,000</td>
+                  <td>424,500</td>
+                  <td>364,900</td>
+                  <td>511,300</td>
+                  <td>0</td>
+                  <td>0</td>
+                  <td>-25,300</td>
+                  <td>303,400</td>
+                </tr>
+                <tr>
+                  <td>B2C</td>
+                  <td>스마일기프트 앱</td>
+                  <td>스마일기프트 샵 (20XX)</td>
+                  <td>스마일기프트 플랫폼 (BC00XX)</td>
+                  <td>스타벅스 <br />(EC00XX)</td>
+                  <td>2023-07</td>
+                  <td>410,000</td>
+                  <td>424,500</td>
+                  <td>364,900</td>
+                  <td>511,300</td>
+                  <td>0</td>
+                  <td>0</td>
+                  <td>-25,300</td>
+                  <td>303,400</td>
+                </tr>
+              </tbody>
+            </table>
+          </div><!-- .tb-list-wrap -->
+          <div class="pagination">
+            <a href="#" class="btn btn-first">처음</a>
+            <a href="#" class="btn btn-prev">이전</a>
+            <a href="#" class="on">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#">5</a>
+            <a href="#">6</a>
+            <a href="#">7</a>
+            <a href="#">8</a>
+            <a href="#">9</a>
+            <a href="#">10</a>
+            <a href="#" class="btn btn-next">다음</a>
+            <a href="#" class="btn btn-last">마지막</a>
+          </div>
+        </div><!-- .con-area -->
+      </div><!-- .content-wrap -->
+    </div><!-- #container -->
+  </div><!-- #wrap -->
+  <script>
+    // 0405 수정
+    $('.dropdown-base > a').on('click', function(e){
+      e.preventDefault();
+      var target = $(this).closest('.dropdown-base');
+      if (!target.hasClass('on')) {
+        target.addClass('on');
+      } else {
+        target.removeClass('on');
+      }
+    });
+  </script>
+</body>
+
+</html>
+ 

@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SmileGift- Admin</title>
+  <link rel="stylesheet" href="css/common.css">
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-ui.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/ui.js"></script>
+</head>
+<body class="c-scrollbar">
+  <div id="wrap">
+    <div id="header">
+      <h1><a href="#"><img src="img/common/logo.svg" alt="" /></a></h1>
+      <ul class="utils">
+        <li>
+          <span class="my"><em>홍길동</em>님</span>
+          <div class="utils-tip">
+            <ul>
+              <li><a href="#">로그아웃</a></li>
+              <li><a href="#">비밀번호 변경</a></li>
+            </ul>
+          </div>
+        </li>
+        <li><a href="#" class="btn-logout">로그아웃</a></li>
+      </ul>
+    </div><!-- #header -->
+    <div id="container">
+      <div class="lnb-wrap c-scrollbar">
+        <ul class="lnb" data-dp1="7" data-dp2="2">
+          <li class="user-group">
+            <dl>
+              <dt>회원관리</dt>
+              <dd>
+                <ul>
+                  <li><a href="#">일반회원</a></li>
+                  <li><a href="#">탈퇴회원</a></li>
+                </ul>
+              </dd>
+            </dl>
+          </li>
+          <li class="gift">
+            <dl>
+              <dt>기프트샵 상품 관리</dt>
+              <dd>
+                <ul>
+                  <li><a href="#">브랜드/카테고리 관리</a></li>
+                  <li><a href="#">연동상품 관리</a></li>
+                  <li><a href="#">판매상품 관리</a></li>
+                </ul>
+              </dd>
+            </dl>
+          </li>
+          <li class="gift-1">
+            <dl>
+              <dt>기프트샵 전시 관리</dt>
+              <dd>
+                <ul>
+                  <li><a href="#">메인 상품 진열</a></li>
+                  <li><a href="#">추천 검색어 관리</a></li>
+                  <li><a href="#">샵 메인 배너 관리</a></li>
+                  <li><a href="#">샵 서브 배너 관리</a></li>
+                </ul>
+              </dd>
+            </dl>
+          </li>
+          <li class="desktop-computer">
+            <dl>
+              <dt>메인 관리</dt>
+              <dd>
+                <ul>
+                  <li><a href="#">메인 배너 관리</a></li>
+                  <li><a href="#">메인 서브 배너 관리</a></li>
+                  <li><a href="#">팝업 관리</a></li>
+                  <li><a href="#">매장 사용 브랜드</a></li>
+                </ul>
+              </dd>
+            </dl>
+          </li>
+          <li class="event">
+            <dl>
+              <dt>기획전/이벤트</dt>
+              <dd>
+                <ul>
+                  <li><a href="#">기획전/이벤트 관리</a></li>
+                </ul>
+              </dd>
+            </dl>
+          </li>
+          <li class="cash">
+            <dl>
+              <dt>캐시 충전 관리</dt>
+              <dd>
+                <ul>
+                  <li><a href="#">캐시 충전 내역</a></li>
+                </ul>
+              </dd>
+            </dl>
+          </li>
+          <li class="order">
+            <dl>
+              <dt>주문 내역</dt>
+              <dd>
+                <ul>
+                  <li><a href="#">기프트샵</a></li>
+                  <li><a href="#">매장 결제</a></li>
+                </ul>
+              </dd>
+            </dl>
+          </li>
+          <li class="receipt-refund">
+            <dl>
+              <dt>캐시잔액 환불</dt>
+              <dd>
+                <ul>
+                  <li><a href="#">스마일기프트 쿠폰</a></li>
+                </ul>
+              </dd>
+            </dl>
+          </li>
+          <li class="coupon">
+            <dl>
+              <dt>쿠폰환불</dt>
+              <dd>
+                <ul>
+                  <li><a href="#">환불 접수</a></li>
+                  <li><a href="#">환불 확정</a></li>
+                  <li><a href="#">환불 완료</a></li>
+                </ul>
+              </dd>
+            </dl>
+          </li>
+          <li class="management">
+            <dl>
+              <dt>회계 관리</dt>
+              <dd>
+                <ul>
+                  <li><a href="#">캐시 현황</a></li>
+                  <li><a href="#">수익 현황</a></li>
+                  <li><a href="#">비용 현황</a></li>
+                  <li><a href="#">선수금</a></li>
+                  <li><a href="#">낙전</a></li>
+                </ul>
+              </dd>
+            </dl>
+          </li>
+          <li class="phone">
+            <dl>
+              <dt>고객센터</dt>
+              <dd>
+                <ul>
+                  <li><a href="#">공지사항</a></li>
+                  <li><a href="#">문의내역</a></li>
+                  <li><a href="#">문의 템플릿 관리</a></li>
+                  <li><a href="#">문의 유형 관리</a></li>
+                  <li><a href="#">FAQ 분류 관리</a></li>
+                  <li><a href="#">FAQ 등록 관리</a></li>
+                  <li><a href="#">제휴 문의 관리</a></li>
+                </ul>
+              </dd>
+            </dl>
+          </li>
+          <li class="device-mobile">
+            <dl>
+              <dt>앱 관리</dt>
+              <dd>
+                <ul>
+                  <li><a href="#">앱 회원관리</a></li>
+                  <li><a href="#">앱 푸쉬관리</a></li>
+                  <li><a href="#">스플래시 설정</a></li>
+                </ul>
+              </dd>
+            </dl>
+          </li>
+          <li class="pencil-alt">
+            <dl>
+              <dt>사이트/관리자 설정</dt>
+              <dd>
+                <ul>
+                  <li><a href="#">약관 관리</a></li>
+                  <li><a href="#">관리자 그룹 관리</a></li>
+                  <li><a href="#">관리자 계정 관리</a></li>
+                  <li><a href="#">관리자 접속이력</a></li>
+                </ul>
+              </dd>
+            </dl>
+          </li>
+        </ul>
+      </div><!-- .lnb-wrap -->
+      <div class="content-wrap c-scrollbar">
+        <div class="tit-area">
+          <h3>매장 결제</h3>
+        </div><!-- .tit-area -->
+        <div class="con-area">
+          <div class="tb-input-wrap">
+            <table class="tb-input">
+              <colgroup>
+                <col width="15%" />
+                <col width="35%" />
+                <col width="15%" />
+                <col width="*" />
+              </colgroup>
+              <tbody>
+                <tr>
+                  <th scope="row">검색 조건</th>
+                  <td>
+                    <div class="input-wrap select-input">
+                      <span class="select-base" style="width: 150px;">
+                        <span class="value"></span>
+                        <select>
+                          <option value="0" selected>선택 </option>
+                          <option value="1">1</option>
+                        </select>
+                      </span>
+                      <input type="text" class="input-base" />
+                    </div>
+                  </td>
+                  <th scope="row">교환 여부</th>
+                  <td>
+                    <ul class="radio-list">
+                      <li>
+                        <span class="radio-base">
+                          <input type="radio" id="radio-exchange-all" name="radio-exchange" checked />
+                          <label for="radio-exchange-all">전체</label>
+                        </span>
+                      </li>
+                      <li>
+                        <span class="radio-base">
+                          <input type="radio" id="radio-exchange-1" name="radio-exchange" />
+                          <label for="radio-exchange-1">교환완료</label>
+                        </span>
+                      </li>
+                      <li>
+                        <span class="radio-base">
+                          <input type="radio" id="radio-exchange-2" name="radio-exchange" />
+                          <label for="radio-exchange-2">교환취소</label>
+                        </span>
+                      </li>
+                    </ul>
+                  </td>
+                </tr> 
+                <tr>
+                  <th scope="row">주문 일자</th>
+                  <td colspan="3">
+                    <div class="input-wrap fix-width">
+                      <span class="s-datepicker">
+                        <input type="text" class="input-base datepicker" />
+                      </span>
+                      <span class="bridge">~</span>
+                      <span class="s-datepicker">
+                        <input type="text" class="input-base datepicker" />
+                      </span>
+                      <div class="btns-wrap ml10">
+                        <span class="btn-base tp3 yymd"><a href="#">7일</a></span>
+                        <span class="btn-base tp3 yymd"><a href="#">15일</a></span>
+                        <span class="btn-base tp3 yymd"><a href="#">1개월</a></span>
+                        <span class="btn-base tp3 yymd"><a href="#">6개월</a></span>
+                        <span class="btn-base tp3 yymd"><a href="#">1년</a></span>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div><!-- .tb-input-wrap -->
+          <div class="btns-wrap t-right mt15">
+            <span class="btn-base tp2 lg purple"><a href="#"><em class="search">검색</em></a></span>
+          </div>
+          <div class="total-area mt25">
+            <span class="total">
+              [총 <em>6</em>건]
+            </span>
+            <span class="btn-base tp2 lg"><a href="#">엑셀다운</a></span>
+          </div>
+          <div class="tb-list-wrap c-scrollbar mt10">
+            <table class="tb-list">
+              <colgroup>
+                <col width="64" />
+                <col width="160" />
+                <col width="180" />
+                <col width="123" />
+                <col width="123" />
+                <col width="123" />
+                <col width="123" />
+                <col width="123" />
+                <col width="123" />
+                <col width="123" />
+                <col width="123" />
+                <col width="123" />
+              </colgroup>
+              <thead>
+                <tr>
+                  <th scope="col"><span>No.</span></th>
+                  <th scope="col"><span>주문(취소) 일시</span></th>
+                  <th scope="col"><span>주문번호(취소번호)</span></th>
+                  <th scope="col"><span>주문자</span></th>
+                  <th scope="col"><span>아이디</span></th>
+                  <th scope="col"><span>쿠폰 번호(OTP)</span></th>
+                  <th scope="col"><span>주문(취소) 금액</span></th>
+                  <th scope="col"><span>교환 여부</span></th>
+                  <th scope="col"><span>브랜드(ID)</span></th>
+                  <th scope="col"><span>교환지점(코드)</span></th>
+                  <th scope="col"><span>승인번호</span></th>
+                  <th scope="col"><span>TR ID</span></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>5</td>
+                  <td>2023-06-06 23:59:51</td>
+                  <td>OCH20230606000002</td>
+                  <td>홍*동</td>
+                  <td>K**33</td>
+                  <td>9320****45674699</td>
+                  <td>8,500</td>
+                  <td>교환완료</td>
+                  <td>빽다방(EC2324)</td>
+                  <td>XXX점(JG1555)</td>
+                  <td>승인 번호 출력</td>
+                  <td>TR ID 출력</td>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td>2023-06-06 23:59:51</td>
+                  <td>OCH20230606000002</td>
+                  <td>홍*동</td>
+                  <td>K**33</td>
+                  <td>9320****45674699</td>
+                  <td>8,500</td>
+                  <td>교환완료</td>
+                  <td>빽다방(EC2324)</td>
+                  <td>XXX점(JG1555)</td>
+                  <td>승인 번호 출력</td>
+                  <td>TR ID 출력</td>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td>2023-06-06 23:59:51</td>
+                  <td>OCH20230606000002</td>
+                  <td>홍*동</td>
+                  <td>K**33</td>
+                  <td>9320****45674699</td>
+                  <td>8,500</td>
+                  <td>교환완료</td>
+                  <td>빽다방(EC2324)</td>
+                  <td>XXX점(JG1555)</td>
+                  <td>승인 번호 출력</td>
+                  <td>TR ID 출력</td>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td>2023-06-06 23:59:51</td>
+                  <td>OCH20230606000002</td>
+                  <td>홍*동</td>
+                  <td>K**33</td>
+                  <td>9320****45674699</td>
+                  <td>8,500</td>
+                  <td>교환완료</td>
+                  <td>빽다방(EC2324)</td>
+                  <td>XXX점(JG1555)</td>
+                  <td>승인 번호 출력</td>
+                  <td>TR ID 출력</td>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td>2023-06-06 23:59:51</td>
+                  <td>OCH20230606000002</td>
+                  <td>홍*동</td>
+                  <td>K**33</td>
+                  <td>9320****45674699</td>
+                  <td>8,500</td>
+                  <td>교환완료</td>
+                  <td>빽다방(EC2324)</td>
+                  <td>XXX점(JG1555)</td>
+                  <td>승인 번호 출력</td>
+                  <td>TR ID 출력</td>
+                </tr>
+              </tbody>
+            </table>
+          </div><!-- .tb-list-wrap -->
+          <div class="pagination">
+            <a href="#" class="btn btn-first">처음</a>
+            <a href="#" class="btn btn-prev">이전</a>
+            <a href="#" class="on">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#">5</a>
+            <a href="#">6</a>
+            <a href="#">7</a>
+            <a href="#">8</a>
+            <a href="#">9</a>
+            <a href="#">10</a>
+            <a href="#" class="btn btn-next">다음</a>
+            <a href="#" class="btn btn-last">마지막</a>
+          </div>
+        </div><!-- .con-area -->
+      </div><!-- .content-wrap -->
+    </div><!-- #container -->
+
+    <div class="popup-wrap z-anim mfp-hide" id="popup-coupon" data-width="638">
+      <div class="popup-inner">
+        <div class="tit-wrap">
+          <p class="tit">쿠폰 유효기간 연장</p>
+        </div>
+        <div class="con-area">
+          <p class="s-period">현재 유효기간 종료일 : <em class="date">2023-06-09</em></p>
+          <div class="input-box mt10 t-left">
+            <div class="input-wrap">
+              <span class="radio-base mr10">
+                <input type="radio" id="radio-coupon-1" name="radio-coupon" checked />
+                <label for="radio-coupon-1">직접 입력</label>
+              </span>
+              <input type="text" class="input-base" style="width: 157px;" />
+              <span class="unit">일</span>
+              <span class="radio-base ml10">
+                <input type="radio" id="radio-coupon-2" name="radio-coupon" />
+                <label for="radio-coupon-2">날짜 선택</label>
+              </span>
+              <span class="s-datepicker ml10" style="width: 157px;">
+                <input type="text" class="input-base datepicker" />
+              </span>
+            </div>
+          </div>
+          <div class="info-area">
+            <span class="b-info">연장 시 유효기간 종료일 : 2023-10-24</span>
+          </div>
+          <div class="btns-wrap t-center mt24">
+            <span class="btn-base tp2 purple lg b-mfp-close"><a href="#">저장</a></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div><!-- #wrap -->
+  <script>
+    var Qpopup = $.urlParam('popup');
+    if (Qpopup) {
+      setTimeout(function(){
+        if (Qpopup === 'coupon') {
+          $('[href*=#popup-coupon]').click();
+        }
+      }, 250);
+    }
+  </script>
+</body>
+
+</html>
+ 
