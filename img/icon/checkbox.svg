@@ -1,10 +1,9 @@
 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g clip-path="url(#clip0_32_3619)">
-<rect width="20" height="20" fill="white"/>
-<rect x="0.5" y="0.5" width="19" height="19" rx="1.5" stroke="#BAC5D9"/>
+<g id="Off/on=Off, State=Default" clip-path="url(#clip0_84_760)">
+<rect id="Checkbox/Default" x="0.416667" y="0.416667" width="19.1667" height="19.1667" rx="2.58333" fill="white" stroke="#D1D1D1" stroke-width="0.833333"/>
 </g>
 <defs>
-<clipPath id="clip0_32_3619">
+<clipPath id="clip0_84_760">
 <rect width="20" height="20" fill="white"/>
 </clipPath>
 </defs>

@@ -74,6 +74,14 @@ var GUI = window.GUI || (function(){
           $(this).closest('li').removeClass('on');
         }
       });
+      $('.lnb-wrap .btn-arrow').on('click', function(e){
+        e.preventDefault();
+        if (!$('#container').hasClass('ver-collapse')) {
+          $('#container').addClass('ver-collapse')
+        } else {
+          $('#container').removeClass('ver-collapse')
+        }
+      })
 
       if (inputCountUI.length) {
         inputCountUI.each(function(){

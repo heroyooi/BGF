@@ -31,22 +31,31 @@
 			//<![CDATA[
 			b = new dTree('b');
 
-			b.add(0, -1, '스마일기프트 - Admin');
-			b.add(1, 0, '1. 로그인 & 메인 & 회원관리' );
+			b.add(0, -1, 'BGF네트웍스');
+
+			b.add(1, 0, '1. 신규 작업');
 			b.add(1.011, 1, '1-1) 로그인','login.html', '완료', '_blank');
-			b.add(1.012, 1, '1-2) 로그인 - 인증번호','login.html?sample=certify', '완료', '_blank');
+			b.add(1.012, 1, '1-2) 로그인 - 2차 인증','login.html?sample=certify', '완료', '_blank');
 			b.add(1.013, 1, '1-3) 로그인 - 계정 확인','login.html?sample=confirm', '완료', '_blank');
-			b.add(1.014, 1, '1-4) 로그인 - 인증번호 확인','login.html?sample=certify_number', '완료', '_blank');
 			b.add(1.015, 1, '1-5) 로그인 - 비밀번호 재설정/변경','login.html?sample=reset_password', '완료', '_blank');
-			b.add(1.016, 1, '1-6) 로그인 - 유효성 검사','login.html?sample=validation', '완료', '_blank');
-			b.add(1.02, 1, '2) 메인', 'main.html', '완료', '_blank');
-			b.add(1.031, 1, '3-1) 일반회원','member_1_1.html', '완료', '_blank');
-			b.add(1.032, 1, '3-2) 일반회원 - 회원 기본 정보(새창 페이지)','member_1_2.html', '완료', '_blank');
-			b.add(1.033, 1, '3-3) 일반회원 - 캐시 이용 내역(새창 페이지)','member_1_3.html', '완료', '_blank');
-			b.add(1.034, 1, '3-4) 일반회원 - 스마일기프트 이용 내역/사용 중(새창 페이지)','member_1_4.html', '완료', '_blank');
-			b.add(1.035, 1, '3-5) 일반회원 - 회원 메모(새창 페이지)','member_1_5.html', '완료', '_blank');
-			b.add(1.041, 1, '4-1) 탈퇴회원','member_2_1.html', '완료', '_blank');
-			b.add(1.042, 1, '4-2) 탈퇴회원 - 캐시 이용 내역(새창 페이지)','member_2_2.html', '완료', '_blank');
+			b.add(1.016, 1, '1-6) 로그인 - Alert','login.html?sample=reset_password&popup=alert', '완료', '_blank');
+			b.add(1.021, 1, '2) 판매상품 관리','page_1.html', '완료', '_blank');
+
+			// b.add(1, 0, '1. 로그인 & 메인 & 회원관리' );
+			// b.add(1.011, 1, '1-1) 로그인','login.html', '완료', '_blank');
+			// b.add(1.012, 1, '1-2) 로그인 - 인증번호','login.html?sample=certify', '완료', '_blank');
+			// b.add(1.013, 1, '1-3) 로그인 - 계정 확인','login.html?sample=confirm', '완료', '_blank');
+			// b.add(1.014, 1, '1-4) 로그인 - 인증번호 확인','login.html?sample=certify_number', '완료', '_blank');
+			// b.add(1.015, 1, '1-5) 로그인 - 비밀번호 재설정/변경','login.html?sample=reset_password', '완료', '_blank');
+			// b.add(1.016, 1, '1-6) 로그인 - 유효성 검사','login.html?sample=validation', '완료', '_blank');
+			// b.add(1.02, 1, '2) 메인', 'main.html', '완료', '_blank');
+			// b.add(1.031, 1, '3-1) 일반회원','member_1_1.html', '완료', '_blank');
+			// b.add(1.032, 1, '3-2) 일반회원 - 회원 기본 정보(새창 페이지)','member_1_2.html', '완료', '_blank');
+			// b.add(1.033, 1, '3-3) 일반회원 - 캐시 이용 내역(새창 페이지)','member_1_3.html', '완료', '_blank');
+			// b.add(1.034, 1, '3-4) 일반회원 - 스마일기프트 이용 내역/사용 중(새창 페이지)','member_1_4.html', '완료', '_blank');
+			// b.add(1.035, 1, '3-5) 일반회원 - 회원 메모(새창 페이지)','member_1_5.html', '완료', '_blank');
+			// b.add(1.041, 1, '4-1) 탈퇴회원','member_2_1.html', '완료', '_blank');
+			// b.add(1.042, 1, '4-2) 탈퇴회원 - 캐시 이용 내역(새창 페이지)','member_2_2.html', '완료', '_blank');
 
 			b.add(2, 0, '2. 기프트샵 상품 관리' );
 			b.add(2.011, 2, '1-1) 브랜드/카테고리 관리 - 브랜드 관리','product_1_1.html', '완료', '_blank');
@@ -197,14 +206,7 @@
 			b.add(17, 0, '17. 퍼블리싱 수정 내역_0421');
 			b.add(17.01, 17, '1) 기프트샵상품관리 - 판매상품관리', 'product_4_2.html?search=true', '수정', '_blank');
 
-			b.add(18, 0, '18. 신규 작업');
-			b.add(18.011, 18, '1-1) 로그인','login.html', '완료', '_blank');
-			b.add(18.012, 18, '1-2) 로그인 - 인증번호','login.html?sample=certify', '완료', '_blank');
-			b.add(18.013, 18, '1-3) 로그인 - 계정 확인','login.html?sample=confirm', '완료', '_blank');
-			b.add(18.014, 18, '1-4) 로그인 - 인증번호 확인','login.html?sample=certify_number', '완료', '_blank');
-			b.add(18.015, 18, '1-5) 로그인 - 비밀번호 재설정/변경','login.html?sample=reset_password', '완료', '_blank');
-			b.add(18.016, 18, '1-6) 로그인 - 유효성 검사','login.html?sample=validation', '완료', '_blank');
-			b.add(18.0411, 18, '2) 판매상품 관리','product_4_1.html', '완료', '_blank');
+			
 
 			document.write(b);
 			//]]>

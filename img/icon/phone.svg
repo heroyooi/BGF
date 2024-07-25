@@ -1,4 +1,6 @@
-<svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M11.8335 1.52669H5.16683C4.43045 1.52669 3.8335 2.12364 3.8335 2.86002V13.5267C3.8335 14.2631 4.43045 14.86 5.16683 14.86H11.8335C12.5699 14.86 13.1668 14.2631 13.1668 13.5267V2.86002C13.1668 2.12364 12.5699 1.52669 11.8335 1.52669Z" stroke="#25282B" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M8.5 12.1934H8.50667" stroke="#0E0F0E" stroke-linecap="round" stroke-linejoin="round"/>
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="24/phone">
+<path id="Vector" d="M17 2.00006H7C5.89543 2.00006 5 2.89549 5 4.00006V20.0001C5 21.1046 5.89543 22.0001 7 22.0001H17C18.1046 22.0001 19 21.1046 19 20.0001V4.00006C19 2.89549 18.1046 2.00006 17 2.00006Z" fill="#BEC0C4"/>
+<path id="Line 321" d="M9 17.5H15" stroke="white" stroke-linecap="round"/>
+</g>
 </svg>

@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SmileGift- Admin</title>
+  <title>BGF 네트웍스</title>
   <link rel="stylesheet" href="css/common.css">
   <script src="js/jquery.min.js"></script>
   <script src="js/jquery-ui.js"></script>
@@ -19,7 +19,7 @@
       <div class="form_area">
         <div class="form_inner">
           <div class="general_area">
-            <h1 class="en">ADMIN</h1>
+            <h1 ><img src="img/common/logo.png" alt=""></h1>
             <ul class="form_list">
               <li class="user_id">
                 <input type="text" class="input-base" placeholder="아이디" />
@@ -47,21 +47,19 @@
               <li>인증번호는 <strong>3분 동안</strong> 유효 합니다.</li>
             </ul>
             <ul class="form_list">
-              <li class="user_pw">
+              <li class="user_cert">
                 <input type="number" class="input-base" placeholder="인증번호" />
               </li>
               <li class="item">
                 <span class="time">02:09</span>
                 <span class="btn-base tp2"><a href="#">인증번호 다시 받기</a></span>
               </li>
-              <li>
-                <span class="btn-base tp1"><a href="#">확인</a></span>
-              </li>
             </ul>
+            <span class="btn-base tp1 mt18"><a href="#">확인</a></span>
           </div><!-- .certify_area -->
 
           <div class="confirm_area" style="display: none;">
-            <h1>계정 확인</h1>
+            <h2>계정 확인</h2>
             <ul class="form_list">
               <li class="user_id">
                 <input type="text" class="input-base" placeholder="아이디" />
@@ -100,37 +98,37 @@
             <ul class="form_list">
               <li class="user_pw">
                 <input type="password" class="input-base" placeholder="비밀번호" />
-                <ul class="info-valid">
+                <!-- <ul class="info-valid">
                   <li>√영문</li>
                   <li>√숫자</li>
                   <li>√특수문자</li>
                   <li>√11-20자리</li>
-                </ul>
+                </ul> -->
               </li>
-              <li class="user_pw">
+              <li class="user_pw_check">
                 <input type="password" class="input-base" placeholder="비밀번호 확인" />
-                <ul class="info-valid">
+                <!-- <ul class="info-valid">
                   <li>√영문</li>
                   <li>√숫자</li>
                   <li>√특수문자</li>
                   <li>√11-20자리</li>
-                </ul>
+                </ul> -->
                 <span class="info error">비밀번호가 일치하지 않습니다.</span>
               </li>
               <li>
-                <span class="btn-base tp1"><a href="#">비밀 번호 변경</a></span>
+                <span class="btn-base tp1 btn-popup-anim-1"><a href="#popup-alert">비밀 번호 변경</a></span>
               </li>
               <li>
                 <span class="btn-base tp1 reverse"><a href="#">취소</a></span>
               </li>
             </ul>
             <div class="info-box">
-              <p class="tit">※ 비밀번호 설정 조건</p>
+              <p class="tit">비밀번호 설정 조건</p>
               <ul>
-                <li>- 11자리 이상, 20자 이하</li>
-                <li>- 영문, 특수문자, 숫자 3가지 조합</li>
-                <li>- 3자 이상 연속되거나 중복되는 문자, 숫자 설정 불가</li>
-                <li>- 이전 비밀번호와 동일한 비밀번호 설정 불가</li>
+                <li>11자리 이상, 20자 이하</li>
+                <li>영문, 특수문자, 숫자 3가지 조합</li>
+                <li>3자 이상 연속되거나 중복되는 문자, 숫자 설정 불가</li>
+                <li>이전 비밀번호와 동일한 비밀번호 설정 불가</li>
               </ul>
             </div>
           </div><!-- .reset_password_area -->
@@ -139,21 +137,34 @@
     </div><!-- .login-area -->
   </div><!-- .login-wrap -->
 
+  <div class="popup-wrap z-anim mfp-hide popup-alert" id="popup-alert" data-width="410">
+    <div class="popup-inner">
+      <div class="con-area">
+        <p class="msg">비밀번호가 재설정(변경) 완료 되었습니다.</p>
+        <div class="btns-wrap t-center mt24">
+          <span class="btn-base tp2 green lg b-mfp-close"><a href="#">확인</a></span>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <script>
-    var query = $.urlParam('sample');
-	  if (query === 'certify') {
+    var Qsample = $.urlParam('sample');
+    var Qpopup = $.urlParam('popup');
+
+	  if (Qsample === 'certify') {
       $('.general_area').hide();
       $('.certify_area').show();
-    } else if (query === 'confirm') {
+    } else if (Qsample === 'confirm') {
       $('.general_area').hide();
       $('.confirm_area').show();
-    } else if (query === 'certify_number') {
+    } else if (Qsample === 'certify_number') {
       $('.general_area').hide();
       $('.certify_number_area').show();
-    } else if (query === 'reset_password' || query === 'validation') {
-      $('.general_area, .bg_area').hide();
+    } else if (Qsample === 'reset_password' || Qsample === 'validation') {
+      $('.general_area').hide();
       $('.reset_password_area').show();
-      if (query === 'validation') {
+      if (Qsample === 'validation') {
         $('.reset_password_area .form_list > li.user_pw .input-base').each(function(index){
           if (index == 0) {
             $(this).val('qwert');
@@ -169,6 +180,14 @@
           }
         });
       }
+    }
+    if (Qpopup) {
+      setTimeout(function(){
+        // if (Qpopup.indexOf('alert') != -1) {
+        //   $.magnificPopup.open(getOptions('#popup-' + Qpopup));
+        // }
+        $('[href*=#popup-alert]').click();
+      }, 250);
     }
   </script>
 </body>
