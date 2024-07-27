@@ -382,6 +382,15 @@ var GUI = window.GUI || (function(){
         callback(allChecked);
       });
     },
+    openSpinner: function(dimm){
+      if (dimm) {
+        $('.c-dimm').stop().fadeIn(200);
+      }
+      $('.c-spinner').stop().fadeIn(200);
+    },
+    closeSpinner: function(){
+      $('.c-dimm, .c-spinner').stop().fadeOut(200);
+    },
   }
 }());
 

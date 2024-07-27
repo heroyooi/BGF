@@ -146,11 +146,11 @@
               </colgroup>
               <tbody>
                 <tr>
-                  <th scope="row">사용가능금액</th>
+                  <th scope="row">발행 금액 관리</th>
                   <td>
                     <div class="input-wrap input-btn" style="max-width: 450px;">
                       <input type="text" class="input-base" value="7,000,000" disabled />
-                      <span class="btn-base tp3"><a href="#">발행금액관리</a></span>
+                      <span class="btn-base tp3 btn-popup-anim-1"><a href="#popup-manage-amount">발행금액관리</a></span>
                     </div>
                   </td>
                 </tr>
@@ -166,14 +166,14 @@
           <table id="table_8" class="table classic mt15">
             <thead>
               <tr>
-                <th width="50px">No.</th>
-                <th>판매처</th>
-                <th>판매지사</th>
-                <th>수신자번호</th>
-                <th>쿠폰번호</th>
-                <th>발행금액</th>
-                <th>이미지</th>
-                <th>발행일</th>
+                <th width="50px"><span>No.</span></th>
+                <th><span>판매처</span></th>
+                <th><span>판매지사</span></th>
+                <th><span>수신자번호</span></th>
+                <th><span>쿠폰번호</span></th>
+                <th><span>발행금액</span></th>
+                <th><span>이미지</span></th>
+                <th><span>발행일</span></th>
               </tr>
             </thead>
             <tbody></tbody>
@@ -207,16 +207,70 @@
             <a href="#" class="btn btn-next">다음</a>
             <a href="#" class="btn btn-last">마지막</a>
           </div>
+
+          <div class="info-box lg">
+            <p class="tit">상품 대량 등록 유의사항</p>
+            <ul>
+              <li>상품등록양식 다운로드 후 내용 기재 > 상품정보 업로드 > 등록 버튼 클릭하면 등록 완료 됩니다.</li>
+              <li>상품등록양식 내 상품구분 필드 정보 : 시스템관리 > 공통코드관리 > 상품구분 하위 코드명 기재</li>
+              <li>상품등록양식 내 상품군 필드 정보 : 시스템관리 > 공통코드관리 > GOOD-ZONE 하위 코드명 기재</li>
+            </ul>
+          </div>
         </div><!-- .con-area -->
       </div><!-- .content-wrap -->
     </div><!-- #container -->
+
+    <div class="popup-wrap z-anim mfp-hide" id="popup-manage-amount" data-width="611">
+      <div class="popup-inner">
+        <div class="tit-wrap">
+          <p class="tit">발행 금액 관리</p>
+        </div>
+        <div class="con-area">
+          <div class="tb-input-wrap">
+            <table class="tb-input">
+              <colgroup>
+                <col width="150" />
+                <col width="*" />
+              </colgroup>
+              <tbody>
+                <tr>
+                  <th scope="row">사용구분</th>
+                  <td>
+                    <span class="select-base">
+                      <span class="value"></span>
+                      <select>
+                        <option value="0" selected>선택</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                      </select>
+                    </span>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="btns-wrap t-center mt15">
+            <span class="btn-base tp2 lg green"><a href="#">저장</a></span>
+          </div>
+        </div>
+      </div>
+    </div><!-- .popup-wrap -->
+
+    <div class="popup-wrap z-anim mfp-hide popup-confirm" id="popup-confirm" data-width="410">
+      <div class="popup-inner">
+        <div class="con-area">
+          <p class="msg">저장 하시겠습니까?</p>
+          <div class="btns-wrap t-center mt24">
+            <span class="btn-base tp2 lg b-mfp-close"><a href="#">취소</a></span>
+            <span class="btn-base tp2 green  lg b-mfp-close"><a href="#">확인</a></span>
+          </div>
+        </div>
+      </div>
+    </div><!-- .popup-confirm -->
   </div><!-- #wrap -->
 
   <script>
-    // $('#btnChangePopup').on('click', function(e){
-    //   e.preventDefault();
-    //   $.magnificPopup.open(getOptions('#popup-change-dinfo'));
-    // });
     jui.ready(['grid.table'], function (table) {
       table_8 = table('#table_8', {
         fields: [null, 'no', 'vendor', 'branch', 'recipient', 'coupon', 'amount', 'image', 'date'],
@@ -245,6 +299,17 @@
         },
       });
     });
+
+    var Qpopup = $.urlParam('popup');
+    if (Qpopup) {
+      setTimeout(function(){
+        if (Qpopup === 'manageAmount') {
+          $.magnificPopup.open(getOptions('#popup-manage-amount'));
+        } else if (Qpopup === 'confirm') {
+          $.magnificPopup.open(getOptions('#popup-confirm'));
+        }
+      }, 250);
+    }
   </script>
 </body>
 

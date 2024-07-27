@@ -16,7 +16,6 @@
     .component .section h3 button{display:inline-block;background-color:#333;color:#fff;padding:5px;border-radius:3px;font-size:12px;}
     .component .code-area{padding:20px;margin-top:10px;border:1px solid #ddd;border-radius:3px;box-shadow:0px 4px 15px 0px rgba(0, 0, 0, 0.10);background-color:#fff;}
     .component h2 + .code-area{margin-top:15px;}
-    .component .lnb-wrap .lnb li dt{padding-left:0;}
     .component .lnb li dt::after{display:none;}
     .component .tab-base ul li.on{border-bottom:1px solid #fff;}
   </style>
@@ -26,102 +25,7 @@
     <div id="container" class="component">
       <div class="lnb-wrap c-scrollbar">
         <h2><a href="#"></a></h2>
-        <ul class="lnb">
-        <!-- <ul class="lnb" data-dp1="1" data-dp2="1"> -->
-          <li class="li1">
-            <dl>
-              <dt><span>기업관리</span></dt>
-              <dd>
-                <ul>
-                  <li><a href="#">공급사관리</a></li>
-                  <li><a href="#">판매처관리</a></li>
-                  <li><a href="#">판매지사관리</a></li>
-                  <li><a href="#">가맹점관리</a></li>
-                </ul>
-              </dd>
-            </dl>
-          </li>
-          <li class="li2">
-            <dl>
-              <dt><span>상품관리</span></dt>
-              <dd>
-                <ul>
-                  <li><a href="#">서브 메뉴</a></li>
-                </ul>
-              </dd>
-            </dl>
-          </li>
-          <li class="li3">
-            <dl>
-              <dt><span>상품권관리</span></dt>
-              <dd>
-                <ul>
-                  <li><a href="#">서브 메뉴</a></li>
-                </ul>
-              </dd>
-            </dl>
-          </li>
-          <li class="li4">
-            <dl>
-              <dt><span>발송관리</span></dt>
-              <dd>
-                <ul>
-                  <li><a href="#">서브 메뉴</a></li>
-                </ul>
-              </dd>
-            </dl>
-          </li>
-          <li class="li5">
-            <dl>
-              <dt><span>상품권조회(CS)</span></dt>
-              <dd>
-                <ul>
-                  <li><a href="#">서브 메뉴</a></li>
-                </ul>
-              </dd>
-            </dl>
-          </li>
-          <li class="li6">
-            <dl>
-              <dt><span>정산관리</span></dt>
-              <dd>
-                <ul>
-                  <li><a href="#">서브 메뉴</a></li>
-                </ul>
-              </dd>
-            </dl>
-          </li>
-          <li class="li7">
-            <dl>
-              <dt><span>통계</span></dt>
-              <dd>
-                <ul>
-                  <li><a href="#">서브 메뉴</a></li>
-                </ul>
-              </dd>
-            </dl>
-          </li>
-          <li class="li8">
-            <dl>
-              <dt><span>시스템관리</span></dt>
-              <dd>
-                <ul>
-                  <li><a href="#">서브 메뉴</a></li>
-                </ul>
-              </dd>
-            </dl>
-          </li>
-          <li class="li9">
-            <dl>
-              <dt><span>로그관리</span></dt>
-              <dd>
-                <ul>
-                  <li><a href="#">서브 메뉴</a></li>
-                </ul>
-              </dd>
-            </dl>
-          </li>
-        </ul>
+        <ul class="lnb"></ul>
         <a href="#" class="btn-arrow"></a>
       </div><!-- .lnb-wrap -->
       <div class="content-wrap c-scrollbar">
@@ -158,54 +62,39 @@
                   </div>
 
                   <div class="code-area">
-                    <h3>타입2 - 인증번호 버튼 <button>코드 보기</button></h3>
-<div class="code-box"><span class="btn-base tp2"><a href="#">인증번호 다시 받기</a></span></div>
+                    <h3>타입1 - Reverse - 취소 버튼 <button>코드 보기</button></h3>
+<div class="code-box"><span class="btn-base tp1 reverse"><a href="#">취소</a></span></div>
 <pre class="language-html"></pre>
                   </div>
-          
+
                   <div class="code-area">
-                    <h3>타입2 Large - 우측 정렬 + 버튼 그룹 <button>코드 보기</button></h3>
-<div class="code-box"><div class="btns-wrap t-right">
-  <span class="btn-base tp2 lg"><a href="#">취소</a></span>
-  <span class="btn-base tp2 purple lg"><a href="#">저장</a></span>
+                    <h3>타입2 <button>코드 보기</button></h3>
+<div class="code-box"><span class="btn-base tp2 green lg"><a href="#">확인</a></span></div>
+<pre class="language-html"></pre>
+                  </div>
+
+                  <div class="code-area">
+                    <h3>타입2 - 검색 버튼 <button>코드 보기</button></h3>
+<div class="code-box"><span class="btn-base tp2 lg green"><a href="#"><em class="search">검색</em></a></span></div>
+<pre class="language-html"></pre>
+                  </div>
+
+                  <div class="code-area">
+                    <h3>타입2 - 버튼 그룹 <button>코드 보기</button></h3>
+<div class="code-box"><div class="btns-wrap">
+  <span class="btn-base tp2 lg"><a href="#">엑셀 다운</a></span>
+  <span class="btn-base tp2 green lg"><a href="#">신규 등록</a></span>
 </div></div>
 <pre class="language-html"></pre>
                   </div>
 
                   <div class="code-area">
-                    <h3>타입2 Small <button>코드 보기</button></h3>
-<div class="code-box"><span class="btn-base tp2 purple sm"><a href="#">검색</a></span></div>
+                    <h3>타입3 <button>코드 보기</button></h3>
+<div class="code-box"><span class="btn-base tp3" id="btnChangePopup"><a href="#">전시정보 일괄 변경</a></span></div>
 <pre class="language-html"></pre>
                   </div>
 
                   
-
-                  <div class="code-area">
-                    <h3>타입3 - 가운데 정렬 + 버튼 그룹 <button>코드 보기</button></h3>
-<div class="code-box"><div class="btns-wrap t-center">
-  <span class="btn-base tp3"><a href="#">수정</a></span>
-  <span class="btn-base tp3 orange"><a href="#">삭제</a></span>
-</div></div>
-<pre class="language-html"></pre>
-                  </div>
-
-                  <div class="code-area">
-                    <h3>타입4 <button>코드 보기</button></h3>
-<div class="code-box"><span class="btn-base tp4"><a href="#">중복 확인</a></span></div>
-<pre class="language-html"></pre>
-                  </div>
-
-                  <div class="code-area">
-                    <h3>타입5 <button>코드 보기</button></h3>
-<div class="code-box"><span class="btn-base tp5"><a href="#">상품정보 일괄 변경</a></span></div>
-<pre class="language-html"></pre>
-                  </div>
-
-                  <div class="code-area">
-                    <h3>타입6 <button>코드 보기</button></h3>
-<div class="code-box"><span class="btn-base tp6"><a href="#">상품 검색</a></span></div>
-<pre class="language-html"></pre>
-                  </div>
 
                   <div class="code-area">
                     <h3>휴대 번호 버튼 <button>코드 보기</button></h3>
@@ -373,15 +262,6 @@ $("#datepicker").datepicker({
                   </div>
 
                   <div class="code-area">
-                    <h3>검색 인풋 + 버튼 <button>코드 보기</button></h3>
-<div class="code-box"><div class="input-wrap input-search" style="width: 626px;">
-  <input type="text" class="input-base" />
-  <span class="btn-base tp2 purple sm"><a href="#">검색</a></span>
-</div></div>
-<pre class="language-html"></pre>
-                  </div>
-
-                  <div class="code-area">
                     <h3>인풋 - 카운트 <button>코드 보기</button></h3>
 <div class="code-box"><div class="input-wrap w-count">
   <input type="text" class="input-base" />
@@ -527,66 +407,70 @@ $('#radio-cbtn-2').on('change', function(){
 
                 <div class="section">
                   <h2>이미지 등록</h2>
+                  
                   <div class="code-area">
                     <h3>타입1 <button>코드 보기</button></h3>
-<div class="code-box code-fileType1"><div class="input-wrapper">
-  <div class="input-wrap input-btn input-file" style="width: 475px;">
-    <input type="text" class="input-base" placeholder="사이즈 500 *500 권장" readonly />
-    <input type="file" accept="image/*" />
-    <span class="btn-base tp2"><a href="#"><em class="upload">이미지 등록</em></a></span>
+<div class="code-box code-fileType1"><div class="input-wrapper" style="max-width: 520px;">
+  <div class="input-wrap input-btn input-file">
+    <input type="text" class="input-base" readonly>
+    <input type="file" accept="image/*">
+    <a href="#" class="btn-delete"></a>
+    <span class="btn-base tp2"><a href="#"><em class="upload">파일 등록</em></a></span>
   </div>
-  <span class="file-info">※ jpg, png, jpeg</span>
-</div>
-<div class="preview-area">
-  <span class="tit">[아이콘 이미지 미리 보기]</span>
-  <div class="thumb"><span class="txt">아이콘 <br />썸넬</span></div>
 </div>
 <script src="js/load-image.all.min.js"></script></div>
 <script>$('.code-fileType1 .input-file').find('input[type="file"]').on('change', function(e){
   var $input = $(this).closest('.input-file').find('.input-base');
-  var $thumb = $(this).closest('.input-wrapper').next('.preview-area').find('.thumb');
+  var $del = $(this).closest('.input-file').find('.btn-delete');
   var fileValue = this.value.split('\\');  
   $input.val(fileValue[fileValue.length-1]);
 
   loadImage(
     e.target.files[0],
     function (img) {
-      $thumb.css('background-image', 'url(' + img.toDataURL() + ')');
-      $thumb.find('.txt').hide();
+      // $thumb.css('background-image', 'url(' + img.toDataURL() + ')');
+      // $thumb.find('.txt').hide();')
+      $del.addClass('on');
     },
     {
       canvas: true,
-      crop: true,
+      crop: false, // 전체 수정
+      // crop: true,
       downsamplingRatio: 0.5,
-      maxWidth: 79,
-      maxHeight: 76,
+      maxWidth: 320,
+      maxHeight: 170,
       orientation: true
     }
   );
-});</script>
+});
+$('.input-wrap.input-file .btn-delete').on('click', function(){
+  $(this).removeClass('on');
+  $(this).closest('.input-file').find('.input-base').val('');
+})</script>
 <pre class="language-html"></pre>
 <pre class="language-javascript"></pre>
                   </div>
 
                   <div class="code-area">
                     <h3>타입2 <button>코드 보기</button></h3>
-<div class="code-box code-fileType2"><div class="input-wrapper">
+<div class="code-box code-fileType2"><div class="input-wrapper flex">
   <div class="input-wrap input-btn input-file" style="width: 475px;">
-    <input type="text" class="input-base" placeholder="사이즈 500 *500 권장" readonly />
-    <input type="file" accept="image/*" />
-    <span class="btn-base tp2"><a href="#"><em class="upload">이미지 등록</em></a></span>
+    <div class="thumb"></div>
+    <input type="text" class="input-base" readonly placeholder="선택된 파일 없음">
+    <input type="file" accept="image/*">
+    <a href="#" class="btn-delete"></a>
+    <span class="btn-base tp2"><a href="#"><em class="upload">파일 등록</em></a></span>
   </div>
-  <span class="file-info">※ jpg, png, jpeg</span>
-</div>
-
-<div class="preview-area tp2 mt25">
-  <span class="tit">브랜드 아이콘 미리 보기</span>
-  <div class="thumb"><span class="txt">이미지 출력</span></div>
+  <div class="input-addon">
+    <span class="btn-base tp3"><a href="#">미리보기</a></span>
+    <span class="s-info">(jpg만 가능, 크기는 가로 500 * 세로 500)</span>
+  </div>
 </div>
 <script src="js/load-image.all.min.js"></script></div>
 <script>$('.code-fileType2 .input-file').find('input[type="file"]').on('change', function(e){
   var $input = $(this).closest('.input-file').find('.input-base');
-  var $thumb = $('.code-fileType2 .preview-area').find('.thumb');
+  var $del = $(this).closest('.input-file').find('.btn-delete');
+  var $thumb = $(this).closest('.input-file').find('.thumb');
   var fileValue = this.value.split('\\');  
   $input.val(fileValue[fileValue.length-1]);
 
@@ -594,17 +478,24 @@ $('#radio-cbtn-2').on('change', function(){
     e.target.files[0],
     function (img) {
       $thumb.css('background-image', 'url(' + img.toDataURL() + ')');
-      $thumb.find('.txt').hide();          
+      $del.addClass('on');
     },
     {
       canvas: true,
-      crop: true,
+      crop: false, // 전체 수정
+      // crop: true,
       downsamplingRatio: 0.5,
-      maxWidth: 500,
-      maxHeight: 58,
+      maxWidth: 32,
+      maxHeight: 32,
       orientation: true
     }
   );
+});
+
+$('.code-fileType2 .input-wrap.input-file .btn-delete').on('click', function(){
+  $(this).removeClass('on');
+  $(this).closest('.input-file').find('.input-base').val('');
+  $(this).closest('.input-file').find('.thumb').attr('style', null);
 });</script>
 <pre class="language-html"></pre>
 <pre class="language-javascript"></pre>
@@ -970,7 +861,7 @@ $('.file-list').on('change', 'li input[type="file"]', function(e){
                   <div class="code-area">
                     <h3>버튼 + 페이지네이션 <button>코드 보기</button></h3>
 <div class="code-box"><div class="btns-wrap w-pagination">
-  <span class="btn-base tp2 lg purple"><a href="#">순서 저장</a></span>
+  <span class="btn-base tp2 lg green"><a href="#">순서 저장</a></span>
   <div class="pagination">
     <a href="#" class="btn btn-first">처음</a>
     <a href="#" class="btn btn-prev">이전</a>
@@ -1015,6 +906,21 @@ $('.file-list').on('change', 'li input[type="file"]', function(e){
                   <h2>기타</h2>
 
                   <div class="code-area">
+                    <h3>스피너 <button>코드 보기</button></h3>
+<div class="code-box"><span class="btn-base tp3"><a href="javascript:;" onclick="callSpinner();">스피너 호출</a></span>
+<div class="c-dimm"></div>
+<div class="c-spinner"><img src="img/common/spinner.gif" alt=""></div></div>
+<script>function callSpinner() {
+  GUI.openSpinner(true);
+  setTimeout(function(){
+    GUI.closeSpinner();
+  }, 3000);
+}</script>
+<pre class="language-html"></pre>
+<pre class="language-javascript"></pre>
+                  </div>
+
+                  <div class="code-area">
                     <h3>라벨 - 테이블 내부 <button>코드 보기</button></h3>
 <div class="code-box"><span class="s-label tp1">환불 접수</span>
 <span class="s-label tp2">환불 불가</span></div>
@@ -1033,11 +939,15 @@ $('.file-list').on('change', 'li input[type="file"]', function(e){
   </div><!-- #wrap -->
 
   <script>
-    $('.lnb > li').attr('class', null);
     $('.section h2').each(function(index, value){
-      $('.lnb > li:eq(' + index + ') dt').html("<span>" + $(this).text() + "</span>");
+      $('.lnb').append(`
+        <li class="li${index + 1}">
+          <dl>
+            <dt><span>${$(this).text()}</span></dt>
+          </dl>
+        </li>
+      `)
     });
-    $('.lnb > li dd').remove();
     $('.lnb > li:eq(' + ($('.section h2').length - 1) + ') ~ li').remove();
 
     var componentOffset = [];

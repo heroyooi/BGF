@@ -45,6 +45,11 @@
 .info-box li::before{content:'';display:inline-block;width:3px;height:3px;background-color:#3F4A53;position: absolute;left:0;top:6px;}
 .info-box li:first-of-type{margin-top:0;}
 
+.info-box.lg{padding:20px 30px;margin-top:25px;}
+.info-box.lg .tit{font-size:15px;font-weight:700;}
+.info-box.lg ul{margin-top:14px;padding-left:15px;}
+.info-box.lg li{font-size:14px;line-height:16px;margin-top:8px;}
+
 /* main */
 .res-list{display:flex;gap:25px;flex-wrap:wrap;}
 .res-list > li{padding:20px 30px;background-color:#fff;border-radius:6px;box-shadow: 0px 6px 10px 0px #EAE7F6;}
