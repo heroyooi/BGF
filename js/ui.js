@@ -85,7 +85,19 @@ var GUI = window.GUI || (function(){
         } else {
           $('#container').removeClass('ver-collapse')
         }
-      })
+      });
+
+      $('.btn-toggle').on('click', function(e){
+        e.preventDefault();
+        if ($(this).hasClass('disabled')) {
+          return;
+        }
+        if (!$(this).hasClass('on')) {
+          $(this).addClass('on');
+        } else {
+          $(this).removeClass('on');
+        }
+      });
 
       if (inputCountUI.length) {
         inputCountUI.each(function(){

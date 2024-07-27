@@ -26,6 +26,7 @@
 .login-area .form_list > li .info.no-icon:before{display:none;}
 .login-area .form_list > li .info.error{color:#EC1A1A;}
 .login-area .form_list > li .info.error:before{background:url(../img/icon/error.svg) 0 0 no-repeat;background-size:auto 13px;}
+.login-area .form_list > li .s-tip{margin-top:4px;margin-left:15px;}
 
 .info-valid{font-size:0;margin-top:8px;}
 .info-valid li{display:inline-block;font-size:13px;font-weight:500;line-height:18px;color:#3f4a53;margin-right:6px;}
