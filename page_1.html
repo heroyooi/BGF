@@ -7,12 +7,12 @@
   <title>BGF 네트웍스</title>
   <link rel="stylesheet" href="css/common.css">
   <script src="js/jquery.min.js"></script>
-    <script src="js/jquery-ui.js"></script>
-    <script src="js/jui-core.js"></script>
-    <script src="js/jui-grid.js"></script>
-    <script src="js/jquery.magnific-popup.min.js"></script>
-    <script src="js/aos.js"></script>
-    <script src="js/ui.js"></script>
+  <script src="js/jquery-ui.js"></script>
+  <script src="js/jui-core.js"></script>
+  <script src="js/jui-grid.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/ui.js"></script>
 </head>
 <body class="c-scrollbar jui" id="j-custom">
   <div id="wrap">
@@ -123,32 +123,29 @@
           <h3>공급사 관리</h3>
           <div class="item-wrap">
             <a href="#" class="mem"><strong>이영희</strong> 님</a>
+            <div class="utils-tip">
+              <ul>
+                <li><a href="#">로그아웃</a></li>
+                <li><a href="#">비밀번호 변경</a></li>
+              </ul>
+            </div>
           </div>
         </div><!-- .tit-area -->
         <div class="con-area">
           <div class="tb-input-wrap">
             <table class="tb-input">
               <colgroup>
-                <col width="15%" />
-                <col width="35%" />
-                <col width="15%" />
+                <col width="12%" />
+                <col width="38%" />
+                <col width="12%" />
                 <col width="*" />
               </colgroup>
               <tbody>
                 <tr>
                   <th scope="row">전시 일자</th>
-                  <td colspan="3">
+                  <td>
                     <div class="input-wrap fix-width">
-                      <span class="select-base ml6" style="width: 150px;">
-                        <span class="value"></span>
-                        <select>
-                          <option value="0" selected>시작일</option>
-                          <option value="1">1일</option>
-                          <option value="2">2일</option>
-                          <option value="3">3일</option>
-                        </select>
-                      </span>
-                      <span class="s-datepicker ml10">
+                      <span class="s-datepicker">
                         <input type="text" class="input-base datepicker" />
                       </span>
                       <span class="bridge">~</span>
@@ -156,151 +153,119 @@
                         <input type="text" class="input-base datepicker" />
                       </span>
                       <div class="btns-wrap ml10">
-                        <span class="btn-base tp3 yymd"><a href="#">7일</a></span>
-                        <span class="btn-base tp3 yymd"><a href="#">15일</a></span>
-                        <span class="btn-base tp3 yymd"><a href="#">1개월</a></span>
-                        <span class="btn-base tp3 yymd"><a href="#">6개월</a></span>
-                        <span class="btn-base tp3 yymd"><a href="#">1년</a></span>
+                        <span class="btn-base tp3"><a href="#">7일</a></span>
+                        <span class="btn-base tp3"><a href="#">15일</a></span>
+                        <span class="btn-base tp3"><a href="#">1개월</a></span>
                       </div>
+                    </div>
+                  </td>
+                  <th scope="row">만료일</th>
+                  <td>
+                    <span class="s-datepicker">
+                      <input type="text" class="input-base datepicker" />
+                    </span>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">판매지사</th>
+                  <td>
+                    <div class="input-wrap input-btn" style="max-width: 446px;">
+                      <input type="text" class="input-base">
+                      <span class="btn-base tp3"><a href="#">선택</a></span>
+                    </div>
+                  </td>
+                  <th scope="row">상품공급사</th>
+                  <td>
+                    <div class="input-wrap input-btn" style="max-width: 446px;">
+                      <input type="text" class="input-base">
+                      <span class="btn-base tp3"><a href="#">선택</a></span>
                     </div>
                   </td>
                 </tr>
                 <tr>
-                  <th scope="row">판매 상품명</th>
+                  <th scope="row">검색어</th>
                   <td>
-                    <input type="text" class="input-base" />
-                  </td>
-                  <th scope="row">브랜드명</th>
-                  <td>
-                    <input type="text" class="input-base" />
-                  </td>
-                </tr>
-                <tr>
-                  <th scope="row">상품 코드</th>
-                  <td colspan="3">
-                    <div class="f-row y-center">
-                      <div class="f-col" style="width: 103px;">
-                        <ul class="radio-list vertical">
-                          <li>
-                            <span class="radio-base">
-                              <input type="radio" id="radio-code-1" name="radio-code" checked />
-                              <label for="radio-code-1">판매상품코드</label>
-                            </span>
-                          </li>
-                          <li>
-                            <span class="radio-base">
-                              <input type="radio" id="radio-code-2" name="radio-code" />
-                              <label for="radio-code-2">연동상품 ID <br />(스마일콘)</label>
-                            </span>
-                          </li>
-                        </ul>
-                      </div>
-                      <div class="f-col">
-                        <textarea class="textarea-base" placeholder="복수 검색 (ENTER 또는 , 로 구분) / 최대 100개까지 검색 가능" style="height: 91px;"></textarea>
-                      </div>
+                    <div class="input-wrap select-input">
+                      <span class="select-base">
+                        <span class="value"></span>
+                        <select>
+                          <option value="0" selected>선택</option>
+                          <option value="1">Value 1</option>
+                          <option value="2">Value 2</option>
+                          <option value="3">Value 3</option>
+                        </select>
+                      </span>
+                      <input type="text" class="input-base">
                     </div>
                   </td>
-                </tr>
-                <tr>
-                  <th scope="row">카테고리</th>
+                  <th scope="row">쿠폰상태</th>
                   <td>
-                    <span class="select-base">
+                    <span class="select-base" style="max-width: 350px;">
                       <span class="value"></span>
                       <select>
-                        <option value="0" selected>전체</option>
+                        <option value="0" selected>선택</option>
                         <option value="1">Value 1</option>
                         <option value="2">Value 2</option>
                         <option value="3">Value 3</option>
                       </select>
                     </span>
                   </td>
-                  <th scope="row">상품 타입</th>
-                  <td>
+                </tr>
+                <tr>
+                  <th scope="row">복수검색</th>
+                  <td colspan="3">
                     <ul class="radio-list">
                       <li>
                         <span class="radio-base">
-                          <input type="radio" id="radio-ptype-1" name="radio-ptype" checked />
-                          <label for="radio-ptype-1">전체</label>
+                          <input type="radio" id="radio-code-1" name="radio-code" checked />
+                          <label for="radio-code-1">쿠폰번호</label>
                         </span>
                       </li>
                       <li>
                         <span class="radio-base">
-                          <input type="radio" id="radio-ptype-2" name="radio-ptype" />
-                          <label for="radio-ptype-2">BARCODE: 기본상품</label>
+                          <input type="radio" id="radio-code-2" name="radio-code" />
+                          <label for="radio-code-2">TR_ID</label>
                         </span>
                       </li>
                       <li>
                         <span class="radio-base">
-                          <input type="radio" id="radio-ptype-3" name="radio-ptype" />
-                          <label for="radio-ptype-3">AMOUNT: 잔액관리권</label>
+                          <input type="radio" id="radio-code-3" name="radio-code" />
+                          <label for="radio-code-3">수신자번호</label>
+                        </span>
+                      </li>
+                      <li>
+                        <span class="radio-base">
+                          <input type="radio" id="radio-code-4" name="radio-code" />
+                          <label for="radio-code-4">상품코드</label>
                         </span>
                       </li>
                     </ul>
+                    <textarea class="textarea-base mt6" placeholder="복수 검색 (ENTER 또는 , 로 구분) / 최대 100개까지 검색 가능"></textarea>
                   </td>
                 </tr>
                 <tr>
-                  <th scope="row">전시 여부</th>
-                  <td>
-                    <ul class="radio-list">
-                      <li>
-                        <span class="radio-base">
-                          <input type="radio" id="radio-pdisplay-1" name="radio-pdisplay" checked />
-                          <label for="radio-pdisplay-1">전체</label>
-                        </span>
-                      </li>
-                      <li>
-                        <span class="radio-base">
-                          <input type="radio" id="radio-pdisplay-2" name="radio-pdisplay" />
-                          <label for="radio-pdisplay-2">비전시</label>
-                        </span>
-                      </li>
-                      <li>
-                        <span class="radio-base">
-                          <input type="radio" id="radio-pdisplay-3" name="radio-pdisplay" />
-                          <label for="radio-pdisplay-3">전시</label>
-                        </span>
-                      </li>
-                    </ul>
-                  </td>
-                  <th scope="row">판매 상태</th>
-                  <td>
-                    <ul class="chk-list horizon">
-                      <li>
-                        <span class="chk-base">
-                          <input type="checkbox" id="chk-pstate-1" checked />
-                          <label for="chk-pstate-1">판매중</label>
-                        </span>
-                      </li>
-                      <li>
-                        <span class="chk-base">
-                          <input type="checkbox" id="chk-pstate-2" />
-                          <label for="chk-pstate-2">품절</label>
-                        </span>
-                      </li>
-                      <li>
-                        <span class="chk-base">
-                          <input type="checkbox" id="chk-pstate-3" />
-                          <label for="chk-pstate-3">판매 종료</label>
-                        </span>
-                      </li>
-                      <li>
-                        <span class="chk-base">
-                          <input type="checkbox" id="chk-pstate-4" />
-                          <label for="chk-pstate-4">판매 대기</label>
-                        </span>
-                      </li>
-                    </ul>
+                  <th scope="row">검색어</th>
+                  <td colspan="3">
+                    <span class="select-base">
+                      <span class="value"></span>
+                      <select>
+                        <option value="0" selected>선택</option>
+                        <option value="1">Value 1</option>
+                        <option value="2">Value 2</option>
+                        <option value="3">Value 3</option>
+                      </select>
+                    </span>
                   </td>
                 </tr>
               </tbody>
             </table>
           </div><!-- .tb-input-wrap -->
-          <div class="btns-wrap t-right mt15">
+          <div class="btns-wrap t-right mt2">
             <span class="btn-base tp2 lg green"><a href="#"><em class="search">검색</em></a></span>
           </div>
-          <div class="total-area mt25">
+          <div class="total-area mt22">
             <span class="total">
-              [총 <em>6</em>건] 판매 중 <em>XXX</em>건 / 품절 <em>XXX</em>건 / 판매 종료 <em>XXX</em>건 / 판매 대기 <em>XXX</em>건
+              [총 <em>6</em>건]
             </span>
             <div class="btns-wrap">
               <span class="btn-base tp2 lg"><a href="#">엑셀 다운</a></span>
@@ -308,7 +273,7 @@
             </div>
           </div>
 
-          <table class="tb-list">
+          <table class="tb-list mt12">
             <colgroup>
               <col width="*" />
             </colgroup>
@@ -316,16 +281,16 @@
               <tr>
                 <th colspan="20" class="t-left">
                   <span>
-                    <div class="input-wrap">
-                      <span class="select-base sm" style="width: 92px;">
+                    <div class="input-wrap select-btn">
+                      <span class="select-base" style="width: 150px;">
                         <span class="value"></span>
                         <select>
                           <option value="0" selected>선택</option>
-                          <option value="1">판매상태</option>
+                          <option value="1">판매상태</option> 
                           <option value="2">전시상태</option>
                         </select>
                       </span>
-                      <span class="btn-base tp5 ml6" id="btnChangePopup"><a href="#popup-change-pinfo">상품정보 일괄 변경</a></span>
+                      <span class="btn-base tp3" id="btnChangePopup"><a href="#popup-change-pinfo">전시정보 일괄 변경</a></span>
                     </div>
                   </span>
                 </th>
@@ -336,215 +301,30 @@
           <table id="table_8" class="table classic">
             <thead>
               <tr>
-                <th width="50px">No</th>
-                <th>Name</th>
-                <th>Age</th>
-                <th>Location</th>
+                <th width="50px">No.</th>
+                <th>판매처</th>
+                <th>판매지사</th>
+                <th>수신자번호</th>
+                <th>쿠폰번호</th>
+                <th>발행금액</th>
+                <th>이미지</th>
+                <th>발행일</th>
               </tr>
             </thead>
             <tbody></tbody>
           </table>
           <script id="tpl_row" type="text/template">
             <tr>
-                 <td><!= row.index !></td>
-                  <td><!= name !></td>
-                  <td><!= age !></td>
-                 <td><!= location !></td>
+              <td><!= no !></td>
+              <td><!= vendor !></td>
+              <td><!= branch !></td>
+              <td><!= recipient !></td>
+              <td><!= coupon !></td>
+              <td><!= amount !></td>
+              <td><!= image !></td>
+              <td><!= date !></td>
             </tr>
           </script>
-
-          <div class="tb-list-wrap c-scrollbar mt10">
-            <table class="tb-list">
-              <colgroup>
-                <col width="64" />
-                <col width="64" />
-                <col width="132" />
-                <col width="124" />
-                <col width="124" />
-                <col width="124" />
-                <col width="124" />
-                <col width="132" />
-                <col width="132" />
-                <col width="124" />
-                <col width="124" />
-                <col width="124" />
-                <col width="124" />
-
-                <col width="130" />
-                <col width="130" />
-                <col width="130" />
-                <col width="130" />
-                <col width="130" />
-                <col width="130" />
-                <col width="130" />
-              </colgroup>
-              <thead>
-                <tr>
-                  <th colspan="20" class="t-left">
-                    <span>
-                      <div class="input-wrap">
-                        <span class="select-base sm" style="width: 92px;">
-                          <span class="value"></span>
-                          <select>
-                            <option value="0" selected>선택</option>
-                            <option value="1">판매상태</option>
-                            <option value="2">전시상태</option>
-                          </select>
-                        </span>
-                        <span class="btn-base tp5 ml6" id="btnChangePopup"><a href="#popup-change-pinfo">상품정보 일괄 변경</a></span>
-                      </div>
-                    </span>
-                  </th>
-                </tr>
-                <tr>
-                  <th scope="col">
-                    <span>
-                      <span class="chk-base chk-only">
-                        <input type="checkbox" id="chk-tb-all" />
-                        <label for="chk-tb-all">전체 체크</label>
-                      </span>
-                    </span>
-                  </th>
-                  <th scope="col"><span>No.</span></th>
-                  <th scope="col"><span>변경이력</span></th>
-                  <th scope="col"><span>URL주소</span></th>
-                  <th scope="col"><span>판매 상품코드</span></th>
-                  <th scope="col"><span>전시 상태</span></th>
-                  <th scope="col"><span>판매 상태</span></th>
-                  <th scope="col"><span>이미지</span></th>
-                  <th scope="col"><span>판매 상품명</span></th>
-                  <th scope="col"><span>정가</span></th>
-                  <th scope="col"><span>판매가</span></th>
-                  <th scope="col"><span>브랜드</span></th>
-                  <th scope="col"><span>상품 타입</span></th>
-
-                  <th scope="col"><span>재고수량</span></th>
-                  <th scope="col"><span>ID당 구매 수량</span></th>
-                  <th scope="col"><span>카테고리</span></th>
-                  <th scope="col"><span>연동상품 ID</span></th>
-                  <th scope="col"><span>연동상품 사용 여부</span></th>
-                  <th scope="col"><span>등록자(아이디)</span></th>
-                  <th scope="col"><span>상품 등록일시</span></th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>
-                    <span class="chk-base chk-only">
-                      <input type="checkbox" id="chk-tb-1" />
-                      <label for="chk-tb-1">체크1</label>
-                    </span>
-                  </td>
-                  <td>99</td>
-                  <td><a href="#popup-change-history" class="primary btn-popup-anim-1">보기</a></td>
-                  <td><span class="primary">복사</span></td>
-                  <td>PRO000001</td>
-                  <td>전시</td>
-                  <td>판매 중</td>
-                  <td>
-                    <img width="40" src="./img/mockup/logo.png" alt="스타벅스 로고" />
-                  </td>
-                  <td>아이스 아메리카노</td>
-                  <td>4,500</td>
-                  <td>4,000</td>
-                  <td>스타벅스</td>
-                  <td>BARCODE: <br />기본상품</td>
-
-                  <td><span class="primary">무제한</span></td>
-                  <td><span class="primary">1</span></td>
-                  <td>커피/음료</td>
-                  <td>0000068601</td>
-                  <td>Y</td>
-                  <td>홍길동(djdj22)</td>
-                  <td>YYYY.MM.DD <br />HH:MM</td>
-                </tr>
-                <tr>
-                  <td>
-                    <span class="chk-base chk-only">
-                      <input type="checkbox" id="chk-tb-2" />
-                      <label for="chk-tb-2">체크2</label>
-                    </span>
-                  </td>
-                  <td>99</td>
-                  <td><a href="#popup-change-history" class="primary btn-popup-anim-1">보기</a></td>
-                  <td><span class="primary">복사</span></td>
-                  <td>PRO000001</td>
-                  <td>전시</td>
-                  <td>판매 중</td>
-                  <td><img width="40" src="./img/mockup/logo.png" alt="스타벅스 로고" /></td>
-                  <td>아이스 아메리카노</td>
-                  <td>4,500</td>
-                  <td>4,000</td>
-                  <td>스타벅스</td>
-                  <td>BARCODE: <br />기본상품</td>
-
-                  <td><span class="primary">무제한</span></td>
-                  <td><span class="primary">1</span></td>
-                  <td>커피/음료</td>
-                  <td>0000068601</td>
-                  <td>Y</td>
-                  <td>홍길동(djdj22)</td>
-                  <td>YYYY.MM.DD <br />HH:MM</td>
-                </tr>
-                <tr>
-                  <td>
-                    <span class="chk-base chk-only">
-                      <input type="checkbox" id="chk-tb-3" />
-                      <label for="chk-tb-3">체크3</label>
-                    </span>
-                  </td>
-                  <td>99</td>
-                  <td><a href="#popup-change-history" class="primary btn-popup-anim-1">보기</a></td>
-                  <td><span class="primary">복사</span></td>
-                  <td>PRO000001</td>
-                  <td>전시</td>
-                  <td>판매 중</td>
-                  <td><img width="40" src="./img/mockup/logo.png" alt="스타벅스 로고" /></td>
-                  <td>아이스 아메리카노</td>
-                  <td>4,500</td>
-                  <td>4,000</td>
-                  <td>스타벅스</td>
-                  <td>BARCODE: <br />기본상품</td>
-
-                  <td><span class="primary">무제한</span></td>
-                  <td><span class="primary">1</span></td>
-                  <td>커피/음료</td>
-                  <td>0000068601</td>
-                  <td>Y</td>
-                  <td>홍길동(djdj22)</td>
-                  <td>YYYY.MM.DD <br />HH:MM</td>
-                </tr>
-                <tr>
-                  <td>
-                    <span class="chk-base chk-only">
-                      <input type="checkbox" id="chk-tb-4" />
-                      <label for="chk-tb-4">체크4</label>
-                    </span>
-                  </td>
-                  <td>99</td>
-                  <td><a href="#popup-change-history" class="primary btn-popup-anim-1">보기</a></td>
-                  <td><span class="primary">복사</span></td>
-                  <td>PRO000001</td>
-                  <td>전시</td>
-                  <td>판매 중</td>
-                  <td><img width="40" src="./img/mockup/logo.png" alt="스타벅스 로고" /></td>
-                  <td>아이스 아메리카노</td>
-                  <td>4,500</td>
-                  <td>4,000</td>
-                  <td>스타벅스</td>
-                  <td>BARCODE: <br />기본상품</td>
-
-                  <td><span class="primary">무제한</span></td>
-                  <td><span class="primary">1</span></td>
-                  <td>커피/음료</td>
-                  <td>0000068601</td>
-                  <td>Y</td>
-                  <td>홍길동(djdj22)</td>
-                  <td>YYYY.MM.DD <br />HH:MM</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
 
           <div class="pagination">
             <a href="#" class="btn btn-first">처음</a>
@@ -783,31 +563,32 @@
     </div>
   </div><!-- #wrap -->
   <script>
+    $('#btnChangePopup').on('click', function(e){
+      e.preventDefault();
+      $.magnificPopup.open(getOptions('#popup-change-dinfo'));
+    });
     jui.ready(['grid.table'], function (table) {
       table_8 = table('#table_8', {
-        fields: [null, 'name', 'age', 'location'],
+        fields: [null, 'no', 'vendor', 'branch', 'recipient', 'coupon', 'amount', 'image', 'date'],
         data: [
-          { name: 'Hong', age: '20', location: '<img width="40" src="./img/mockup/logo.png" alt="스타벅스 로고" />' },
-          { name: 'Jung', age: '30', location: '<span class="primary">복사</span>' },
-          { name: 'Park', age: '15', location: 'Yeosu' },
-          { name: 'Kang', age: '32', location: 'Seoul' },
-          { name: 'Song', age: '12', location: 'Gwangju' },
-          { name: 'Yoon', age: '22', location: 'Damyang' },
-          { name: 'Kim', age: '33', location: 'Busan' },
-          { name: 'Hwang', age: '21', location: 'Seoul' },
+          { no: '5', vendor: 'PRO000005', branch: '기프트쇼약10자', recipient: '<div class="secret-input"><span>010-6643-****</span><a href="#" class="btn-lock"></a></div>', coupon:'9921****1234', amount: '4,100', image: '<img src="img/icon/thumb.svg" alt="" />', date: 'YYYY.MM.DD' },
+          { no: '4', vendor: 'PRO000005', branch: '기프트쇼약10자', recipient: '<div class="secret-input"><span>010-6643-****</span><a href="#" class="btn-lock"></a></div>', coupon:'9921****1234', amount: '4,100', image: '<img src="img/mockup/logo.png" width="30" alt="" />', date: 'YYYY.MM.DD' },
+          { no: '3', vendor: 'PRO000005', branch: '기프트쇼약10자', recipient: '<div class="secret-input"><span>010-6643-****</span><a href="#" class="btn-lock"></a></div>', coupon:'9921****1234', amount: '4,100', image: '<img src="img/icon/thumb.svg" alt="" />', date: 'YYYY.MM.DD' },
+          { no: '2', vendor: 'PRO000005', branch: '기프트쇼약10자', recipient: '<div class="secret-input"><span>010-6643-****</span><a href="#" class="btn-lock"></a></div>', coupon:'9921****1234', amount: '4,100', image: '<img src="img/icon/thumb.svg" alt="" />', date: 'YYYY.MM.DD' },
+          { no: '1', vendor: 'PRO000005', branch: '기프트쇼약10자', recipient: '<div class="secret-input"><span>010-6643-****</span><a href="#" class="btn-lock"></a></div>', coupon:'9921****1234', amount: '4,100', image: '<img src="img/icon/thumb.svg" alt="" />', date: 'YYYY.MM.DD' },
         ],
-        editRow: ['name', 'age'],
+        editRow: ['no', 'vendor', 'branch'],
         resize: true,
         sort: true,
         event: {
-          editend: function (row) {
-            for (var key in row.data) {
-              if (key == 'age' && isNaN(row.data[key])) {
-                alert('Age must enter a numeric value.');
-                return false;
-              }
-            }
-          },
+          // editend: function (row) {
+          //   for (var key in row.data) {
+          //     if (key == 'recipient' && isNaN(row.data[key])) {
+          //       alert('Age must enter a numeric value.');
+          //       return false;
+          //     }
+          //   }
+          // },
         },
         tpl: {
           row: $('#tpl_row').html(),
