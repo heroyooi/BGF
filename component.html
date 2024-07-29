@@ -535,8 +535,11 @@ $('.code-fileType2 .input-wrap.input-file .btn-delete').on('click', function(){
 </ul>
 <script src="js/load-image.all.min.js"></script></div>
 <script>$('.file-list').on('click', 'li .btn-delete', function(e){
+  var $thumb = $(this).closest('li').find('.thumb-area');
   e.preventDefault();
-  $(this).closest('li').remove();
+  // $(this).closest('li').remove();
+  $thumb.removeClass('on');
+  $thumb.attr('style', null);
 });
 $('.file-list').on('change', 'li input[type="file"]', function(e){
   var $thumb = $(this).closest('li').find('.thumb-area');
@@ -544,11 +547,11 @@ $('.file-list').on('change', 'li input[type="file"]', function(e){
     e.target.files[0],
     function (img) {
       $thumb.css('background-image', 'url(' + img.toDataURL() + ')');
-      $thumb.find('.thumb-ico').hide();
+      $thumb.addClass('on');
     },
     {
       canvas: true,
-      crop: true,
+      crop: false,
       downsamplingRatio: 0.5,
       maxWidth: 207,
       maxHeight: 161,
@@ -983,6 +986,12 @@ $('.file-list').on('change', 'li input[type="file"]', function(e){
       $(this).closest('.code-area').find('pre').toggle();
       $('html, body').animate({ scrollTop: $(this).closest('.code-area').offset().top }, 300);
     });
+
+    var Qid = $.urlParam('id');
+
+    if (Qid) {
+      $('.content-wrap').animate({ scrollTop: $(`.section:eq(${Qid - 1}) .code-area`).offset().top }, 300);
+    }
   </script>
   <script src="js/prism.js"></script>
 </body>

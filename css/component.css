@@ -2098,13 +2098,19 @@
   transform: translate(-50%, -50%);
 }
 .file-list > li .thumb-area .btn-delete {
-  display: block;
   width: 10px;
   height: 10px;
   background: url(../img/icon/upload_delete.svg) 50% 50% no-repeat;
   position: absolute;
   right: 10px;
   top: 10px;
+  display: none;
+}
+.file-list > li .thumb-area.on .btn-delete {
+  display: block;
+}
+.file-list > li .thumb-area.on .thumb-ico {
+  display: none;
 }
 .file-list > li .btn-base {
   margin-top: 10px;

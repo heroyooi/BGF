@@ -76,10 +76,11 @@ body{width:100%;}
 .ver-collapse .lnb li dt{white-space:nowrap;}
 .ver-collapse .lnb li dt span{display:none;}
 .ver-collapse .lnb li dt::after{display:none;}
-.ver-collapse .lnb li dd{position: absolute;white-space:nowrap;width:146px;left:54px;padding-top:0;}
+.ver-collapse .lnb li dd{position: absolute;white-space:nowrap;width:146px;left:54px;padding-top:0;padding-bottom:0;}
 .ver-collapse .lnb li dt span{display:none;}
 .ver-collapse .lnb li.on dt, .ver-collapse .lnb li.active dt{width:200px;border-radius:6px 0 0 6px;}
 .ver-collapse .lnb li.on dt span, .ver-collapse .lnb li.active dt span{display:inline-block;}
+.ver-collapse .lnb li.on dt{border:1px solid #0F9563;}
 .ver-collapse .lnb li dd li a{padding:8px 10px;background-color:#22AD79;color:#fff;}
 .ver-collapse .lnb li dd li.active a,
 .ver-collapse .lnb li dd li.on a,
