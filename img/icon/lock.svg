@@ -1,7 +1,5 @@
 <svg width="12" height="15" viewBox="0 0 12 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g id="Group">
-<path id="Vector" d="M10.7334 6.4967H1.1001V13.75H10.7334V6.4967Z" fill="#0F9563" stroke="#0F9563" stroke-width="1.25" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-<path id="Vector_2" d="M7.33332 10.3027H4.5" stroke="white" stroke-width="1.25" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-<path id="Vector_3" d="M2.91345 6.49664V3.97499C2.91345 2.33166 4.27345 1 5.91677 1C7.5601 1 8.92009 2.33166 8.92009 4.00332V6.52498" stroke="#0F9563" stroke-width="1.25" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-</g>
+<path d="M10.7334 6.49658H1.1001V13.7499H10.7334V6.49658Z" fill="#4DB857" stroke="#4DB857" stroke-width="1.25" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M7.33332 10.3027H4.5" stroke="white" stroke-width="1.25" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M2.91345 6.49664V3.97499C2.91345 2.33166 4.27345 1 5.91677 1C7.5601 1 8.92009 2.33166 8.92009 4.00332V6.52498" stroke="#4DB857" stroke-width="1.25" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
