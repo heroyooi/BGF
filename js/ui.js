@@ -436,7 +436,6 @@ function closeModal(id) {
 }
 
 function getOptions(id, closeOnBgClick) {
-  console.log(closeOnBgClick)
   return {
     items: {
       src: id,
@@ -451,5 +450,43 @@ function getOptions(id, closeOnBgClick) {
     removalDelay: 300,
     mainClass: 'mfp-zin',
     closeOnBgClick: closeOnBgClick ?? true,
+  };
+}
+
+var magnificPopupDimmConfiguration = function(dimmClass, openCB, closeCB) {
+  return {
+    open: function() {
+      $('.mfp-content').prepend('<div class="'+dimmClass+'"></div>');
+      if (typeof openCallback === 'function') {
+        openCB();
+      }
+    },
+    beforeClose: function() {
+      $('.mfp-content .' + dimmClass).remove();
+    },
+    close: function(){
+      if (typeof closeCallback === 'function') {
+        closeCB();
+      }
+    }
+  }
+}
+
+function devOptions(id, dimmClass, openCB, closeCB) {
+  return {
+    items: {
+      src: id,
+      type: 'inline',
+    },
+    fixedContentPos: true,
+    fixedBgPos: true,
+    overflowY: 'auto',
+    closeBtnInside: true,
+    preloader: false,
+    midClick: true,
+    removalDelay: 300,
+    mainClass: 'mfp-zin',
+    closeOnBgClick: false,
+    callbacks: magnificPopupDimmConfiguration(dimmClass, openCB, closeCB),
   };
 }

@@ -251,10 +251,11 @@
             </table>
           </div>
           <div class="btns-wrap t-center mt15">
-            <span class="btn-base tp2 lg green"><a href="#">저장</a></span>
+            <span class="btn-base tp2 lg green" onclick="validationPopup(); return false;"><a href="#">저장</a></span>
           </div>
         </div>
       </div>
+      <a href="#" class="btn-popup-close" onclick="validationPopup(); return false;"></a>
     </div><!-- .popup-wrap -->
 
     <div class="popup-wrap z-anim mfp-hide popup-confirm" id="popup-confirm" data-width="410">
@@ -300,11 +301,21 @@
       });
     });
 
+    function validationPopup() {
+      if (confirm('팝업을 닫으시겠습니까?')) {
+        $.magnificPopup.close();
+      }
+    }
+
+    $(document).on('click', '.popup-dimm', function(){
+      validationPopup();
+    });
+
     var Qpopup = $.urlParam('popup');
     if (Qpopup) {
       setTimeout(function(){
         if (Qpopup === 'manageAmount') {
-          $.magnificPopup.open(getOptions('#popup-manage-amount'));
+          $.magnificPopup.open(devOptions('#popup-manage-amount', 'popup-dimm'));
         } else if (Qpopup === 'confirm') {
           $.magnificPopup.open(getOptions('#popup-confirm'));
         }
