@@ -42,6 +42,7 @@ button{border:0;background-color:transparent;padding:0;cursor:pointer}
 input[type="radio"] {-webkit-appearance:radio;}
 input[type="checkbox"] {-webkit-appearance:checkbox;}
 input:disabled{background:#f2f2f2;border:1px solid #dfdfdf;}
+input:read-only{background:#f2f2f2;border:1px solid #dfdfdf;}
 input[type=file], input[type=file]::-webkit-file-upload-button{cursor:pointer;}
 input::-webkit-outer-spin-button, input::-webkit-inner-spin-button{-webkit-appearance:none;margin:0;}/* Chrome, Safari, Edge, Opera */
 input[type=number]{-moz-appearance:textfield;}/* Firefox */
