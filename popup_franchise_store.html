@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>BGF 네트웍스</title>
+  <link rel="stylesheet" href="css/common.css">
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-ui.js"></script>
+  <script src="js/jui-core.js"></script>
+  <script src="js/jui-grid.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/swiper-bundle.min.js"></script>
+  <script src="js/ui.js"></script>
+</head>
+<body class="jui" id="j-custom">
+  <div class="popup-wrap popup-window" data-width="1200" data-height="600">
+    <div class="popup-inner">
+      <div class="tit-wrap">
+        <p class="tit">가맹점 검색</p>
+      </div>
+      <div class="con-area">
+        <div class="tb-input-wrap">
+          <table class="tb-input">
+            <colgroup>
+              <col width="12%" />
+              <col width="38%" />
+              <col width="12%" />
+              <col width="*" />
+            </colgroup>
+            <tbody>
+              <tr>
+                <th scope="row">검색어</th>
+                <td>
+                  <div class="input-wrap select-input">
+                    <span class="select-base" style="width: 120px;">
+                      <span class="value"></span>
+                      <select>
+                        <option value="0" selected>선택</option>
+                        <option value="1">Value 1</option>
+                        <option value="2">Value 2</option>
+                        <option value="3">Value 3</option>
+                      </select>
+                    </span>
+                    <input type="text" class="input-base">
+                  </div>
+                </td>
+                <th scope="row">운영구분</th>
+                <td>
+                  <span class="select-base">
+                    <span class="value"></span>
+                    <select>
+                      <option value="0">선택</option>
+                      <option value="1" selected>전체</option>
+                      <option value="2">Value 2</option>
+                      <option value="3">Value 3</option>
+                    </select>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">주소</th>
+                <td>
+                  <div class="select-group">
+                    <span class="select-base">
+                      <span class="value"></span>
+                      <select>
+                        <option value="0" selected>시/도</option>
+                        <option value="1">Value 1</option>
+                        <option value="2">Value 2</option>
+                        <option value="3">Value 3</option>
+                      </select>
+                    </span>
+                    <span class="select-base">
+                      <span class="value"></span>
+                      <select>
+                        <option value="0" selected>구/군</option>
+                        <option value="1">Value 1</option>
+                        <option value="2">Value 2</option>
+                        <option value="3">Value 3</option>
+                      </select>
+                    </span>
+                    <span class="select-base">
+                      <span class="value"></span>
+                      <select>
+                        <option value="0" selected>읍/면/동</option>
+                        <option value="1">Value 1</option>
+                        <option value="2">Value 2</option>
+                        <option value="3">Value 3</option>
+                      </select>
+                    </span>
+                  </div>
+                </td>
+                <th scope="row">가맹구분</th>
+                <td>
+                  <span class="select-base">
+                    <span class="value"></span>
+                    <select>
+                      <option value="0">선택</option>
+                      <option value="1" selected>전체</option>
+                      <option value="2">Value 2</option>
+                      <option value="3">Value 3</option>
+                    </select>
+                  </span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div><!-- .tb-input-wrap -->
+        <div class="btns-wrap t-right mt10">
+          <span class="btn-base tp2 lg green"><a href="#"><em class="search">검색</em></a></span>
+        </div>
+        <div class="total-area mt22">
+          <span class="total">
+            [총 <em>6</em>건]
+          </span>
+          <div class="btns-wrap">
+            <span class="btn-base tp2 green lg"><a href="#">선택</a></span>
+          </div>
+        </div>
+        <div class="tb-list-wrap mt12">
+          <table class="tb-list">
+            <colgroup>
+              <col width="50" />
+              <col width="50" />
+              <col width="" />
+              <col width="" />
+              <col width="" />
+              <col width="" />
+            </colgroup>
+            <thead>
+              <tr>
+                <th scope="col">
+                  <span>
+                    <span class="chk-base chk-only">
+                      <input type="checkbox" id="chk-tb-all" />
+                      <label for="chk-tb-all">전체 체크</label>
+                    </span>
+                  </span>
+                </th>
+                <th scope="col"><span>No.</span></th>
+                <th scope="col"><span>가맹점코드</span></th>
+                <th scope="col"><span>가맹점명</span></th>
+                <th scope="col"><span>가맹구분</span></th>
+                <th scope="col"><span>운영구분</span></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <span class="chk-base chk-only">
+                    <input type="checkbox" id="chk-tb-5" />
+                    <label for="chk-tb-5">체크5</label>
+                  </span>
+                </td>
+                <td>5</td>
+                <td>#{가맹점코드}</td>
+                <td>#{가맹점명}</td>
+                <td>#{가맹구분}</td>
+                <td>#{운영구분}</td>
+              </tr>
+              <tr>
+                <td>
+                  <span class="chk-base chk-only">
+                    <input type="checkbox" id="chk-tb-4" />
+                    <label for="chk-tb-4">체크4</label>
+                  </span>
+                </td>
+                <td>4</td>
+                <td>#{가맹점코드}</td>
+                <td>#{가맹점명}</td>
+                <td>#{가맹구분}</td>
+                <td>#{운영구분}</td>
+              </tr>
+              <tr>
+                <td>
+                  <span class="chk-base chk-only">
+                    <input type="checkbox" id="chk-tb-3" />
+                    <label for="chk-tb-3">체크3</label>
+                  </span>
+                </td>
+                <td>3</td>
+                <td>#{가맹점코드}</td>
+                <td>#{가맹점명}</td>
+                <td>#{가맹구분}</td>
+                <td>#{운영구분}</td>
+              </tr>
+              <tr>
+                <td>
+                  <span class="chk-base chk-only">
+                    <input type="checkbox" id="chk-tb-2" />
+                    <label for="chk-tb-2">체크2</label>
+                  </span>
+                </td>
+                <td>2</td>
+                <td>#{가맹점코드}</td>
+                <td>#{가맹점명}</td>
+                <td>#{가맹구분}</td>
+                <td>#{운영구분}</td>
+              </tr>
+              <tr>
+                <td>
+                  <span class="chk-base chk-only">
+                    <input type="checkbox" id="chk-tb-1" />
+                    <label for="chk-tb-1">체크1</label>
+                  </span>
+                </td>
+                <td>1</td>
+                <td>#{가맹점코드}</td>
+                <td>#{가맹점명}</td>
+                <td>#{가맹구분}</td>
+                <td>#{운영구분}</td>
+              </tr>
+            </tbody>
+          </table>
+        </div><!-- .tb-list-wrap -->
+        <div class="pagination">
+          <a href="#" class="btn btn-first">처음</a>
+          <a href="#" class="btn btn-prev">이전</a>
+          <a href="#" class="on">1</a>
+          <a href="#">2</a>
+          <a href="#">3</a>
+          <a href="#">4</a>
+          <a href="#">5</a>
+          <a href="#" class="btn btn-next">다음</a>
+          <a href="#" class="btn btn-last">마지막</a>
+        </div>
+      </div><!-- .con-area -->
+    </div><!-- .popup-inner -->
+    <button class="mfp-close" onclick="$.magnificPopup.open(getOptions('#popup-confirm'));"></button>
+  </div><!-- .popup-wrap -->
+
+  <div class="popup-wrap z-anim mfp-hide popup-confirm" id="popup-confirm" data-width="410">
+    <div class="popup-inner">
+      <div class="con-area">
+        <p class="msg">등록을 취소 하고 팝업창을 닫겠습니까?</p>
+        <div class="btns-wrap t-center mt24">
+          <span class="btn-base tp2 lg b-mfp-close"><a href="#">취소</a></span>
+          <span class="btn-base tp2 green lg b-mfp-close"><a href="#" onclick="window.close(); return false;">확인</a></span>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <script>
+    var checkCb = function(checked){
+      console.log('테이블 전체체크 유무 : ', checked)
+    };
+
+    GUI.checkAllUI('#chk-tb-all', 'table', checkCb);
+  </script>
+</body>
+</html>

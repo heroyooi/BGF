@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>BGF 네트웍스</title>
+    <link rel="stylesheet" href="css/common.css" />
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/jui-core.js"></script>
+    <script src="js/jui-grid.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/ui.js"></script>
+  </head>
+  <body class="jui" id="j-custom">
+    <div class="popup-wrap popup-window" data-width="984" data-height="600">
+      <div class="popup-inner">
+        <div class="tit-wrap">
+          <p class="tit">판매지사 등록</p>
+        </div>
+        <div class="con-area">
+          <h4 class="s-tit">기본 정보</h4>
+          <div class="tb-input-wrap mt10">
+            <table class="tb-input">
+              <colgroup>
+                <col width="15%" />
+                <col width="35%" />
+                <col width="15%" />
+                <col width="*" />
+              </colgroup>
+              <tbody>
+                <tr>
+                  <th scope="row">판매지사코드</th>
+                  <td colspan="3" class="viewer">
+                    신규 등록 시 판매지사 코드 자동으로 생성됩니다.
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">판매사 <em>*</em></th>
+                  <td class="viewer">
+                    판매사명 출력
+                  </td>
+                  <th scope="row">상태 <em>*</em></th>
+                  <td>
+                    <ul class="radio-list">
+                      <li>
+                        <span class="radio-base">
+                          <input
+                            type="radio"
+                            id="radio-state-1"
+                            name="radio-state"
+                            checked
+                          />
+                          <label for="radio-state-1">거래중</label>
+                        </span>
+                      </li>
+                      <li>
+                        <span class="radio-base">
+                          <input
+                            type="radio"
+                            id="radio-state-2"
+                            name="radio-state"
+                          />
+                          <label for="radio-state-2">중지</label>
+                        </span>
+                      </li>
+                    </ul>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">판매지사명 <em>*</em></th>
+                  <td>
+                    <input type="text" class="input-base" />
+                  </td>
+                  <th scope="row">대표자명 <em>*</em></th>
+                  <td>
+                    <input type="text" class="input-base" value="디폴트 판매처 대표자명 출력" />
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">사업자번호 <em>*</em></th>
+                  <td>
+                    <input type="text" class="input-base" value="디폴트 판매처 사업자번호출력" />
+                  </td>
+                  <th scope="row">사업자등록증 사본</th>
+                  <td>
+                    <div class="input-wrapper">
+                      <div class="input-wrap input-btn input-file">
+                        <input type="text" class="input-base" readonly value="사업자등록증.PDF" />
+                        <input type="file" accept="image/*">
+                        <a href="#" class="btn-delete on"></a>
+                        <span class="btn-base tp2"><a href="#"><em class="upload">파일 등록</em></a></span>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">기업 주소 <em>*</em></th>
+                  <td colspan="3">
+                    <input type="text" class="input-base" value="디폴트 판매처 기업주소 출력" />
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">종목 <em>*</em></th>
+                  <td>
+                    <input type="text" class="input-base" value="디폴트 판매처 종목 출력" />
+                  </td>
+                  <th scope="row">업태 <em>*</em></th>
+                  <td>
+                    <input type="text" class="input-base" value="디폴트 판매처 업태 출력" />
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">계약기간</th>
+                  <td colspan="3">
+                    <div class="input-wrap fix-width">
+                      <span class="s-datepicker">
+                        <input type="text" class="input-base datepicker" />
+                      </span>
+                      <span class="bridge">~</span>
+                      <span class="s-datepicker">
+                        <input type="text" class="input-base datepicker" />
+                      </span>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">리마인드 발송여부</th>
+                  <td colspan="3">
+                    <ul class="chk-list horizon">
+                      <li>
+                        <span class="chk-base">
+                          <input type="checkbox" id="chk-remind-1" checked />
+                          <label for="chk-remind-1">30일전</label>
+                        </span>
+                      </li>
+                      <li>
+                        <span class="chk-base">
+                          <input type="checkbox" id="chk-remind-2" checked />
+                          <label for="chk-remind-2">14일전</label>
+                        </span>
+                      </li>
+                      <li>
+                        <span class="chk-base">
+                          <input type="checkbox" id="chk-remind-3" checked />
+                          <label for="chk-remind-3">7일전</label>
+                        </span>
+                      </li>
+                      <li>
+                        <span class="chk-base">
+                          <input type="checkbox" id="chk-remind-4" />
+                          <label for="chk-remind-4">기간만료</label>
+                        </span>
+                      </li>
+                      <li>
+                        <div class="input-wrap radio-input-unit">
+                          <span class="chk-base chk-only">
+                            <input type="checkbox" id="chk-remind-5" />
+                            <label for="chk-remind-5">선택</label>
+                          </span>
+                          <div class="input-unit">
+                            <input
+                              type="text"
+                              class="input-base t-left"
+                              disabled
+                              style="width: 200px"
+                            />
+                            <span class="unit">일전</span>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">메모</th>
+                  <td colspan="3">
+                    <div class="textarea-wrap">
+                      <textarea
+                        class="textarea-base"
+                        placeholder="내용"
+                      ></textarea>
+                      <!-- <span class="tx-count"><em>0</em>/100자</span> -->
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">기타파일등록</th>
+                  <td colspan="3">
+                    <div class="input-wrapper" style="max-width: 520px">
+                      <div class="input-wrap input-btn input-file">
+                        <input type="text" class="input-base" readonly value="사업자등록증.PDF" />
+                        <input type="file" accept="image/*">
+                        <a href="#" class="btn-delete on"></a>
+                        <span class="btn-base tp2"><a href="#"><em class="upload">파일 등록</em></a></span>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <h4 class="s-tit mt25">정산 정보</h4>
+          <div class="tb-input-wrap mt10">
+            <table class="tb-input">
+              <colgroup>
+                <col width="15%" />
+                <col width="35%" />
+                <col width="15%" />
+                <col width="*" />
+              </colgroup>
+              <tbody>
+                <tr>
+                  <th scope="row">정산구분 <em>*</em></th>
+                  <td>
+                    <ul class="radio-list">
+                      <li>
+                        <span class="radio-base">
+                          <input type="radio" id="radio-calculate-1" name="radio-calculate" checked />
+                          <label for="radio-calculate-1">사용분발행</label>
+                        </span>
+                      </li>
+                      <li>
+                        <span class="radio-base">
+                          <input type="radio" id="radio-calculate-2" name="radio-calculate" />
+                          <label for="radio-calculate-2">발행</label>
+                        </span>
+                      </li>
+                      <li>
+                        <span class="radio-base">
+                          <input type="radio" id="radio-calculate-3" name="radio-calculate" />
+                          <label for="radio-calculate-3">사용분</label>
+                        </span>
+                      </li>
+                    </ul>
+                  </td>
+                  <th scope="row">B2B/B2C구분 <em>*</em></th>
+                  <td>
+                    <ul class="radio-list">
+                      <li>
+                        <span class="radio-base">
+                          <input type="radio" id="radio-btype-b2c" name="radio-btype" checked />
+                          <label for="radio-btype-b2c">B2C</label>
+                        </span>
+                      </li>
+                      <li>
+                        <span class="radio-base">
+                          <input type="radio" id="radio-btype-b2b" name="radio-btype" />
+                          <label for="radio-btype-b2b">B2B</label>
+                        </span>
+                      </li>
+                    </ul>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">운영수수료</th>
+                  <td>
+                    <div class="input-wrap select-input">
+                      <input type="text" class="input-base">
+                      <select class="select-tag" style="width: 80px;">
+                        <option value="0" selected>%</option>
+                        <option value="1">Value 1</option>
+                        <option value="2">Value 2</option>
+                        <option value="3">Value 3</option>
+                      </select>
+                    </div>
+                  </td>
+                  <th scope="row">지급수수료</th>
+                  <td>
+                    <div class="input-wrap select-input">
+                      <input type="text" class="input-base">
+                      <select class="select-tag" style="width: 80px;">
+                        <option value="0" selected>%</option>
+                        <option value="1">Value 1</option>
+                        <option value="2">Value 2</option>
+                        <option value="3">Value 3</option>
+                      </select>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">할인율(%)</th>
+                  <td>
+                    <input type="text" class="input-base" />
+                  </td>
+                  <th scope="row">VAT포함여부 <em>*</em></th>
+                  <td>
+                    <ul class="radio-list">
+                      <li>
+                        <span class="radio-base">
+                          <input type="radio" id="radio-inc-vat-1" name="radio-inc-vat" checked />
+                          <label for="radio-inc-vat-1">미포함</label>
+                        </span>
+                      </li>
+                      <li>
+                        <span class="radio-base">
+                          <input type="radio" id="radio-inc-vat-2" name="radio-inc-vat" />
+                          <label for="radio-inc-vat-2">포함</label>
+                        </span>
+                      </li>
+                    </ul>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">월한도금액</th>
+                  <td>
+                    <ul class="radio-list">
+                      <li>
+                        <span class="radio-base">
+                          <input type="radio" id="radio-monthly-limit-1" name="radio-monthly-limit" checked />
+                          <label for="radio-monthly-limit-1">미설정</label>
+                        </span>
+                      </li>
+                      <li>
+                        <div class="input-wrap radio-input-unit">
+                          <span class="radio-base">
+                            <input type="radio" id="radio-monthly-limit-2" name="radio-monthly-limit" />
+                            <label for="radio-monthly-limit-2">설정</label>
+                          </span>
+                          <div class="input-unit">
+                            <input type="text" class="input-base t-left" disabled style="width: 130px" />
+                            <span class="unit">원</span>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </td>
+                  <th scope="row">월발행금액</th>
+                  <td class="viewer">
+                    등록 후 월별 총 발행 금액이 출력 됩니다.
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="s-tit-area mt15">
+            <h4 class="s-tit">프리픽스 정보</h4>
+            <span class="btn-base tp2 lg green"><a href="#"><em class="add">추가</em></a></span>
+          </div>
+
+          <div class="tb-list-wrap mt12">  
+            <div class="tb-scroll">
+              <table id="table_1" class="table classic">
+                <thead>
+                  <tr>
+                    <th width="50px"><span>No.</span></th>
+                    <th width="213px"><span>권종</span></th>
+                    <th><span>프리픽스</span></th>
+                    <th width="213px"><span>공급수수료 (%)</span></th>
+                    <th width="100px"><span>&nbsp;</span></th>
+                  </tr>
+                </thead>
+                <tbody></tbody>
+              </table>
+            </div>
+            <script id="tpl_row" type="text/template">
+              <tr>
+                <td><!= no !></td>
+                <td><!= col1 !></td>
+                <td><!= col2 !></td>
+                <td><!= col3 !></td>
+                <td><!= col4 !></td>
+              </tr>
+            </script>
+          </div>
+
+          <h4 class="s-tit mt15">설정 정보</h4>
+          <div class="tb-input-wrap mt10">
+            <table class="tb-input">
+              <colgroup>
+                <col width="17%" />
+                <col width="33%" />
+                <col width="17%" />
+                <col width="*" />
+              </colgroup>
+              <tbody>
+                <tr>
+                  <th scope="row">월렛전환여부</th>
+                  <td colspan="3">
+                    <ul class="radio-list">
+                      <li>
+                        <span class="radio-base">
+                          <input type="radio" id="radio-1-1" name="radio-1" />
+                          <label for="radio-1-1">미설정</label>
+                        </span>
+                      </li>
+                      <li>
+                        <span class="radio-base">
+                          <input type="radio" id="radio-1-2" name="radio-1" checked />
+                          <label for="radio-1-2">설정</label>
+                        </span>
+                      </li>
+                    </ul>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">암호화키</th>
+                  <td>
+                    <input type="text" class="input-base" />
+                  </td>
+                  <th scope="row">사용내역URL</th>
+                  <td>
+                    <input type="text" class="input-base" />
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">금액교환권여부 <em>*</em></th>
+                  <td>
+                    <ul class="radio-list">
+                      <li>
+                        <span class="radio-base">
+                          <input type="radio" id="radio-2-1" name="radio-2" />
+                          <label for="radio-2-1">미설정</label>
+                        </span>
+                      </li>
+                      <li>
+                        <span class="radio-base">
+                          <input type="radio" id="radio-2-2" name="radio-2" checked />
+                          <label for="radio-2-2">설정</label>
+                        </span>
+                      </li>
+                    </ul>
+                  </td>
+                  <th scope="row">환불가능여부 <em>*</em></th>
+                  <td>
+                    <ul class="radio-list">
+                      <li>
+                        <span class="radio-base">
+                          <input type="radio" id="radio-3-1" name="radio-3" />
+                          <label for="radio-3-1">미설정</label>
+                        </span>
+                      </li>
+                      <li>
+                        <span class="radio-base">
+                          <input type="radio" id="radio-3-2" name="radio-3" checked />
+                          <label for="radio-3-2">설정</label>
+                        </span>
+                      </li>
+                    </ul>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">유효기간연장여부 <em>*</em></th>
+                  <td>
+                    <ul class="radio-list">
+                      <li>
+                        <span class="radio-base">
+                          <input type="radio" id="radio-4-1" name="radio-4" />
+                          <label for="radio-4-1">미설정</label>
+                        </span>
+                      </li>
+                      <li>
+                        <span class="radio-base">
+                          <input type="radio" id="radio-4-2" name="radio-4" checked />
+                          <label for="radio-4-2">설정</label>
+                        </span>
+                      </li>
+                    </ul>
+                  </td>
+                  <th scope="row">취소가능여부 <em>*</em></th>
+                  <td>
+                    <ul class="radio-list">
+                      <li>
+                        <span class="radio-base">
+                          <input type="radio" id="radio-5-1" name="radio-5" />
+                          <label for="radio-5-1">미설정</label>
+                        </span>
+                      </li>
+                      <li>
+                        <span class="radio-base">
+                          <input type="radio" id="radio-5-2" name="radio-5" checked />
+                          <label for="radio-5-2">설정</label>
+                        </span>
+                      </li>
+                    </ul>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="s-tit-area mt15">
+            <h4 class="s-tit">담당자 정보</h4>
+            <span class="btn-base tp2 lg green"><a href="#"><em class="add">추가</em></a></span>
+          </div>
+
+          <div class="tb-list-wrap mt12">  
+            <div class="tb-scroll">
+              <table id="table_2" class="table classic">
+                <thead>
+                  <tr>
+                    <th width="50px"><span>No.</span></th>
+                    <th><span>담당자명</span></th>
+                    <th><span>부서명</span></th>
+                    <th><span>연락처(회사)</span></th>
+                    <th><span>연락처(휴대폰)</span></th>
+                    <th><span>이메일</span></th>
+                    <th><span>메모</span></th>
+                    <th width="89px"><span>&nbsp;</span></th>
+                  </tr>
+                </thead>
+                <tbody></tbody>
+              </table>
+            </div>
+            <script id="tpl_row2" type="text/template">
+              <tr>
+                <td><!= no !></td>
+                <td><!= col1 !></td>
+                <td><!= col2 !></td>
+                <td><!= col3 !></td>
+                <td><!= col4 !></td>
+                <td><!= col5 !></td>
+                <td><!= col6 !></td>
+                <td><!= col7 !></td>
+              </tr>
+            </script>
+          </div>
+
+
+
+          <div class="btns-wrap t-center mt15">
+            <span class="btn-base tp2 lg btn-popup-anim-1"><a href="#popup-confirm">취소</a></span>
+            <span class="btn-base tp2 green lg btn-popup-anim-1"><a href="#popup-alert">저장</a></span>
+          </div>
+        </div>
+        <!-- .con-area -->
+      </div><!-- .popup-inner -->
+      <button class="mfp-close" onclick="$.magnificPopup.open(getOptions('#popup-confirm'));"></button>
+    </div>
+    <!-- .popup-wrap -->
+
+    <div class="popup-wrap z-anim mfp-hide popup-confirm" id="popup-confirm" data-width="410">
+      <div class="popup-inner">
+        <div class="con-area">
+          <p class="msg">등록을 취소 하고 팝업창을 닫겠습니까?</p>
+          <div class="btns-wrap t-center mt24">
+            <span class="btn-base tp2 lg b-mfp-close"><a href="#">취소</a></span>
+            <span class="btn-base tp2 green lg b-mfp-close"><a href="#" onclick="window.close(); return false;">확인</a></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="popup-wrap z-anim mfp-hide popup-alert" id="popup-alert" data-width="410">
+      <div class="popup-inner">
+        <div class="con-area">
+          <p class="msg">저장되었습니다.</p>
+          <div class="btns-wrap t-center mt24">
+            <span class="btn-base tp2 green lg b-mfp-close"><a href="#" onclick="window.close(); return false;">확인</a></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      // 파일 등록
+      $('.input-file input[type="file"]').on('change', function() {
+        var $input = $(this).closest('.input-file').find('.input-base');
+        var $del = $(this).closest('.input-file').find('.btn-delete');
+        var fileValue = this.value.split('\\');  
+        $input.val(fileValue[fileValue.length-1]);
+        $del.addClass('on');
+      });
+      $('.input-wrap.input-file .btn-delete').on('click', function(e){
+        e.preventDefault();
+        $(this).removeClass('on');
+        $(this).closest('.input-file').find('.input-base').val('');
+      });
+
+      // 리마인드 발송여부 - 체크박스
+      $('#chk-remind-5').on('change', function(){
+        var $input = $(this).closest('.input-wrap').find('.input-unit .input-base');
+        $input.prop('disabled', !$(this).is(':checked'));
+      });
+
+      // 월한도금액 - 라디오
+      $('#radio-monthly-limit-2').on('change', function(){
+        var $input = $(this).closest('.input-wrap').find('.input-unit .input-base');
+        $input.prop('disabled', !$(this).is(':checked'));
+      });
+      $('#radio-monthly-limit-1').on('change', function(){
+        console.log($(this).is(':checked'))
+        var $input = $(this).closest('.radio-list').find('.input-unit .input-base');
+        $input.prop('disabled', $(this).is(':checked'));
+      });
+
+      jui.ready(['grid.table'], function (table) {
+      table_1 = table('#table_1', {
+        fields: [null, 'no', 'col1', 'col2', 'col3', 'col4'],
+        data: [
+          {
+            no: '1',
+            col1: 
+              `<select class="select-tag">
+                <option value="0" selected>교환권</option>
+                <option value="1">Value 1</option>
+                <option value="2">Value 2</option>
+                <option value="3">Value 3</option>
+              </select>`,
+            col2:
+              `<select class="select-tag">
+                <option value="0" selected>프리픽스 정보</option>
+                <option value="1">Value 1</option>
+                <option value="2">Value 2</option>
+                <option value="3">Value 3</option>
+              </select>`,
+            col3: '<input type="text" class="input-base" value="9" disabled />',
+            col4: '<span class="btn-base tp5"><a href="#">삭제</a></span>',
+          },
+          {
+            no: '2',
+            col1: 
+              `<select class="select-tag">
+                <option value="0" selected>할인권</option>
+                <option value="1">Value 1</option>
+                <option value="2">Value 2</option>
+                <option value="3">Value 3</option>
+              </select>`,
+            col2:
+              `<select class="select-tag">
+                <option value="0" selected>999</option>
+                <option value="1">Value 1</option>
+                <option value="2">Value 2</option>
+                <option value="3">Value 3</option>
+              </select>`,
+            col3: '<input type="text" class="input-base" value="9" disabled />',
+            col4: '<span class="btn-base tp5"><a href="#">삭제</a></span>',
+          },
+          {
+            no: '3',
+            col1: 
+              `<select class="select-tag">
+                <option value="0" selected>할인권</option>
+                <option value="1">Value 1</option>
+                <option value="2">Value 2</option>
+                <option value="3">Value 3</option>
+              </select>`,
+            col2:
+              `<select class="select-tag">
+                <option value="0" selected>999</option>
+                <option value="1">Value 1</option>
+                <option value="2">Value 2</option>
+                <option value="3">Value 3</option>
+              </select>`,
+            col3: '<input type="text" class="input-base" value="9" disabled />',
+            col4: '<span class="btn-base tp5"><a href="#">삭제</a></span>',
+          },
+          {
+            no: '4',
+            col1: 
+              `<select class="select-tag">
+                <option value="0" selected>할인권</option>
+                <option value="1">Value 1</option>
+                <option value="2">Value 2</option>
+                <option value="3">Value 3</option>
+              </select>`,
+            col2:
+              `<select class="select-tag">
+                <option value="0" selected>999</option>
+                <option value="1">Value 1</option>
+                <option value="2">Value 2</option>
+                <option value="3">Value 3</option>
+              </select>`,
+            col3: '<input type="text" class="input-base" value="9" disabled />',
+            col4: '<span class="btn-base tp5"><a href="#">삭제</a></span>',
+          },
+          {
+            no: '5',
+            col1: 
+              `<select class="select-tag">
+                <option value="0" selected>할인권</option>
+                <option value="1">Value 1</option>
+                <option value="2">Value 2</option>
+                <option value="3">Value 3</option>
+              </select>`,
+            col2:
+              `<select class="select-tag">
+                <option value="0" selected>999</option>
+                <option value="1">Value 1</option>
+                <option value="2">Value 2</option>
+                <option value="3">Value 3</option>
+              </select>`,
+            col3: '<input type="text" class="input-base" value="9" disabled />',
+            col4: '<span class="btn-base tp5"><a href="#">삭제</a></span>',
+          },
+          {
+            no: '6',
+            col1: 
+              `<select class="select-tag">
+                <option value="0" selected>할인권</option>
+                <option value="1">Value 1</option>
+                <option value="2">Value 2</option>
+                <option value="3">Value 3</option>
+              </select>`,
+            col2:
+              `<select class="select-tag">
+                <option value="0" selected>999</option>
+                <option value="1">Value 1</option>
+                <option value="2">Value 2</option>
+                <option value="3">Value 3</option>
+              </select>`,
+            col3: '<input type="text" class="input-base" value="9" disabled />',
+            col4: '<span class="btn-base tp5"><a href="#">삭제</a></span>',
+          },
+        ],
+        editRow: ['no'],
+        resize: true,
+        sort: true,
+        tpl: {
+          row: $('#tpl_row').html(),
+        },
+      });
+
+      table_2 = table('#table_2', {
+        fields: [null, 'no', 'col1', 'col2', 'col3', 'col4', 'col5', 'col6', 'col7'],
+        data: [
+          {
+            no: '1',
+            col1: '<input type="text" class="input-base" />',
+            col2: '<input type="text" class="input-base" />',
+            col3: '<input type="text" class="input-base" placeholder="- 없이 입력" />',
+            col4: '<input type="text" class="input-base" placeholder="- 없이 입력" />',
+            col5: '<input type="text" class="input-base" />',
+            col6: '<input type="text" class="input-base" />',
+            col7: '<span class="btn-base tp5"><a href="#">삭제</a></span>',
+          },
+          {
+            no: '2',
+            col1: '<input type="text" class="input-base" />',
+            col2: '<input type="text" class="input-base" />',
+            col3: '<input type="text" class="input-base" placeholder="- 없이 입력" />',
+            col4: '<input type="text" class="input-base" placeholder="- 없이 입력" />',
+            col5: '<input type="text" class="input-base" />',
+            col6: '<input type="text" class="input-base" />',
+            col7: '<span class="btn-base tp5"><a href="#">삭제</a></span>',
+          },
+          {
+            no: '3',
+            col1: '<input type="text" class="input-base" />',
+            col2: '<input type="text" class="input-base" />',
+            col3: '<input type="text" class="input-base" placeholder="- 없이 입력" />',
+            col4: '<input type="text" class="input-base" placeholder="- 없이 입력" />',
+            col5: '<input type="text" class="input-base" />',
+            col6: '<input type="text" class="input-base" />',
+            col7: '<span class="btn-base tp5"><a href="#">삭제</a></span>',
+          },
+          {
+            no: '4',
+            col1: '<input type="text" class="input-base" />',
+            col2: '<input type="text" class="input-base" />',
+            col3: '<input type="text" class="input-base" placeholder="- 없이 입력" />',
+            col4: '<input type="text" class="input-base" placeholder="- 없이 입력" />',
+            col5: '<input type="text" class="input-base" />',
+            col6: '<input type="text" class="input-base" />',
+            col7: '<span class="btn-base tp5"><a href="#">삭제</a></span>',
+          },
+          {
+            no: '5',
+            col1: '<input type="text" class="input-base" />',
+            col2: '<input type="text" class="input-base" />',
+            col3: '<input type="text" class="input-base" placeholder="- 없이 입력" />',
+            col4: '<input type="text" class="input-base" placeholder="- 없이 입력" />',
+            col5: '<input type="text" class="input-base" />',
+            col6: '<input type="text" class="input-base" />',
+            col7: '<span class="btn-base tp5"><a href="#">삭제</a></span>',
+          },
+          {
+            no: '6',
+            col1: '<input type="text" class="input-base" />',
+            col2: '<input type="text" class="input-base" />',
+            col3: '<input type="text" class="input-base" placeholder="- 없이 입력" />',
+            col4: '<input type="text" class="input-base" placeholder="- 없이 입력" />',
+            col5: '<input type="text" class="input-base" />',
+            col6: '<input type="text" class="input-base" />',
+            col7: '<span class="btn-base tp5"><a href="#">삭제</a></span>',
+          },
+        ],
+        editRow: ['no'],
+        resize: true,
+        sort: true,
+        tpl: {
+          row: $('#tpl_row2').html(),
+        },
+      });
+    });
+    </script>
+  </body>
+</html>
