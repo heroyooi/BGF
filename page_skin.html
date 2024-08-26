@@ -226,13 +226,13 @@
     updateSkin($skin_b_top, $skin_b_obj, 'top');
 
     $skin_t_obj.draggable({
-      // containment: '.skin-frame',
+      containment: '.skin-frame',
       stop: function(event, ui) {
         $skin_t_left.val(ui.position.left);
         $skin_t_top.val(ui.position.top);
       }
     }).resizable({
-      // containment: '.skin-frame',
+      containment: '.skin-frame',
       stop: function(event, ui) {
         $skin_t_width.val(ui.size.width);
         $skin_t_height.val(ui.size.height);
@@ -240,13 +240,13 @@
     });
 
     $skin_b_obj.draggable({
-      // containment: '.skin-frame',
+      containment: '.skin-frame',
       stop: function(event, ui) {
         $skin_b_left.val(ui.position.left);
         $skin_b_top.val(ui.position.top);
       }
     }).resizable({
-      // containment: '.skin-frame',
+      containment: '.skin-frame',
       stop: function(event, ui) {
         $skin_b_width.val(ui.size.width);
         $skin_b_height.val(ui.size.height);
