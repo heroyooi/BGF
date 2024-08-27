@@ -1408,6 +1408,7 @@
 }
 .tb-list td a {
   color: #3f4a63;
+  text-decoration: underline;
 }
 .tb-list td .primary {
   color: #605dec;
@@ -2392,6 +2393,9 @@ select.select-tag.green {
   background-color: #fff;
   border-bottom: 1px solid #A9C2BD;
   height: 44px;
+}
+.jui#j-custom .table.classic > tbody > tr > td a {
+  text-decoration: underline;
 }
 .jui#j-custom .tb-list + .table.classic > thead th {
   border-top: 0;
