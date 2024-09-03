@@ -950,9 +950,1178 @@
             <h4 class="s-tit">프로모션 설정</h4>
             <span class="btn-base tp2 lg green"><a href="#"><em class="add">추가</em></a></span>
           </div>
-          <div class="tb-list-wrap">
-
+          <div class="tb-list-wrap mt12" style="overflow: hidden;">
+            <div class="tb-scroll xy">
+              <table class="tb-list">
+                <colgroup>
+                  <col width="50" />
+                  <col width="777" />
+                  <col width="235" />
+                  <col width="235" />
+                  <col width="235" />
+                  <col width="907" />
+                  <col width="90" />
+                </colgroup>
+                <thead>
+                  <tr>
+                    <th scope="col"><span>No.</span></th>
+                    <th scope="col"><span>기간</span></th>
+                    <th scope="col"><span>혜택방법</span></th>
+                    <th scope="col"><span>혜택값</span></th>
+                    <th scope="col"><span>타입</span></th>
+                    <th scope="col"><span>타입 설정 값</span></th>
+                    <th scope="col"><span></span></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>
+                      <div class="input-wrap datetime">
+                        <span class="s-datepicker">
+                          <input type="text" class="input-base datepicker" />
+                        </span>
+                        <select class="select-tag">
+                          <option value="0" selected>00시</option>
+                          <option value="1">Value 1</option>
+                          <option value="2">Value 2</option>
+                          <option value="3">Value 3</option>
+                        </select>
+                        <select class="select-tag">
+                          <option value="0" selected>00분</option>
+                          <option value="1">Value 1</option>
+                          <option value="2">Value 2</option>
+                          <option value="3">Value 3</option>
+                        </select>
+                        <span class="bridge">~</span>
+                        <span class="s-datepicker">
+                          <input type="text" class="input-base datepicker" />
+                        </span>
+                        <select class="select-tag">
+                          <option value="0" selected>00시</option>
+                          <option value="1">Value 1</option>
+                          <option value="2">Value 2</option>
+                          <option value="3">Value 3</option>
+                        </select>
+                        <select class="select-tag">
+                          <option value="0" selected>00분</option>
+                          <option value="1">Value 1</option>
+                          <option value="2">Value 2</option>
+                          <option value="3">Value 3</option>
+                        </select>
+                      </div>
+                    </td>
+                    <td>
+                      <select class="select-tag">
+                        <option value="0" selected>정율</option>
+                        <option value="1">Value 1</option>
+                        <option value="2">Value 2</option>
+                        <option value="3">Value 3</option>
+                      </select>
+                    </td>
+                    <td>
+                      <input type="text" class="input-base">
+                    </td>
+                    <td>
+                      <select class="select-tag set-type">
+                        <option value="1" selected>기간별</option>
+                        <option value="2">지정일</option>
+                        <option value="3">지정요일</option>
+                        <option value="4">지정시간</option>
+                        <option value="5">지정일자</option>
+                      </select>
+                    </td>
+                    <td>
+                      <div class="input-wrap select-type select-type-2" style="display: none;">
+                        <span class="label">일 지정형 : 매월</span>
+                        <select class="select-tag" style="width: 120px;">
+                          <option value="0" selected>1일</option>
+                          <option value="1">Value 1</option>
+                          <option value="2">Value 2</option>
+                          <option value="3">Value 3</option>
+                        </select>
+                        <select class="select-tag" style="width: 120px;">
+                          <option value="0" selected>일추가</option>
+                          <option value="1">Value 1</option>
+                          <option value="2">Value 2</option>
+                          <option value="3">Value 3</option>
+                        </select>
+                        <ul class="result-list">
+                          <li>
+                            <span class="val">1일</span>
+                            <a href="#" class="del">삭제</a>
+                          </li>
+                          <li>
+                            <span class="val">15일</span>
+                            <a href="#" class="del">삭제</a>
+                          </li>
+                        </ul>
+                      </div><!-- .select-type -->
+                      <div class="input-wrap select-type select-type-3" style="display: none;">
+                        <span class="label">요일 지정형 : 매주</span>
+                        <ul class="chk-list horizon">
+                          <li>
+                            <span class="chk-base">
+                              <input type="checkbox" id="chk1-weekand-1" />
+                              <label for="chk1-weekand-1">월</label>
+                            </span>
+                          </li>
+                          <li>
+                            <span class="chk-base">
+                              <input type="checkbox" id="chk1-weekand-2" />
+                              <label for="chk1-weekand-2">화</label>
+                            </span>
+                          </li>
+                          <li>
+                            <span class="chk-base">
+                              <input type="checkbox" id="chk1-weekand-3" />
+                              <label for="chk1-weekand-3">수</label>
+                            </span>
+                          </li>
+                          <li>
+                            <span class="chk-base">
+                              <input type="checkbox" id="chk1-weekand-4" />
+                              <label for="chk1-weekand-4">목</label>
+                            </span>
+                          </li>
+                          <li>
+                            <span class="chk-base">
+                              <input type="checkbox" id="chk1-weekand-5" />
+                              <label for="chk1-weekand-5">금</label>
+                            </span>
+                          </li>
+                          <li>
+                            <span class="chk-base">
+                              <input type="checkbox" id="chk1-weekand-6" />
+                              <label for="chk1-weekand-6">토</label>
+                            </span>
+                          </li>
+                          <li>
+                            <span class="chk-base">
+                              <input type="checkbox" id="chk1-weekand-7" />
+                              <label for="chk1-weekand-7">일</label>
+                            </span>
+                          </li>
+                        </ul>
+                      </div><!-- .select-type -->
+                      <div class="input-wrap select-type select-type-4" style="display: none;">
+                        <select class="select-tag" style="width: 120px;">
+                          <option value="0" selected>00시</option>
+                          <option value="1">Value 1</option>
+                          <option value="2">Value 2</option>
+                          <option value="3">Value 3</option>
+                        </select>
+                        <select class="select-tag" style="width: 120px;">
+                          <option value="0" selected>00분</option>
+                          <option value="1">Value 1</option>
+                          <option value="2">Value 2</option>
+                          <option value="3">Value 3</option>
+                        </select>
+                        <span class="bridge">~</span>
+                        <select class="select-tag" style="width: 120px;">
+                          <option value="0" selected>00시</option>
+                          <option value="1">Value 1</option>
+                          <option value="2">Value 2</option>
+                          <option value="3">Value 3</option>
+                        </select>
+                        <select class="select-tag" style="width: 120px;">
+                          <option value="0" selected>00분</option>
+                          <option value="1">Value 1</option>
+                          <option value="2">Value 2</option>
+                          <option value="3">Value 3</option>
+                        </select>
+                        <span class="btn-base tp3 md"><a href="#"><em class="add">시간추가</em></a></span>
+                        <ul class="result-list">
+                          <li>
+                            <span class="val">17:00 ~ 21:00</span>
+                            <a href="#" class="del">삭제</a>
+                          </li>
+                          <li>
+                            <span class="val">21:00 ~ 23:00</span>
+                            <a href="#" class="del">삭제</a>
+                          </li>
+                        </ul>
+                      </div><!-- .select-type -->
+                      <div class="input-wrap select-type select-type-5" style="display: none;">
+                        <span class="s-datepicker">
+                          <input type="text" class="input-base datepicker" />
+                        </span>
+                        <span class="btn-base tp3 md"><a href="#"><em class="add">일자추가</em></a></span>
+                        <ul class="result-list">
+                          <li>
+                            <span class="val">2024-07-01</span>
+                            <a href="#" class="del">삭제</a>
+                          </li>
+                          <li>
+                            <span class="val">2024-07-05</span>
+                            <a href="#" class="del">삭제</a>
+                          </li>
+                        </ul>
+                      </div><!-- .select-type -->
+                    </td>
+                    <td>
+                      <span class="btn-base tp5"><a href="#">삭제</a></span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>
+                      <div class="input-wrap datetime">
+                        <span class="s-datepicker">
+                          <input type="text" class="input-base datepicker" />
+                        </span>
+                        <select class="select-tag">
+                          <option value="0" selected>00시</option>
+                          <option value="1">Value 1</option>
+                          <option value="2">Value 2</option>
+                          <option value="3">Value 3</option>
+                        </select>
+                        <select class="select-tag">
+                          <option value="0" selected>00분</option>
+                          <option value="1">Value 1</option>
+                          <option value="2">Value 2</option>
+                          <option value="3">Value 3</option>
+                        </select>
+                        <span class="bridge">~</span>
+                        <span class="s-datepicker">
+                          <input type="text" class="input-base datepicker" />
+                        </span>
+                        <select class="select-tag">
+                          <option value="0" selected>00시</option>
+                          <option value="1">Value 1</option>
+                          <option value="2">Value 2</option>
+                          <option value="3">Value 3</option>
+                        </select>
+                        <select class="select-tag">
+                          <option value="0" selected>00분</option>
+                          <option value="1">Value 1</option>
+                          <option value="2">Value 2</option>
+                          <option value="3">Value 3</option>
+                        </select>
+                      </div>
+                    </td>
+                    <td>
+                      <select class="select-tag">
+                        <option value="0" selected>정율</option>
+                        <option value="1">Value 1</option>
+                        <option value="2">Value 2</option>
+                        <option value="3">Value 3</option>
+                      </select>
+                    </td>
+                    <td>
+                      <input type="text" class="input-base">
+                    </td>
+                    <td>
+                      <select class="select-tag set-type">
+                        <option value="1" selected>기간별</option>
+                        <option value="2">지정일</option>
+                        <option value="3">지정요일</option>
+                        <option value="4">지정시간</option>
+                        <option value="5">지정일자</option>
+                      </select>
+                    </td>
+                    <td>
+                      <div class="input-wrap select-type select-type-2" style="display: none;">
+                        <span class="label">일 지정형 : 매월</span>
+                        <select class="select-tag" style="width: 120px;">
+                          <option value="0" selected>1일</option>
+                          <option value="1">Value 1</option>
+                          <option value="2">Value 2</option>
+                          <option value="3">Value 3</option>
+                        </select>
+                        <select class="select-tag" style="width: 120px;">
+                          <option value="0" selected>일추가</option>
+                          <option value="1">Value 1</option>
+                          <option value="2">Value 2</option>
+                          <option value="3">Value 3</option>
+                        </select>
+                        <ul class="result-list">
+                          <li>
+                            <span class="val">1일</span>
+                            <a href="#" class="del">삭제</a>
+                          </li>
+                          <li>
+                            <span class="val">15일</span>
+                            <a href="#" class="del">삭제</a>
+                          </li>
+                        </ul>
+                      </div><!-- .select-type -->
+                      <div class="input-wrap select-type select-type-3" style="display: none;">
+                        <span class="label">요일 지정형 : 매주</span>
+                        <ul class="chk-list horizon">
+                          <li>
+                            <span class="chk-base">
+                              <input type="checkbox" id="chk2-weekand-1" />
+                              <label for="chk2-weekand-1">월</label>
+                            </span>
+                          </li>
+                          <li>
+                            <span class="chk-base">
+                              <input type="checkbox" id="chk2-weekand-2" />
+                              <label for="chk2-weekand-2">화</label>
+                            </span>
+                          </li>
+                          <li>
+                            <span class="chk-base">
+                              <input type="checkbox" id="chk2-weekand-3" />
+                              <label for="chk2-weekand-3">수</label>
+                            </span>
+                          </li>
+                          <li>
+                            <span class="chk-base">
+                              <input type="checkbox" id="chk2-weekand-4" />
+                              <label for="chk2-weekand-4">목</label>
+                            </span>
+                          </li>
+                          <li>
+                            <span class="chk-base">
+                              <input type="checkbox" id="chk2-weekand-5" />
+                              <label for="chk2-weekand-5">금</label>
+                            </span>
+                          </li>
+                          <li>
+                            <span class="chk-base">
+                              <input type="checkbox" id="chk2-weekand-6" />
+                              <label for="chk2-weekand-6">토</label>
+                            </span>
+                          </li>
+                          <li>
+                            <span class="chk-base">
+                              <input type="checkbox" id="chk2-weekand-7" />
+                              <label for="chk2-weekand-7">일</label>
+                            </span>
+                          </li>
+                        </ul>
+                      </div><!-- .select-type -->
+                      <div class="input-wrap select-type select-type-4" style="display: none;">
+                        <select class="select-tag" style="width: 120px;">
+                          <option value="0" selected>00시</option>
+                          <option value="1">Value 1</option>
+                          <option value="2">Value 2</option>
+                          <option value="3">Value 3</option>
+                        </select>
+                        <select class="select-tag" style="width: 120px;">
+                          <option value="0" selected>00분</option>
+                          <option value="1">Value 1</option>
+                          <option value="2">Value 2</option>
+                          <option value="3">Value 3</option>
+                        </select>
+                        <span class="bridge">~</span>
+                        <select class="select-tag" style="width: 120px;">
+                          <option value="0" selected>00시</option>
+                          <option value="1">Value 1</option>
+                          <option value="2">Value 2</option>
+                          <option value="3">Value 3</option>
+                        </select>
+                        <select class="select-tag" style="width: 120px;">
+                          <option value="0" selected>00분</option>
+                          <option value="1">Value 1</option>
+                          <option value="2">Value 2</option>
+                          <option value="3">Value 3</option>
+                        </select>
+                        <span class="btn-base tp3 md"><a href="#"><em class="add">시간추가</em></a></span>
+                        <ul class="result-list">
+                          <li>
+                            <span class="val">17:00 ~ 21:00</span>
+                            <a href="#" class="del">삭제</a>
+                          </li>
+                          <li>
+                            <span class="val">21:00 ~ 23:00</span>
+                            <a href="#" class="del">삭제</a>
+                          </li>
+                        </ul>
+                      </div><!-- .select-type -->
+                      <div class="input-wrap select-type select-type-5" style="display: none;">
+                        <span class="s-datepicker">
+                          <input type="text" class="input-base datepicker" />
+                        </span>
+                        <span class="btn-base tp3 md"><a href="#"><em class="add">일자추가</em></a></span>
+                        <ul class="result-list">
+                          <li>
+                            <span class="val">2024-07-01</span>
+                            <a href="#" class="del">삭제</a>
+                          </li>
+                          <li>
+                            <span class="val">2024-07-05</span>
+                            <a href="#" class="del">삭제</a>
+                          </li>
+                        </ul>
+                      </div><!-- .select-type -->
+                    </td>
+                    <td>
+                      <span class="btn-base tp5"><a href="#">삭제</a></span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>
+                      <div class="input-wrap datetime">
+                        <span class="s-datepicker">
+                          <input type="text" class="input-base datepicker" />
+                        </span>
+                        <select class="select-tag">
+                          <option value="0" selected>00시</option>
+                          <option value="1">Value 1</option>
+                          <option value="2">Value 2</option>
+                          <option value="3">Value 3</option>
+                        </select>
+                        <select class="select-tag">
+                          <option value="0" selected>00분</option>
+                          <option value="1">Value 1</option>
+                          <option value="2">Value 2</option>
+                          <option value="3">Value 3</option>
+                        </select>
+                        <span class="bridge">~</span>
+                        <span class="s-datepicker">
+                          <input type="text" class="input-base datepicker" />
+                        </span>
+                        <select class="select-tag">
+                          <option value="0" selected>00시</option>
+                          <option value="1">Value 1</option>
+                          <option value="2">Value 2</option>
+                          <option value="3">Value 3</option>
+                        </select>
+                        <select class="select-tag">
+                          <option value="0" selected>00분</option>
+                          <option value="1">Value 1</option>
+                          <option value="2">Value 2</option>
+                          <option value="3">Value 3</option>
+                        </select>
+                      </div>
+                    </td>
+                    <td>
+                      <select class="select-tag">
+                        <option value="0" selected>정율</option>
+                        <option value="1">Value 1</option>
+                        <option value="2">Value 2</option>
+                        <option value="3">Value 3</option>
+                      </select>
+                    </td>
+                    <td>
+                      <input type="text" class="input-base">
+                    </td>
+                    <td>
+                      <select class="select-tag set-type">
+                        <option value="1" selected>기간별</option>
+                        <option value="2">지정일</option>
+                        <option value="3">지정요일</option>
+                        <option value="4">지정시간</option>
+                        <option value="5">지정일자</option>
+                      </select>
+                    </td>
+                    <td>
+                      <div class="input-wrap select-type select-type-2" style="display: none;">
+                        <span class="label">일 지정형 : 매월</span>
+                        <select class="select-tag" style="width: 120px;">
+                          <option value="0" selected>1일</option>
+                          <option value="1">Value 1</option>
+                          <option value="2">Value 2</option>
+                          <option value="3">Value 3</option>
+                        </select>
+                        <select class="select-tag" style="width: 120px;">
+                          <option value="0" selected>일추가</option>
+                          <option value="1">Value 1</option>
+                          <option value="2">Value 2</option>
+                          <option value="3">Value 3</option>
+                        </select>
+                        <ul class="result-list">
+                          <li>
+                            <span class="val">1일</span>
+                            <a href="#" class="del">삭제</a>
+                          </li>
+                          <li>
+                            <span class="val">15일</span>
+                            <a href="#" class="del">삭제</a>
+                          </li>
+                        </ul>
+                      </div><!-- .select-type -->
+                      <div class="input-wrap select-type select-type-3" style="display: none;">
+                        <span class="label">요일 지정형 : 매주</span>
+                        <ul class="chk-list horizon">
+                          <li>
+                            <span class="chk-base">
+                              <input type="checkbox" id="chk3-weekand-1" />
+                              <label for="chk3-weekand-1">월</label>
+                            </span>
+                          </li>
+                          <li>
+                            <span class="chk-base">
+                              <input type="checkbox" id="chk3-weekand-2" />
+                              <label for="chk3-weekand-2">화</label>
+                            </span>
+                          </li>
+                          <li>
+                            <span class="chk-base">
+                              <input type="checkbox" id="chk3-weekand-3" />
+                              <label for="chk3-weekand-3">수</label>
+                            </span>
+                          </li>
+                          <li>
+                            <span class="chk-base">
+                              <input type="checkbox" id="chk3-weekand-4" />
+                              <label for="chk3-weekand-4">목</label>
+                            </span>
+                          </li>
+                          <li>
+                            <span class="chk-base">
+                              <input type="checkbox" id="chk3-weekand-5" />
+                              <label for="chk3-weekand-5">금</label>
+                            </span>
+                          </li>
+                          <li>
+                            <span class="chk-base">
+                              <input type="checkbox" id="chk3-weekand-6" />
+                              <label for="chk3-weekand-6">토</label>
+                            </span>
+                          </li>
+                          <li>
+                            <span class="chk-base">
+                              <input type="checkbox" id="chk3-weekand-7" />
+                              <label for="chk3-weekand-7">일</label>
+                            </span>
+                          </li>
+                        </ul>
+                      </div><!-- .select-type -->
+                      <div class="input-wrap select-type select-type-4" style="display: none;">
+                        <select class="select-tag" style="width: 120px;">
+                          <option value="0" selected>00시</option>
+                          <option value="1">Value 1</option>
+                          <option value="2">Value 2</option>
+                          <option value="3">Value 3</option>
+                        </select>
+                        <select class="select-tag" style="width: 120px;">
+                          <option value="0" selected>00분</option>
+                          <option value="1">Value 1</option>
+                          <option value="2">Value 2</option>
+                          <option value="3">Value 3</option>
+                        </select>
+                        <span class="bridge">~</span>
+                        <select class="select-tag" style="width: 120px;">
+                          <option value="0" selected>00시</option>
+                          <option value="1">Value 1</option>
+                          <option value="2">Value 2</option>
+                          <option value="3">Value 3</option>
+                        </select>
+                        <select class="select-tag" style="width: 120px;">
+                          <option value="0" selected>00분</option>
+                          <option value="1">Value 1</option>
+                          <option value="2">Value 2</option>
+                          <option value="3">Value 3</option>
+                        </select>
+                        <span class="btn-base tp3 md"><a href="#"><em class="add">시간추가</em></a></span>
+                        <ul class="result-list">
+                          <li>
+                            <span class="val">17:00 ~ 21:00</span>
+                            <a href="#" class="del">삭제</a>
+                          </li>
+                          <li>
+                            <span class="val">21:00 ~ 23:00</span>
+                            <a href="#" class="del">삭제</a>
+                          </li>
+                        </ul>
+                      </div><!-- .select-type -->
+                      <div class="input-wrap select-type select-type-5" style="display: none;">
+                        <span class="s-datepicker">
+                          <input type="text" class="input-base datepicker" />
+                        </span>
+                        <span class="btn-base tp3 md"><a href="#"><em class="add">일자추가</em></a></span>
+                        <ul class="result-list">
+                          <li>
+                            <span class="val">2024-07-01</span>
+                            <a href="#" class="del">삭제</a>
+                          </li>
+                          <li>
+                            <span class="val">2024-07-05</span>
+                            <a href="#" class="del">삭제</a>
+                          </li>
+                        </ul>
+                      </div><!-- .select-type -->
+                    </td>
+                    <td>
+                      <span class="btn-base tp5"><a href="#">삭제</a></span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>4</td>
+                    <td>
+                      <div class="input-wrap datetime">
+                        <span class="s-datepicker">
+                          <input type="text" class="input-base datepicker" />
+                        </span>
+                        <select class="select-tag">
+                          <option value="0" selected>00시</option>
+                          <option value="1">Value 1</option>
+                          <option value="2">Value 2</option>
+                          <option value="3">Value 3</option>
+                        </select>
+                        <select class="select-tag">
+                          <option value="0" selected>00분</option>
+                          <option value="1">Value 1</option>
+                          <option value="2">Value 2</option>
+                          <option value="3">Value 3</option>
+                        </select>
+                        <span class="bridge">~</span>
+                        <span class="s-datepicker">
+                          <input type="text" class="input-base datepicker" />
+                        </span>
+                        <select class="select-tag">
+                          <option value="0" selected>00시</option>
+                          <option value="1">Value 1</option>
+                          <option value="2">Value 2</option>
+                          <option value="3">Value 3</option>
+                        </select>
+                        <select class="select-tag">
+                          <option value="0" selected>00분</option>
+                          <option value="1">Value 1</option>
+                          <option value="2">Value 2</option>
+                          <option value="3">Value 3</option>
+                        </select>
+                      </div>
+                    </td>
+                    <td>
+                      <select class="select-tag">
+                        <option value="0" selected>정율</option>
+                        <option value="1">Value 1</option>
+                        <option value="2">Value 2</option>
+                        <option value="3">Value 3</option>
+                      </select>
+                    </td>
+                    <td>
+                      <input type="text" class="input-base">
+                    </td>
+                    <td>
+                      <select class="select-tag set-type">
+                        <option value="1" selected>기간별</option>
+                        <option value="2">지정일</option>
+                        <option value="3">지정요일</option>
+                        <option value="4">지정시간</option>
+                        <option value="5">지정일자</option>
+                      </select>
+                    </td>
+                    <td>
+                      <div class="input-wrap select-type select-type-2" style="display: none;">
+                        <span class="label">일 지정형 : 매월</span>
+                        <select class="select-tag" style="width: 120px;">
+                          <option value="0" selected>1일</option>
+                          <option value="1">Value 1</option>
+                          <option value="2">Value 2</option>
+                          <option value="3">Value 3</option>
+                        </select>
+                        <select class="select-tag" style="width: 120px;">
+                          <option value="0" selected>일추가</option>
+                          <option value="1">Value 1</option>
+                          <option value="2">Value 2</option>
+                          <option value="3">Value 3</option>
+                        </select>
+                        <ul class="result-list">
+                          <li>
+                            <span class="val">1일</span>
+                            <a href="#" class="del">삭제</a>
+                          </li>
+                          <li>
+                            <span class="val">15일</span>
+                            <a href="#" class="del">삭제</a>
+                          </li>
+                        </ul>
+                      </div><!-- .select-type -->
+                      <div class="input-wrap select-type select-type-3" style="display: none;">
+                        <span class="label">요일 지정형 : 매주</span>
+                        <ul class="chk-list horizon">
+                          <li>
+                            <span class="chk-base">
+                              <input type="checkbox" id="chk4-weekand-1" />
+                              <label for="chk4-weekand-1">월</label>
+                            </span>
+                          </li>
+                          <li>
+                            <span class="chk-base">
+                              <input type="checkbox" id="chk4-weekand-2" />
+                              <label for="chk4-weekand-2">화</label>
+                            </span>
+                          </li>
+                          <li>
+                            <span class="chk-base">
+                              <input type="checkbox" id="chk4-weekand-3" />
+                              <label for="chk4-weekand-3">수</label>
+                            </span>
+                          </li>
+                          <li>
+                            <span class="chk-base">
+                              <input type="checkbox" id="chk4-weekand-4" />
+                              <label for="chk4-weekand-4">목</label>
+                            </span>
+                          </li>
+                          <li>
+                            <span class="chk-base">
+                              <input type="checkbox" id="chk4-weekand-5" />
+                              <label for="chk4-weekand-5">금</label>
+                            </span>
+                          </li>
+                          <li>
+                            <span class="chk-base">
+                              <input type="checkbox" id="chk4-weekand-6" />
+                              <label for="chk4-weekand-6">토</label>
+                            </span>
+                          </li>
+                          <li>
+                            <span class="chk-base">
+                              <input type="checkbox" id="chk4-weekand-7" />
+                              <label for="chk4-weekand-7">일</label>
+                            </span>
+                          </li>
+                        </ul>
+                      </div><!-- .select-type -->
+                      <div class="input-wrap select-type select-type-4" style="display: none;">
+                        <select class="select-tag" style="width: 120px;">
+                          <option value="0" selected>00시</option>
+                          <option value="1">Value 1</option>
+                          <option value="2">Value 2</option>
+                          <option value="3">Value 3</option>
+                        </select>
+                        <select class="select-tag" style="width: 120px;">
+                          <option value="0" selected>00분</option>
+                          <option value="1">Value 1</option>
+                          <option value="2">Value 2</option>
+                          <option value="3">Value 3</option>
+                        </select>
+                        <span class="bridge">~</span>
+                        <select class="select-tag" style="width: 120px;">
+                          <option value="0" selected>00시</option>
+                          <option value="1">Value 1</option>
+                          <option value="2">Value 2</option>
+                          <option value="3">Value 3</option>
+                        </select>
+                        <select class="select-tag" style="width: 120px;">
+                          <option value="0" selected>00분</option>
+                          <option value="1">Value 1</option>
+                          <option value="2">Value 2</option>
+                          <option value="3">Value 3</option>
+                        </select>
+                        <span class="btn-base tp3 md"><a href="#"><em class="add">시간추가</em></a></span>
+                        <ul class="result-list">
+                          <li>
+                            <span class="val">17:00 ~ 21:00</span>
+                            <a href="#" class="del">삭제</a>
+                          </li>
+                          <li>
+                            <span class="val">21:00 ~ 23:00</span>
+                            <a href="#" class="del">삭제</a>
+                          </li>
+                        </ul>
+                      </div><!-- .select-type -->
+                      <div class="input-wrap select-type select-type-5" style="display: none;">
+                        <span class="s-datepicker">
+                          <input type="text" class="input-base datepicker" />
+                        </span>
+                        <span class="btn-base tp3 md"><a href="#"><em class="add">일자추가</em></a></span>
+                        <ul class="result-list">
+                          <li>
+                            <span class="val">2024-07-01</span>
+                            <a href="#" class="del">삭제</a>
+                          </li>
+                          <li>
+                            <span class="val">2024-07-05</span>
+                            <a href="#" class="del">삭제</a>
+                          </li>
+                        </ul>
+                      </div><!-- .select-type -->
+                    </td>
+                    <td>
+                      <span class="btn-base tp5"><a href="#">삭제</a></span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>5</td>
+                    <td>
+                      <div class="input-wrap datetime">
+                        <span class="s-datepicker">
+                          <input type="text" class="input-base datepicker" />
+                        </span>
+                        <select class="select-tag">
+                          <option value="0" selected>00시</option>
+                          <option value="1">Value 1</option>
+                          <option value="2">Value 2</option>
+                          <option value="3">Value 3</option>
+                        </select>
+                        <select class="select-tag">
+                          <option value="0" selected>00분</option>
+                          <option value="1">Value 1</option>
+                          <option value="2">Value 2</option>
+                          <option value="3">Value 3</option>
+                        </select>
+                        <span class="bridge">~</span>
+                        <span class="s-datepicker">
+                          <input type="text" class="input-base datepicker" />
+                        </span>
+                        <select class="select-tag">
+                          <option value="0" selected>00시</option>
+                          <option value="1">Value 1</option>
+                          <option value="2">Value 2</option>
+                          <option value="3">Value 3</option>
+                        </select>
+                        <select class="select-tag">
+                          <option value="0" selected>00분</option>
+                          <option value="1">Value 1</option>
+                          <option value="2">Value 2</option>
+                          <option value="3">Value 3</option>
+                        </select>
+                      </div>
+                    </td>
+                    <td>
+                      <select class="select-tag">
+                        <option value="0" selected>정율</option>
+                        <option value="1">Value 1</option>
+                        <option value="2">Value 2</option>
+                        <option value="3">Value 3</option>
+                      </select>
+                    </td>
+                    <td>
+                      <input type="text" class="input-base">
+                    </td>
+                    <td>
+                      <select class="select-tag set-type">
+                        <option value="1" selected>기간별</option>
+                        <option value="2">지정일</option>
+                        <option value="3">지정요일</option>
+                        <option value="4">지정시간</option>
+                        <option value="5">지정일자</option>
+                      </select>
+                    </td>
+                    <td>
+                      <div class="input-wrap select-type select-type-2" style="display: none;">
+                        <span class="label">일 지정형 : 매월</span>
+                        <select class="select-tag" style="width: 120px;">
+                          <option value="0" selected>1일</option>
+                          <option value="1">Value 1</option>
+                          <option value="2">Value 2</option>
+                          <option value="3">Value 3</option>
+                        </select>
+                        <select class="select-tag" style="width: 120px;">
+                          <option value="0" selected>일추가</option>
+                          <option value="1">Value 1</option>
+                          <option value="2">Value 2</option>
+                          <option value="3">Value 3</option>
+                        </select>
+                        <ul class="result-list">
+                          <li>
+                            <span class="val">1일</span>
+                            <a href="#" class="del">삭제</a>
+                          </li>
+                          <li>
+                            <span class="val">15일</span>
+                            <a href="#" class="del">삭제</a>
+                          </li>
+                        </ul>
+                      </div><!-- .select-type -->
+                      <div class="input-wrap select-type select-type-3" style="display: none;">
+                        <span class="label">요일 지정형 : 매주</span>
+                        <ul class="chk-list horizon">
+                          <li>
+                            <span class="chk-base">
+                              <input type="checkbox" id="chk5-weekand-1" />
+                              <label for="chk5-weekand-1">월</label>
+                            </span>
+                          </li>
+                          <li>
+                            <span class="chk-base">
+                              <input type="checkbox" id="chk5-weekand-2" />
+                              <label for="chk5-weekand-2">화</label>
+                            </span>
+                          </li>
+                          <li>
+                            <span class="chk-base">
+                              <input type="checkbox" id="chk5-weekand-3" />
+                              <label for="chk5-weekand-3">수</label>
+                            </span>
+                          </li>
+                          <li>
+                            <span class="chk-base">
+                              <input type="checkbox" id="chk5-weekand-4" />
+                              <label for="chk5-weekand-4">목</label>
+                            </span>
+                          </li>
+                          <li>
+                            <span class="chk-base">
+                              <input type="checkbox" id="chk5-weekand-5" />
+                              <label for="chk5-weekand-5">금</label>
+                            </span>
+                          </li>
+                          <li>
+                            <span class="chk-base">
+                              <input type="checkbox" id="chk5-weekand-6" />
+                              <label for="chk5-weekand-6">토</label>
+                            </span>
+                          </li>
+                          <li>
+                            <span class="chk-base">
+                              <input type="checkbox" id="chk5-weekand-7" />
+                              <label for="chk5-weekand-7">일</label>
+                            </span>
+                          </li>
+                        </ul>
+                      </div><!-- .select-type -->
+                      <div class="input-wrap select-type select-type-4" style="display: none;">
+                        <select class="select-tag" style="width: 120px;">
+                          <option value="0" selected>00시</option>
+                          <option value="1">Value 1</option>
+                          <option value="2">Value 2</option>
+                          <option value="3">Value 3</option>
+                        </select>
+                        <select class="select-tag" style="width: 120px;">
+                          <option value="0" selected>00분</option>
+                          <option value="1">Value 1</option>
+                          <option value="2">Value 2</option>
+                          <option value="3">Value 3</option>
+                        </select>
+                        <span class="bridge">~</span>
+                        <select class="select-tag" style="width: 120px;">
+                          <option value="0" selected>00시</option>
+                          <option value="1">Value 1</option>
+                          <option value="2">Value 2</option>
+                          <option value="3">Value 3</option>
+                        </select>
+                        <select class="select-tag" style="width: 120px;">
+                          <option value="0" selected>00분</option>
+                          <option value="1">Value 1</option>
+                          <option value="2">Value 2</option>
+                          <option value="3">Value 3</option>
+                        </select>
+                        <span class="btn-base tp3 md"><a href="#"><em class="add">시간추가</em></a></span>
+                        <ul class="result-list">
+                          <li>
+                            <span class="val">17:00 ~ 21:00</span>
+                            <a href="#" class="del">삭제</a>
+                          </li>
+                          <li>
+                            <span class="val">21:00 ~ 23:00</span>
+                            <a href="#" class="del">삭제</a>
+                          </li>
+                        </ul>
+                      </div><!-- .select-type -->
+                      <div class="input-wrap select-type select-type-5" style="display: none;">
+                        <span class="s-datepicker">
+                          <input type="text" class="input-base datepicker" />
+                        </span>
+                        <span class="btn-base tp3 md"><a href="#"><em class="add">일자추가</em></a></span>
+                        <ul class="result-list">
+                          <li>
+                            <span class="val">2024-07-01</span>
+                            <a href="#" class="del">삭제</a>
+                          </li>
+                          <li>
+                            <span class="val">2024-07-05</span>
+                            <a href="#" class="del">삭제</a>
+                          </li>
+                        </ul>
+                      </div><!-- .select-type -->
+                    </td>
+                    <td>
+                      <span class="btn-base tp5"><a href="#">삭제</a></span>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           </div><!-- .tb-list-wrap -->
+
+          <div class="s-tit-area mt25">
+            <h4 class="s-tit">행사 설정</h4>
+          </div>
+          <div class="tb-input-wrap mt15">
+            <table class="tb-input">
+              <colgroup>
+                <col width="12%" />
+                <col width="*" />
+              </colgroup>
+              <tbody>
+                <tr>
+                  <th scope="row">행사아이디</th>
+                  <td>
+                    <input type="text" class="input-base" style="width: 200px;">
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">행사명</th>
+                  <td>
+                    <input type="text" class="input-base" style="width: 200px;">
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">행사일자</th>
+                  <td>
+                    <div class="input-wrap fix-width">
+                      <span class="s-datepicker disabled">
+                        <input type="text" class="input-base datepicker" value="2024-07-25" />
+                      </span>
+                      <span class="bridge">~</span>
+                      <span class="s-datepicker disabled">
+                        <input type="text" class="input-base datepicker" value="2024-08-24" />
+                      </span>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">BIN정보검색</th>
+                  <td>
+                    <div class="input-wrapper">
+                      <div class="input-wrap input-btn input-file">
+                        <input type="text" class="input-base" readonly value="사업자등록증.PDF" />
+                        <input type="file" accept="image/*" style="right: 118px;">
+                        <a href="#" class="btn-delete on" style="right: 238px;"></a>
+                        <span class="btn-base tp2"><a href="#"><em class="upload">파일 등록</em></a></span>
+                        <span class="btn-base tp3"><a href="#">샘플파일다운</a></span>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div><!-- .tb-input-wrap -->
+
+          <div class="total-area mt15">
+            <div>
+              <span class="total">
+                [총 <em>100</em>건]
+              </span>
+            </div>
+            <div class="btns-wrap">
+              <span class="btn-base tp2 lg"><a href="#">초기화</a></span>
+            </div>
+          </div>
+
+          <div class="tb-list-wrap mt12">
+            <div class="tb-scroll">
+              <table class="tb-list">
+                <colgroup>
+                  <col width="50" />
+                  <col width="" />
+                  <col width="" />
+                  <col width="" />
+                </colgroup>
+                <thead>
+                  <tr>
+                    <th scope="col"><span>No.</span></th>
+                    <th scope="col"><span>BIN번호</span></th>
+                    <th scope="col"><span>카드사</span></th>
+                    <th scope="col"><span>카드유형</span></th>
+                    <th scope="col"><span>카드브랜드</span></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>4</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>5</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>6</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div><!-- .tb-list-wrap -->
+
+          <h4 class="s-tit mt20">이미지 정보</h4>
+          <div class="tb-input-wrap mt10">
+            <table class="tb-input">
+              <colgroup>
+                <col width="12%" />
+                <col width="38%" />
+                <col width="12%" />
+                <col width="*" />
+              </colgroup>
+              <tbody>
+                <tr>
+                  <th scope="row">상품이미지 <em>*</em></th>
+                  <td colspan="3">
+                    <ul class="file-list type-2">
+                      <li>
+                        <div class="thumb-area">
+                          <span class="thumb-ico"></span>
+                          <a href="#" class="btn-delete"></a>
+                        </div>
+                        <span class="btn-base tp5"><a href="#">이미지 등록</a></span>
+                        <input type="file" accept="image/*" />
+                      </li>
+                      <li>
+                        <div class="thumb-area">
+                          <span class="thumb-ico"></span>
+                          <a href="#" class="btn-delete"></a>
+                        </div>
+                        <span class="btn-base tp5"><a href="#">이미지 등록</a></span>
+                        <input type="file" accept="image/*" />
+                      </li>
+                    </ul>
+                    <ul class="info-list mt10">
+                      <li>※ 권장 사이즈 250x250 /5MB이하/지원 파일 형식 png, jpg, jpeg</li>
+                    </ul>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">스킨 <em>*</em></th>
+                  <td colspan="3">
+                    <ul class="radio-list flex">
+                      <li>
+                        <span class="radio-base">
+                          <input type="radio" id="radio-skin-1" name="radio-skin" checked />
+                          <label for="radio-skin-1">기본스킨</label>
+                        </span>
+                      </li>
+                      <li>
+                        <span class="radio-base">
+                          <input type="radio" id="radio-skin-2" name="radio-skin" />
+                          <label for="radio-skin-2">스킨검색</label>
+                        </span>
+                      </li>
+                      <li>
+                        <div class="input-wrap input-btn input-file preview disabled">
+                          <input type="text" class="input-base" readonly disabled />
+                          <span class="btn-base tp3"><a href="#">검색</a></span>
+                          <input type="file" accept="image/*" />
+                          <a href="#" class="btn-delete"></a>
+                          <span class="btn-base tp3 green btn-preview btn-popup-anim-1"><a href="#popup-preview">미리보기</a></span>
+                        </div>
+                      </li>
+                    </ul>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div><!-- .tb-input-wrap -->
         </div><!-- .con-area -->
       </div><!-- .content-wrap -->
     </div><!-- #container -->
@@ -969,6 +2138,7 @@
     </div><!-- .popup-confirm -->
   </div><!-- #wrap -->
 
+  <script src="js/load-image.all.min.js"></script></div>
   <script>
     // S: 상품군 추가/삭제 기능
     setTimeout(() => {
@@ -1085,6 +2255,114 @@
       checkInTbScroll('#chk-tb-local-all'); // ui.js 내부에 정의
       checkInTbScroll('#chk-tb-jumpo-all'); // ui.js 내부에 정의
     }, 250);
+
+    $('.tb-scroll').on('scroll', function(){
+      var left = $(this).scrollLeft();
+      // console.log(left)
+      $(this).prev('.tb-fix').css('left', -1 * left + 'px');
+    });
+
+    // 타입 설정 값
+    $('.set-type').on('change', function(){
+      $(this).closest('tr').find('.select-type').hide();
+      if ($(this).val() == 2) {
+        $(this).closest('tr').find('.select-type-2').show();
+      } else if ($(this).val() == 3) {
+        $(this).closest('tr').find('.select-type-3').show();
+      } else if ($(this).val() == 4) {
+        $(this).closest('tr').find('.select-type-4').show();
+      } else if ($(this).val() == 5) {
+        $(this).closest('tr').find('.select-type-5').show();
+      }
+    });
+    $(document).on('click', '.input-wrap.select-type .result-list li .del', function(){
+      $(this).closest('li').remove();
+    });
+
+    // BIN정보검색 - 파일 등록
+    $('.input-file').find('input[type="file"]').on('change', function(e){
+      var $input = $(this).closest('.input-file').find('.input-base');
+      var $del = $(this).closest('.input-file').find('.btn-delete');
+      var fileValue = this.value.split('\\');  
+      $input.val(fileValue[fileValue.length-1]);
+      $del.addClass('on');
+    });
+    $('.input-wrap.input-file .btn-delete').on('click', function(){
+      $(this).removeClass('on');
+      $(this).closest('.input-file').find('.input-base').val('');
+    })
+
+    // 이미지 정보
+    // 상품이미지
+    $('.file-list').on('click', 'li .btn-delete', function(e){
+      var $thumb = $(this).closest('li').find('.thumb-area');
+      e.preventDefault();
+      // $(this).closest('li').remove();
+      $thumb.removeClass('on');
+      $thumb.attr('style', null);
+    });
+    $('.file-list').on('change', 'li input[type="file"]', function(e){
+      var $thumb = $(this).closest('li').find('.thumb-area');
+      loadImage(
+        e.target.files[0],
+        function (img) {
+          $thumb.css('background-image', 'url(' + img.toDataURL() + ')');
+          $thumb.addClass('on');
+        },
+        {
+          canvas: true,
+          crop: false,
+          downsamplingRatio: 0.5,
+          maxWidth: 185,
+          maxHeight: 185,
+          orientation: true
+        }
+      );
+    });
+    // 스킨 - 라디오
+    $('input[name="radio-skin"]').on('change', function(){
+      var $input = $(this).closest('.radio-list').find('.input-file.preview .input-base');
+      if ($(this).attr('id') == 'radio-skin-1') { // 기본스킨
+        if ($(this).is(':checked')) {
+          $input.prop('disabled', true);
+          $('.input-file.preview').addClass('disabled');
+        }
+      }
+      if ($(this).attr('id') == 'radio-skin-2') { // 스킨검색
+        if ($(this).is(':checked')) {
+          $input.prop('disabled', false);
+          $('.input-file.preview').removeClass('disabled');
+        }
+      }
+    });
+    
+    // 스킨 - 미리보기
+    var previewInput = $('.input-file.preview .input-base');
+    var previewDel = $('.input-file.preview .btn-delete');
+    var previewObj = $('.popup-preview .skin-obj');
+
+    $('.input-file.preview input[type="file"]').on('change', function(e){
+      var file = e.target.files[0];
+      if (file) {
+        var fileValue = this.value.split('\\');
+        previewInput.val(fileValue[fileValue.length-1]);
+        previewDel.addClass('on');
+        var reader = new FileReader();
+        reader.onload = function(e) {
+          previewObj.css('background-image', 'url(' + e.target.result + ')');
+        }
+        reader.readAsDataURL(file);
+      } else {
+        previewObj.css('background-image', 'none');
+        previewInput.val('');
+        previewDel.removeClass('on');
+      }
+    });
+    previewDel.on('click', function(){
+      previewObj.css('background-image', 'none');
+      previewInput.val('');
+      previewDel.removeClass('on');
+    });
 
     var Qpopup = $.urlParam('popup');
     var Qwpopup = $.urlParam('wpopup');
