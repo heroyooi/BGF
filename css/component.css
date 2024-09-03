@@ -555,6 +555,16 @@
 .input-wrap.radio-input-unit .input-unit .unit {
   flex-shrink: 0;
 }
+.input-wrap.label-input {
+  display: flex;
+  align-items: center;
+  gap: 0 6px;
+}
+.input-wrap.label-input .label {
+  flex-shrink: 0;
+  margin-left: 0;
+  font-weight: 400;
+}
 .input-list > li {
   padding-left: 65px;
   position: relative;
@@ -2451,7 +2461,10 @@ select.select-tag.green {
 .select-list li:first-child {
   margin-top: 0;
 }
-
+.select-wrap {
+  display: flex;
+  gap: 0 30px;
+}
 .select-box {
   position: relative;
 }

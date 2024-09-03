@@ -435,7 +435,552 @@
           </div><!-- .tb-input-wrap -->
 
           <h4 class="s-tit mt25">할인 설정</h4>
-          PPT 16 ~ 23 페이지 내용만 하면 됨
+          <div class="tb-input-wrap mt15">
+            <table class="tb-input">
+              <colgroup>
+                <col width="12%" />
+                <col width="*" />
+              </colgroup>
+              <tbody>
+                <tr>
+                  <th scope="row">가격정책</th>
+                  <td>
+                    <select class="select-tag" style="width: 200px;">
+                      <option value="0" selected>선택</option>
+                      <option value="1">Value 1</option>
+                      <option value="2">Value 2</option>
+                      <option value="3">Value 3</option>
+                    </select>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">최대할인/적립액</th>
+                  <td>
+                    <div class="input-wrap select-input"  style="width: 406px;">
+                      <select class="select-tag">
+                        <option value="0" selected="">선택</option>
+                        <option value="1">Value 1</option>
+                        <option value="2">Value 2</option>
+                        <option value="3">Value 3</option>
+                      </select>
+                      <input type="text" class="input-base">
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">기준금액타입</th>
+                  <td>
+                    <ul class="radio-list flex">
+                      <li>
+                        <span class="radio-base">
+                          <input type="radio" id="radio-rmoney-1" name="radio-rmoney" checked />
+                          <label for="radio-rmoney-1">없음</label>
+                        </span>
+                      </li>
+                      <li>
+                        <span class="radio-base">
+                          <input type="radio" id="radio-rmoney-2" name="radio-rmoney" />
+                          <label for="radio-rmoney-2">이상</label>
+                        </span>
+                      </li>
+                      <li>
+                        <div class="input-wrap select-input">
+                          <input type="text" class="input-base" disabled>
+                          <select class="select-tag" disabled>
+                            <option value="0">선택</option>
+                            <option value="1" selected>원</option>
+                            <option value="2">%</option>
+                          </select>
+                        </div>
+                      </li>
+                    </ul>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div><!-- .tb-input-wrap -->
+
+          <h4 class="s-tit mt25">사용 설정</h4>
+          <div class="tb-input-wrap mt15">
+            <table class="tb-input">
+              <colgroup>
+                <col width="12%" />
+                <col width="*" />
+              </colgroup>
+              <tbody>
+                <tr>
+                  <th scope="row">총사용가능횟수</th>
+                  <td>
+                    <select class="select-tag" style="width: 200px;">
+                      <option value="0" selected>선택</option>
+                      <option value="1">Value 1</option>
+                      <option value="2">Value 2</option>
+                      <option value="3">Value 3</option>
+                    </select>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">시간제한</th>
+                  <td>
+                    <div class="select-wrap">
+                      <div class="input-wrap select-group" style="width: 406px;">
+                        <select class="select-tag">
+                          <option value="0" selected>00시</option>
+                          <option value="1">Value 1</option>
+                          <option value="2">Value 2</option>
+                          <option value="3">Value 3</option>
+                        </select>
+                        <select class="select-tag">
+                          <option value="0" selected>00분</option>
+                          <option value="1">Value 1</option>
+                          <option value="2">Value 2</option>
+                          <option value="3">Value 3</option>
+                        </select>
+                      </div>
+                      <div class="input-wrap select-group" style="width: 406px;">
+                        <select class="select-tag">
+                          <option value="0" selected>00시</option>
+                          <option value="1">Value 1</option>
+                          <option value="2">Value 2</option>
+                          <option value="3">Value 3</option>
+                        </select>
+                        <select class="select-tag">
+                          <option value="0" selected>00분</option>
+                          <option value="1">Value 1</option>
+                          <option value="2">Value 2</option>
+                          <option value="3">Value 3</option>
+                        </select>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">선착순여부</th>
+                  <td>
+                    <ul class="radio-list flex">
+                      <li>
+                        <span class="radio-base">
+                          <input type="radio" id="radio-fcome-1" name="radio-fcome" checked />
+                          <label for="radio-fcome-1">미설정</label>
+                        </span>
+                      </li>
+                      <li>
+                        <span class="radio-base">
+                          <input type="radio" id="radio-fcome-2" name="radio-fcome" />
+                          <label for="radio-fcome-2">설정</label>
+                        </span>
+                      </li>
+                      <li>
+                        <div class="input-wrap label-input">
+                          <span class="label">제한수량</span>
+                          <input type="text" class="input-base" disabled>
+                        </div>
+                      </li>
+                    </ul>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">배달</th>
+                  <td>
+                    <ul class="radio-list flex">
+                      <li>
+                        <span class="radio-base">
+                          <input type="radio" id="radio-delivery-1" name="radio-delivery" checked />
+                          <label for="radio-delivery-1">미설정</label>
+                        </span>
+                      </li>
+                      <li>
+                        <span class="radio-base">
+                          <input type="radio" id="radio-delivery-2" name="radio-delivery" />
+                          <label for="radio-delivery-2">설정</label>
+                        </span>
+                      </li>
+                    </ul>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">픽업</th>
+                  <td>
+                    <ul class="radio-list flex">
+                      <li>
+                        <span class="radio-base">
+                          <input type="radio" id="radio-pickup-1" name="radio-pickup" checked />
+                          <label for="radio-pickup-1">미설정</label>
+                        </span>
+                      </li>
+                      <li>
+                        <span class="radio-base">
+                          <input type="radio" id="radio-pickup-2" name="radio-pickup" />
+                          <label for="radio-pickup-2">설정</label>
+                        </span>
+                      </li>
+                    </ul>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">택배</th>
+                  <td>
+                    <ul class="radio-list flex">
+                      <li>
+                        <span class="radio-base">
+                          <input type="radio" id="radio-parcel-1" name="radio-parcel" checked />
+                          <label for="radio-parcel-1">미설정</label>
+                        </span>
+                      </li>
+                      <li>
+                        <span class="radio-base">
+                          <input type="radio" id="radio-parcel-2" name="radio-parcel" />
+                          <label for="radio-parcel-2">설정</label>
+                        </span>
+                      </li>
+                    </ul>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">예약구매</th>
+                  <td>
+                    <ul class="radio-list flex">
+                      <li>
+                        <span class="radio-base">
+                          <input type="radio" id="radio-reserve-1" name="radio-reserve" checked />
+                          <label for="radio-reserve-1">미설정</label>
+                        </span>
+                      </li>
+                      <li>
+                        <span class="radio-base">
+                          <input type="radio" id="radio-reserve-2" name="radio-reserve" />
+                          <label for="radio-reserve-2">설정</label>
+                        </span>
+                      </li>
+                    </ul>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">POST택배</th>
+                  <td>
+                    <select class="select-tag" style="width: 200px;">
+                      <option value="0" selected>선택</option>
+                      <option value="1">Value 1</option>
+                      <option value="2">Value 2</option>
+                      <option value="3">Value 3</option>
+                    </select>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div><!-- .tb-input-wrap -->
+          <div class="tb-input-wrap mt15">
+            <table class="tb-input">
+              <colgroup>
+                <col width="12%" />
+                <col width="*" />
+              </colgroup>
+              <tbody>
+                <tr>
+                  <th scope="row">사용가능지역</th>
+                  <td>
+                    <div class="select-btn">
+                      <select class="select-tag" style="width: 200px;" id="select-avaliable">
+                        <option value="1" selected>전체</option>
+                        <option value="2">지역선택</option>
+                        <option value="3">점포선택</option>
+                      </select>
+                      <span class="btn-base tp3" id="search-btn1" style="display: none;"><a href="javascript:;">지역검색</a></span>
+                      <span class="btn-base tp3" id="search-btn2" style="display: none;"><a href="javascript:;">점포검색</a></span>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div><!-- .tb-input-wrap -->
+
+          <div class="total-area mt15" id="search-total1" style="display: none;">
+            <div>
+              <span class="total">
+                [지역 총 <em>5</em>건]
+              </span>
+            </div>
+            <div class="btns-wrap">
+              <span class="btn-base tp2 lg"><a href="#">삭제</a></span>
+            </div>
+          </div>
+
+          <div class="tb-list-wrap mt12" id="search-result1" style="display: none;">
+            <div class="tb-scroll">
+              <table class="tb-list">
+                <colgroup>
+                  <col width="50" />
+                  <col width="50" />
+                  <col width="" />
+                  <col width="" />
+                  <col width="" />
+                </colgroup>
+                <thead>
+                  <tr>
+                    <th scope="col">
+                      <span>
+                        <span class="chk-base chk-only">
+                          <input type="checkbox" id="chk-tb-local-all" />
+                          <label for="chk-tb-local-all">전체 체크</label>
+                        </span>
+                      </span>
+                    </th>
+                    <th scope="col"><span>No.</span></th>
+                    <th scope="col"><span>(시/도)</span></th>
+                    <th scope="col"><span>사용가능지역(구/군)</span></th>
+                    <th scope="col"><span>코드</span></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <span class="chk-base chk-only">
+                        <input type="checkbox" id="chk-tb-local-1" />
+                        <label for="chk-tb-local-1">체크1</label>
+                      </span>
+                    </td>
+                    <td>1</td>
+                    <td>강원도</td>
+                    <td>고성군</td>
+                    <td>23</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <span class="chk-base chk-only">
+                        <input type="checkbox" id="chk-tb-local-2" />
+                        <label for="chk-tb-local-2">체크2</label>
+                      </span>
+                    </td>
+                    <td>2</td>
+                    <td>경기도</td>
+                    <td>고성군</td>
+                    <td>12</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <span class="chk-base chk-only">
+                        <input type="checkbox" id="chk-tb-local-3" />
+                        <label for="chk-tb-local-3">체크3</label>
+                      </span>
+                    </td>
+                    <td>3</td>
+                    <td>경상남도</td>
+                    <td>지역구</td>
+                    <td>23</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <span class="chk-base chk-only">
+                        <input type="checkbox" id="chk-tb-local-4" />
+                        <label for="chk-tb-local-4">체크4</label>
+                      </span>
+                    </td>
+                    <td>4</td>
+                    <td>광주광역시</td>
+                    <td>지역군</td>
+                    <td>23</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <span class="chk-base chk-only">
+                        <input type="checkbox" id="chk-tb-local-5" />
+                        <label for="chk-tb-local-5">체크5</label>
+                      </span>
+                    </td>
+                    <td>5</td>
+                    <td>서울특별시</td>
+                    <td>강남구</td>
+                    <td>44</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <span class="chk-base chk-only">
+                        <input type="checkbox" id="chk-tb-local-6" />
+                        <label for="chk-tb-local-6">체크6</label>
+                      </span>
+                    </td>
+                    <td>6</td>
+                    <td>강원도</td>
+                    <td>평창군</td>
+                    <td>45</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div><!-- .tb-list-wrap -->
+
+          <div class="total-area mt15" id="search-total2" style="display: none;">
+            <div>
+              <span class="total">
+                [점포 총 <em>5</em>건]
+              </span>
+            </div>
+            <div class="btns-wrap">
+              <span class="btn-base tp2 lg"><a href="#">삭제</a></span>
+            </div>
+          </div>
+
+          <div class="tb-list-wrap mt12" id="search-result2" style="display: none;">
+            <div class="tb-scroll">
+              <table class="tb-list">
+                <colgroup>
+                  <col width="50" />
+                  <col width="50" />
+                  <col width="" />
+                  <col width="" />
+                  <col width="" />
+                </colgroup>
+                <thead>
+                  <tr>
+                    <th scope="col">
+                      <span>
+                        <span class="chk-base chk-only">
+                          <input type="checkbox" id="chk-tb-jumpo-all" />
+                          <label for="chk-tb-jumpo-all">전체 체크</label>
+                        </span>
+                      </span>
+                    </th>
+                    <th scope="col"><span>No.</span></th>
+                    <th scope="col"><span>시/군</span></th>
+                    <th scope="col"><span>점포명</span></th>
+                    <th scope="col"><span>점포코드</span></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <span class="chk-base chk-only">
+                        <input type="checkbox" id="chk-tb-jumpo-1" />
+                        <label for="chk-tb-jumpo-1">체크1</label>
+                      </span>
+                    </td>
+                    <td>1</td>
+                    <td>강원도</td>
+                    <td>점포명</td>
+                    <td>23</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <span class="chk-base chk-only">
+                        <input type="checkbox" id="chk-tb-jumpo-2" />
+                        <label for="chk-tb-jumpo-2">체크2</label>
+                      </span>
+                    </td>
+                    <td>2</td>
+                    <td>경기도</td>
+                    <td>점포명</td>
+                    <td>12</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <span class="chk-base chk-only">
+                        <input type="checkbox" id="chk-tb-jumpo-3" />
+                        <label for="chk-tb-jumpo-3">체크3</label>
+                      </span>
+                    </td>
+                    <td>3</td>
+                    <td>경상남도</td>
+                    <td>점포명</td>
+                    <td>23</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <span class="chk-base chk-only">
+                        <input type="checkbox" id="chk-tb-jumpo-4" />
+                        <label for="chk-tb-jumpo-4">체크4</label>
+                      </span>
+                    </td>
+                    <td>4</td>
+                    <td>광주광역시</td>
+                    <td>점포명</td>
+                    <td>23</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <span class="chk-base chk-only">
+                        <input type="checkbox" id="chk-tb-jumpo-5" />
+                        <label for="chk-tb-jumpo-5">체크5</label>
+                      </span>
+                    </td>
+                    <td>5</td>
+                    <td>서울특별시</td>
+                    <td>점포명</td>
+                    <td>44</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <span class="chk-base chk-only">
+                        <input type="checkbox" id="chk-tb-jumpo-6" />
+                        <label for="chk-tb-jumpo-6">체크6</label>
+                      </span>
+                    </td>
+                    <td>6</td>
+                    <td>강원도</td>
+                    <td>점포명</td>
+                    <td>45</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div><!-- .tb-list-wrap -->
+
+          <div class="tb-input-wrap mt15">
+            <table class="tb-input">
+              <colgroup>
+                <col width="12%" />
+                <col width="*" />
+              </colgroup>
+              <tbody>
+                <tr>
+                  <th scope="row">사용가능점포</th>
+                  <td>
+                    <select class="select-tag" style="width: 200px;">
+                      <option value="0" selected>전체</option>
+                      <option value="1">Value 1</option>
+                      <option value="2">Value 2</option>
+                      <option value="3">Value 3</option>
+                    </select>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div><!-- .tb-input-wrap -->
+
+          <div class="s-tit-area mt15">
+            <h4 class="s-tit">프로모션 설정</h4>
+            <span class="btn-base tp2 lg green"><a href="#"><em class="add">추가</em></a></span>
+          </div>
+          <div class="tb-list-wrap mt15">  
+            <div class="tb-scroll">
+              <table id="table_2" class="table classic">
+                <thead>
+                  <tr>
+                    <th width="50px"><span>No.</span></th>
+                    <th><span>담당자명</span></th>
+                    <th><span>부서명</span></th>
+                    <th><span>연락처(회사)</span></th>
+                    <th><span>연락처(휴대폰)</span></th>
+                    <th><span>이메일</span></th>
+                    <th><span>메모</span></th>
+                    <th width="89px"><span>&nbsp;</span></th>
+                  </tr>
+                </thead>
+                <tbody></tbody>
+              </table>
+            </div>
+            <script id="tpl_row2" type="text/template">
+              <tr>
+                <td><!= no !></td>
+                <td><!= col1 !></td>
+                <td><!= col2 !></td>
+                <td><!= col3 !></td>
+                <td><!= col4 !></td>
+                <td><!= col5 !></td>
+                <td><!= col6 !></td>
+                <td><!= col7 !></td>
+              </tr>
+            </script>
+          </div>
         </div><!-- .con-area -->
       </div><!-- .content-wrap -->
     </div><!-- #container -->
@@ -453,6 +998,7 @@
   </div><!-- #wrap -->
 
   <script>
+    // S: 상품군 추가/삭제 기능
     setTimeout(() => {
       checkInTbScroll('#chk-tb1-all'); // ui.js 내부에 정의
     }, 250);
@@ -493,7 +1039,6 @@
       $('.s-tit span em').text(plength - 1);
     });
     
-    
     $('.add-product').on('click', function(e){
       e.preventDefault();
       let plength = $('.tb-manage-product').length + 1;
@@ -510,6 +1055,137 @@
 
       checkInTbScroll(`#chk-tb${plength}-all`);
       $('.s-tit span em').text(plength);
+    });
+    // E: 상품군 추가/삭제 기능
+
+    // 할인 설정 - 기준금액타입
+    $('input[name="radio-rmoney"]').on('change', function(){
+      if ($(this).attr('id') == 'radio-rmoney-1') { // 없음
+        if ($(this).is(':checked')) {
+          $(this).closest('.radio-list').find('.select-input').find('.input-base').prop('disabled', true);
+          $(this).closest('.radio-list').find('.select-input').find('.select-tag').prop('disabled', true);
+        }
+      }
+      if ($(this).attr('id') == 'radio-rmoney-2') { // 이상
+        if ($(this).is(':checked')) {
+          $(this).closest('.radio-list').find('.select-input').find('.input-base').prop('disabled', false);
+          $(this).closest('.radio-list').find('.select-input').find('.select-tag').prop('disabled', false);
+        }
+      }
+    });
+
+    // 사용 설정 - 선착순여부
+    $('input[name="radio-fcome"]').on('change', function(){
+      if ($(this).attr('id') == 'radio-fcome-1') { // 미설정
+        if ($(this).is(':checked')) {
+          $(this).closest('.radio-list').find('.label-input').find('.input-base').prop('disabled', true);
+        }
+      }
+      if ($(this).attr('id') == 'radio-fcome-2') { // 설정
+        if ($(this).is(':checked')) {
+          $(this).closest('.radio-list').find('.label-input').find('.input-base').prop('disabled', false);
+        }
+      }
+    });
+
+    // 사용가능지역
+    $('#select-avaliable').on('change', function(){
+      $('#search-total1, #search-result1').hide();
+      $('#search-total2, #search-result2').hide();
+      $('#search-btn1, #search-btn2').hide();
+      if ($(this).val() == 1) { // 전체
+      } else if ($(this).val() == 2) { // 지역선택
+        $('#search-btn1').show();
+      } else if ($(this).val() == 3) { // 점포선택
+        $('#search-btn2').show();
+      }
+    });
+    $('#search-btn1').on('click', function(e){
+      e.preventDefault();
+      $('#search-total1, #search-result1').show();
+    });
+    $('#search-btn2').on('click', function(e){
+      e.preventDefault();
+      $('#search-total2, #search-result2').show();
+    });
+
+    setTimeout(() => {
+      checkInTbScroll('#chk-tb-local-all'); // ui.js 내부에 정의
+      checkInTbScroll('#chk-tb-jumpo-all'); // ui.js 내부에 정의
+    }, 250);
+
+    jui.ready(['grid.table'], function (table) {
+      table_2 = table('#table_2', {
+        fields: [null, 'no', 'col1', 'col2', 'col3', 'col4', 'col5', 'col6', 'col7'],
+        data: [
+          {
+            no: '1',
+            col1: '<input type="text" class="input-base" />',
+            col2: '<input type="text" class="input-base" />',
+            col3: '<input type="text" class="input-base" placeholder="- 없이 입력" />',
+            col4: '<input type="text" class="input-base" placeholder="- 없이 입력" />',
+            col5: '<input type="text" class="input-base" />',
+            col6: '<input type="text" class="input-base" />',
+            col7: '<span class="btn-base tp5"><a href="#">삭제</a></span>',
+          },
+          {
+            no: '2',
+            col1: '<input type="text" class="input-base" />',
+            col2: '<input type="text" class="input-base" />',
+            col3: '<input type="text" class="input-base" placeholder="- 없이 입력" />',
+            col4: '<input type="text" class="input-base" placeholder="- 없이 입력" />',
+            col5: '<input type="text" class="input-base" />',
+            col6: '<input type="text" class="input-base" />',
+            col7: '<span class="btn-base tp5"><a href="#">삭제</a></span>',
+          },
+          {
+            no: '3',
+            col1: '<input type="text" class="input-base" />',
+            col2: '<input type="text" class="input-base" />',
+            col3: '<input type="text" class="input-base" placeholder="- 없이 입력" />',
+            col4: '<input type="text" class="input-base" placeholder="- 없이 입력" />',
+            col5: '<input type="text" class="input-base" />',
+            col6: '<input type="text" class="input-base" />',
+            col7: '<span class="btn-base tp5"><a href="#">삭제</a></span>',
+          },
+          {
+            no: '4',
+            col1: '<input type="text" class="input-base" />',
+            col2: '<input type="text" class="input-base" />',
+            col3: '<input type="text" class="input-base" placeholder="- 없이 입력" />',
+            col4: '<input type="text" class="input-base" placeholder="- 없이 입력" />',
+            col5: '<input type="text" class="input-base" />',
+            col6: '<input type="text" class="input-base" />',
+            col7: '<span class="btn-base tp5"><a href="#">삭제</a></span>',
+          },
+          {
+            no: '5',
+            col1: '<input type="text" class="input-base" />',
+            col2: '<input type="text" class="input-base" />',
+            col3: '<input type="text" class="input-base" placeholder="- 없이 입력" />',
+            col4: '<input type="text" class="input-base" placeholder="- 없이 입력" />',
+            col5: '<input type="text" class="input-base" />',
+            col6: '<input type="text" class="input-base" />',
+            col7: '<span class="btn-base tp5"><a href="#">삭제</a></span>',
+          },
+          {
+            no: '6',
+            col1: '<input type="text" class="input-base" />',
+            col2: '<input type="text" class="input-base" />',
+            col3: '<input type="text" class="input-base" placeholder="- 없이 입력" />',
+            col4: '<input type="text" class="input-base" placeholder="- 없이 입력" />',
+            col5: '<input type="text" class="input-base" />',
+            col6: '<input type="text" class="input-base" />',
+            col7: '<span class="btn-base tp5"><a href="#">삭제</a></span>',
+          },
+        ],
+        editRow: ['no'],
+        resize: true,
+        sort: true,
+        tpl: {
+          row: $('#tpl_row2').html(),
+        },
+      });
     });
 
     var Qpopup = $.urlParam('popup');

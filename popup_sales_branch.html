@@ -589,204 +589,204 @@
       });
 
       jui.ready(['grid.table'], function (table) {
-      table_1 = table('#table_1', {
-        fields: [null, 'no', 'col1', 'col2', 'col3', 'col4'],
-        data: [
-          {
-            no: '1',
-            col1: 
-              `<select class="select-tag">
-                <option value="0" selected>교환권</option>
-                <option value="1">Value 1</option>
-                <option value="2">Value 2</option>
-                <option value="3">Value 3</option>
-              </select>`,
-            col2:
-              `<select class="select-tag">
-                <option value="0" selected>프리픽스 정보</option>
-                <option value="1">Value 1</option>
-                <option value="2">Value 2</option>
-                <option value="3">Value 3</option>
-              </select>`,
-            col3: '<input type="text" class="input-base" value="9" disabled />',
-            col4: '<span class="btn-base tp5"><a href="#">삭제</a></span>',
+        table_1 = table('#table_1', {
+          fields: [null, 'no', 'col1', 'col2', 'col3', 'col4'],
+          data: [
+            {
+              no: '1',
+              col1: 
+                `<select class="select-tag">
+                  <option value="0" selected>교환권</option>
+                  <option value="1">Value 1</option>
+                  <option value="2">Value 2</option>
+                  <option value="3">Value 3</option>
+                </select>`,
+              col2:
+                `<select class="select-tag">
+                  <option value="0" selected>프리픽스 정보</option>
+                  <option value="1">Value 1</option>
+                  <option value="2">Value 2</option>
+                  <option value="3">Value 3</option>
+                </select>`,
+              col3: '<input type="text" class="input-base" value="9" disabled />',
+              col4: '<span class="btn-base tp5"><a href="#">삭제</a></span>',
+            },
+            {
+              no: '2',
+              col1: 
+                `<select class="select-tag">
+                  <option value="0" selected>할인권</option>
+                  <option value="1">Value 1</option>
+                  <option value="2">Value 2</option>
+                  <option value="3">Value 3</option>
+                </select>`,
+              col2:
+                `<select class="select-tag">
+                  <option value="0" selected>999</option>
+                  <option value="1">Value 1</option>
+                  <option value="2">Value 2</option>
+                  <option value="3">Value 3</option>
+                </select>`,
+              col3: '<input type="text" class="input-base" value="9" disabled />',
+              col4: '<span class="btn-base tp5"><a href="#">삭제</a></span>',
+            },
+            {
+              no: '3',
+              col1: 
+                `<select class="select-tag">
+                  <option value="0" selected>할인권</option>
+                  <option value="1">Value 1</option>
+                  <option value="2">Value 2</option>
+                  <option value="3">Value 3</option>
+                </select>`,
+              col2:
+                `<select class="select-tag">
+                  <option value="0" selected>999</option>
+                  <option value="1">Value 1</option>
+                  <option value="2">Value 2</option>
+                  <option value="3">Value 3</option>
+                </select>`,
+              col3: '<input type="text" class="input-base" value="9" disabled />',
+              col4: '<span class="btn-base tp5"><a href="#">삭제</a></span>',
+            },
+            {
+              no: '4',
+              col1: 
+                `<select class="select-tag">
+                  <option value="0" selected>할인권</option>
+                  <option value="1">Value 1</option>
+                  <option value="2">Value 2</option>
+                  <option value="3">Value 3</option>
+                </select>`,
+              col2:
+                `<select class="select-tag">
+                  <option value="0" selected>999</option>
+                  <option value="1">Value 1</option>
+                  <option value="2">Value 2</option>
+                  <option value="3">Value 3</option>
+                </select>`,
+              col3: '<input type="text" class="input-base" value="9" disabled />',
+              col4: '<span class="btn-base tp5"><a href="#">삭제</a></span>',
+            },
+            {
+              no: '5',
+              col1: 
+                `<select class="select-tag">
+                  <option value="0" selected>할인권</option>
+                  <option value="1">Value 1</option>
+                  <option value="2">Value 2</option>
+                  <option value="3">Value 3</option>
+                </select>`,
+              col2:
+                `<select class="select-tag">
+                  <option value="0" selected>999</option>
+                  <option value="1">Value 1</option>
+                  <option value="2">Value 2</option>
+                  <option value="3">Value 3</option>
+                </select>`,
+              col3: '<input type="text" class="input-base" value="9" disabled />',
+              col4: '<span class="btn-base tp5"><a href="#">삭제</a></span>',
+            },
+            {
+              no: '6',
+              col1: 
+                `<select class="select-tag">
+                  <option value="0" selected>할인권</option>
+                  <option value="1">Value 1</option>
+                  <option value="2">Value 2</option>
+                  <option value="3">Value 3</option>
+                </select>`,
+              col2:
+                `<select class="select-tag">
+                  <option value="0" selected>999</option>
+                  <option value="1">Value 1</option>
+                  <option value="2">Value 2</option>
+                  <option value="3">Value 3</option>
+                </select>`,
+              col3: '<input type="text" class="input-base" value="9" disabled />',
+              col4: '<span class="btn-base tp5"><a href="#">삭제</a></span>',
+            },
+          ],
+          editRow: ['no'],
+          resize: true,
+          sort: true,
+          tpl: {
+            row: $('#tpl_row').html(),
           },
-          {
-            no: '2',
-            col1: 
-              `<select class="select-tag">
-                <option value="0" selected>할인권</option>
-                <option value="1">Value 1</option>
-                <option value="2">Value 2</option>
-                <option value="3">Value 3</option>
-              </select>`,
-            col2:
-              `<select class="select-tag">
-                <option value="0" selected>999</option>
-                <option value="1">Value 1</option>
-                <option value="2">Value 2</option>
-                <option value="3">Value 3</option>
-              </select>`,
-            col3: '<input type="text" class="input-base" value="9" disabled />',
-            col4: '<span class="btn-base tp5"><a href="#">삭제</a></span>',
-          },
-          {
-            no: '3',
-            col1: 
-              `<select class="select-tag">
-                <option value="0" selected>할인권</option>
-                <option value="1">Value 1</option>
-                <option value="2">Value 2</option>
-                <option value="3">Value 3</option>
-              </select>`,
-            col2:
-              `<select class="select-tag">
-                <option value="0" selected>999</option>
-                <option value="1">Value 1</option>
-                <option value="2">Value 2</option>
-                <option value="3">Value 3</option>
-              </select>`,
-            col3: '<input type="text" class="input-base" value="9" disabled />',
-            col4: '<span class="btn-base tp5"><a href="#">삭제</a></span>',
-          },
-          {
-            no: '4',
-            col1: 
-              `<select class="select-tag">
-                <option value="0" selected>할인권</option>
-                <option value="1">Value 1</option>
-                <option value="2">Value 2</option>
-                <option value="3">Value 3</option>
-              </select>`,
-            col2:
-              `<select class="select-tag">
-                <option value="0" selected>999</option>
-                <option value="1">Value 1</option>
-                <option value="2">Value 2</option>
-                <option value="3">Value 3</option>
-              </select>`,
-            col3: '<input type="text" class="input-base" value="9" disabled />',
-            col4: '<span class="btn-base tp5"><a href="#">삭제</a></span>',
-          },
-          {
-            no: '5',
-            col1: 
-              `<select class="select-tag">
-                <option value="0" selected>할인권</option>
-                <option value="1">Value 1</option>
-                <option value="2">Value 2</option>
-                <option value="3">Value 3</option>
-              </select>`,
-            col2:
-              `<select class="select-tag">
-                <option value="0" selected>999</option>
-                <option value="1">Value 1</option>
-                <option value="2">Value 2</option>
-                <option value="3">Value 3</option>
-              </select>`,
-            col3: '<input type="text" class="input-base" value="9" disabled />',
-            col4: '<span class="btn-base tp5"><a href="#">삭제</a></span>',
-          },
-          {
-            no: '6',
-            col1: 
-              `<select class="select-tag">
-                <option value="0" selected>할인권</option>
-                <option value="1">Value 1</option>
-                <option value="2">Value 2</option>
-                <option value="3">Value 3</option>
-              </select>`,
-            col2:
-              `<select class="select-tag">
-                <option value="0" selected>999</option>
-                <option value="1">Value 1</option>
-                <option value="2">Value 2</option>
-                <option value="3">Value 3</option>
-              </select>`,
-            col3: '<input type="text" class="input-base" value="9" disabled />',
-            col4: '<span class="btn-base tp5"><a href="#">삭제</a></span>',
-          },
-        ],
-        editRow: ['no'],
-        resize: true,
-        sort: true,
-        tpl: {
-          row: $('#tpl_row').html(),
-        },
-      });
+        });
 
-      table_2 = table('#table_2', {
-        fields: [null, 'no', 'col1', 'col2', 'col3', 'col4', 'col5', 'col6', 'col7'],
-        data: [
-          {
-            no: '1',
-            col1: '<input type="text" class="input-base" />',
-            col2: '<input type="text" class="input-base" />',
-            col3: '<input type="text" class="input-base" placeholder="- 없이 입력" />',
-            col4: '<input type="text" class="input-base" placeholder="- 없이 입력" />',
-            col5: '<input type="text" class="input-base" />',
-            col6: '<input type="text" class="input-base" />',
-            col7: '<span class="btn-base tp5"><a href="#">삭제</a></span>',
+        table_2 = table('#table_2', {
+          fields: [null, 'no', 'col1', 'col2', 'col3', 'col4', 'col5', 'col6', 'col7'],
+          data: [
+            {
+              no: '1',
+              col1: '<input type="text" class="input-base" />',
+              col2: '<input type="text" class="input-base" />',
+              col3: '<input type="text" class="input-base" placeholder="- 없이 입력" />',
+              col4: '<input type="text" class="input-base" placeholder="- 없이 입력" />',
+              col5: '<input type="text" class="input-base" />',
+              col6: '<input type="text" class="input-base" />',
+              col7: '<span class="btn-base tp5"><a href="#">삭제</a></span>',
+            },
+            {
+              no: '2',
+              col1: '<input type="text" class="input-base" />',
+              col2: '<input type="text" class="input-base" />',
+              col3: '<input type="text" class="input-base" placeholder="- 없이 입력" />',
+              col4: '<input type="text" class="input-base" placeholder="- 없이 입력" />',
+              col5: '<input type="text" class="input-base" />',
+              col6: '<input type="text" class="input-base" />',
+              col7: '<span class="btn-base tp5"><a href="#">삭제</a></span>',
+            },
+            {
+              no: '3',
+              col1: '<input type="text" class="input-base" />',
+              col2: '<input type="text" class="input-base" />',
+              col3: '<input type="text" class="input-base" placeholder="- 없이 입력" />',
+              col4: '<input type="text" class="input-base" placeholder="- 없이 입력" />',
+              col5: '<input type="text" class="input-base" />',
+              col6: '<input type="text" class="input-base" />',
+              col7: '<span class="btn-base tp5"><a href="#">삭제</a></span>',
+            },
+            {
+              no: '4',
+              col1: '<input type="text" class="input-base" />',
+              col2: '<input type="text" class="input-base" />',
+              col3: '<input type="text" class="input-base" placeholder="- 없이 입력" />',
+              col4: '<input type="text" class="input-base" placeholder="- 없이 입력" />',
+              col5: '<input type="text" class="input-base" />',
+              col6: '<input type="text" class="input-base" />',
+              col7: '<span class="btn-base tp5"><a href="#">삭제</a></span>',
+            },
+            {
+              no: '5',
+              col1: '<input type="text" class="input-base" />',
+              col2: '<input type="text" class="input-base" />',
+              col3: '<input type="text" class="input-base" placeholder="- 없이 입력" />',
+              col4: '<input type="text" class="input-base" placeholder="- 없이 입력" />',
+              col5: '<input type="text" class="input-base" />',
+              col6: '<input type="text" class="input-base" />',
+              col7: '<span class="btn-base tp5"><a href="#">삭제</a></span>',
+            },
+            {
+              no: '6',
+              col1: '<input type="text" class="input-base" />',
+              col2: '<input type="text" class="input-base" />',
+              col3: '<input type="text" class="input-base" placeholder="- 없이 입력" />',
+              col4: '<input type="text" class="input-base" placeholder="- 없이 입력" />',
+              col5: '<input type="text" class="input-base" />',
+              col6: '<input type="text" class="input-base" />',
+              col7: '<span class="btn-base tp5"><a href="#">삭제</a></span>',
+            },
+          ],
+          editRow: ['no'],
+          resize: true,
+          sort: true,
+          tpl: {
+            row: $('#tpl_row2').html(),
           },
-          {
-            no: '2',
-            col1: '<input type="text" class="input-base" />',
-            col2: '<input type="text" class="input-base" />',
-            col3: '<input type="text" class="input-base" placeholder="- 없이 입력" />',
-            col4: '<input type="text" class="input-base" placeholder="- 없이 입력" />',
-            col5: '<input type="text" class="input-base" />',
-            col6: '<input type="text" class="input-base" />',
-            col7: '<span class="btn-base tp5"><a href="#">삭제</a></span>',
-          },
-          {
-            no: '3',
-            col1: '<input type="text" class="input-base" />',
-            col2: '<input type="text" class="input-base" />',
-            col3: '<input type="text" class="input-base" placeholder="- 없이 입력" />',
-            col4: '<input type="text" class="input-base" placeholder="- 없이 입력" />',
-            col5: '<input type="text" class="input-base" />',
-            col6: '<input type="text" class="input-base" />',
-            col7: '<span class="btn-base tp5"><a href="#">삭제</a></span>',
-          },
-          {
-            no: '4',
-            col1: '<input type="text" class="input-base" />',
-            col2: '<input type="text" class="input-base" />',
-            col3: '<input type="text" class="input-base" placeholder="- 없이 입력" />',
-            col4: '<input type="text" class="input-base" placeholder="- 없이 입력" />',
-            col5: '<input type="text" class="input-base" />',
-            col6: '<input type="text" class="input-base" />',
-            col7: '<span class="btn-base tp5"><a href="#">삭제</a></span>',
-          },
-          {
-            no: '5',
-            col1: '<input type="text" class="input-base" />',
-            col2: '<input type="text" class="input-base" />',
-            col3: '<input type="text" class="input-base" placeholder="- 없이 입력" />',
-            col4: '<input type="text" class="input-base" placeholder="- 없이 입력" />',
-            col5: '<input type="text" class="input-base" />',
-            col6: '<input type="text" class="input-base" />',
-            col7: '<span class="btn-base tp5"><a href="#">삭제</a></span>',
-          },
-          {
-            no: '6',
-            col1: '<input type="text" class="input-base" />',
-            col2: '<input type="text" class="input-base" />',
-            col3: '<input type="text" class="input-base" placeholder="- 없이 입력" />',
-            col4: '<input type="text" class="input-base" placeholder="- 없이 입력" />',
-            col5: '<input type="text" class="input-base" />',
-            col6: '<input type="text" class="input-base" />',
-            col7: '<span class="btn-base tp5"><a href="#">삭제</a></span>',
-          },
-        ],
-        editRow: ['no'],
-        resize: true,
-        sort: true,
-        tpl: {
-          row: $('#tpl_row2').html(),
-        },
+        });
       });
-    });
     </script>
   </body>
 </html>
