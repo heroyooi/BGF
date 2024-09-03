@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BGF 네트웍스</title>
+  <link rel="stylesheet" href="css/common.css">
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-ui.js"></script>
+  <script src="js/jui-core.js"></script>
+  <script src="js/jui-grid.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/swiper-bundle.min.js"></script>
+  <script src="js/ui.js"></script>
+</head>
+<body class="c-scrollbar jui" id="j-custom">
+  <div id="wrap">
+    <div id="container">
+    <!-- <div id="container" class="ver-collapse"> -->
+      <div class="lnb-wrap c-scrollbar">
+        <h2><a href="#"></a></h2>
+        <ul class="lnb">
+        <!-- <ul class="lnb" data-dp1="1" data-dp2="1"> -->
+          <li class="li1">
+            <dl>
+              <dt><span>기업관리</span></dt>
+              <dd>
+                <ul>
+                  <li><a href="#">공급사관리</a></li>
+                  <li><a href="#">판매처관리</a></li>
+                  <li><a href="#">판매지사관리</a></li>
+                  <li><a href="#">가맹점관리</a></li>
+                </ul>
+              </dd>
+            </dl>
+          </li>
+          <li class="li2">
+            <dl>
+              <dt><span>상품관리</span></dt>
+              <dd>
+                <ul>
+                  <li><a href="#">서브 메뉴</a></li>
+                </ul>
+              </dd>
+            </dl>
+          </li>
+          <li class="li3">
+            <dl>
+              <dt><span>상품권관리</span></dt>
+              <dd>
+                <ul>
+                  <li><a href="#">서브 메뉴</a></li>
+                </ul>
+              </dd>
+            </dl>
+          </li>
+          <li class="li4">
+            <dl>
+              <dt><span>발송관리</span></dt>
+              <dd>
+                <ul>
+                  <li><a href="#">서브 메뉴</a></li>
+                </ul>
+              </dd>
+            </dl>
+          </li>
+          <li class="li5">
+            <dl>
+              <dt><span>상품권조회(CS)</span></dt>
+              <dd>
+                <ul>
+                  <li><a href="#">서브 메뉴</a></li>
+                </ul>
+              </dd>
+            </dl>
+          </li>
+          <li class="li6">
+            <dl>
+              <dt><span>정산관리</span></dt>
+              <dd>
+                <ul>
+                  <li><a href="#">서브 메뉴</a></li>
+                </ul>
+              </dd>
+            </dl>
+          </li>
+          <li class="li7">
+            <dl>
+              <dt><span>통계</span></dt>
+              <dd>
+                <ul>
+                  <li><a href="#">서브 메뉴</a></li>
+                </ul>
+              </dd>
+            </dl>
+          </li>
+          <li class="li8">
+            <dl>
+              <dt><span>시스템관리</span></dt>
+              <dd>
+                <ul>
+                  <li><a href="#">서브 메뉴</a></li>
+                </ul>
+              </dd>
+            </dl>
+          </li>
+          <li class="li9">
+            <dl>
+              <dt><span>로그관리</span></dt>
+              <dd>
+                <ul>
+                  <li><a href="#">서브 메뉴</a></li>
+                </ul>
+              </dd>
+            </dl>
+          </li>
+        </ul>
+        <a href="#" class="btn-arrow"></a>
+      </div><!-- .lnb-wrap -->
+      <div class="content-wrap c-scrollbar">
+        <div class="tit-area">
+          <h3>상품권 등록</h3>
+          <div class="item-wrap">
+            <a href="#" class="mem"><strong>이영희</strong> 님</a>
+            <div class="utils-tip">
+              <ul>
+                <li><a href="#">로그아웃</a></li>
+                <li><a href="#">비밀번호 변경</a></li>
+              </ul>
+            </div>
+          </div>
+        </div><!-- .tit-area -->
+        <div class="con-area">
+          <div class="s-tit-area">
+            <h4 class="s-tit">행사 가능 상품군 수 <span>[총 <em>1</em>건]</span></h4>
+            <div class="btns-wrap">
+              <span class="btn-base tp2 lg green add-product"><a href="#"><em class="add">상품군 추가</em></a></span>
+            </div>
+          </div>
+          <div class="tb-input-wrap tb-manage-product on mt15">
+            <table class="tb-input">
+              <colgroup>
+                <col width="12%" />
+                <col width="38%" />
+                <col width="12%" />
+                <col width="*" />
+              </colgroup>
+              <tbody>
+                <tr>
+                  <th scope="row" colspan="4" class="br short">
+                    <div class="d-flex">
+                      <span class="toggle on">상품군 1</span>
+                      <span class="btn-base tp3 sm del-product"><a href="#"><em class="delete">상품군 삭제</em></a></span>
+                    </div>
+                  </th>
+                </tr>
+                <tr>
+                  <th scope="row">구성상품유형</th>
+                  <td>
+                    <select class="select-tag">
+                      <option value="0" selected>선택</option>
+                      <option value="1">Value 1</option>
+                      <option value="2">Value 2</option>
+                      <option value="3">Value 3</option>
+                    </select>
+                  </td>
+                  <th scope="row">제어속성타입</th>
+                  <td>
+                    <select class="select-tag">
+                      <option value="0" selected>선택</option>
+                      <option value="1">Value 1</option>
+                      <option value="2">Value 2</option>
+                      <option value="3">Value 3</option>
+                    </select>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">성립기준/값</th>
+                  <td>
+                    <div class="input-wrap select-input">
+                      <select class="select-tag">
+                        <option value="0" selected>선택</option>
+                        <option value="1">Value 1</option>
+                        <option value="2">Value 2</option>
+                        <option value="3">Value 3</option>
+                      </select>
+                      <input type="text" class="input-base">
+                    </div>
+                  </td>
+                  <th scope="row">혜택방법/값</th>
+                  <td>
+                    <div class="input-wrap select-input">
+                      <select class="select-tag">
+                        <option value="0" selected>선택</option>
+                        <option value="1">Value 1</option>
+                        <option value="2">Value 2</option>
+                        <option value="3">Value 3</option>
+                      </select>
+                      <input type="text" class="input-base">
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">제한값</th>
+                  <td>
+                    <div class="input-wrap select-input">
+                      <select class="select-tag">
+                        <option value="0" selected>선택</option>
+                        <option value="1">Value 1</option>
+                        <option value="2">Value 2</option>
+                        <option value="3">Value 3</option>
+                      </select>
+                      <input type="text" class="input-base">
+                    </div>
+                  </td>
+                  <th scope="row">그룹유형</th>
+                  <td>
+                    <select class="select-tag">
+                      <option value="0" selected>선택</option>
+                      <option value="1">Value 1</option>
+                      <option value="2">Value 2</option>
+                      <option value="3">Value 3</option>
+                    </select>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">우선순위 <em>*</em></th>
+                  <td colspan="3">
+                    <input type="text" class="input-base" style="width: 575px;" />
+                  </td>
+                </tr>
+                <tr class="in-table">
+                  <td colspan="4">
+                    <div class="tb-list-wrap">
+                      <div class="tb-scroll">
+                        <table class="tb-list">
+                          <colgroup>
+                            <col width="50" />
+                            <col width="50" />
+                            <col width="70" />
+                            <col width="" />
+                            <col width="" />
+                            <col width="" />
+                            <col width="" />
+                            <col width="89" />
+                          </colgroup>
+                          <thead>
+                            <tr>
+                              <th scope="col" colspan="8" class="short">
+                                <div class="d-flex">
+                                  <span></span>
+                                  <div class="btns-wrap">
+                                    <span class="btn-base tp3 sm"><a href="#"><em class="delete">상품삭제</em></a></span>
+                                    <span class="btn-base tp3 sm"><a href="#"><em class="search">상품검색</em></a></span>
+                                  </div>
+                                </div>
+                              </th>
+                            </tr>
+                            <tr>
+                              <th scope="col">
+                                <span>
+                                  <span class="chk-base chk-only">
+                                    <input type="checkbox" id="chk-tb1-all" />
+                                    <label for="chk-tb1-all">전체 체크</label>
+                                  </span>
+                                </span>
+                              </th>
+                              <th scope="col"><span>No.</span></th>
+                              <th scope="col"><span>이미지</span></th>
+                              <th scope="col"><span>상품명</span></th>
+                              <th scope="col"><span>상품코드</span></th>
+                              <th scope="col"><span>현재매가</span></th>
+                              <th scope="col"><span>판매가</span></th>
+                              <th scope="col"><span> </span></th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>
+                                <span class="chk-base chk-only">
+                                  <input type="checkbox" id="chk-tb1-1" />
+                                  <label for="chk-tb1-1">체크1</label>
+                                </span>
+                              </td>
+                              <td>1</td>
+                              <td><img width="35" src="img/mockup/logo.png" alt=""></td>
+                              <td>상품/카테고리 명 출력</td>
+                              <td>#{코드값}</td>
+                              <td>
+                                <input type="text" class="input-base t-right" value="9,000" />
+                              </td>
+                              <td>
+                                <input type="text" class="input-base t-right" value="9,000" />
+                              </td>
+                              <td>
+                                <span class="btn-base tp5"><a href="#">삭제</a></span>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <span class="chk-base chk-only">
+                                  <input type="checkbox" id="chk-tb1-2" />
+                                  <label for="chk-tb1-2">체크2</label>
+                                </span>
+                              </td>
+                              <td>2</td>
+                              <td><img width="35" src="img/mockup/logo.png" alt=""></td>
+                              <td>상품/카테고리 명 출력</td>
+                              <td>#{코드값}</td>
+                              <td>
+                                <input type="text" class="input-base t-right" value="9,000" />
+                              </td>
+                              <td>
+                                <input type="text" class="input-base t-right" value="9,000" />
+                              </td>
+                              <td>
+                                <span class="btn-base tp5"><a href="#">삭제</a></span>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <span class="chk-base chk-only">
+                                  <input type="checkbox" id="chk-tb1-3" />
+                                  <label for="chk-tb1-3">체크3</label>
+                                </span>
+                              </td>
+                              <td>3</td>
+                              <td><img width="35" src="img/mockup/logo.png" alt=""></td>
+                              <td>상품/카테고리 명 출력</td>
+                              <td>#{코드값}</td>
+                              <td>
+                                <input type="text" class="input-base t-right" value="9,000" />
+                              </td>
+                              <td>
+                                <input type="text" class="input-base t-right" value="9,000" />
+                              </td>
+                              <td>
+                                <span class="btn-base tp5"><a href="#">삭제</a></span>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <span class="chk-base chk-only">
+                                  <input type="checkbox" id="chk-tb1-4" />
+                                  <label for="chk-tb1-4">체크4</label>
+                                </span>
+                              </td>
+                              <td>4</td>
+                              <td><img width="35" src="img/mockup/logo.png" alt=""></td>
+                              <td>상품/카테고리 명 출력</td>
+                              <td>#{코드값}</td>
+                              <td>
+                                <input type="text" class="input-base t-right" value="9,000" />
+                              </td>
+                              <td>
+                                <input type="text" class="input-base t-right" value="9,000" />
+                              </td>
+                              <td>
+                                <span class="btn-base tp5"><a href="#">삭제</a></span>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <span class="chk-base chk-only">
+                                  <input type="checkbox" id="chk-tb1-5" />
+                                  <label for="chk-tb1-5">체크5</label>
+                                </span>
+                              </td>
+                              <td>5</td>
+                              <td><img width="35" src="img/mockup/logo.png" alt=""></td>
+                              <td>상품/카테고리 명 출력</td>
+                              <td>#{코드값}</td>
+                              <td>
+                                <input type="text" class="input-base t-right" value="9,000" />
+                              </td>
+                              <td>
+                                <input type="text" class="input-base t-right" value="9,000" />
+                              </td>
+                              <td>
+                                <span class="btn-base tp5"><a href="#">삭제</a></span>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <span class="chk-base chk-only">
+                                  <input type="checkbox" id="chk-tb1-6" />
+                                  <label for="chk-tb1-6">체크6</label>
+                                </span>
+                              </td>
+                              <td>6</td>
+                              <td><img width="35" src="img/mockup/logo.png" alt=""></td>
+                              <td>상품/카테고리 명 출력</td>
+                              <td>#{코드값}</td>
+                              <td>
+                                <input type="text" class="input-base t-right" value="9,000" />
+                              </td>
+                              <td>
+                                <input type="text" class="input-base t-right" value="9,000" />
+                              </td>
+                              <td>
+                                <span class="btn-base tp5"><a href="#">삭제</a></span>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <span class="chk-base chk-only">
+                                  <input type="checkbox" id="chk-tb1-7" />
+                                  <label for="chk-tb1-7">체크7</label>
+                                </span>
+                              </td>
+                              <td>7</td>
+                              <td><img width="35" src="img/mockup/logo.png" alt=""></td>
+                              <td>상품/카테고리 명 출력</td>
+                              <td>#{코드값}</td>
+                              <td>
+                                <input type="text" class="input-base t-right" value="9,000" />
+                              </td>
+                              <td>
+                                <input type="text" class="input-base t-right" value="9,000" />
+                              </td>
+                              <td>
+                                <span class="btn-base tp5"><a href="#">삭제</a></span>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div><!-- .tb-input-wrap -->
+
+          <h4 class="s-tit mt25">할인 설정</h4>
+          PPT 16 ~ 23 페이지 내용만 하면 됨
+        </div><!-- .con-area -->
+      </div><!-- .content-wrap -->
+    </div><!-- #container -->
+
+    <div class="popup-wrap z-anim mfp-hide popup-preview" id="popup-preview" data-width="433">
+      <div class="popup-inner">
+        <div class="skin-area">
+          <!-- <div class="skin-obj" style="background-image: url(../img/mockup/skin_general.png)"></div> -->
+          <div class="skin-obj"></div>
+          <div class="skin-bg"></div>
+        </div>
+        
+      </div>
+    </div><!-- .popup-confirm -->
+  </div><!-- #wrap -->
+
+  <script>
+    setTimeout(() => {
+      checkInTbScroll('#chk-tb1-all'); // ui.js 내부에 정의
+    }, 250);
+    // var checkCb = function(checked){
+    //   console.log('테이블 전체체크 유무 : ', checked)
+    // };
+
+    // GUI.checkAllUI('#chk-tb1-all', 'table', checkCb);
+    var manageProduct = $('.tb-manage-product').html();
+
+    $(document).on('click', '.tb-input > tbody > tr > th .toggle', function(){
+      if (!$(this).hasClass('on')) {
+        $(this).addClass('on');
+        $(this).closest('.tb-manage-product').addClass('on');
+      } else {
+        $(this).removeClass('on');
+        $(this).closest('.tb-manage-product').removeClass('on');
+      }
+    });
+
+    $(document).on('click', '.tb-input > tbody > tr > th .del-product', function(){
+      let plength = $('.tb-manage-product').length;
+      if (plength == 1) {
+        return alert("상품군이 최소 1개는 필요합니다.");
+      }
+      $(this).closest('.tb-manage-product').remove();
+
+      $('.tb-manage-product').each(function(i1){
+        $(this).find('.tb-input > tbody > tr > th .toggle').text(`상품군 ${i1 + 1}`);
+        $(this).find('.tb-list-wrap .tb-fix thead .chk-base input').attr('id', `chk-tb${i1 + 1}-all`);
+        $(this).find('.tb-list-wrap .tb-fix thead .chk-base label').attr('for', `chk-tb${i1 + 1}-all`);
+        $(this).find('.tb-list-wrap .tb-scroll tbody .chk-base').each(function(i2){
+          $(this).find('input').attr('id', `chk-tb${i1 + 1}-${i2 + 1}`);
+          $(this).find('label').attr('for', `chk-tb${i1 + 1}-${i2 + 1}`);
+        })
+      });
+
+      $('.s-tit span em').text(plength - 1);
+    });
+    
+    
+    $('.add-product').on('click', function(e){
+      e.preventDefault();
+      let plength = $('.tb-manage-product').length + 1;
+      $('.con-area').append(getTableManage(plength));
+
+      $('.tb-scroll').each(function(){
+        if ($(this).closest('.tb-manage-product').hasClass('append')) {
+          var colgroup = $(this).find('colgroup').prop('outerHTML');
+          var thead = $(this).find('thead').prop('outerHTML');
+          $(this).closest('.tb-list-wrap').prepend(`<div class="tb-fix"><table class="tb-list">${colgroup + thead}</table></div>`);
+          $(this).closest('.tb-manage-product').removeClass('append');
+        }
+      });
+
+      checkInTbScroll(`#chk-tb${plength}-all`);
+      $('.s-tit span em').text(plength);
+    });
+
+    var Qpopup = $.urlParam('popup');
+    var Qwpopup = $.urlParam('wpopup');
+    if (Qpopup) {
+      setTimeout(function(){
+        if (Qpopup == 'preview') {
+          previewInput.val('bg_skin_general.png');
+          previewDel.addClass('on');
+          previewObj.css('background-image', 'url(../img/mockup/bg_skin_general.png)');
+          $('[href*=#popup-preview]').click();
+        }
+      }, 250);
+    }
+  </script>
+</body>
+
+</html>
+ 

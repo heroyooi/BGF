@@ -1,0 +1,1602 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BGF 네트웍스</title>
+  <link rel="stylesheet" href="css/common.css">
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-ui.js"></script>
+  <script src="js/jui-core.js"></script>
+  <script src="js/jui-grid.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/swiper-bundle.min.js"></script>
+  <script src="js/ui.js"></script>
+</head>
+<body class="c-scrollbar jui" id="j-custom">
+  <div id="wrap">
+    <div id="container">
+    <!-- <div id="container" class="ver-collapse"> -->
+      <div class="lnb-wrap c-scrollbar">
+        <h2><a href="#"></a></h2>
+        <ul class="lnb">
+        <!-- <ul class="lnb" data-dp1="1" data-dp2="1"> -->
+          <li class="li1">
+            <dl>
+              <dt><span>기업관리</span></dt>
+              <dd>
+                <ul>
+                  <li><a href="#">공급사관리</a></li>
+                  <li><a href="#">판매처관리</a></li>
+                  <li><a href="#">판매지사관리</a></li>
+                  <li><a href="#">가맹점관리</a></li>
+                </ul>
+              </dd>
+            </dl>
+          </li>
+          <li class="li2">
+            <dl>
+              <dt><span>상품관리</span></dt>
+              <dd>
+                <ul>
+                  <li><a href="#">서브 메뉴</a></li>
+                </ul>
+              </dd>
+            </dl>
+          </li>
+          <li class="li3">
+            <dl>
+              <dt><span>상품권관리</span></dt>
+              <dd>
+                <ul>
+                  <li><a href="#">서브 메뉴</a></li>
+                </ul>
+              </dd>
+            </dl>
+          </li>
+          <li class="li4">
+            <dl>
+              <dt><span>발송관리</span></dt>
+              <dd>
+                <ul>
+                  <li><a href="#">서브 메뉴</a></li>
+                </ul>
+              </dd>
+            </dl>
+          </li>
+          <li class="li5">
+            <dl>
+              <dt><span>상품권조회(CS)</span></dt>
+              <dd>
+                <ul>
+                  <li><a href="#">서브 메뉴</a></li>
+                </ul>
+              </dd>
+            </dl>
+          </li>
+          <li class="li6">
+            <dl>
+              <dt><span>정산관리</span></dt>
+              <dd>
+                <ul>
+                  <li><a href="#">서브 메뉴</a></li>
+                </ul>
+              </dd>
+            </dl>
+          </li>
+          <li class="li7">
+            <dl>
+              <dt><span>통계</span></dt>
+              <dd>
+                <ul>
+                  <li><a href="#">서브 메뉴</a></li>
+                </ul>
+              </dd>
+            </dl>
+          </li>
+          <li class="li8">
+            <dl>
+              <dt><span>시스템관리</span></dt>
+              <dd>
+                <ul>
+                  <li><a href="#">서브 메뉴</a></li>
+                </ul>
+              </dd>
+            </dl>
+          </li>
+          <li class="li9">
+            <dl>
+              <dt><span>로그관리</span></dt>
+              <dd>
+                <ul>
+                  <li><a href="#">서브 메뉴</a></li>
+                </ul>
+              </dd>
+            </dl>
+          </li>
+        </ul>
+        <a href="#" class="btn-arrow"></a>
+      </div><!-- .lnb-wrap -->
+      <div class="content-wrap c-scrollbar">
+        <div class="tit-area">
+          <h3>스킨 등록</h3>
+          <div class="item-wrap">
+            <a href="#" class="mem"><strong>이영희</strong> 님</a>
+            <div class="utils-tip">
+              <ul>
+                <li><a href="#">로그아웃</a></li>
+                <li><a href="#">비밀번호 변경</a></li>
+              </ul>
+            </div>
+          </div>
+        </div><!-- .tit-area -->
+        <div class="con-area">
+          <div class="total-area">
+            <span class="d-tit">
+              판매처 리스트
+            </span>
+          </div>
+          <div class="skin-wrapper mt20">
+            <div class="skin-frame-wrap">
+              <div class="skin-frame" style="background-image:url(/img/mockup/bg_skin_general.png);">
+                <div class="skin-title">
+                  <span class="tip">금액 텍스트 (상품) 정보</span>
+                  <span class="text">금액 텍스트</span>
+                </div>
+                <div class="skin-barcode">
+                  <span class="tip">바코드 정보</span>
+                </div>
+                <div class="skin-code skin-code1">
+                  <span class="tip">유효기간 정보</span>
+                  <span class="text">유효기간 텍스트</span>
+                </div>
+                <div class="skin-code skin-code2">
+                  <span class="tip">교환처 정보</span>
+                  <span class="text">교환처 텍스트</span>
+                </div>
+              </div>
+            </div><!-- .skin-frame-wrap -->
+            <div class="skin-form-wrap">
+              <div class="tb-input-wrap">
+                <table class="tb-input">
+                  <colgroup>
+                    <col width="12%">
+                    <col width="38%">
+                    <col width="12%">
+                    <col width="*">
+                  </colgroup>
+                  <tbody>
+                    <tr>
+                      <th scope="row">스킨코드</th>
+                      <td class="viewer">
+                        신규 등록 시 자동 생성
+                      </td>
+                      <th scope="row">등록일자</th>
+                      <td class="viewer">
+                        신규 등록 시 자동 생성
+                      </td>
+                    </tr>
+                    <tr>
+                      <th>스킨명 <em>*</em></th>
+                      <td colspan="3">
+                        <input type="text" class="input-base">
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">기본스킨설정 <em>*</em></th>
+                      <td>
+                        <span class="chk-base">
+                          <input type="checkbox" id="chk-basic-skin" checked>
+                          <label for="chk-basic-skin">기본스킨설정</label>
+                        </span>
+                      </td>
+                      <th scope="row">상태 <em>*</em></th>
+                      <td>
+                        <ul class="radio-list">
+                          <li>
+                            <span class="radio-base">
+                              <input type="radio" id="radio-use-1" name="radio-use" checked />
+                              <label for="radio-use-1">사용안함</label>
+                            </span>
+                          </li>
+                          <li>
+                            <span class="radio-base">
+                              <input type="radio" id="radio-use-2" name="radio-use" />
+                              <label for="radio-use-2">사용</label>
+                            </span>
+                          </li>
+                        </ul>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">스킨이미지 <em>*</em></th>
+                      <td colspan="3">
+                        <div class="input-wrapper" style="width: 608px;">
+                          <div class="input-wrap input-btn input-file skin">
+                            <input type="text" class="input-base" readonly value="bg_skin_general.png" />
+                            <input type="file" accept="image/*">
+                            <a href="#" class="btn-delete on"></a>
+                            <span class="btn-base tp2"><a href="#"><em class="upload">파일 등록</em></a></span>
+                            <span class="btn-base tp3"><a href="#">스킨 검색</a></span>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th>파일명</th>
+                      <td>bg_skin_general.png</td>
+                      <th>확장자</th>
+                      <td>png</td>
+                    </tr>
+                    <tr>
+                      <th>Width/pix</th>
+                      <td>388</td>
+                      <th>Height/pix</th>
+                      <td>686</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <div class="total-area">
+                <span class="d-tit">바코드 위치 정보</span>
+              </div>
+              <div class="tb-input-wrap">
+                <table class="tb-input">
+                  <colgroup>
+                    <col width="12%">
+                    <col width="38%">
+                    <col width="12%">
+                    <col width="*">
+                  </colgroup>
+                  <tbody class="skin-barcode-input">
+                    <tr>
+                      <th scope="row">X 좌표</th>
+                      <td>
+                        <input type="number" class="input-base skin-barcode-left" value="0" />
+                      </td>
+                      <th scope="row">Y 좌표</th>
+                      <td>
+                        <input type="number" class="input-base skin-barcode-top" value="420" />
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Width/pix</th>
+                      <td>
+                        <input type="number" class="input-base skin-barcode-width" value="388" />
+                      </td>
+                      <th scope="row">Height/pix</th>
+                      <td>
+                        <input type="number" class="input-base skin-barcode-height" value="135" />
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <div class="total-area">
+                <span class="d-tit">금액 텍스트 (상품) 위치 정보</span>
+              </div>
+              <div class="tb-input-wrap">
+                <table class="tb-input">
+                  <colgroup>
+                    <col width="12%">
+                    <col width="38%">
+                    <col width="12%">
+                    <col width="*">
+                  </colgroup>
+                  <tbody class="skin-title-input">
+                    <tr>
+                      <th scope="row">X 좌표</th>
+                      <td>
+                        <input type="number" class="input-base skin-title-left" value="60" />
+                      </td>
+                      <th scope="row">Y 좌표</th>
+                      <td>
+                        <input type="number" class="input-base skin-title-top" value="60" />
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Width/pix</th>
+                      <td>
+                        <input type="number" class="input-base skin-title-width" value="265" />
+                      </td>
+                      <th scope="row">Height/pix</th>
+                      <td>
+                        <input type="number" class="input-base skin-title-height" value="265" />
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">
+                        <div class="color-pick-wrap">
+                          <span class="txt">색상</span>
+                          <span class="btn-base tp2"><a href="#">색상표</a></span>
+                          <div class="color-pick-area c-scrollbar" data-type="title">
+                            <ul>
+                              <li data-color="000000"></li>
+                              <li data-color="333333"></li>
+                              <li data-color="666666"></li>
+                              <li data-color="999999"></li>
+                              <li data-color="CCCCCC"></li>
+                              <li data-color="FFFFFF"></li>
+                              <li data-color="000033"></li>
+                              <li data-color="333300"></li>
+                              <li data-color="666600"></li>
+                              <li data-color="999900"></li>
+                              <li data-color="CCCC00"></li>
+                              <li data-color="FFFF00"></li>
+                              <li data-color="000066"></li>
+                              <li data-color="333366"></li>
+                              <li data-color="666633"></li>
+                              <li data-color="999933"></li>
+                              <li data-color="CCCC33"></li>
+                              <li data-color="FFFF33"></li>
+                              <li data-color="000099"></li>
+                              <li data-color="333399"></li>
+                              <li data-color="666699"></li>
+                              <li data-color="999966"></li>
+                              <li data-color="CCCC66"></li>
+                              <li data-color="FFFF66"></li>
+                              <li data-color="0000CC"></li>
+                              <li data-color="3333CC"></li>
+                              <li data-color="6666FF"></li>
+                              <li data-color="9999FF"></li>
+                              <li data-color="CCCCFF"></li>
+                              <li data-color="FFFFCC"></li>
+                              <li data-color="003300"></li>
+                              <li data-color="336633"></li>
+                              <li data-color="669966"></li>
+                              <li data-color="99CC99"></li>
+                              <li data-color="CCCC66"></li>
+                              <li data-color="FFFF66"></li>
+                              <li data-color="0000CC"></li>
+                              <li data-color="3333CC"></li>
+                              <li data-color="6666CC"></li>
+                              <li data-color="9999CC"></li>
+                              <li data-color="CCCC99"></li>
+                              <li data-color="FFFF99"></li>
+                              <li data-color="0000FF"></li>
+                              <li data-color="3333FF"></li>
+                              <li data-color="6666FF"></li>
+                              <li data-color="9999FF"></li>
+                              <li data-color="CCCCFF"></li>
+                              <li data-color="FFFFCC"></li>
+                              <li data-color="003300"></li>
+                              <li data-color="336633"></li>
+                              <li data-color="669966"></li>
+                              <li data-color="99CC99"></li>
+                              <li data-color="CCFFCC"></li>
+                              <li data-color="FF00FF"></li>
+                              <li data-color="006600"></li>
+                              <li data-color="339933"></li>
+                              <li data-color="66CC66"></li>
+                              <li data-color="99FF99"></li>
+                              <li data-color="CC00CC"></li>
+                              <li data-color="FF33FF"></li>
+
+                              <!-- 10 -->
+                              <li data-color="00CC00"></li>
+                              <li data-color="33FF33"></li>
+                              <li data-color="660066"></li>
+                              <li data-color="993399"></li>
+                              <li data-color="CC66CC"></li>
+                              <li data-color="FF99FF"></li>
+
+                              <!-- 11 -->
+                              <li data-color="00FF00"></li>
+                              <li data-color="330033"></li>
+                              <li data-color="663366"></li>
+                              <li data-color="996699"></li>
+                              <li data-color="CC99CC"></li>
+                              <li data-color="FFCCFF"></li>
+
+                              <!-- 12 -->
+                              <li data-color="00FF33"></li>
+                              <li data-color="330066"></li>
+                              <li data-color="663399"></li>
+                              <li data-color="9966CC"></li>
+                              <li data-color="CC99FF"></li>
+                              <li data-color="FFCC00"></li>
+
+                              <!-- 13 -->
+                              <li data-color="00FF66"></li>
+                              <li data-color="330099"></li>
+                              <li data-color="6633CC"></li>
+                              <li data-color="9966FF"></li>
+                              <li data-color="CC9900"></li>
+                              <li data-color="FFCC33"></li>
+
+                              <!-- 14 -->
+                              <li data-color="00FF99"></li>
+                              <li data-color="3300CC"></li>
+                              <li data-color="6633FF"></li>
+                              <li data-color="996600"></li>
+                              <li data-color="CC9933"></li>
+                              <li data-color="FFCC66"></li>
+
+                              <!-- 15 -->
+                              <li data-color="00FFCC"></li>
+                              <li data-color="3300FF"></li>
+                              <li data-color="663300"></li>
+                              <li data-color="996633"></li>
+                              <li data-color="CC9966"></li>
+                              <li data-color="FFCC99"></li>
+
+                              <!-- 16 -->
+                              <li data-color="00FFFF"></li>
+                              <li data-color="330000"></li>
+                              <li data-color="663366"></li>
+                              <li data-color="996633"></li>
+                              <li data-color="CC9999"></li>
+                              <li data-color="FFCCCC"></li>
+
+                              <!-- 17 -->
+                              <li data-color="00CCCC"></li>
+                              <li data-color="33FFFF"></li>
+                              <li data-color="660000"></li>
+                              <li data-color="993333"></li>
+                              <li data-color="CC6666"></li>
+                              <li data-color="FF9999"></li>
+
+                              <!-- 18 -->
+                              <li data-color="009999"></li>
+                              <li data-color="33CCCC"></li>
+                              <li data-color="66FFFF"></li>
+                              <li data-color="990000"></li>
+                              <li data-color="CC3333"></li>
+                              <li data-color="FF6666"></li>
+
+                              <!-- 19 -->
+                              <li data-color="006666"></li>
+                              <li data-color="339999"></li>
+                              <li data-color="66CCCC"></li>
+                              <li data-color="99FFFF"></li>
+                              <li data-color="CC0000"></li>
+                              <li data-color="FF3333"></li>
+
+                              <!-- 20 -->
+                              <li data-color="003333"></li>
+                              <li data-color="336666"></li>
+                              <li data-color="669999"></li>
+                              <li data-color="99CCCC"></li>
+                              <li data-color="CCFFFF"></li>
+                              <li data-color="FF0000"></li>
+
+                              <!-- 21 -->
+                              <li data-color="003366"></li>
+                              <li data-color="336699"></li>
+                              <li data-color="6699CC"></li>
+                              <li data-color="99CCFF"></li>
+                              <li data-color="CCFF00"></li>
+                              <li data-color="FF0033"></li>
+
+                              <!-- 22 -->
+                              <li data-color="003399"></li>
+                              <li data-color="3366CC"></li>
+                              <li data-color="6699FF"></li>
+                              <li data-color="99CC00"></li>
+                              <li data-color="CCFF33"></li>
+                              <li data-color="FF0066"></li>
+
+                              <!-- 23 -->
+                              <li data-color="003399"></li>
+                              <li data-color="3366FF"></li>
+                              <li data-color="669900"></li>
+                              <li data-color="99CC33"></li>
+                              <li data-color="CCFF66"></li>
+                              <li data-color="FF0099"></li>
+
+                              <!-- 24 -->
+                              <li data-color="0033FF"></li>
+                              <li data-color="336600"></li>
+                              <li data-color="669933"></li>
+                              <li data-color="99CC66"></li>
+                              <li data-color="CCFF99"></li>
+                              <li data-color="FF00CC"></li>
+
+                              <!-- 25 -->
+                              <li data-color="0066FF"></li>
+                              <li data-color="339900"></li>
+                              <li data-color="66CC33"></li>
+                              <li data-color="99FF66"></li>
+                              <li data-color="CC0099"></li>
+                              <li data-color="FF33CC"></li>
+
+                              <!-- 26 -->
+                              <li data-color="0099FF"></li>
+                              <li data-color="33CC00"></li>
+                              <li data-color="66FF33"></li>
+                              <li data-color="990066"></li>
+                              <li data-color="CC3399"></li>
+                              <li data-color="FF66CC"></li>
+
+                              <!-- 27 -->
+                              <li data-color="00CCFF"></li>
+                              <li data-color="33FF00"></li>
+                              <li data-color="660033"></li>
+                              <li data-color="993366"></li>
+                              <li data-color="CC6699"></li>
+                              <li data-color="FF99CC"></li>
+
+                              <!-- 28 -->
+                              <li data-color="00CC33"></li>
+                              <li data-color="33FF66"></li>
+                              <li data-color="660099"></li>
+                              <li data-color="9933CC"></li>
+                              <li data-color="CC66FF"></li>
+                              <li data-color="FF9900"></li>
+
+                              <!-- 29 -->
+                              <li data-color="00CC66"></li>
+                              <li data-color="33FF99"></li>
+                              <li data-color="6600CC"></li>
+                              <li data-color="9933FF"></li>
+                              <li data-color="CC6600"></li>
+                              <li data-color="FF9933"></li>
+
+                              <!-- 30 -->
+                              <li data-color="00CC99"></li>
+                              <li data-color="33FFCC"></li>
+                              <li data-color="6600FF"></li>
+                              <li data-color="993300"></li>
+                              <li data-color="CC6633"></li>
+                              <li data-color="FF9966"></li>
+
+                              <!-- 31 -->
+                              <li data-color="009933"></li>
+                              <li data-color="33CC66"></li>
+                              <li data-color="66FF99"></li>
+                              <li data-color="9900CC"></li>
+                              <li data-color="CC33FF"></li>
+                              <li data-color="FF6600"></li>
+
+                              <!-- 32 -->
+                              <li data-color="006633"></li>
+                              <li data-color="339966"></li>
+                              <li data-color="66CC99"></li>
+                              <li data-color="99FFCC"></li>
+                              <li data-color="CC00FF"></li>
+                              <li data-color="FF3300"></li>
+
+                              <!-- 33 -->
+                              <li data-color="009966"></li>
+                              <li data-color="33CC99"></li>
+                              <li data-color="66FFCC"></li>
+                              <li data-color="99FFCC"></li>
+                              <li data-color="CC3300"></li>
+                              <li data-color="FF6633"></li>
+
+                              <!-- 34 -->
+                              <li data-color="0099CC"></li>
+                              <li data-color="33CCFF"></li>
+                              <li data-color="66FF00"></li>
+                              <li data-color="990033"></li>
+                              <li data-color="CC3366"></li>
+                              <li data-color="FF6699"></li>
+
+                              <!-- 35 -->
+                              <li data-color="0066CC"></li>
+                              <li data-color="3399FF"></li>
+                              <li data-color="66CC00"></li>
+                              <li data-color="99FF33"></li>
+                              <li data-color="CC0066"></li>
+                              <li data-color="FF3399"></li>
+
+                              <!-- 36 -->
+                              <li data-color="006699"></li>
+                              <li data-color="3399CC"></li>
+                              <li data-color="66CCFF"></li>
+                              <li data-color="99FF00"></li>
+                              <li data-color="CC0033"></li>
+                              <li data-color="FF3366"></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </th>
+                      <td>
+                        <input type="text" class="input-base skin-title-color" value="000000" readonly />
+                      </td>
+                      <th scope="row">글짜크기</th>
+                      <td>
+                        <input type="number" class="input-base skin-title-size" value="14" />
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">정렬</th>
+                      <td colspan="3">
+                        <select class="select-tag" style="width: 421px;">
+                          <option value="0" selected>선택</option>
+                          <option value="1">Value 1</option>
+                          <option value="2">Value 2</option>
+                          <option value="3">Value 3</option>
+                        </select>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <div class="total-area">
+                <span class="d-tit">안내 TEXT</span>
+                <div class="btns-wrap">
+                  <span class="btn-base tp2 lg green"><a href="#"><em class="add">추가</em></a></span>
+                </div>
+              </div>
+              <div class="tb-input-wrap">
+                <table class="tb-input">
+                  <colgroup>
+                    <col width="12%">
+                    <col width="38%">
+                    <col width="12%">
+                    <col width="*">
+                  </colgroup>
+                  <tbody class="skin-code1-input">
+                    <tr>
+                      <th scope="row">내용</th>
+                      <td colspan="3">
+                        <textarea class="textarea-base skin-code-text">유효기간:</textarea>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">치환코드</th>
+                      <td>
+                        <select class="select-tag">
+                          <option value="0" selected>선택</option>
+                          <option value="1">Value 1</option>
+                          <option value="2">Value 2</option>
+                          <option value="3">Value 3</option>
+                        </select>
+                      </td>
+                      <th scope="row">정렬</th>
+                      <td>
+                        <select class="select-tag">
+                          <option value="0" selected>선택</option>
+                          <option value="1">Value 1</option>
+                          <option value="2">Value 2</option>
+                          <option value="3">Value 3</option>
+                        </select>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">X 좌표</th>
+                      <td>
+                        <input type="number" class="input-base skin-code-left" value="140">
+                      </td>
+                      <th scope="row">Y 좌표</th>
+                      <td>
+                        <input type="number" class="input-base skin-code-top" value="590">
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Width/pix</th>
+                      <td>
+                        <input type="number" class="input-base  skin-code-width" value="240">
+                      </td>
+                      <th scope="row">Height/pix</th>
+                      <td>
+                        <input type="number" class="input-base  skin-code-height" value="30">
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">
+                        <div class="color-pick-wrap">
+                          <span class="txt">색상</span>
+                          <span class="btn-base tp2"><a href="#">색상표</a></span>
+                          <div class="color-pick-area c-scrollbar" data-type="code1">
+                            <ul>
+                              <li data-color="000000"></li>
+                              <li data-color="333333"></li>
+                              <li data-color="666666"></li>
+                              <li data-color="999999"></li>
+                              <li data-color="CCCCCC"></li>
+                              <li data-color="FFFFFF"></li>
+                              <li data-color="000033"></li>
+                              <li data-color="333300"></li>
+                              <li data-color="666600"></li>
+                              <li data-color="999900"></li>
+                              <li data-color="CCCC00"></li>
+                              <li data-color="FFFF00"></li>
+                              <li data-color="000066"></li>
+                              <li data-color="333366"></li>
+                              <li data-color="666633"></li>
+                              <li data-color="999933"></li>
+                              <li data-color="CCCC33"></li>
+                              <li data-color="FFFF33"></li>
+                              <li data-color="000099"></li>
+                              <li data-color="333399"></li>
+                              <li data-color="666699"></li>
+                              <li data-color="999966"></li>
+                              <li data-color="CCCC66"></li>
+                              <li data-color="FFFF66"></li>
+                              <li data-color="0000CC"></li>
+                              <li data-color="3333CC"></li>
+                              <li data-color="6666FF"></li>
+                              <li data-color="9999FF"></li>
+                              <li data-color="CCCCFF"></li>
+                              <li data-color="FFFFCC"></li>
+                              <li data-color="003300"></li>
+                              <li data-color="336633"></li>
+                              <li data-color="669966"></li>
+                              <li data-color="99CC99"></li>
+                              <li data-color="CCCC66"></li>
+                              <li data-color="FFFF66"></li>
+                              <li data-color="0000CC"></li>
+                              <li data-color="3333CC"></li>
+                              <li data-color="6666CC"></li>
+                              <li data-color="9999CC"></li>
+                              <li data-color="CCCC99"></li>
+                              <li data-color="FFFF99"></li>
+                              <li data-color="0000FF"></li>
+                              <li data-color="3333FF"></li>
+                              <li data-color="6666FF"></li>
+                              <li data-color="9999FF"></li>
+                              <li data-color="CCCCFF"></li>
+                              <li data-color="FFFFCC"></li>
+                              <li data-color="003300"></li>
+                              <li data-color="336633"></li>
+                              <li data-color="669966"></li>
+                              <li data-color="99CC99"></li>
+                              <li data-color="CCFFCC"></li>
+                              <li data-color="FF00FF"></li>
+                              <li data-color="006600"></li>
+                              <li data-color="339933"></li>
+                              <li data-color="66CC66"></li>
+                              <li data-color="99FF99"></li>
+                              <li data-color="CC00CC"></li>
+                              <li data-color="FF33FF"></li>
+
+                              <!-- 10 -->
+                              <li data-color="00CC00"></li>
+                              <li data-color="33FF33"></li>
+                              <li data-color="660066"></li>
+                              <li data-color="993399"></li>
+                              <li data-color="CC66CC"></li>
+                              <li data-color="FF99FF"></li>
+
+                              <!-- 11 -->
+                              <li data-color="00FF00"></li>
+                              <li data-color="330033"></li>
+                              <li data-color="663366"></li>
+                              <li data-color="996699"></li>
+                              <li data-color="CC99CC"></li>
+                              <li data-color="FFCCFF"></li>
+
+                              <!-- 12 -->
+                              <li data-color="00FF33"></li>
+                              <li data-color="330066"></li>
+                              <li data-color="663399"></li>
+                              <li data-color="9966CC"></li>
+                              <li data-color="CC99FF"></li>
+                              <li data-color="FFCC00"></li>
+
+                              <!-- 13 -->
+                              <li data-color="00FF66"></li>
+                              <li data-color="330099"></li>
+                              <li data-color="6633CC"></li>
+                              <li data-color="9966FF"></li>
+                              <li data-color="CC9900"></li>
+                              <li data-color="FFCC33"></li>
+
+                              <!-- 14 -->
+                              <li data-color="00FF99"></li>
+                              <li data-color="3300CC"></li>
+                              <li data-color="6633FF"></li>
+                              <li data-color="996600"></li>
+                              <li data-color="CC9933"></li>
+                              <li data-color="FFCC66"></li>
+
+                              <!-- 15 -->
+                              <li data-color="00FFCC"></li>
+                              <li data-color="3300FF"></li>
+                              <li data-color="663300"></li>
+                              <li data-color="996633"></li>
+                              <li data-color="CC9966"></li>
+                              <li data-color="FFCC99"></li>
+
+                              <!-- 16 -->
+                              <li data-color="00FFFF"></li>
+                              <li data-color="330000"></li>
+                              <li data-color="663366"></li>
+                              <li data-color="996633"></li>
+                              <li data-color="CC9999"></li>
+                              <li data-color="FFCCCC"></li>
+
+                              <!-- 17 -->
+                              <li data-color="00CCCC"></li>
+                              <li data-color="33FFFF"></li>
+                              <li data-color="660000"></li>
+                              <li data-color="993333"></li>
+                              <li data-color="CC6666"></li>
+                              <li data-color="FF9999"></li>
+
+                              <!-- 18 -->
+                              <li data-color="009999"></li>
+                              <li data-color="33CCCC"></li>
+                              <li data-color="66FFFF"></li>
+                              <li data-color="990000"></li>
+                              <li data-color="CC3333"></li>
+                              <li data-color="FF6666"></li>
+
+                              <!-- 19 -->
+                              <li data-color="006666"></li>
+                              <li data-color="339999"></li>
+                              <li data-color="66CCCC"></li>
+                              <li data-color="99FFFF"></li>
+                              <li data-color="CC0000"></li>
+                              <li data-color="FF3333"></li>
+
+                              <!-- 20 -->
+                              <li data-color="003333"></li>
+                              <li data-color="336666"></li>
+                              <li data-color="669999"></li>
+                              <li data-color="99CCCC"></li>
+                              <li data-color="CCFFFF"></li>
+                              <li data-color="FF0000"></li>
+
+                              <!-- 21 -->
+                              <li data-color="003366"></li>
+                              <li data-color="336699"></li>
+                              <li data-color="6699CC"></li>
+                              <li data-color="99CCFF"></li>
+                              <li data-color="CCFF00"></li>
+                              <li data-color="FF0033"></li>
+
+                              <!-- 22 -->
+                              <li data-color="003399"></li>
+                              <li data-color="3366CC"></li>
+                              <li data-color="6699FF"></li>
+                              <li data-color="99CC00"></li>
+                              <li data-color="CCFF33"></li>
+                              <li data-color="FF0066"></li>
+
+                              <!-- 23 -->
+                              <li data-color="003399"></li>
+                              <li data-color="3366FF"></li>
+                              <li data-color="669900"></li>
+                              <li data-color="99CC33"></li>
+                              <li data-color="CCFF66"></li>
+                              <li data-color="FF0099"></li>
+
+                              <!-- 24 -->
+                              <li data-color="0033FF"></li>
+                              <li data-color="336600"></li>
+                              <li data-color="669933"></li>
+                              <li data-color="99CC66"></li>
+                              <li data-color="CCFF99"></li>
+                              <li data-color="FF00CC"></li>
+
+                              <!-- 25 -->
+                              <li data-color="0066FF"></li>
+                              <li data-color="339900"></li>
+                              <li data-color="66CC33"></li>
+                              <li data-color="99FF66"></li>
+                              <li data-color="CC0099"></li>
+                              <li data-color="FF33CC"></li>
+
+                              <!-- 26 -->
+                              <li data-color="0099FF"></li>
+                              <li data-color="33CC00"></li>
+                              <li data-color="66FF33"></li>
+                              <li data-color="990066"></li>
+                              <li data-color="CC3399"></li>
+                              <li data-color="FF66CC"></li>
+
+                              <!-- 27 -->
+                              <li data-color="00CCFF"></li>
+                              <li data-color="33FF00"></li>
+                              <li data-color="660033"></li>
+                              <li data-color="993366"></li>
+                              <li data-color="CC6699"></li>
+                              <li data-color="FF99CC"></li>
+
+                              <!-- 28 -->
+                              <li data-color="00CC33"></li>
+                              <li data-color="33FF66"></li>
+                              <li data-color="660099"></li>
+                              <li data-color="9933CC"></li>
+                              <li data-color="CC66FF"></li>
+                              <li data-color="FF9900"></li>
+
+                              <!-- 29 -->
+                              <li data-color="00CC66"></li>
+                              <li data-color="33FF99"></li>
+                              <li data-color="6600CC"></li>
+                              <li data-color="9933FF"></li>
+                              <li data-color="CC6600"></li>
+                              <li data-color="FF9933"></li>
+
+                              <!-- 30 -->
+                              <li data-color="00CC99"></li>
+                              <li data-color="33FFCC"></li>
+                              <li data-color="6600FF"></li>
+                              <li data-color="993300"></li>
+                              <li data-color="CC6633"></li>
+                              <li data-color="FF9966"></li>
+
+                              <!-- 31 -->
+                              <li data-color="009933"></li>
+                              <li data-color="33CC66"></li>
+                              <li data-color="66FF99"></li>
+                              <li data-color="9900CC"></li>
+                              <li data-color="CC33FF"></li>
+                              <li data-color="FF6600"></li>
+
+                              <!-- 32 -->
+                              <li data-color="006633"></li>
+                              <li data-color="339966"></li>
+                              <li data-color="66CC99"></li>
+                              <li data-color="99FFCC"></li>
+                              <li data-color="CC00FF"></li>
+                              <li data-color="FF3300"></li>
+
+                              <!-- 33 -->
+                              <li data-color="009966"></li>
+                              <li data-color="33CC99"></li>
+                              <li data-color="66FFCC"></li>
+                              <li data-color="99FFCC"></li>
+                              <li data-color="CC3300"></li>
+                              <li data-color="FF6633"></li>
+
+                              <!-- 34 -->
+                              <li data-color="0099CC"></li>
+                              <li data-color="33CCFF"></li>
+                              <li data-color="66FF00"></li>
+                              <li data-color="990033"></li>
+                              <li data-color="CC3366"></li>
+                              <li data-color="FF6699"></li>
+
+                              <!-- 35 -->
+                              <li data-color="0066CC"></li>
+                              <li data-color="3399FF"></li>
+                              <li data-color="66CC00"></li>
+                              <li data-color="99FF33"></li>
+                              <li data-color="CC0066"></li>
+                              <li data-color="FF3399"></li>
+
+                              <!-- 36 -->
+                              <li data-color="006699"></li>
+                              <li data-color="3399CC"></li>
+                              <li data-color="66CCFF"></li>
+                              <li data-color="99FF00"></li>
+                              <li data-color="CC0033"></li>
+                              <li data-color="FF3366"></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </th>
+                      <td>
+                        <input type="text" class="input-base skin-code-color" value="FFFFFF" readonly />
+                      </td>
+                      <th scope="row">글짜크기</th>
+                      <td>
+                        <input type="number" class="input-base skin-code-size" value="14" />
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div><!-- .tb-input-wrap -->
+
+              <div class="total-area">
+                <span> </span>
+                <div class="btns-wrap">
+                  <span class="btn-base tp2 lg green"><a href="#"><em class="minus">삭제</em></a></span>
+                </div>
+              </div>
+              <div class="tb-input-wrap">
+                <table class="tb-input">
+                  <colgroup>
+                    <col width="12%">
+                    <col width="38%">
+                    <col width="12%">
+                    <col width="*">
+                  </colgroup>
+                  <tbody class="skin-code2-input">
+                    <tr>
+                      <th scope="row">내용</th>
+                      <td colspan="3">
+                        <textarea class="textarea-base skin-code-text">교환처:</textarea>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">치환코드</th>
+                      <td>
+                        <select class="select-tag">
+                          <option value="0" selected>선택</option>
+                          <option value="1">Value 1</option>
+                          <option value="2">Value 2</option>
+                          <option value="3">Value 3</option>
+                        </select>
+                      </td>
+                      <th scope="row">정렬</th>
+                      <td>
+                        <select class="select-tag">
+                          <option value="0" selected>선택</option>
+                          <option value="1">Value 1</option>
+                          <option value="2">Value 2</option>
+                          <option value="3">Value 3</option>
+                        </select>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">X 좌표</th>
+                      <td>
+                        <input type="number" class="input-base skin-code-left" value="140">
+                      </td>
+                      <th scope="row">Y 좌표</th>
+                      <td>
+                        <input type="number" class="input-base skin-code-top" value="630">
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Width/pix</th>
+                      <td>
+                        <input type="number" class="input-base skin-code-width" value="240">
+                      </td>
+                      <th scope="row">Height/pix</th>
+                      <td>
+                        <input type="number" class="input-base skin-code-height" value="30">
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">
+                        <div class="color-pick-wrap">
+                          <span class="txt">색상</span>
+                          <span class="btn-base tp2"><a href="#">색상표</a></span>
+                          <div class="color-pick-area c-scrollbar" data-type="code2">
+                            <ul>
+                              <li data-color="000000"></li>
+                              <li data-color="333333"></li>
+                              <li data-color="666666"></li>
+                              <li data-color="999999"></li>
+                              <li data-color="CCCCCC"></li>
+                              <li data-color="FFFFFF"></li>
+                              <li data-color="000033"></li>
+                              <li data-color="333300"></li>
+                              <li data-color="666600"></li>
+                              <li data-color="999900"></li>
+                              <li data-color="CCCC00"></li>
+                              <li data-color="FFFF00"></li>
+                              <li data-color="000066"></li>
+                              <li data-color="333366"></li>
+                              <li data-color="666633"></li>
+                              <li data-color="999933"></li>
+                              <li data-color="CCCC33"></li>
+                              <li data-color="FFFF33"></li>
+                              <li data-color="000099"></li>
+                              <li data-color="333399"></li>
+                              <li data-color="666699"></li>
+                              <li data-color="999966"></li>
+                              <li data-color="CCCC66"></li>
+                              <li data-color="FFFF66"></li>
+                              <li data-color="0000CC"></li>
+                              <li data-color="3333CC"></li>
+                              <li data-color="6666FF"></li>
+                              <li data-color="9999FF"></li>
+                              <li data-color="CCCCFF"></li>
+                              <li data-color="FFFFCC"></li>
+                              <li data-color="003300"></li>
+                              <li data-color="336633"></li>
+                              <li data-color="669966"></li>
+                              <li data-color="99CC99"></li>
+                              <li data-color="CCCC66"></li>
+                              <li data-color="FFFF66"></li>
+                              <li data-color="0000CC"></li>
+                              <li data-color="3333CC"></li>
+                              <li data-color="6666CC"></li>
+                              <li data-color="9999CC"></li>
+                              <li data-color="CCCC99"></li>
+                              <li data-color="FFFF99"></li>
+                              <li data-color="0000FF"></li>
+                              <li data-color="3333FF"></li>
+                              <li data-color="6666FF"></li>
+                              <li data-color="9999FF"></li>
+                              <li data-color="CCCCFF"></li>
+                              <li data-color="FFFFCC"></li>
+                              <li data-color="003300"></li>
+                              <li data-color="336633"></li>
+                              <li data-color="669966"></li>
+                              <li data-color="99CC99"></li>
+                              <li data-color="CCFFCC"></li>
+                              <li data-color="FF00FF"></li>
+                              <li data-color="006600"></li>
+                              <li data-color="339933"></li>
+                              <li data-color="66CC66"></li>
+                              <li data-color="99FF99"></li>
+                              <li data-color="CC00CC"></li>
+                              <li data-color="FF33FF"></li>
+
+                              <!-- 10 -->
+                              <li data-color="00CC00"></li>
+                              <li data-color="33FF33"></li>
+                              <li data-color="660066"></li>
+                              <li data-color="993399"></li>
+                              <li data-color="CC66CC"></li>
+                              <li data-color="FF99FF"></li>
+
+                              <!-- 11 -->
+                              <li data-color="00FF00"></li>
+                              <li data-color="330033"></li>
+                              <li data-color="663366"></li>
+                              <li data-color="996699"></li>
+                              <li data-color="CC99CC"></li>
+                              <li data-color="FFCCFF"></li>
+
+                              <!-- 12 -->
+                              <li data-color="00FF33"></li>
+                              <li data-color="330066"></li>
+                              <li data-color="663399"></li>
+                              <li data-color="9966CC"></li>
+                              <li data-color="CC99FF"></li>
+                              <li data-color="FFCC00"></li>
+
+                              <!-- 13 -->
+                              <li data-color="00FF66"></li>
+                              <li data-color="330099"></li>
+                              <li data-color="6633CC"></li>
+                              <li data-color="9966FF"></li>
+                              <li data-color="CC9900"></li>
+                              <li data-color="FFCC33"></li>
+
+                              <!-- 14 -->
+                              <li data-color="00FF99"></li>
+                              <li data-color="3300CC"></li>
+                              <li data-color="6633FF"></li>
+                              <li data-color="996600"></li>
+                              <li data-color="CC9933"></li>
+                              <li data-color="FFCC66"></li>
+
+                              <!-- 15 -->
+                              <li data-color="00FFCC"></li>
+                              <li data-color="3300FF"></li>
+                              <li data-color="663300"></li>
+                              <li data-color="996633"></li>
+                              <li data-color="CC9966"></li>
+                              <li data-color="FFCC99"></li>
+
+                              <!-- 16 -->
+                              <li data-color="00FFFF"></li>
+                              <li data-color="330000"></li>
+                              <li data-color="663366"></li>
+                              <li data-color="996633"></li>
+                              <li data-color="CC9999"></li>
+                              <li data-color="FFCCCC"></li>
+
+                              <!-- 17 -->
+                              <li data-color="00CCCC"></li>
+                              <li data-color="33FFFF"></li>
+                              <li data-color="660000"></li>
+                              <li data-color="993333"></li>
+                              <li data-color="CC6666"></li>
+                              <li data-color="FF9999"></li>
+
+                              <!-- 18 -->
+                              <li data-color="009999"></li>
+                              <li data-color="33CCCC"></li>
+                              <li data-color="66FFFF"></li>
+                              <li data-color="990000"></li>
+                              <li data-color="CC3333"></li>
+                              <li data-color="FF6666"></li>
+
+                              <!-- 19 -->
+                              <li data-color="006666"></li>
+                              <li data-color="339999"></li>
+                              <li data-color="66CCCC"></li>
+                              <li data-color="99FFFF"></li>
+                              <li data-color="CC0000"></li>
+                              <li data-color="FF3333"></li>
+
+                              <!-- 20 -->
+                              <li data-color="003333"></li>
+                              <li data-color="336666"></li>
+                              <li data-color="669999"></li>
+                              <li data-color="99CCCC"></li>
+                              <li data-color="CCFFFF"></li>
+                              <li data-color="FF0000"></li>
+
+                              <!-- 21 -->
+                              <li data-color="003366"></li>
+                              <li data-color="336699"></li>
+                              <li data-color="6699CC"></li>
+                              <li data-color="99CCFF"></li>
+                              <li data-color="CCFF00"></li>
+                              <li data-color="FF0033"></li>
+
+                              <!-- 22 -->
+                              <li data-color="003399"></li>
+                              <li data-color="3366CC"></li>
+                              <li data-color="6699FF"></li>
+                              <li data-color="99CC00"></li>
+                              <li data-color="CCFF33"></li>
+                              <li data-color="FF0066"></li>
+
+                              <!-- 23 -->
+                              <li data-color="003399"></li>
+                              <li data-color="3366FF"></li>
+                              <li data-color="669900"></li>
+                              <li data-color="99CC33"></li>
+                              <li data-color="CCFF66"></li>
+                              <li data-color="FF0099"></li>
+
+                              <!-- 24 -->
+                              <li data-color="0033FF"></li>
+                              <li data-color="336600"></li>
+                              <li data-color="669933"></li>
+                              <li data-color="99CC66"></li>
+                              <li data-color="CCFF99"></li>
+                              <li data-color="FF00CC"></li>
+
+                              <!-- 25 -->
+                              <li data-color="0066FF"></li>
+                              <li data-color="339900"></li>
+                              <li data-color="66CC33"></li>
+                              <li data-color="99FF66"></li>
+                              <li data-color="CC0099"></li>
+                              <li data-color="FF33CC"></li>
+
+                              <!-- 26 -->
+                              <li data-color="0099FF"></li>
+                              <li data-color="33CC00"></li>
+                              <li data-color="66FF33"></li>
+                              <li data-color="990066"></li>
+                              <li data-color="CC3399"></li>
+                              <li data-color="FF66CC"></li>
+
+                              <!-- 27 -->
+                              <li data-color="00CCFF"></li>
+                              <li data-color="33FF00"></li>
+                              <li data-color="660033"></li>
+                              <li data-color="993366"></li>
+                              <li data-color="CC6699"></li>
+                              <li data-color="FF99CC"></li>
+
+                              <!-- 28 -->
+                              <li data-color="00CC33"></li>
+                              <li data-color="33FF66"></li>
+                              <li data-color="660099"></li>
+                              <li data-color="9933CC"></li>
+                              <li data-color="CC66FF"></li>
+                              <li data-color="FF9900"></li>
+
+                              <!-- 29 -->
+                              <li data-color="00CC66"></li>
+                              <li data-color="33FF99"></li>
+                              <li data-color="6600CC"></li>
+                              <li data-color="9933FF"></li>
+                              <li data-color="CC6600"></li>
+                              <li data-color="FF9933"></li>
+
+                              <!-- 30 -->
+                              <li data-color="00CC99"></li>
+                              <li data-color="33FFCC"></li>
+                              <li data-color="6600FF"></li>
+                              <li data-color="993300"></li>
+                              <li data-color="CC6633"></li>
+                              <li data-color="FF9966"></li>
+
+                              <!-- 31 -->
+                              <li data-color="009933"></li>
+                              <li data-color="33CC66"></li>
+                              <li data-color="66FF99"></li>
+                              <li data-color="9900CC"></li>
+                              <li data-color="CC33FF"></li>
+                              <li data-color="FF6600"></li>
+
+                              <!-- 32 -->
+                              <li data-color="006633"></li>
+                              <li data-color="339966"></li>
+                              <li data-color="66CC99"></li>
+                              <li data-color="99FFCC"></li>
+                              <li data-color="CC00FF"></li>
+                              <li data-color="FF3300"></li>
+
+                              <!-- 33 -->
+                              <li data-color="009966"></li>
+                              <li data-color="33CC99"></li>
+                              <li data-color="66FFCC"></li>
+                              <li data-color="99FFCC"></li>
+                              <li data-color="CC3300"></li>
+                              <li data-color="FF6633"></li>
+
+                              <!-- 34 -->
+                              <li data-color="0099CC"></li>
+                              <li data-color="33CCFF"></li>
+                              <li data-color="66FF00"></li>
+                              <li data-color="990033"></li>
+                              <li data-color="CC3366"></li>
+                              <li data-color="FF6699"></li>
+
+                              <!-- 35 -->
+                              <li data-color="0066CC"></li>
+                              <li data-color="3399FF"></li>
+                              <li data-color="66CC00"></li>
+                              <li data-color="99FF33"></li>
+                              <li data-color="CC0066"></li>
+                              <li data-color="FF3399"></li>
+
+                              <!-- 36 -->
+                              <li data-color="006699"></li>
+                              <li data-color="3399CC"></li>
+                              <li data-color="66CCFF"></li>
+                              <li data-color="99FF00"></li>
+                              <li data-color="CC0033"></li>
+                              <li data-color="FF3366"></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </th>
+                      <td>
+                        <input type="text" class="input-base skin-code-color" value="FFFFFF" readonly />
+                      </td>
+                      <th scope="row">글짜크기</th>
+                      <td>
+                        <input type="number" class="input-base skin-code-size" value="14" />
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div><!-- .tb-input-wrap -->
+              <div class="btns-wrap t-right mt15">
+                <span class="btn-base tp2 lg"><a href="#">목록</a></span>
+                <span class="btn-base tp2 green lg"><a href="#">저장</a></span>
+              </div>
+            </div><!-- .skin-form-wrap -->
+          </div><!-- .skin-wrapper -->
+        </div><!-- .con-area -->
+      </div><!-- .content-wrap -->
+    </div><!-- #container -->
+  </div><!-- #wrap -->
+  <script>
+
+    const $skin_t = $('.skin-title-input');
+    const $skin_b = $('.skin-barcode-input');
+    const $skin_c1 = $('.skin-code1-input');
+    const $skin_c2 = $('.skin-code2-input');
+
+    const $skin_t_obj = $('.skin-title');
+    const $skin_t_input = $skin_t.find('.input-base');
+    const $skin_t_width = $skin_t.find('.skin-title-width');
+    const $skin_t_height = $skin_t.find('.skin-title-height');
+    const $skin_t_left = $skin_t.find('.skin-title-left');
+    const $skin_t_top = $skin_t.find('.skin-title-top');
+    const $skin_t_color = $skin_t.find('.skin-title-color');
+    const $skin_t_size = $skin_t.find('.skin-title-size');
+
+    const $skin_b_obj = $('.skin-barcode');
+    const $skin_b_input = $skin_b.find('.input-base');
+    const $skin_b_width = $skin_b.find('.skin-barcode-width');
+    const $skin_b_height = $skin_b.find('.skin-barcode-height');
+    const $skin_b_left = $skin_b.find('.skin-barcode-left');
+    const $skin_b_top = $skin_b.find('.skin-barcode-top');
+
+    const $skin_c1_obj = $('.skin-code1');
+    const $skin_c1_input = $skin_c1.find('.input-base');
+    const $skin_c1_width = $skin_c1.find('.skin-code-width');
+    const $skin_c1_height = $skin_c1.find('.skin-code-height');
+    const $skin_c1_left = $skin_c1.find('.skin-code-left');
+    const $skin_c1_top = $skin_c1.find('.skin-code-top');
+    const $skin_c1_color = $skin_c1.find('.skin-code-color');
+    const $skin_c1_size = $skin_c1.find('.skin-code-size');
+    const $skin_c1_text = $skin_c1.find('.skin-code-text');
+
+    const $skin_c2_obj = $('.skin-code2');
+    const $skin_c2_input = $skin_c2.find('.input-base');
+    const $skin_c2_width = $skin_c2.find('.skin-code-width');
+    const $skin_c2_height = $skin_c2.find('.skin-code-height');
+    const $skin_c2_left = $skin_c2.find('.skin-code-left');
+    const $skin_c2_top = $skin_c2.find('.skin-code-top');
+    const $skin_c2_color = $skin_c2.find('.skin-code-color');
+    const $skin_c2_size = $skin_c2.find('.skin-code-size');
+    const $skin_c2_text = $skin_c2.find('.skin-code-text');
+    
+
+    $skin_t_obj.css({
+      left: $skin_t_left.val() + 'px',
+      top: $skin_t_top.val() + 'px',
+      width: $skin_t_width.val() + 'px',
+      height: $skin_t_height.val() + 'px',
+    });
+    $skin_t_obj.find('.text').css({
+      fontSize: $skin_t_size.val() + 'px',
+      color: '#'+ $skin_t_color.val(),
+    });
+    $skin_b_obj.css({
+      left: $skin_b_left.val() + 'px',
+      top: $skin_b_top.val() + 'px',
+      width: $skin_b_width.val() + 'px',
+      height: $skin_b_height.val() + 'px',
+    });
+
+    $skin_c1_obj.css({
+      left: $skin_c1_left.val() + 'px',
+      top: $skin_c1_top.val() + 'px',
+      width: $skin_c1_width.val() + 'px',
+      height: $skin_c1_height.val() + 'px',
+    });
+    $skin_c1_obj.find('.text').css({
+      fontSize: $skin_c1_size.val() + 'px',
+      color: '#'+ $skin_c1_color.val(),
+    });
+    $skin_c1_obj.find('.text').text($skin_c1_text.val());
+
+    $skin_c2_obj.css({
+      left: $skin_c2_left.val() + 'px',
+      top: $skin_c2_top.val() + 'px',
+      width: $skin_c2_width.val() + 'px',
+      height: $skin_c2_height.val() + 'px',
+    });
+    $skin_c2_obj.find('.text').css({
+      fontSize: $skin_c2_size.val() + 'px',
+      color: '#'+ $skin_c2_color.val(),
+    });
+    $skin_c2_obj.find('.text').text($skin_c2_text.val());
+
+    function updateSkin($input, $el, cssProperty) {
+      $input.on('keyup', function() {
+        let inputValue = $(this).val();
+        if (cssProperty == 'code') {
+          let formattedText = inputValue.replace(/\n/g, '<br>');
+          $el.find('.text').html(formattedText);
+          return;
+        }
+        inputValue = inputValue.replace(/\D/g, '');
+        if (cssProperty == 'width' || cssProperty == 'height') {
+          $el.css('display', (inputValue == 0 || inputValue == '') ? 'none' : 'block');
+        }
+        if (inputValue.length > 3) {
+          inputValue = inputValue.substring(0, 3);
+        }
+        $(this).val(inputValue);
+        if ($.isNumeric(inputValue) && inputValue !== '') {
+          if (cssProperty == 'size') {
+            $el.find('.text').css({
+              fontSize: $skin_t_size.val() + 'px',
+            });
+            return;
+          }
+          $el.css(cssProperty, inputValue + 'px');
+        }
+      });
+    }
+
+    // 금액 텍스트 (상품)
+    updateSkin($skin_t_width, $skin_t_obj, 'width');
+    updateSkin($skin_t_height, $skin_t_obj, 'height');
+    updateSkin($skin_t_left, $skin_t_obj, 'left');
+    updateSkin($skin_t_top, $skin_t_obj, 'top');
+    updateSkin($skin_t_size, $skin_t_obj, 'size');
+    
+    // 바코드
+    updateSkin($skin_b_width, $skin_b_obj, 'width');
+    updateSkin($skin_b_height, $skin_b_obj, 'height');
+    updateSkin($skin_b_left, $skin_b_obj, 'left');
+    updateSkin($skin_b_top, $skin_b_obj, 'top');
+
+    // 유효기간
+    updateSkin($skin_c1_width, $skin_c1_obj, 'width');
+    updateSkin($skin_c1_height, $skin_c1_obj, 'height');
+    updateSkin($skin_c1_left, $skin_c1_obj, 'left');
+    updateSkin($skin_c1_top, $skin_c1_obj, 'top');
+    updateSkin($skin_c1_size, $skin_c1_obj, 'size');
+    updateSkin($skin_c1_text, $skin_c1_obj, 'code');
+
+    updateSkin($skin_c2_width, $skin_c2_obj, 'width');
+    updateSkin($skin_c2_height, $skin_c2_obj, 'height');
+    updateSkin($skin_c2_left, $skin_c2_obj, 'left');
+    updateSkin($skin_c2_top, $skin_c2_obj, 'top');
+    updateSkin($skin_c2_size, $skin_c2_obj, 'size');
+    updateSkin($skin_c2_text, $skin_c2_obj, 'code');
+
+    $skin_t_obj.draggable({
+      containment: '.skin-frame',
+      stop: function(event, ui) {
+        $skin_t_left.val(ui.position.left);
+        $skin_t_top.val(ui.position.top);
+      }
+    }).resizable({
+      containment: '.skin-frame',
+      stop: function(event, ui) {
+        $skin_t_width.val(ui.size.width);
+        $skin_t_height.val(ui.size.height);
+      }
+    });
+
+    $skin_b_obj.draggable({
+      containment: '.skin-frame',
+      stop: function(event, ui) {
+        $skin_b_left.val(ui.position.left);
+        $skin_b_top.val(ui.position.top);
+      }
+    }).resizable({
+      containment: '.skin-frame',
+      stop: function(event, ui) {
+        $skin_b_width.val(ui.size.width);
+        $skin_b_height.val(ui.size.height);
+      }
+    });
+
+    $skin_c1_obj.draggable({
+      containment: '.skin-frame',
+      stop: function(event, ui) {
+        $skin_c1_left.val(ui.position.left);
+        $skin_c1_top.val(ui.position.top);
+      }
+    }).resizable({
+      containment: '.skin-frame',
+      stop: function(event, ui) {
+        $skin_c1_width.val(ui.size.width);
+        $skin_c1_height.val(ui.size.height);
+      }
+    });
+
+    $skin_c2_obj.draggable({
+      containment: '.skin-frame',
+      stop: function(event, ui) {
+        $skin_c2_left.val(ui.position.left);
+        $skin_c2_top.val(ui.position.top);
+      }
+    }).resizable({
+      containment: '.skin-frame',
+      stop: function(event, ui) {
+        $skin_c2_width.val(ui.size.width);
+        $skin_c2_height.val(ui.size.height);
+      }
+    });
+
+    var skinInput = $('.input-file.skin .input-base');
+    var skinDel = $('.input-file.skin .btn-delete');
+    var skinObj = $('.skin-frame');
+
+    $('.input-file.skin input[type="file"]').on('change', function(e){
+      var file = e.target.files[0];
+      if (file) {
+        var fileValue = this.value.split('\\');
+        skinInput.val(fileValue[fileValue.length-1]);
+        skinDel.addClass('on');
+        var reader = new FileReader();
+        reader.onload = function(e) {
+          skinObj.css('background-image', 'url(' + e.target.result + ')');
+        }
+        reader.readAsDataURL(file);
+      } else {
+        // skinObj.css('background-image', 'none');
+        skinInput.val('');
+        skinDel.removeClass('on');
+      }
+    });
+    skinDel.on('click', function(){
+      // skinObj.css('background-image', 'none');
+      skinInput.val('');
+      skinDel.removeClass('on');
+    });
+
+    var $color_pick = $('.color-pick-area');
+    $('.color-pick-wrap > .btn-base').on('click', function(){
+      var $target = $(this).next('.color-pick-area');
+      if (!$target.hasClass('on')) {
+        $target.addClass('on');
+      } else {
+        $target.removeClass('on');
+      }
+    });
+    $color_pick.find('li').each(function(){
+      var _color = $(this).data('color');
+      $(this).append('<span class="thumb"></span><span class="txt"></span>');
+      $(this).find('.thumb').css('background-color', '#' + _color);
+      $(this).find('.txt').text('#' + _color);
+    });
+    $color_pick.find('li').on('click', function(){
+      var _type = $(this).closest('.color-pick-area').data('type');
+      var _color = $(this).data('color');
+      $(this).closest('th').next('td').find('.input-base').val(_color);
+      $('.skin-' + _type).find('.text').css({
+        color: '#' + _color,
+      })
+      $color_pick.removeClass('on');
+    });
+  </script>
+</body>
+
+</html>
+ 

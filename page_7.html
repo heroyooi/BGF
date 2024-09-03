@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BGF 네트웍스</title>
+  <link rel="stylesheet" href="css/common.css">
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-ui.js"></script>
+  <script src="js/jui-core.js"></script>
+  <script src="js/jui-grid.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/swiper-bundle.min.js"></script>
+  <script src="js/ui.js"></script>
+</head>
+<body class="c-scrollbar jui" id="j-custom">
+  <div id="wrap">
+    <div id="container">
+    <!-- <div id="container" class="ver-collapse"> -->
+      <div class="lnb-wrap c-scrollbar">
+        <h2><a href="#"></a></h2>
+        <ul class="lnb">
+        <!-- <ul class="lnb" data-dp1="1" data-dp2="1"> -->
+          <li class="li1">
+            <dl>
+              <dt><span>기업관리</span></dt>
+              <dd>
+                <ul>
+                  <li><a href="#">공급사관리</a></li>
+                  <li><a href="#">판매처관리</a></li>
+                  <li><a href="#">판매지사관리</a></li>
+                  <li><a href="#">가맹점관리</a></li>
+                </ul>
+              </dd>
+            </dl>
+          </li>
+          <li class="li2">
+            <dl>
+              <dt><span>상품관리</span></dt>
+              <dd>
+                <ul>
+                  <li><a href="#">서브 메뉴</a></li>
+                </ul>
+              </dd>
+            </dl>
+          </li>
+          <li class="li3">
+            <dl>
+              <dt><span>상품권관리</span></dt>
+              <dd>
+                <ul>
+                  <li><a href="#">서브 메뉴</a></li>
+                </ul>
+              </dd>
+            </dl>
+          </li>
+          <li class="li4">
+            <dl>
+              <dt><span>발송관리</span></dt>
+              <dd>
+                <ul>
+                  <li><a href="#">서브 메뉴</a></li>
+                </ul>
+              </dd>
+            </dl>
+          </li>
+          <li class="li5">
+            <dl>
+              <dt><span>상품권조회(CS)</span></dt>
+              <dd>
+                <ul>
+                  <li><a href="#">서브 메뉴</a></li>
+                </ul>
+              </dd>
+            </dl>
+          </li>
+          <li class="li6">
+            <dl>
+              <dt><span>정산관리</span></dt>
+              <dd>
+                <ul>
+                  <li><a href="#">서브 메뉴</a></li>
+                </ul>
+              </dd>
+            </dl>
+          </li>
+          <li class="li7">
+            <dl>
+              <dt><span>통계</span></dt>
+              <dd>
+                <ul>
+                  <li><a href="#">서브 메뉴</a></li>
+                </ul>
+              </dd>
+            </dl>
+          </li>
+          <li class="li8">
+            <dl>
+              <dt><span>시스템관리</span></dt>
+              <dd>
+                <ul>
+                  <li><a href="#">서브 메뉴</a></li>
+                </ul>
+              </dd>
+            </dl>
+          </li>
+          <li class="li9">
+            <dl>
+              <dt><span>로그관리</span></dt>
+              <dd>
+                <ul>
+                  <li><a href="#">서브 메뉴</a></li>
+                </ul>
+              </dd>
+            </dl>
+          </li>
+        </ul>
+        <a href="#" class="btn-arrow"></a>
+      </div><!-- .lnb-wrap -->
+      <div class="content-wrap c-scrollbar">
+        <div class="tit-area">
+          <h3>전시 관리</h3>
+          <div class="item-wrap">
+            <a href="#" class="mem"><strong>이영희</strong> 님</a>
+            <div class="utils-tip">
+              <ul>
+                <li><a href="#">로그아웃</a></li>
+                <li><a href="#">비밀번호 변경</a></li>
+              </ul>
+            </div>
+          </div>
+        </div><!-- .tit-area -->
+        <div class="con-area">
+          <div class="tb-input-wrap">
+            <table class="tb-input">
+              <colgroup>
+                <col width="12%" />
+                <col width="38%" />
+                <col width="12%" />
+                <col width="*" />
+              </colgroup>
+              <tbody>
+                <tr>
+                  <th scope="row">판매처</th>
+                  <td>
+                    <div class="input-wrap input-btn">
+                      <input type="text" class="input-base w160" placeholder="판매처">
+                      <input type="text" class="input-base" placeholder="판매지사">
+                      <span class="btn-base tp3"><a href="#">검색</a></span>
+                    </div>
+                  </td>
+                  <th scope="row">공급사</th>
+                  <td>
+                    <div class="input-wrap input-btn">
+                      <input type="text" class="input-base w160" placeholder="판매처">
+                      <input type="text" class="input-base" placeholder="판매지사">
+                      <span class="btn-base tp3"><a href="#">검색</a></span>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div><!-- .tb-input-wrap -->
+          <div class="btns-wrap t-right mt10">
+            <span class="btn-base tp2 lg green"><a href="#"><em class="search">검색</em></a></span>
+          </div>
+
+          <div class="tb-wrapper mt22">
+            <div class="tb-left">
+              <div class="total-area">
+                <span class="d-tit">
+                  판매처 리스트
+                </span>
+              </div>
+              <div class="chk-tree-wrap">
+                <ul class="chk-tree-list">
+                  <li class="on">
+                    <dl>
+                      <dt>
+                        <span class="chk-base">
+                          <input type="checkbox" id="chk-1" />
+                          <label for="chk-1">카카오톡 [C00000000012]</label>
+                        </span>
+                        <a href="#" class="chk-toggle"></a>
+                      </dt>
+                      <dd>
+                        <ul>
+                          <li>
+                            <span class="chk-base">
+                              <input type="checkbox" id="chk-1-1" />
+                              <label for="chk-1-1">카카오톡 [C00000000002]</label>
+                            </span>
+                          </li>
+                          <li>
+                            <span class="chk-base">
+                              <input type="checkbox" id="chk-1-2" />
+                              <label for="chk-1-2">카카오톡 [C00000000002]</label>
+                            </span>
+                          </li>
+                        </ul>
+                      </dd>
+                    </dl>
+                  </li>
+
+                  <li>
+                    <dl>
+                      <dt>
+                        <span class="chk-base">
+                          <input type="checkbox" id="chk-2" />
+                          <label for="chk-2">#{판매처명}</label>
+                        </span>
+                        <a href="#" class="chk-toggle"></a>
+                      </dt>
+                      <dd>
+                        <ul>
+                          <li>
+                            <span class="chk-base">
+                              <input type="checkbox" id="chk-2-1" />
+                              <label for="chk-2-1">카카오톡 [C00000000002]</label>
+                            </span>
+                          </li>
+                          <li>
+                            <span class="chk-base">
+                              <input type="checkbox" id="chk-2-2" />
+                              <label for="chk-2-2">카카오톡 [C00000000002]</label>
+                            </span>
+                          </li>
+                        </ul>
+                      </dd>
+                    </dl>
+                  </li>
+
+                  <li>
+                    <dl>
+                      <dt>
+                        <span class="chk-base">
+                          <input type="checkbox" id="chk-3" />
+                          <label for="chk-3">#{판매처명}</label>
+                        </span>
+                        <a href="#" class="chk-toggle"></a>
+                      </dt>
+                      <dd>
+                        <ul>
+                          <li>
+                            <span class="chk-base">
+                              <input type="checkbox" id="chk-3-1" />
+                              <label for="chk-3-1">카카오톡 [C00000000002]</label>
+                            </span>
+                          </li>
+                          <li>
+                            <span class="chk-base">
+                              <input type="checkbox" id="chk-3-2" />
+                              <label for="chk-3-2">카카오톡 [C00000000002]</label>
+                            </span>
+                          </li>
+                        </ul>
+                      </dd>
+                    </dl>
+                  </li>
+
+                  <li>
+                    <dl>
+                      <dt>
+                        <span class="chk-base">
+                          <input type="checkbox" id="chk-4" />
+                          <label for="chk-4">#{판매처명}</label>
+                        </span>
+                        <a href="#" class="chk-toggle"></a>
+                      </dt>
+                      <dd>
+                        <ul>
+                          <li>
+                            <span class="chk-base">
+                              <input type="checkbox" id="chk-4-1" />
+                              <label for="chk-4-1">카카오톡 [C00000000002]</label>
+                            </span>
+                          </li>
+                          <li>
+                            <span class="chk-base">
+                              <input type="checkbox" id="chk-4-2" />
+                              <label for="chk-4-2">카카오톡 [C00000000002]</label>
+                            </span>
+                          </li>
+                        </ul>
+                      </dd>
+                    </dl>
+                  </li>
+
+                  <li>
+                    <dl>
+                      <dt>
+                        <span class="chk-base">
+                          <input type="checkbox" id="chk-5" />
+                          <label for="chk-5">#{판매처명}</label>
+                        </span>
+                        <a href="#" class="chk-toggle"></a>
+                      </dt>
+                      <dd>
+                        <ul>
+                          <li>
+                            <span class="chk-base">
+                              <input type="checkbox" id="chk-5-1" />
+                              <label for="chk-5-1">카카오톡 [C00000000002]</label>
+                            </span>
+                          </li>
+                          <li>
+                            <span class="chk-base">
+                              <input type="checkbox" id="chk-5-2" />
+                              <label for="chk-5-2">카카오톡 [C00000000002]</label>
+                            </span>
+                          </li>
+                        </ul>
+                      </dd>
+                    </dl>
+                  </li>
+
+                  <li>
+                    <dl>
+                      <dt>
+                        <span class="chk-base">
+                          <input type="checkbox" id="chk-6" />
+                          <label for="chk-6">#{판매처명}</label>
+                        </span>
+                        <a href="#" class="chk-toggle"></a>
+                      </dt>
+                      <dd>
+                        <ul>
+                          <li>
+                            <span class="chk-base">
+                              <input type="checkbox" id="chk-6-1" />
+                              <label for="chk-6-1">카카오톡 [C00000000002]</label>
+                            </span>
+                          </li>
+                          <li>
+                            <span class="chk-base">
+                              <input type="checkbox" id="chk-6-2" />
+                              <label for="chk-6-2">카카오톡 [C00000000002]</label>
+                            </span>
+                          </li>
+                        </ul>
+                      </dd>
+                    </dl>
+                  </li>
+
+                  <li>
+                    <dl>
+                      <dt>
+                        <span class="chk-base">
+                          <input type="checkbox" id="chk-7" />
+                          <label for="chk-7">#{판매처명}</label>
+                        </span>
+                        <a href="#" class="chk-toggle"></a>
+                      </dt>
+                      <dd>
+                        <ul>
+                          <li>
+                            <span class="chk-base">
+                              <input type="checkbox" id="chk-7-1" />
+                              <label for="chk-7-1">카카오톡 [C00000000002]</label>
+                            </span>
+                          </li>
+                          <li>
+                            <span class="chk-base">
+                              <input type="checkbox" id="chk-7-2" />
+                              <label for="chk-7-2">카카오톡 [C00000000002]</label>
+                            </span>
+                          </li>
+                        </ul>
+                      </dd>
+                    </dl>
+                  </li>
+
+                  <li>
+                    <dl>
+                      <dt>
+                        <span class="chk-base">
+                          <input type="checkbox" id="chk-8" />
+                          <label for="chk-8">#{판매처명}</label>
+                        </span>
+                        <a href="#" class="chk-toggle"></a>
+                      </dt>
+                      <dd>
+                        <ul>
+                          <li>
+                            <span class="chk-base">
+                              <input type="checkbox" id="chk-8-1" />
+                              <label for="chk-8-1">카카오톡 [C00000000002]</label>
+                            </span>
+                          </li>
+                          <li>
+                            <span class="chk-base">
+                              <input type="checkbox" id="chk-8-2" />
+                              <label for="chk-8-2">카카오톡 [C00000000002]</label>
+                            </span>
+                          </li>
+                        </ul>
+                      </dd>
+                    </dl>
+                  </li>
+
+                  <li>
+                    <dl>
+                      <dt>
+                        <span class="chk-base">
+                          <input type="checkbox" id="chk-9" />
+                          <label for="chk-9">#{판매처명}</label>
+                        </span>
+                        <a href="#" class="chk-toggle"></a>
+                      </dt>
+                      <dd>
+                        <ul>
+                          <li>
+                            <span class="chk-base">
+                              <input type="checkbox" id="chk-9-1" />
+                              <label for="chk-9-1">카카오톡 [C00000000002]</label>
+                            </span>
+                          </li>
+                          <li>
+                            <span class="chk-base">
+                              <input type="checkbox" id="chk-9-2" />
+                              <label for="chk-9-2">카카오톡 [C00000000002]</label>
+                            </span>
+                          </li>
+                        </ul>
+                      </dd>
+                    </dl>
+                  </li>
+
+                  <li>
+                    <dl>
+                      <dt>
+                        <span class="chk-base">
+                          <input type="checkbox" id="chk-10" />
+                          <label for="chk-10">#{판매처명}</label>
+                        </span>
+                        <a href="#" class="chk-toggle"></a>
+                      </dt>
+                      <dd>
+                        <ul>
+                          <li>
+                            <span class="chk-base">
+                              <input type="checkbox" id="chk-10-1" />
+                              <label for="chk-10-1">카카오톡 [C00000000002]</label>
+                            </span>
+                          </li>
+                          <li>
+                            <span class="chk-base">
+                              <input type="checkbox" id="chk-10-2" />
+                              <label for="chk-10-2">카카오톡 [C00000000002]</label>
+                            </span>
+                          </li>
+                        </ul>
+                      </dd>
+                    </dl>
+                  </li>
+                </ul>
+              </div>
+            </div><!-- .tb-left -->
+            <div class="tb-item">
+              <a href="#" class="btn right"></a>
+              <a href="#" class="btn left"></a>
+            </div>
+            <div class="tb-right">
+              <div class="total-area">
+                <span class="d-tit">
+                  상품권 리스트
+                </span>
+                <div class="btns-wrap">
+                  <span class="btn-base tp2 green lg"><a href="#">상품권 전시</a></span>
+                </div>
+              </div>
+    
+              <div class="tb-list-wrap mt12">
+                <div class="tb-scroll xy">
+                  <table class="tb-list">
+                    <colgroup>
+                      <col width="50" />
+                      <col width="176" />
+                      <col width="176" />
+                      <col width="176" />
+                      <col width="176" />
+                      <col width="176" />
+                      <col width="176" />
+                      <col width="176" />
+                      <col width="176" />
+                      <col width="176" />
+                      <col width="176" />
+                    </colgroup>
+                    <thead>
+                      <tr>
+                        <th scope="col">
+                          <span>
+                            <span class="chk-base chk-only">
+                              <input type="checkbox" id="chk-tb-all" />
+                              <label for="chk-tb-all">전체 체크</label>
+                            </span>
+                          </span>
+                        </th>
+                        <th scope="col"><span>상품권코드</span></th>
+                        <th scope="col"><span>공급사</span></th>
+                        <th scope="col"><span>브랜드</span></th>
+                        <th scope="col"><span>상품권명</span></th>
+                        <th scope="col"><span>권종타입</span></th>
+                        <th scope="col"><span>정산구분</span></th>
+                        <th scope="col"><span>상품권가격</span></th>
+                        <th scope="col"><span>판매가</span></th>
+                        <th scope="col"><span>유효기간일</span></th>
+                        <th scope="col"><span>상태</span></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>
+                          <span class="chk-base chk-only">
+                            <input type="checkbox" id="chk-tb-10" />
+                            <label for="chk-tb-10">체크10</label>
+                          </span>
+                        </td>
+                        <td>#{상품권코드}</td>
+                        <td>#{공급사명}</td>
+                        <td>#{브랜드명}</td>
+                        <td>#{상품권명}</td>
+                        <td>#{권종타입}</td>
+                        <td>#{정산구분}</td>
+                        <td>#{상품권가격}</td>
+                        <td>#{판매가}</td>
+                        <td>20241231</td>
+                        <td>판매중</td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <span class="chk-base chk-only">
+                            <input type="checkbox" id="chk-tb-9" />
+                            <label for="chk-tb-9">체크9</label>
+                          </span>
+                        </td>
+                        <td>#{상품권코드}</td>
+                        <td>#{공급사명}</td>
+                        <td>#{브랜드명}</td>
+                        <td>#{상품권명}</td>
+                        <td>#{권종타입}</td>
+                        <td>#{정산구분}</td>
+                        <td>#{상품권가격}</td>
+                        <td>#{판매가}</td>
+                        <td>20241231</td>
+                        <td>판매중</td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <span class="chk-base chk-only">
+                            <input type="checkbox" id="chk-tb-8" />
+                            <label for="chk-tb-8">체크8</label>
+                          </span>
+                        </td>
+                        <td>#{상품권코드}</td>
+                        <td>#{공급사명}</td>
+                        <td>#{브랜드명}</td>
+                        <td>#{상품권명}</td>
+                        <td>#{권종타입}</td>
+                        <td>#{정산구분}</td>
+                        <td>#{상품권가격}</td>
+                        <td>#{판매가}</td>
+                        <td>20241231</td>
+                        <td>판매중</td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <span class="chk-base chk-only">
+                            <input type="checkbox" id="chk-tb-7" />
+                            <label for="chk-tb-7">체크7</label>
+                          </span>
+                        </td>
+                        <td>#{상품권코드}</td>
+                        <td>#{공급사명}</td>
+                        <td>#{브랜드명}</td>
+                        <td>#{상품권명}</td>
+                        <td>#{권종타입}</td>
+                        <td>#{정산구분}</td>
+                        <td>#{상품권가격}</td>
+                        <td>#{판매가}</td>
+                        <td>20241231</td>
+                        <td>판매중</td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <span class="chk-base chk-only">
+                            <input type="checkbox" id="chk-tb-6" />
+                            <label for="chk-tb-6">체크6</label>
+                          </span>
+                        </td>
+                        <td>#{상품권코드}</td>
+                        <td>#{공급사명}</td>
+                        <td>#{브랜드명}</td>
+                        <td>#{상품권명}</td>
+                        <td>#{권종타입}</td>
+                        <td>#{정산구분}</td>
+                        <td>#{상품권가격}</td>
+                        <td>#{판매가}</td>
+                        <td>20241231</td>
+                        <td>판매중</td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <span class="chk-base chk-only">
+                            <input type="checkbox" id="chk-tb-5" />
+                            <label for="chk-tb-5">체크5</label>
+                          </span>
+                        </td>
+                        <td>#{상품권코드}</td>
+                        <td>#{공급사명}</td>
+                        <td>#{브랜드명}</td>
+                        <td>#{상품권명}</td>
+                        <td>#{권종타입}</td>
+                        <td>#{정산구분}</td>
+                        <td>#{상품권가격}</td>
+                        <td>#{판매가}</td>
+                        <td>20241231</td>
+                        <td>판매중</td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <span class="chk-base chk-only">
+                            <input type="checkbox" id="chk-tb-4" />
+                            <label for="chk-tb-4">체크4</label>
+                          </span>
+                        </td>
+                        <td>#{상품권코드}</td>
+                        <td>#{공급사명}</td>
+                        <td>#{브랜드명}</td>
+                        <td>#{상품권명}</td>
+                        <td>#{권종타입}</td>
+                        <td>#{정산구분}</td>
+                        <td>#{상품권가격}</td>
+                        <td>#{판매가}</td>
+                        <td>20241231</td>
+                        <td>판매중</td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <span class="chk-base chk-only">
+                            <input type="checkbox" id="chk-tb-3" />
+                            <label for="chk-tb-3">체크3</label>
+                          </span>
+                        </td>
+                        <td>#{상품권코드}</td>
+                        <td>#{공급사명}</td>
+                        <td>#{브랜드명}</td>
+                        <td>#{상품권명}</td>
+                        <td>#{권종타입}</td>
+                        <td>#{정산구분}</td>
+                        <td>#{상품권가격}</td>
+                        <td>#{판매가}</td>
+                        <td>20241231</td>
+                        <td>판매중</td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <span class="chk-base chk-only">
+                            <input type="checkbox" id="chk-tb-2" />
+                            <label for="chk-tb-2">체크2</label>
+                          </span>
+                        </td>
+                        <td>#{상품권코드}</td>
+                        <td>#{공급사명}</td>
+                        <td>#{브랜드명}</td>
+                        <td>#{상품권명}</td>
+                        <td>#{권종타입}</td>
+                        <td>#{정산구분}</td>
+                        <td>#{상품권가격}</td>
+                        <td>#{판매가}</td>
+                        <td>20241231</td>
+                        <td>판매중</td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <span class="chk-base chk-only">
+                            <input type="checkbox" id="chk-tb-1" />
+                            <label for="chk-tb-1">체크1</label>
+                          </span>
+                        </td>
+                        <td>#{상품권코드}</td>
+                        <td>#{공급사명}</td>
+                        <td>#{브랜드명}</td>
+                        <td>#{상품권명}</td>
+                        <td>#{권종타입}</td>
+                        <td>#{정산구분}</td>
+                        <td>#{상품권가격}</td>
+                        <td>#{판매가}</td>
+                        <td>20241231</td>
+                        <td>판매중</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div><!-- .tb-list-wrap -->
+            </div><!-- .tb-right -->
+          </div><!-- .tb-wrapper -->
+          
+        </div><!-- .con-area -->
+      </div><!-- .content-wrap -->
+    </div><!-- #container -->
+  </div><!-- #wrap -->
+  <script>    
+    $('.tb-scroll').on('scroll', function(){
+      var left = $(this).scrollLeft();
+      console.log(left)
+      $(this).prev('.tb-fix').css('left', -1 * left + 'px')
+    });
+
+    $('.chk-tree-list > li > dl > dt .chk-toggle').on('click', function(e){
+      e.preventDefault();
+      if (!$(this).closest('li').hasClass('on')) {
+        $(this).closest('li').addClass('on');
+      } else {
+        $(this).closest('li').removeClass('on');
+      }
+    });
+    $('.chk-tree-list > li > dl > dt input[type="checkbox"]').on('change', function(){
+      $(this).closest('dt').next('dd').find('input[type="checkbox"]').prop('checked', $(this).is(':checked'));
+    });
+    $('.chk-tree-list > li > dl > dd input[type="checkbox"]').on('change', function(){
+      if ($(this).is(':checked')) {
+        if ($(this).closest('dd').find('input[type="checkbox"]:checked').length == $(this).closest('dd').find('input[type="checkbox"]').length) {
+          $(this).closest('dd').prev('dt').find('input[type="checkbox"]').prop('checked', true);
+        }
+      } else {
+        $(this).closest('dd').prev('dt').find('input[type="checkbox"]').prop('checked', false);
+      }
+    });
+
+    setTimeout(() => {
+      checkInTbScroll('#chk-tb-all'); // ui.js 내부에 정의
+    }, 250);
+
+    function validationPopup() {
+      if (confirm('팝업을 닫으시겠습니까?')) {
+        $.magnificPopup.close();
+      }
+    }
+
+    $(document).on('click', '.popup-dimm', function(){
+      validationPopup();
+    });
+  </script>
+</body>
+
+</html>
+ 

@@ -133,32 +133,52 @@
           </div>
         </div><!-- .tit-area -->
         <div class="con-area">
-          <div class="menu-swiper-wrap">
-            <div class="menu-swiper swiper-container">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide on">
-                  <a href="#" class="label">기본정보</a>
-                </div>
-                <div class="swiper-slide">
-                  <a href="#" class="label">BGF상품권정보</a>
-                </div>
-                <div class="swiper-slide">
-                  <a href="#" class="label">BGF행사정보</a>
-                </div>
-                <div class="swiper-slide">
-                  <a href="#" class="label">BGF사용정보</a>
-                </div>
-                <div class="swiper-slide">
-                  <a href="#" class="label">BGF할인/적립정보</a>
-                </div>
-                <div class="swiper-slide">
-                  <a href="#" class="label">BGF프로모션정보</a>
-                </div>
-              </div>
-            </div><!-- .menu-swiper -->
-          </div><!-- .menu-swiper-wrap -->
-
+          <div class="s-tit-area">
+            <h4 class="s-tit">기본 정보</h4>
+            <div class="btns-wrap">
+              <span class="btn-base tp2 lg"><a href="javascript:;">임시저장</a></span>
+              <span class="btn-base tp2 lg"><a href="javascript:;">목록</a></span>
+              <span class="btn-base tp2 green lg"><a href="#">저장</a></span>
+            </div>
+          </div>
           <div class="tb-input-wrap mt15">
+            <table class="tb-input">
+              <colgroup>
+                <col width="12%" />
+                <col width="38%" />
+                <col width="12%" />
+                <col width="*" />
+              </colgroup>
+              <tbody>
+                <tr>
+                  <th scope="row">
+                    <span>
+                      <em class="tip">템플릿</em>
+                      <div class="tip-wrap" style="left: 60px;">
+                        <p class="tit">템플릿</p>
+                        <a href="#" class="btn-close"></a>
+                        <div class="con-area">
+                          <ul class="list indent">
+                            <li>- 상품권관리 > 템플릿관리에 등록한 상품권을 만들기 위한 템플릿 구성을 선택합니다.</li>
+                            <li>- 템플릿 선택 시 필수 옵션 필드가 자동 생성 됩니다.</li>
+                            <li>- 템플릿 미 선택 시 기본 상품권 등록이 가능합니다.</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </span>
+                  </th>
+                  <td colspan="3">
+                    <div class="input-wrap input-btn" style="width: 575px;">
+                      <input type="text" class="input-base">
+                      <span class="btn-base tp3"><a href="#">검색</a></span>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          
+          <div class="tb-input-wrap mt25">
             <table class="tb-input">
               <colgroup>
                 <col width="12%" />
@@ -178,7 +198,7 @@
                   </td>
                 </tr>
                 <tr>
-                  <th scope="row">공급사 <em>*</em></th>
+                  <th scope="row">공급지사 <em>*</em></th>
                   <td>
                     <div class="input-wrap input-btn">
                       <input type="text" class="input-base">
@@ -224,30 +244,30 @@
                   <td>
                     <input type="text" class="input-base" />
                   </td>
-                  <th scope="row">발행채널 <em>*</em></th>
+                  <th scope="row">관리상품권명</th>
                   <td>
-                    <select class="select-tag">
-                      <option value="0" selected>선택</option>
-                      <option value="1">Value 1</option>
-                      <option value="2">Value 2</option>
-                      <option value="3">Value 3</option>
-                    </select>
+                    <input type="text" class="input-base" />
                   </td>
                 </tr>
                 <tr>
                   <th scope="row">권종타입 <em>*</em></th>
-                  <td>
-                    <input type="text" class="input-base" />
+                  <td colspan="3">
+                    <ul class="radio-list">
+                      <li>
+                        <span class="radio-base">
+                          <input type="radio" id="radio-kjtype-1" name="radio-kjtype" checked />
+                          <label for="radio-kjtype-1">교환권</label>
+                        </span>
+                      </li>
+                      <li>
+                        <span class="radio-base">
+                          <input type="radio" id="radio-kjtype-2" name="radio-kjtype" />
+                          <label for="radio-kjtype-2">금액권</label>
+                        </span>
+                      </li>
+                    </ul>
                   </td>
-                  <th scope="row">온/오프라인타입</th>
-                  <td>
-                    <select class="select-tag">
-                      <option value="0" selected>선택</option>
-                      <option value="1">Value 1</option>
-                      <option value="2">Value 2</option>
-                      <option value="3">Value 3</option>
-                    </select>
-                  </td>
+                  
                 </tr>
                 <tr>
                   <th scope="row">판매기간설정여부 <em>*</em></th>
@@ -366,14 +386,14 @@
                     <ul class="radio-list">
                       <li>
                         <span class="radio-base">
-                          <input type="radio" id="radio-validity-extended-1" name="radio-validity-extended" checked />
-                          <label for="radio-validity-extended-1">불가</label>
+                          <input type="radio" id="radio-validity-extended-1" name="radio-validity-extended" />
+                          <label for="radio-validity-extended-1">미설정</label>
                         </span>
                       </li>
                       <li>
                         <span class="radio-base">
-                          <input type="radio" id="radio-validity-extended-2" name="radio-validity-extended" />
-                          <label for="radio-validity-extended-2">가능</label>
+                          <input type="radio" id="radio-validity-extended-2" name="radio-validity-extended" checked />
+                          <label for="radio-validity-extended-2">설정</label>
                         </span>
                       </li>
                     </ul>
@@ -384,13 +404,13 @@
                       <li>
                         <span class="radio-base">
                           <input type="radio" id="radio-cancellable-1" name="radio-cancellable" checked />
-                          <label for="radio-cancellable-1">불가</label>
+                          <label for="radio-cancellable-1">미설정</label>
                         </span>
                       </li>
                       <li>
                         <span class="radio-base">
-                          <input type="radio" id="radio-cancellable-2" name="radio-cancellable" />
-                          <label for="radio-cancellable-2">가능</label>
+                          <input type="radio" id="radio-cancellable-2" name="radio-cancellable" checked />
+                          <label for="radio-cancellable-2">설정</label>
                         </span>
                       </li>
                     </ul>
@@ -398,75 +418,49 @@
                 </tr>
                 <tr>
                   <th scope="row">환불가능여부 <em>*</em></th>
-                  <td colspan="3">
+                  <td>
                     <ul class="radio-list">
                       <li>
                         <span class="radio-base">
-                          <input type="radio" id="radio-refundable-1" name="radio-refundable" checked />
-                          <label for="radio-refundable-1">불가</label>
+                          <input type="radio" id="radio-refundable-1" name="radio-refundable" />
+                          <label for="radio-refundable-1">미설정</label>
                         </span>
                       </li>
                       <li>
                         <span class="radio-base">
-                          <input type="radio" id="radio-refundable-2" name="radio-refundable" />
-                          <label for="radio-refundable-2">가능</label>
+                          <input type="radio" id="radio-refundable-2" name="radio-refundable" checked />
+                          <label for="radio-refundable-2">설정</label>
+                        </span>
+                      </li>
+                    </ul>
+                  </td>
+                  <th scope="row">금액교환권여부 <em>*</em></th>
+                  <td>
+                    <ul class="radio-list">
+                      <li>
+                        <span class="radio-base">
+                          <input type="radio" id="radio-bill-exchange-1" name="radio-bill-exchange" checked />
+                          <label for="radio-bill-exchange-1">미설정</label>
+                        </span>
+                      </li>
+                      <li>
+                        <span class="radio-base">
+                          <input type="radio" id="radio-bill-exchange-2" name="radio-bill-exchange" />
+                          <label for="radio-bill-exchange-2">설정</label>
                         </span>
                       </li>
                     </ul>
                   </td>
                 </tr>
                 <tr>
-                  <th scope="row">상품이미지 <em>*</em></th>
+                  <th scope="row">온/오프라인타입 <em>*</em></th>
                   <td colspan="3">
-                    <ul class="file-list type-2">
-                      <li>
-                        <div class="thumb-area">
-                          <span class="thumb-ico"></span>
-                          <a href="#" class="btn-delete"></a>
-                        </div>
-                        <span class="btn-base tp5"><a href="#">이미지 등록</a></span>
-                        <input type="file" accept="image/*" />
-                      </li>
-                      <li>
-                        <div class="thumb-area">
-                          <span class="thumb-ico"></span>
-                          <a href="#" class="btn-delete"></a>
-                        </div>
-                        <span class="btn-base tp5"><a href="#">이미지 등록</a></span>
-                        <input type="file" accept="image/*" />
-                      </li>
-                    </ul>
-                    <ul class="info-list mt10">
-                      <li>※ 권장 사이즈 250x250 /5MB이하/지원 파일 형식 png, jpg, jpeg</li>
-                    </ul>
-                  </td>
-                </tr>
-                <tr>
-                  <th scope="row">스킨 <em>*</em></th>
-                  <td colspan="3">
-                    <ul class="radio-list flex">
-                      <li>
-                        <span class="radio-base">
-                          <input type="radio" id="radio-skin-1" name="radio-skin" checked />
-                          <label for="radio-skin-1">기본스킨</label>
-                        </span>
-                      </li>
-                      <li>
-                        <span class="radio-base">
-                          <input type="radio" id="radio-skin-2" name="radio-skin" />
-                          <label for="radio-skin-2">스킨검색</label>
-                        </span>
-                      </li>
-                      <li>
-                        <div class="input-wrap input-btn input-file preview disabled">
-                          <input type="text" class="input-base" readonly disabled />
-                          <span class="btn-base tp3"><a href="#">검색</a></span>
-                          <input type="file" accept="image/*" />
-                          <a href="#" class="btn-delete"></a>
-                          <span class="btn-base tp3 green btn-preview btn-popup-anim-1"><a href="#popup-preview">미리보기</a></span>
-                        </div>
-                      </li>
-                    </ul>
+                    <select class="select-tag" style="width: 575px;">
+                      <option value="0" selected>선택</option>
+                      <option value="1">Value 1</option>
+                      <option value="2">Value 2</option>
+                      <option value="3">Value 3</option>
+                    </select>
                   </td>
                 </tr>
               </tbody>
@@ -484,7 +478,21 @@
               </colgroup>
               <tbody>
                 <tr>
-                  <th scope="row">상품권가격 <em>*</em></th>
+                  <th scope="row">
+                    <span>
+                      <em class="tip">상품권가격<em>*</em></em>
+                      <div class="tip-wrap" style="left: 90px;">
+                        <p class="tit">상품권가격 설명</p>
+                        <a href="#" class="btn-close"></a>
+                        <div class="con-area">
+                          <ul class="list indent">
+                            <li>- 금액권일 경우 금액권금액 입력</li>
+                            <li>- BGF상품권 옵션 중 기존 구독권 생성일 경우 구독료 입력</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </span>
+                  </th>
                   <td>
                     <input type="text" class="input-base" />
                   </td>
@@ -518,23 +526,38 @@
                     </ul>
                   </td>
                 </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="tb-input-wrap mt15">
+            <table class="tb-input">
+              <colgroup>
+                <col width="12%" />
+                <col width="38%" />
+                <col width="12%" />
+                <col width="*" />
+              </colgroup>
+              <tbody>
                 <tr class="in-table">
                   <th scope="row">프로모션부담금</th>
                   <td colspan="3">
-                    <ul class="radio-list">
-                      <li>
-                        <span class="radio-base">
-                          <input type="radio" id="radio-pr-1" name="radio-pr" />
-                          <label for="radio-pr-1">미설정</label>
-                        </span>
-                      </li>
-                      <li>
-                        <span class="radio-base">
-                          <input type="radio" id="radio-pr-2" name="radio-pr" checked />
-                          <label for="radio-pr-2">설정</label>
-                        </span>
-                      </li>
-                    </ul>
+                    <div class="d-flex">
+                      <ul class="radio-list">
+                        <li>
+                          <span class="radio-base">
+                            <input type="radio" id="radio-pr-1" name="radio-pr" />
+                            <label for="radio-pr-1">미설정</label>
+                          </span>
+                        </li>
+                        <li>
+                          <span class="radio-base">
+                            <input type="radio" id="radio-pr-2" name="radio-pr" checked />
+                            <label for="radio-pr-2">설정</label>
+                          </span>
+                        </li>
+                      </ul>
+                      <span class="btn-base tp2 lg green"><a href="#"><em class="add">추가</em></a></span>
+                    </div>
                     <table class="tb-list mt10">
                       <colgroup>
                         <col width="50" />
@@ -790,11 +813,79 @@
             </table>
           </div><!-- .tb-input-wrap -->
 
-          <div class="btns-wrap mt15 t-right">
+          <h4 class="s-tit mt20">이미지 정보</h4>
+          <div class="tb-input-wrap mt10">
+            <table class="tb-input">
+              <colgroup>
+                <col width="12%" />
+                <col width="38%" />
+                <col width="12%" />
+                <col width="*" />
+              </colgroup>
+              <tbody>
+                <tr>
+                  <th scope="row">상품이미지 <em>*</em></th>
+                  <td colspan="3">
+                    <ul class="file-list type-2">
+                      <li>
+                        <div class="thumb-area">
+                          <span class="thumb-ico"></span>
+                          <a href="#" class="btn-delete"></a>
+                        </div>
+                        <span class="btn-base tp5"><a href="#">이미지 등록</a></span>
+                        <input type="file" accept="image/*" />
+                      </li>
+                      <li>
+                        <div class="thumb-area">
+                          <span class="thumb-ico"></span>
+                          <a href="#" class="btn-delete"></a>
+                        </div>
+                        <span class="btn-base tp5"><a href="#">이미지 등록</a></span>
+                        <input type="file" accept="image/*" />
+                      </li>
+                    </ul>
+                    <ul class="info-list mt10">
+                      <li>※ 권장 사이즈 250x250 /5MB이하/지원 파일 형식 png, jpg, jpeg</li>
+                    </ul>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">스킨 <em>*</em></th>
+                  <td colspan="3">
+                    <ul class="radio-list flex">
+                      <li>
+                        <span class="radio-base">
+                          <input type="radio" id="radio-skin-1" name="radio-skin" checked />
+                          <label for="radio-skin-1">기본스킨</label>
+                        </span>
+                      </li>
+                      <li>
+                        <span class="radio-base">
+                          <input type="radio" id="radio-skin-2" name="radio-skin" />
+                          <label for="radio-skin-2">스킨검색</label>
+                        </span>
+                      </li>
+                      <li>
+                        <div class="input-wrap input-btn input-file preview disabled">
+                          <input type="text" class="input-base" readonly disabled />
+                          <span class="btn-base tp3"><a href="#">검색</a></span>
+                          <input type="file" accept="image/*" />
+                          <a href="#" class="btn-delete"></a>
+                          <span class="btn-base tp3 green btn-preview btn-popup-anim-1"><a href="#popup-preview">미리보기</a></span>
+                        </div>
+                      </li>
+                    </ul>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div><!-- .tb-input-wrap -->
+
+          <!-- <div class="btns-wrap mt15 t-right">
             <span class="btn-base tp2 lg"><a href="javascript:;">임시저장</a></span>
             <span class="btn-base tp2 lg"><a href="javascript:;">목록</a></span>
             <span class="btn-base tp2 green lg"><a href="#">저장</a></span>
-          </div>
+          </div> -->
 
         </div><!-- .con-area -->
       </div><!-- .content-wrap -->
@@ -913,7 +1004,25 @@
       previewDel.removeClass('on');
     });
 
-    $('.tb-list th em.tip').on('click', function(){
+    // 정산 정보 - 프로모션 부담금
+    $('input[name="radio-pr"]').on('change', function(){
+      var $btns = $(this).closest('.d-flex').find('.btn-base');
+      var $table = $(this).closest('.d-flex').next('.tb-list');
+      if ($(this).attr('id') == 'radio-pr-1') { // 미설정
+        if ($(this).is(':checked')) {
+          $btns.hide();
+          $table.hide();
+        }
+      }
+      if ($(this).attr('id') == 'radio-pr-2') { // 설정
+        if ($(this).is(':checked')) {
+          $btns.show();
+          $table.show();
+        }
+      }
+    });
+
+    $('.tb-input th em.tip, .tb-list th em.tip').on('click', function(){
       if (!$(this).next('.tip-wrap').hasClass('on')) {
         $(this).next('.tip-wrap').addClass('on');
       } else {

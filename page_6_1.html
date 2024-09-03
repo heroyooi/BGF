@@ -121,7 +121,7 @@
       </div><!-- .lnb-wrap -->
       <div class="content-wrap c-scrollbar">
         <div class="tit-area">
-          <h3>판매사 관리</h3>
+          <h3>상품권 관리</h3>
           <div class="item-wrap">
             <a href="#" class="mem"><strong>이영희</strong> 님</a>
             <div class="utils-tip">
@@ -165,7 +165,7 @@
                 </tr>
                 <tr>
                   <th scope="row">검색어</th>
-                  <td colspan="3">
+                  <td>
                     <div class="input-wrap select-input">
                       <select class="select-tag">
                         <option value="0" selected>선택</option>
@@ -175,17 +175,6 @@
                       </select>
                       <input type="text" class="input-base">
                     </div>
-                  </td>
-                </tr>
-                <tr>
-                  <th scope="row">정산구분</th>
-                  <td>
-                    <select class="select-tag">
-                      <option value="0" selected>선택</option>
-                      <option value="1">Value 1</option>
-                      <option value="2">Value 2</option>
-                      <option value="3">Value 3</option>
-                    </select>
                   </td>
                   <th scope="row">상태</th>
                   <td>
@@ -198,7 +187,23 @@
                   </td>
                 </tr>
                 <tr>
-                  <th scope="row">B2B/B2C구분</th>
+                  <th scope="row">공급사</th>
+                  <td>
+                    <div class="input-wrap input-btn">
+                      <input type="text" class="input-base">
+                      <span class="btn-base tp3"><a href="#">검색</a></span>
+                    </div>
+                  </td>
+                  <th scope="row">브랜드</th>
+                  <td>
+                    <div class="input-wrap input-btn">
+                      <input type="text" class="input-base">
+                      <span class="btn-base tp3"><a href="#">검색</a></span>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">권종타입</th>
                   <td>
                     <select class="select-tag">
                       <option value="0" selected>선택</option>
@@ -207,7 +212,7 @@
                       <option value="3">Value 3</option>
                     </select>
                   </td>
-                  <th scope="row">환불가능여부</th>
+                  <th scope="row">정산구분</th>
                   <td>
                     <select class="select-tag">
                       <option value="0" selected>선택</option>
@@ -217,6 +222,15 @@
                     </select>
                   </td>
                 </tr>
+                <tr>
+                  <th scope="row">템플릿명</th>
+                  <td colspan="3">
+                    <div class="input-wrap input-btn" style="max-width: 579px;">
+                      <input type="text" class="input-base">
+                      <span class="btn-base tp3"><a href="#">검색</a></span>
+                    </div>
+                  </td>
+                </tr>
               </tbody>
             </table>
           </div><!-- .tb-input-wrap -->
@@ -224,48 +238,10 @@
             <span class="btn-base tp2 lg green"><a href="#"><em class="search">검색</em></a></span>
           </div>
           <div class="total-area mt22">
-            <span class="total">
-              [판매처 총 <em>6</em>건]
-            </span>
-            <div class="btns-wrap">
-              <span class="btn-base tp2 lg"><a href="#">엑셀 다운</a></span>
-              <span class="btn-base tp2 green lg"><a href="#">판매처 등록</a></span>
-            </div>
-          </div>
-
-          <div class="tb-list-wrap mt12">  
-            <div class="tb-scroll">
-              <table id="table_1" class="table classic">
-                <thead>
-                  <tr>
-                    <th width="50px"><span>No.</span></th>
-                    <th><span>판매사코드</span></th>
-                    <th><span>판매사명</span></th>
-                    <th><span>상태</span></th>
-                    <th><span>계약기간</span></th>
-                    <th><span>등록일자</span></th>
-                  </tr>
-                </thead>
-                <tbody></tbody>
-              </table>
-            </div>
-            <script id="tpl_row" type="text/template">
-              <tr>
-                <td><!= no !></td>
-                <td><!= code !></td>
-                <td><!= branch !></td>
-                <td><!= state !></td>
-                <td><!= period !></td>
-                <td><!= date !></td>
-              </tr>
-            </script>
-          </div>
-
-          <div class="total-area mt22">
-            <span class="total">
-              [<strong>(판매처명)</strong> 판매지사 총 <em>6</em>건] 
-            </span>
-            <div class="btns-wrap">
+            <div>
+              <span class="total">
+                [총 <em>6</em>개]
+              </span>
               <select class="select-tag green" style="width: 120px;">
                 <option value="0" selected>선택</option>
                 <option value="1">Value 1</option>
@@ -273,12 +249,15 @@
                 <option value="3">Value 3</option>
               </select>
               <span class="btn-base tp2 lg"><a href="javascript:;" onclick="$.magnificPopup.open(devOptions('#popup-change-state', 'popup-dimm'));">정보 일괄 변경</a></span>
-              <span class="btn-base tp2 green lg" onclick="openWindow('popup_sales_branch.html', 984, 600);"><a href="#">판매지사 등록</a></span>
+            </div>
+            <div class="btns-wrap">
+              <span class="btn-base tp2 lg"><a href="#">엑셀 다운</a></span>
+              <span class="btn-base tp2 green lg"><a href="#">신규 등록</a></span>
             </div>
           </div>
 
           <div class="tb-list-wrap mt12">
-            <div class="tb-scroll">
+            <!-- <div class="tb-scroll"> -->
               <table class="tb-list">
                 <colgroup>
                   <col width="50" />
@@ -306,20 +285,21 @@
                       </span>
                     </th>
                     <th scope="col"><span>No.</span></th>
-                    <th scope="col"><span>판매지사코드</span></th>
-                    <th scope="col"><span>판매지사명</span></th>
-                    <th scope="col"><span>월한도금액</span></th>
-                    <th scope="col"><span>월발행금액</span></th>
+                    <th scope="col"><span>상품권코드</span></th>
+                    <th scope="col"><span>공급지사</span></th>
+                    <th scope="col"><span>브랜드</span></th>
+                    <th scope="col"><span>템플릿명</span></th>
+                    <th scope="col"><span>상품권명</span></th>
+                    <th scope="col"><span>권종타입</span></th>
                     <th scope="col"><span>정산구분</span></th>
-                    <th scope="col"><span>B2B/B2C구분</span></th>
-                    <th scope="col"><span>환불가능여부</span></th>
-                    <th scope="col"><span>상태</span></th>
-                    <th scope="col"><span>계약기간</span></th>
-                    <th scope="col"><span>등록일자</span></th>
+                    <th scope="col"><span>상품권가격</span></th>
+                    <th scope="col"><span>판매가</span></th>
+                    <th scope="col"><span>유효기간/일</span></th>
                     <th scope="col"><span>정산수정이력</span></th>
                   </tr>
                 </thead>
                 <tbody>
+                  <!--
                   <tr>
                     <td>
                       <span class="chk-base chk-only">
@@ -332,15 +312,15 @@
                     <td>
                       <a href="javascript:;" onclick="openWindow('popup_franchise_store.html', 1200, 600);">기프트쇼약10자</a>
                     </td>
-                    <td>1,548,000</td>
-                    <td>1,548,000</td>
-                    <td>발행</td>
-                    <td>B2B</td>
-                    <td>환불가능</td>
-                    <td>거래중</td>
-                    <td>2024.04.01~2024.07.01</td>
+                    <td>스타벅스</td>
+                    <td>#{템플릿명}</td>
+                    <td>#{상품권명}</td>
+                    <td>#{권종타입}</td>
+                    <td>#{정산구분}</td>
+                    <td>#{상품권가격}</td>
+                    <td>#{판매가}</td>
                     <td>2023.12.01</td>
-                    <td><span class="btn-base tp5 btn-popup-anim-1"><a href="#popup-change-history">이력보기</a></span>
+                    <td><span class="btn-base tp5"><a href="#">복사</a></span>
                     </td>
                   </tr>
                   <tr>
@@ -355,15 +335,15 @@
                     <td>
                       <a href="javascript:;" onclick="openWindow('popup_franchise_store.html', 1200, 600);">기프트쇼약10자</a>
                     </td>
-                    <td>1,548,000</td>
-                    <td>1,548,000</td>
-                    <td>발행</td>
-                    <td>B2B</td>
-                    <td>환불가능</td>
-                    <td>거래중</td>
-                    <td>2024.04.01~2024.07.01</td>
+                    <td>스타벅스</td>
+                    <td>#{템플릿명}</td>
+                    <td>#{상품권명}</td>
+                    <td>#{권종타입}</td>
+                    <td>#{정산구분}</td>
+                    <td>#{상품권가격}</td>
+                    <td>#{판매가}</td>
                     <td>2023.12.01</td>
-                    <td><span class="btn-base tp5 btn-popup-anim-1"><a href="#popup-change-history">이력보기</a></span>
+                    <td><span class="btn-base tp5"><a href="#">복사</a></span>
                     </td>
                   </tr>
                   <tr>
@@ -378,15 +358,15 @@
                     <td>
                       <a href="javascript:;" onclick="openWindow('popup_franchise_store.html', 1200, 600);">기프트쇼약10자</a>
                     </td>
-                    <td>1,548,000</td>
-                    <td>1,548,000</td>
-                    <td>발행</td>
-                    <td>B2B</td>
-                    <td>환불가능</td>
-                    <td>거래중</td>
-                    <td>2024.04.01~2024.07.01</td>
+                    <td>스타벅스</td>
+                    <td>#{템플릿명}</td>
+                    <td>#{상품권명}</td>
+                    <td>#{권종타입}</td>
+                    <td>#{정산구분}</td>
+                    <td>#{상품권가격}</td>
+                    <td>#{판매가}</td>
                     <td>2023.12.01</td>
-                    <td><span class="btn-base tp5 btn-popup-anim-1"><a href="#popup-change-history">이력보기</a></span>
+                    <td><span class="btn-base tp5"><a href="#">복사</a></span>
                     </td>
                   </tr>
                   <tr>
@@ -401,15 +381,15 @@
                     <td>
                       <a href="javascript:;" onclick="openWindow('popup_franchise_store.html', 1200, 600);">기프트쇼약10자</a>
                     </td>
-                    <td>1,548,000</td>
-                    <td>1,548,000</td>
-                    <td>발행</td>
-                    <td>B2B</td>
-                    <td>환불가능</td>
-                    <td>거래중</td>
-                    <td>2024.04.01~2024.07.01</td>
+                    <td>스타벅스</td>
+                    <td>#{템플릿명}</td>
+                    <td>#{상품권명}</td>
+                    <td>#{권종타입}</td>
+                    <td>#{정산구분}</td>
+                    <td>#{상품권가격}</td>
+                    <td>#{판매가}</td>
                     <td>2023.12.01</td>
-                    <td><span class="btn-base tp5 btn-popup-anim-1"><a href="#popup-change-history">이력보기</a></span>
+                    <td><span class="btn-base tp5"><a href="#">복사</a></span>
                     </td>
                   </tr>
                   <tr>
@@ -424,17 +404,18 @@
                     <td>
                       <a href="javascript:;" onclick="openWindow('popup_franchise_store.html', 1200, 600);">기프트쇼약10자</a>
                     </td>
-                    <td>1,548,000</td>
-                    <td>1,548,000</td>
-                    <td>발행</td>
-                    <td>B2B</td>
-                    <td>환불가능</td>
-                    <td>거래중</td>
-                    <td>2024.04.01~2024.07.01</td>
+                    <td>스타벅스</td>
+                    <td>#{템플릿명}</td>
+                    <td>#{상품권명}</td>
+                    <td>#{권종타입}</td>
+                    <td>#{정산구분}</td>
+                    <td>#{상품권가격}</td>
+                    <td>#{판매가}</td>
                     <td>2023.12.01</td>
-                    <td><span class="btn-base tp5 btn-popup-anim-1"><a href="#popup-change-history">이력보기</a></span>
+                    <td><span class="btn-base tp5"><a href="#">복사</a></span>
                     </td>
                   </tr>
+                  -->
                   <tr>
                     <td>
                       <span class="chk-base chk-only">
@@ -447,15 +428,15 @@
                     <td>
                       <a href="javascript:;" onclick="openWindow('popup_franchise_store.html', 1200, 600);">기프트쇼약10자</a>
                     </td>
-                    <td>1,548,000</td>
-                    <td>1,548,000</td>
-                    <td>발행</td>
-                    <td>B2B</td>
-                    <td>환불가능</td>
-                    <td>거래중</td>
-                    <td>2024.04.01~2024.07.01</td>
+                    <td>스타벅스</td>
+                    <td>#{템플릿명}</td>
+                    <td>#{상품권명}</td>
+                    <td>#{권종타입}</td>
+                    <td>#{정산구분}</td>
+                    <td>#{상품권가격}</td>
+                    <td>#{판매가}</td>
                     <td>2023.12.01</td>
-                    <td><span class="btn-base tp5 btn-popup-anim-1"><a href="#popup-change-history">이력보기</a></span>
+                    <td><span class="btn-base tp5"><a href="#">복사</a></span>
                     </td>
                   </tr>
                   <tr>
@@ -470,15 +451,15 @@
                     <td>
                       <a href="javascript:;" onclick="openWindow('popup_franchise_store.html', 1200, 600);">기프트쇼약10자</a>
                     </td>
-                    <td>1,548,000</td>
-                    <td>1,548,000</td>
-                    <td>발행</td>
-                    <td>B2B</td>
-                    <td>환불가능</td>
-                    <td>거래중</td>
-                    <td>2024.04.01~2024.07.01</td>
+                    <td>스타벅스</td>
+                    <td>#{템플릿명}</td>
+                    <td>#{상품권명}</td>
+                    <td>#{권종타입}</td>
+                    <td>#{정산구분}</td>
+                    <td>#{상품권가격}</td>
+                    <td>#{판매가}</td>
                     <td>2023.12.01</td>
-                    <td><span class="btn-base tp5 btn-popup-anim-1"><a href="#popup-change-history">이력보기</a></span>
+                    <td><span class="btn-base tp5"><a href="#">복사</a></span>
                     </td>
                   </tr>
                   <tr>
@@ -493,15 +474,15 @@
                     <td>
                       <a href="javascript:;" onclick="openWindow('popup_franchise_store.html', 1200, 600);">기프트쇼약10자</a>
                     </td>
-                    <td>1,548,000</td>
-                    <td>1,548,000</td>
-                    <td>발행</td>
-                    <td>B2B</td>
-                    <td>환불가능</td>
-                    <td>거래중</td>
-                    <td>2024.04.01~2024.07.01</td>
+                    <td>스타벅스</td>
+                    <td>#{템플릿명}</td>
+                    <td>#{상품권명}</td>
+                    <td>#{권종타입}</td>
+                    <td>#{정산구분}</td>
+                    <td>#{상품권가격}</td>
+                    <td>#{판매가}</td>
                     <td>2023.12.01</td>
-                    <td><span class="btn-base tp5 btn-popup-anim-1"><a href="#popup-change-history">이력보기</a></span>
+                    <td><span class="btn-base tp5"><a href="#">복사</a></span>
                     </td>
                   </tr>
                   <tr>
@@ -516,15 +497,15 @@
                     <td>
                       <a href="javascript:;" onclick="openWindow('popup_franchise_store.html', 1200, 600);">기프트쇼약10자</a>
                     </td>
-                    <td>1,548,000</td>
-                    <td>1,548,000</td>
-                    <td>발행</td>
-                    <td>B2B</td>
-                    <td>환불가능</td>
-                    <td>거래중</td>
-                    <td>2024.04.01~2024.07.01</td>
+                    <td>스타벅스</td>
+                    <td>#{템플릿명}</td>
+                    <td>#{상품권명}</td>
+                    <td>#{권종타입}</td>
+                    <td>#{정산구분}</td>
+                    <td>#{상품권가격}</td>
+                    <td>#{판매가}</td>
                     <td>2023.12.01</td>
-                    <td><span class="btn-base tp5 btn-popup-anim-1"><a href="#popup-change-history">이력보기</a></span>
+                    <td><span class="btn-base tp5"><a href="#">복사</a></span>
                     </td>
                   </tr>
                   <tr>
@@ -539,66 +520,21 @@
                     <td>
                       <a href="javascript:;" onclick="openWindow('popup_franchise_store.html', 1200, 600);">기프트쇼약10자</a>
                     </td>
-                    <td>1,548,000</td>
-                    <td>1,548,000</td>
-                    <td>발행</td>
-                    <td>B2B</td>
-                    <td>환불가능</td>
-                    <td>거래중</td>
-                    <td>2024.04.01~2024.07.01</td>
+                    <td>스타벅스</td>
+                    <td>#{템플릿명}</td>
+                    <td>#{상품권명}</td>
+                    <td>#{권종타입}</td>
+                    <td>#{정산구분}</td>
+                    <td>#{상품권가격}</td>
+                    <td>#{판매가}</td>
                     <td>2023.12.01</td>
-                    <td><span class="btn-base tp5 btn-popup-anim-1"><a href="#popup-change-history">이력보기</a></span>
+                    <td><span class="btn-base tp5"><a href="#">복사</a></span>
                     </td>
                   </tr>
-                  
                 </tbody>
               </table>
-            </div>
+            <!-- </div> -->
           </div><!-- .tb-list-wrap -->
-        </div><!-- .con-area -->
-      </div><!-- .content-wrap -->
-    </div><!-- #container -->
-
-    <div class="popup-wrap z-anim mfp-hide" id="popup-change-history" data-width="1200">
-      <div class="popup-inner">
-        <div class="tit-wrap">
-          <p class="tit">정산 정보 수정 이력</p>
-        </div>
-        <div class="con-area">
-          <div class="tb-list-wrap">
-            <table id="table_2" class="table classic">
-              <thead>
-                <tr>
-                  <th width="50px"><span>No.</span></th>
-                  <th><span>정산구분</span></th>
-                  <th><span>VAT포함여부</span></th>
-                  <th><span>B2B/B2C구분</span></th>
-                  <th><span>운영수수료</span></th>
-                  <th><span>지급수수료</span></th>
-                  <th><span>할인율</span></th>
-                  <th><span>월한도금액</span></th>
-                  <th><span>수정자(아이디)</span></th>
-                  <th><span>상품 수정일시</span></th>
-                </tr>
-              </thead>
-              <tbody></tbody>
-            </table>
-          </div>
-          <script id="tpl_row2" type="text/template">
-            <tr>
-              <td><!= no !></td>
-              <td><!= col1 !></td>
-              <td><!= col2 !></td>
-              <td><!= col3 !></td>
-              <td><!= col4 !></td>
-              <td><!= col5 !></td>
-              <td><!= col6 !></td>
-              <td><!= col7 !></td>
-              <td><!= col8 !></td>
-              <td><!= col9 !></td>
-            </tr>
-          </script>
-          </div>
           <div class="pagination">
             <a href="#" class="btn btn-first">처음</a>
             <a href="#" class="btn btn-prev">이전</a>
@@ -607,139 +543,32 @@
             <a href="#">3</a>
             <a href="#">4</a>
             <a href="#">5</a>
+            <a href="#">6</a>
+            <a href="#">7</a>
+            <a href="#">8</a>
+            <a href="#">9</a>
+            <a href="#">10</a>
             <a href="#" class="btn btn-next">다음</a>
             <a href="#" class="btn btn-last">마지막</a>
           </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="popup-wrap z-anim mfp-hide popup-alert" id="popup-alert1" data-width="410">
-      <div class="popup-inner">
-        <div class="con-area">
-          <p class="msg">변경할 판매지사를 선택해 주세요.</p>
-          <div class="btns-wrap t-center mt24">
-            <span class="btn-base tp2 green lg b-mfp-close"><a href="#">확인</a></span>
-          </div>
-        </div>
-      </div>
-    </div>
-    
-    <div class="popup-wrap z-anim mfp-hide popup-confirm" id="popup-confirm" data-width="410">
-      <div class="popup-inner">
-        <div class="con-area">
-          <p class="msg">#{검색한 연동상품ID 출력}의 판매상품 <br />등록을 진행 하시겠습니까?</p>
-          <div class="btns-wrap t-center mt24">
-            <span class="btn-base tp2 lg b-mfp-close"><a href="#">취소</a></span>
-            <span class="btn-base tp2 purple lg b-mfp-close"><a href="#">확인</a></span>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="popup-wrap z-anim mfp-hide" id="popup-change-state" data-width="410">
-      <div class="popup-inner">
-        <div class="tit-wrap">
-          <p class="tit">상태 변경</p>
-        </div>
-        <div class="con-area">
-          <div class="tb-input-wrap">
-            <table class="tb-input tp2">
-              <colgroup>
-                <col width="90" />
-                <col width="*" />
-              </colgroup>
-              <tbody>
-                <tr>
-                  <th scope="row">등록일자 </th>
-                  <td>
-                    <span class="select-base">
-                      <span class="value"></span>
-                      <select>
-                        <option value="0" selected>중지</option>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                      </select>
-                    </span>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-          <div class="btns-wrap t-center mt25">
-            <span class="btn-base tp2 lg green" onclick="validationPopup(); return false;"><a href="#">저장</a></span>
-          </div>
-        </div>
-      </div>
-      <a href="#" class="btn-popup-close" onclick="validationPopup(); return false;"></a>
-    </div><!-- .popup-wrap -->
+        </div><!-- .con-area -->
+      </div><!-- .content-wrap -->
+    </div><!-- #container -->
   </div><!-- #wrap -->
   <script>
     $('#btnChangePopup').on('click', function(e){
       e.preventDefault();
       $.magnificPopup.open(getOptions('#popup-change-dinfo'));
     });
-    jui.ready(['grid.table'], function (table) {
-      table_1 = table('#table_1', {
-        fields: [null, 'no', 'code', 'branch', 'state', 'period', 'date'],
-        data: [
-          { no: '10', code: 'PRO000005', branch: '<a href="#">기프트쇼약10자</a>', state: '거래중', period:'2024.04.01~2024.07.01', date: '2023.12.01' },
-          { no: '9', code: 'PRO000005', branch: '<a href="#">기프트쇼약10자</a>', state: '거래중', period:'2024.04.01~2024.07.01', date: '2023.12.01' },
-          { no: '8', code: 'PRO000005', branch: '<a href="#">기프트쇼약10자</a>', state: '거래중', period:'2024.04.01~2024.07.01', date: '2023.12.01' },
-          { no: '7', code: 'PRO000005', branch: '<a href="#">기프트쇼약10자</a>', state: '거래중', period:'2024.04.01~2024.07.01', date: '2023.12.01' },
-          { no: '6', code: 'PRO000005', branch: '<a href="#">기프트쇼약10자</a>', state: '거래중', period:'2024.04.01~2024.07.01', date: '2023.12.01' },
-          { no: '5', code: 'PRO000005', branch: '<a href="#">기프트쇼약10자</a>', state: '거래중', period:'2024.04.01~2024.07.01', date: '2023.12.01' },
-          { no: '4', code: 'PRO000005', branch: '<a href="#">기프트쇼약10자</a>', state: '거래중', period:'2024.04.01~2024.07.01', date: '2023.12.01' },
-          { no: '3', code: 'PRO000005', branch: '<a href="#">기프트쇼약10자</a>', state: '거래중', period:'2024.04.01~2024.07.01', date: '2023.12.01' },
-          { no: '2', code: 'PRO000005', branch: '<a href="#">기프트쇼약10자</a>', state: '거래중', period:'2024.04.01~2024.07.01', date: '2023.12.01' },
-          { no: '1', code: 'PRO000005', branch: '<a href="#">기프트쇼약10자</a>', state: '거래중', period:'2024.04.01~2024.07.01', date: '2023.12.01' },
-        ],
-        editRow: ['no', 'code', 'branch'],
-        resize: true,
-        sort: true,
-        event: {
-          // editend: function (row) {
-          //   for (var key in row.data) {
-          //     if (key == 'recipient' && isNaN(row.data[key])) {
-          //       alert('Age must enter a numeric value.');
-          //       return false;
-          //     }
-          //   }
-          // },
-        },
-        tpl: {
-          row: $('#tpl_row').html(),
-        },
-      });
 
-      table_2 = table('#table_2', {
-        fields: [null, 'no', 'col1', 'col2', 'col3', 'col4', 'col5', 'col6', 'col7', 'col8', 'col9'],
-        data: [
-          { no: '3', col1: '사용분발행', col2: '포함', col3: 'B2B', col4: '3 %', col5: '3 %', col6: '4%', col7: '미설정', col8: '이영희(dkwk3)', col9: 'YYYY.MM.DD <br />HH:MM' },
-        ],
-        editRow: ['no', 'col1', 'col2'],
-        resize: true,
-        sort: true,
-        event: {
-          // editend: function (row) {
-          //   for (var key in row.data) {
-          //     if (key == 'recipient' && isNaN(row.data[key])) {
-          //       alert('Age must enter a numeric value.');
-          //       return false;
-          //     }
-          //   }
-          // },
-        },
-        tpl: {
-          row: $('#tpl_row2').html(),
-        },
-      });
-    });
+    // setTimeout(() => {
+    //   checkInTbScroll('#chk-tb-all'); // ui.js 내부에 정의
+    // }, 250);
+    var checkCb = function(checked){
+      console.log('테이블 전체체크 유무 : ', checked)
+    };
 
-    setTimeout(() => {
-      checkInTbScroll('#chk-tb-all'); // ui.js 내부에 정의
-    }, 250);
+    GUI.checkAllUI('#chk-tb-all', 'table', checkCb);
 
     function validationPopup() {
       if (confirm('팝업을 닫으시겠습니까?')) {

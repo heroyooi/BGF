@@ -545,3 +545,304 @@ var checkInTbScroll = function(id){
     }
   });
 }
+
+var getTableManage = (num) => `<div class="tb-input-wrap tb-manage-product mt15 append">
+  <table class="tb-input">
+    <colgroup>
+      <col width="12%" />
+      <col width="38%" />
+      <col width="12%" />
+      <col width="*" />
+    </colgroup>
+    <tbody>
+      <tr>
+        <th scope="row" colspan="4" class="br short">
+          <div class="d-flex">
+            <span class="toggle">상품군 ${num}</span>
+            <span class="btn-base tp3 sm del-product">
+              <a href="#"><em class="delete">상품군 삭제</em></a>
+            </span>
+          </div>
+        </th>
+      </tr>
+      <tr>
+        <th scope="row">구성상품유형</th>
+        <td>
+          <select class="select-tag">
+            <option value="0" selected>선택</option>
+            <option value="1">Value 1</option>
+            <option value="2">Value 2</option>
+            <option value="3">Value 3</option>
+          </select>
+        </td>
+        <th scope="row">제어속성타입</th>
+        <td>
+          <select class="select-tag">
+            <option value="0" selected>선택</option>
+            <option value="1">Value 1</option>
+            <option value="2">Value 2</option>
+            <option value="3">Value 3</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">성립기준/값</th>
+        <td>
+          <div class="input-wrap select-input">
+            <select class="select-tag">
+              <option value="0" selected>선택</option>
+              <option value="1">Value 1</option>
+              <option value="2">Value 2</option>
+              <option value="3">Value 3</option>
+            </select>
+            <input type="text" class="input-base">
+          </div>
+        </td>
+        <th scope="row">혜택방법/값</th>
+        <td>
+          <div class="input-wrap select-input">
+            <select class="select-tag">
+              <option value="0" selected>선택</option>
+              <option value="1">Value 1</option>
+              <option value="2">Value 2</option>
+              <option value="3">Value 3</option>
+            </select>
+            <input type="text" class="input-base">
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">제한값</th>
+        <td>
+          <div class="input-wrap select-input">
+            <select class="select-tag">
+              <option value="0" selected>선택</option>
+              <option value="1">Value 1</option>
+              <option value="2">Value 2</option>
+              <option value="3">Value 3</option>
+            </select>
+            <input type="text" class="input-base">
+          </div>
+        </td>
+        <th scope="row">그룹유형</th>
+        <td>
+          <select class="select-tag">
+            <option value="0" selected>선택</option>
+            <option value="1">Value 1</option>
+            <option value="2">Value 2</option>
+            <option value="3">Value 3</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">우선순위 <em>*</em></th>
+        <td colspan="3">
+          <input type="text" class="input-base" style="width: 575px;" />
+        </td>
+      </tr>
+      <tr class="in-table">
+        <td colspan="4">
+          <div class="tb-list-wrap">
+            <div class="tb-scroll">
+              <table class="tb-list">
+                <colgroup>
+                  <col width="50" />
+                  <col width="50" />
+                  <col width="70" />
+                  <col width="" />
+                  <col width="" />
+                  <col width="" />
+                  <col width="" />
+                  <col width="89" />
+                </colgroup>
+                <thead>
+                  <tr>
+                    <th scope="col" colspan="8" class="short">
+                      <div class="d-flex">
+                        <span></span>
+                        <div class="btns-wrap">
+                          <span class="btn-base tp3 sm">
+                            <a href="#"><em class="delete">상품삭제</em></a>
+                          </span>
+                          <span class="btn-base tp3 sm">
+                            <a href="#"><em class="search">상품검색</em></a>
+                          </span>
+                        </div>
+                      </div>
+                    </th>
+                  </tr>
+                  <tr>
+                    <th scope="col">
+                      <span>
+                        <span class="chk-base chk-only">
+                          <input type="checkbox" id="chk-tb${num}-all" />
+                          <label for="chk-tb${num}-all">전체 체크</label>
+                        </span>
+                      </span>
+                    </th>
+                    <th scope="col"><span>No.</span></th>
+                    <th scope="col"><span>이미지</span></th>
+                    <th scope="col"><span>상품명</span></th>
+                    <th scope="col"><span>상품코드</span></th>
+                    <th scope="col"><span>현재매가</span></th>
+                    <th scope="col"><span>판매가</span></th>
+                    <th scope="col"><span> </span></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <span class="chk-base chk-only">
+                        <input type="checkbox" id="chk-tb${num}-1" />
+                        <label for="chk-tb${num}-1">체크1</label>
+                      </span>
+                    </td>
+                    <td>1</td>
+                    <td><img width="35" src="img/mockup/logo.png" alt=""></td>
+                    <td>상품/카테고리 명 출력</td>
+                    <td>#{코드값}</td>
+                    <td>
+                      <input type="text" class="input-base t-right" value="9,000" />
+                    </td>
+                    <td>
+                      <input type="text" class="input-base t-right" value="9,000" />
+                    </td>
+                    <td>
+                      <span class="btn-base tp5"><a href="#">삭제</a></span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <span class="chk-base chk-only">
+                        <input type="checkbox" id="chk-tb${num}-2" />
+                        <label for="chk-tb${num}-2">체크2</label>
+                      </span>
+                    </td>
+                    <td>2</td>
+                    <td><img width="35" src="img/mockup/logo.png" alt=""></td>
+                    <td>상품/카테고리 명 출력</td>
+                    <td>#{코드값}</td>
+                    <td>
+                      <input type="text" class="input-base t-right" value="9,000" />
+                    </td>
+                    <td>
+                      <input type="text" class="input-base t-right" value="9,000" />
+                    </td>
+                    <td>
+                      <span class="btn-base tp5"><a href="#">삭제</a></span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <span class="chk-base chk-only">
+                        <input type="checkbox" id="chk-tb${num}-3" />
+                        <label for="chk-tb${num}-3">체크3</label>
+                      </span>
+                    </td>
+                    <td>3</td>
+                    <td><img width="35" src="img/mockup/logo.png" alt=""></td>
+                    <td>상품/카테고리 명 출력</td>
+                    <td>#{코드값}</td>
+                    <td>
+                      <input type="text" class="input-base t-right" value="9,000" />
+                    </td>
+                    <td>
+                      <input type="text" class="input-base t-right" value="9,000" />
+                    </td>
+                    <td>
+                      <span class="btn-base tp5"><a href="#">삭제</a></span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <span class="chk-base chk-only">
+                        <input type="checkbox" id="chk-tb${num}-4" />
+                        <label for="chk-tb${num}-4">체크4</label>
+                      </span>
+                    </td>
+                    <td>4</td>
+                    <td><img width="35" src="img/mockup/logo.png" alt=""></td>
+                    <td>상품/카테고리 명 출력</td>
+                    <td>#{코드값}</td>
+                    <td>
+                      <input type="text" class="input-base t-right" value="9,000" />
+                    </td>
+                    <td>
+                      <input type="text" class="input-base t-right" value="9,000" />
+                    </td>
+                    <td>
+                      <span class="btn-base tp5"><a href="#">삭제</a></span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <span class="chk-base chk-only">
+                        <input type="checkbox" id="chk-tb${num}-5" />
+                        <label for="chk-tb${num}-5">체크5</label>
+                      </span>
+                    </td>
+                    <td>5</td>
+                    <td><img width="35" src="img/mockup/logo.png" alt=""></td>
+                    <td>상품/카테고리 명 출력</td>
+                    <td>#{코드값}</td>
+                    <td>
+                      <input type="text" class="input-base t-right" value="9,000" />
+                    </td>
+                    <td>
+                      <input type="text" class="input-base t-right" value="9,000" />
+                    </td>
+                    <td>
+                      <span class="btn-base tp5"><a href="#">삭제</a></span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <span class="chk-base chk-only">
+                        <input type="checkbox" id="chk-tb${num}-6" />
+                        <label for="chk-tb${num}-6">체크6</label>
+                      </span>
+                    </td>
+                    <td>6</td>
+                    <td><img width="35" src="img/mockup/logo.png" alt=""></td>
+                    <td>상품/카테고리 명 출력</td>
+                    <td>#{코드값}</td>
+                    <td>
+                      <input type="text" class="input-base t-right" value="9,000" />
+                    </td>
+                    <td>
+                      <input type="text" class="input-base t-right" value="9,000" />
+                    </td>
+                    <td>
+                      <span class="btn-base tp5"><a href="#">삭제</a></span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <span class="chk-base chk-only">
+                        <input type="checkbox" id="chk-tb${num}-7" />
+                        <label for="chk-tb${num}-7">체크7</label>
+                      </span>
+                    </td>
+                    <td>7</td>
+                    <td><img width="35" src="img/mockup/logo.png" alt=""></td>
+                    <td>상품/카테고리 명 출력</td>
+                    <td>#{코드값}</td>
+                    <td>
+                      <input type="text" class="input-base t-right" value="9,000" />
+                    </td>
+                    <td>
+                      <input type="text" class="input-base t-right" value="9,000" />
+                    </td>
+                    <td>
+                      <span class="btn-base tp5"><a href="#">삭제</a></span>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>`;
