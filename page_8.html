@@ -607,10 +607,10 @@
                       <th scope="row">정렬</th>
                       <td colspan="3">
                         <select class="select-tag" style="width: 421px;">
-                          <option value="0" selected>선택</option>
-                          <option value="1">Value 1</option>
-                          <option value="2">Value 2</option>
-                          <option value="3">Value 3</option>
+                          <option value="0">선택</option>
+                          <option value="1" selected>왼쪽 정렬</option>
+                          <option value="2">가운데 정렬</option>
+                          <option value="3">오른쪽 정렬</option>
                         </select>
                       </td>
                     </tr>
@@ -652,10 +652,10 @@
                       <th scope="row">정렬</th>
                       <td>
                         <select class="select-tag">
-                          <option value="0" selected>선택</option>
-                          <option value="1">Value 1</option>
-                          <option value="2">Value 2</option>
-                          <option value="3">Value 3</option>
+                          <option value="0">선택</option>
+                          <option value="1" selected>왼쪽 정렬</option>
+                          <option value="2">가운데 정렬</option>
+                          <option value="3">오른쪽 정렬</option>
                         </select>
                       </td>
                     </tr>
@@ -1012,10 +1012,10 @@
                       <th scope="row">정렬</th>
                       <td>
                         <select class="select-tag">
-                          <option value="0" selected>선택</option>
-                          <option value="1">Value 1</option>
-                          <option value="2">Value 2</option>
-                          <option value="3">Value 3</option>
+                          <option value="0">선택</option>
+                          <option value="1" selected>왼쪽 정렬</option>
+                          <option value="2">가운데 정렬</option>
+                          <option value="3">오른쪽 정렬</option>
                         </select>
                       </td>
                     </tr>
@@ -1362,6 +1362,7 @@
     const $skin_t_top = $skin_t.find('.skin-title-top');
     const $skin_t_color = $skin_t.find('.skin-title-color');
     const $skin_t_size = $skin_t.find('.skin-title-size');
+    const $skin_t_select = $skin_t.find('.select-tag');
 
     const $skin_b_obj = $('.skin-barcode');
     const $skin_b_input = $skin_b.find('.input-base');
@@ -1379,6 +1380,7 @@
     const $skin_c1_color = $skin_c1.find('.skin-code-color');
     const $skin_c1_size = $skin_c1.find('.skin-code-size');
     const $skin_c1_text = $skin_c1.find('.skin-code-text');
+    const $skin_c1_select = $skin_c1.find('.select-tag');
 
     const $skin_c2_obj = $('.skin-code2');
     const $skin_c2_input = $skin_c2.find('.input-base');
@@ -1389,6 +1391,7 @@
     const $skin_c2_color = $skin_c2.find('.skin-code-color');
     const $skin_c2_size = $skin_c2.find('.skin-code-size');
     const $skin_c2_text = $skin_c2.find('.skin-code-text');
+    const $skin_c2_select = $skin_c2.find('.select-tag');
     
 
     $skin_t_obj.css({
@@ -1401,6 +1404,37 @@
       fontSize: $skin_t_size.val() + 'px',
       color: '#'+ $skin_t_color.val(),
     });
+    
+    $skin_t_select.on('change', function(){
+      if ($(this).val() == 1) { // 왼쪽 정렬
+        $skin_t_obj.css('justify-content', 'flex-start');
+      } else if ($(this).val() == 2) { // 가운데 정렬
+        $skin_t_obj.css('justify-content', 'center');
+      } else if ($(this).val() == 3) { // 오른쪽 정렬
+        $skin_t_obj.css('justify-content', 'flex-end');
+      }
+    });
+
+    $skin_c1_select.on('change', function(){
+      if ($(this).val() == 1) { // 왼쪽 정렬
+        $skin_c1_obj.css('justify-content', 'flex-start');
+      } else if ($(this).val() == 2) { // 가운데 정렬
+        $skin_c1_obj.css('justify-content', 'center');
+      } else if ($(this).val() == 3) { // 오른쪽 정렬
+        $skin_c1_obj.css('justify-content', 'flex-end');
+      }
+    });
+
+    $skin_c2_select.on('change', function(){
+      if ($(this).val() == 1) { // 왼쪽 정렬
+        $skin_c2_obj.css('justify-content', 'flex-start');
+      } else if ($(this).val() == 2) { // 가운데 정렬
+        $skin_c2_obj.css('justify-content', 'center');
+      } else if ($(this).val() == 3) { // 오른쪽 정렬
+        $skin_c2_obj.css('justify-content', 'flex-end');
+      }
+    });
+
     $skin_b_obj.css({
       left: $skin_b_left.val() + 'px',
       top: $skin_b_top.val() + 'px',
@@ -1450,9 +1484,20 @@
         $(this).val(inputValue);
         if ($.isNumeric(inputValue) && inputValue !== '') {
           if (cssProperty == 'size') {
-            $el.find('.text').css({
-              fontSize: $skin_t_size.val() + 'px',
-            });
+            if ($el == $skin_t_obj) {
+              $el.find('.text').css({
+                fontSize: $skin_t_size.val() + 'px',
+              });
+            } else if ($el == $skin_c1_obj) {
+              $el.find('.text').css({
+                fontSize: $skin_c1_size.val() + 'px',
+              });
+            } else if ($el == $skin_c2_obj) {
+              $el.find('.text').css({
+                fontSize: $skin_c2_size.val() + 'px',
+              });
+            }
+            
             return;
           }
           $el.css(cssProperty, inputValue + 'px');
@@ -1594,6 +1639,10 @@
         color: '#' + _color,
       })
       $color_pick.removeClass('on');
+      $(this).closest('.color-pick-wrap').find('.btn-base.tp2 > *').css({
+        border: `1px solid #${_color}`,
+        color: `#${_color}`,
+      });
     });
   </script>
 </body>
