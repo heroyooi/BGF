@@ -1457,10 +1457,13 @@
 .tb-input-wrap.tb-manage-product tr:nth-child(1) {
   display: table-row;
 }
-.tb-input-wrap.tb-manage-product {
-  
+.tb-input.type-gray > tbody > tr > th {
+  background-color: #E0E8F3;
 }
-
+.tb-input.type-gray > tbody > tr > th,
+.tb-input.type-gray > tbody > tr > td {
+  border-color: #CFD5E4;
+}
 .color-pick-wrap {
   display: flex;
   align-items: center;
@@ -1960,6 +1963,7 @@
   flex-grow: 1;
   min-width: 0;
 }
+.tb-wrapper .tb-right .
 .tb-wrapper .search-zone {
   min-height: 92px;
   margin-bottom:20px;

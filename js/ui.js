@@ -166,7 +166,7 @@ var GUI = window.GUI || (function(){
       if (calendarUI.length) {
         _.find('.datepicker').datepicker({
           showOn:"button",
-          buttonImage: "img/icon/calendar.svg", // type 2
+          buttonImage: "/img/icon/calendar.svg", // type 2
           onChangeMonthYear: function(year, month, inst) {
             setTimeout(function() {
                 var dateText = (month < 10 ? '0' + month : month) + '.' + year;
@@ -547,7 +547,7 @@ var checkInTbScroll = function(id){
 }
 
 var getTableManage = (num) => `<div class="tb-input-wrap tb-manage-product mt15 append">
-  <table class="tb-input">
+  <table class="tb-input type-gray">
     <colgroup>
       <col width="12%" />
       <col width="38%" />
