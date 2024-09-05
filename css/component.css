@@ -1366,6 +1366,9 @@
   padding: 13px 15px;
   background-color: #E2F0E8;
 }
+.tb-input > tbody > tr > th.deep {
+  background-color: #AED2BD;
+}
 .tb-input > tbody > tr > th.short,
 .tb-input > tbody > tr.in-table .tb-list th.short {
   padding: 6px 10px;
@@ -1963,7 +1966,6 @@
   flex-grow: 1;
   min-width: 0;
 }
-.tb-wrapper .tb-right .
 .tb-wrapper .search-zone {
   min-height: 92px;
   margin-bottom:20px;
