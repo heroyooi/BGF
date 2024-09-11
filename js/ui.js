@@ -164,22 +164,26 @@ var GUI = window.GUI || (function(){
         })
       }
       if (calendarUI.length) {
+        console.log(123);
         _.find('.datepicker').datepicker({
           showOn:"button",
           buttonImage: "/img/icon/calendar.svg", // type 2
+          changeYear: true, // 년도 선택 가능
+          changeMonth: true, // 월 선택 가능
+          // yearRange: "c-10:c+10", // 현재 연도를 기준으로 -10년에서 +10년까지 선택 가능
           onChangeMonthYear: function(year, month, inst) {
             setTimeout(function() {
-                var dateText = (month < 10 ? '0' + month : month) + '.' + year;
-                $(".ui-datepicker-title").text(dateText);
+                // var dateText = (month < 10 ? '0' + month : month) + '.' + year;
+                // $(".ui-datepicker-title").text(dateText);
             }, 1);
           },
           beforeShow: function(input, inst) {
             $('#ui-datepicker-div').addClass('s-datepicker');
             setTimeout(function() {
-                var month = inst.selectedMonth + 1;
-                var year = inst.selectedYear;
-                var dateText = (month < 10 ? '0' + month : month) + '.' + year;
-                $(".ui-datepicker-title").text(dateText);
+                // var month = inst.selectedMonth + 1;
+                // var year = inst.selectedYear;
+                // var dateText = (month < 10 ? '0' + month : month) + '.' + year;
+                // $(".ui-datepicker-title").text(dateText);
             }, 1);
           }
         });

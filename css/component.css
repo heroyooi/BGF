@@ -323,6 +323,15 @@
   bottom: 1px;
   margin-left: -1.5px;
 }
+.ui-datepicker select.ui-datepicker-month, .ui-datepicker select.ui-datepicker-year {
+  padding: 5px;
+  border: 1px solid #d1d1d1;
+  border-radius: 3px;
+  width: 40% !important;
+}
+.ui-datepicker select.ui-datepicker-year {
+  margin-left: 2% !important;
+}
 
 .input-wrapper {
   font-size: 0;
