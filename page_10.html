@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BGF 네트웍스</title>
+  <link rel="stylesheet" href="css/common.css">
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-ui.js"></script>
+  <script src="js/jui-core.js"></script>
+  <script src="js/jui-grid.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/swiper-bundle.min.js"></script>
+  <script src="js/ui.js"></script>
+</head>
+<body class="c-scrollbar jui" id="j-custom">
+  <div id="wrap">
+    <div id="container">
+    <!-- <div id="container" class="ver-collapse"> -->
+      <div class="lnb-wrap c-scrollbar">
+        <h2><a href="#"></a></h2>
+        <ul class="lnb">
+        <!-- <ul class="lnb" data-dp1="1" data-dp2="1"> -->
+          <li class="li1">
+            <dl>
+              <dt><span>기업관리</span></dt>
+              <dd>
+                <ul>
+                  <li><a href="#">공급사관리</a></li>
+                  <li><a href="#">판매처관리</a></li>
+                  <li><a href="#">판매지사관리</a></li>
+                  <li><a href="#">가맹점관리</a></li>
+                </ul>
+              </dd>
+            </dl>
+          </li>
+          <li class="li2">
+            <dl>
+              <dt><span>상품관리</span></dt>
+              <dd>
+                <ul>
+                  <li><a href="#">서브 메뉴</a></li>
+                </ul>
+              </dd>
+            </dl>
+          </li>
+          <li class="li3">
+            <dl>
+              <dt><span>상품권관리</span></dt>
+              <dd>
+                <ul>
+                  <li><a href="#">서브 메뉴</a></li>
+                </ul>
+              </dd>
+            </dl>
+          </li>
+          <li class="li4">
+            <dl>
+              <dt><span>발송관리</span></dt>
+              <dd>
+                <ul>
+                  <li><a href="#">서브 메뉴</a></li>
+                </ul>
+              </dd>
+            </dl>
+          </li>
+          <li class="li5">
+            <dl>
+              <dt><span>상품권조회(CS)</span></dt>
+              <dd>
+                <ul>
+                  <li><a href="#">서브 메뉴</a></li>
+                </ul>
+              </dd>
+            </dl>
+          </li>
+          <li class="li6">
+            <dl>
+              <dt><span>정산관리</span></dt>
+              <dd>
+                <ul>
+                  <li><a href="#">서브 메뉴</a></li>
+                </ul>
+              </dd>
+            </dl>
+          </li>
+          <li class="li7">
+            <dl>
+              <dt><span>통계</span></dt>
+              <dd>
+                <ul>
+                  <li><a href="#">서브 메뉴</a></li>
+                </ul>
+              </dd>
+            </dl>
+          </li>
+          <li class="li8">
+            <dl>
+              <dt><span>시스템관리</span></dt>
+              <dd>
+                <ul>
+                  <li><a href="#">서브 메뉴</a></li>
+                </ul>
+              </dd>
+            </dl>
+          </li>
+          <li class="li9">
+            <dl>
+              <dt><span>로그관리</span></dt>
+              <dd>
+                <ul>
+                  <li><a href="#">서브 메뉴</a></li>
+                </ul>
+              </dd>
+            </dl>
+          </li>
+        </ul>
+        <a href="#" class="btn-arrow"></a>
+      </div><!-- .lnb-wrap -->
+      <div class="content-wrap c-scrollbar">
+        <div class="tit-area">
+          <h3>공급지사 정산 생성</h3>
+          <div class="item-wrap">
+            <a href="#" class="mem"><strong>이영희</strong> 님</a>
+            <div class="utils-tip">
+              <ul>
+                <li><a href="#">로그아웃</a></li>
+                <li><a href="#">비밀번호 변경</a></li>
+              </ul>
+            </div>
+          </div>
+        </div><!-- .tit-area -->
+        <div class="con-area">
+          <div class="top-info-wrap">
+            <ul>
+              <li>
+                <span class="label">정산년월</span>
+                <span class="result">2024년 07월</span>
+              </li>
+              <li>
+                <span class="label">정산년월</span>
+                <span class="result">사용분발행</span>
+              </li>
+              <li>
+                <span class="label">정산년월</span>
+                <span class="result">BGF리테일</span>
+              </li>
+              <li>
+                <span class="label">정산년월</span>
+                <span class="result">BGF리테일_상품권사업팀</span>
+              </li>
+              <li>
+                <span class="label">정산여부</span>
+                <span class="state ing">정산중</span>
+              </li>
+            </ul>
+          </div>
+          
+          <div class="btns-wrap t-right mt10">
+            <span class="btn-base tp2 lg"><a href="#">목록</a></span>
+          </div>
+          <div class="total-area mt22">
+            <span class="total"></span>
+            <div class="btns-wrap">
+              <span class="btn-base tp2 lg"><a href="#">수수료합계금액조</a></span>
+              <span class="btn-base tp2 lg"><a href="#">정산완료</a></span>
+              <span class="btn-base tp2 lg"><a href="#">청구서</a></span>
+              <span class="btn-base tp2 green lg" onclick="openWindow('popup_transaction.html', 984, 600);"><a href="#">거래상세데이터 신청</a></span>
+            </div>
+          </div>
+
+          <div class="tb-list-wrap mt12">
+            <table class="tb-list">
+              <colgroup>
+                <col width="" />
+                <col width="" />
+                <col width="" />
+                <col width="" />
+                <col width="" />
+                <col width="" />
+                <col width="" />
+                <col width="" />
+                <col width="" />
+                <col width="" />
+                <col width="" />
+                <col width="" />
+                <col width="" />
+                <col width="110" />
+                <col width="" />
+              </colgroup>
+              <thead>
+                <tr>
+                  <th scope="col"><span>공급지사</span></th>
+                  <th scope="col"><span>정산구분</span></th>
+                  <th scope="col"><span>권종타입</span></th>
+                  <th scope="col"><span>상품권명</span></th>
+                  <th scope="col"><span>거래금액</span></th>
+                  <th scope="col"><span>할인율(%)</span></th>
+                  <th scope="col"><span>할임금액</span></th>
+                  <th scope="col"><span>수수료율</span></th>
+                  <th scope="col"><span>수수료금액</span></th>
+                  <th scope="col"><span>부가세</span></th>
+                  <th scope="col"><span>부가세금액</span></th>
+                  <th scope="col"><span>수수료합계</span></th>
+                  <th scope="col"><span>지급액</span></th>
+                  <th scope="col"><span>프로모션부담금</span></th>
+                  <th scope="col"><span>비고</span></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="total">
+                  <td colspan="4">합계</td>
+                  <td>11,000</td>
+                  <td>10</td>
+                  <td>10</td>
+                  <td>5.45</td>
+                  <td>5.45</td>
+                  <td>Y</td>
+                  <td>0</td>
+                  <td>545</td>
+                  <td>9,445</td>
+                  <td>1,000</td>
+                  <td>1,000</td>
+                </tr>
+                <tr class="s-total">
+                  <td colspan="4">합계 금액 조정</td>
+                  <td>11,000</td>
+                  <td>10</td>
+                  <td>10</td>
+                  <td>5.45</td>
+                  <td>5.45</td>
+                  <td>Y</td>
+                  <td>0</td>
+                  <td>545</td>
+                  <td>9,445</td>
+                  <td>1,000</td>
+                  <td>1,000</td>
+                </tr>
+                <tr>
+                  <td>#{공급지사명}</td>
+                  <td>사용분발행</td>
+                  <td>금액권</td>
+                  <td>100원</td>
+                  <td>11,000</td>
+                  <td>10</td>
+                  <td>10</td>
+                  <td>5.45</td>
+                  <td>5.45</td>
+                  <td>Y</td>
+                  <td>0</td>
+                  <td>545</td>
+                  <td>9,445</td>
+                  <td>1,000</td>
+                  <td>1,000</td>
+                </tr>
+                <tr>
+                  <td>BGF리테일</td>
+                  <td>사용분발행</td>
+                  <td>교환권</td>
+                  <td>바나나우유</td>
+                  <td>1,000</td>
+                  <td>0</td>
+                  <td>0</td>
+                  <td>3</td>
+                  <td>30</td>
+                  <td>Y</td>
+                  <td>3</td>
+                  <td>33</td>
+                  <td>967</td>
+                  <td>0</td>
+                  <td>\</td>
+                </tr>
+              </tbody>
+            </table>
+          </div><!-- .tb-list-wrap -->
+        </div><!-- .con-area -->
+      </div><!-- .content-wrap -->
+    </div><!-- #container -->
+
+    <div class="popup-wrap z-anim mfp-hide" id="popup-change-history" data-width="1200">
+      <div class="popup-inner">
+        <div class="tit-wrap">
+          <p class="tit">정산 정보 수정 이력</p>
+        </div>
+        <div class="con-area">
+          <div class="tb-list-wrap">
+            <table id="table_2" class="table classic">
+              <thead>
+                <tr>
+                  <th width="50px"><span>No.</span></th>
+                  <th><span>정산구분</span></th>
+                  <th><span>VAT포함여부</span></th>
+                  <th><span>B2B/B2C구분</span></th>
+                  <th><span>운영수수료</span></th>
+                  <th><span>지급수수료</span></th>
+                  <th><span>할인율</span></th>
+                  <th><span>월한도금액</span></th>
+                  <th><span>수정자(아이디)</span></th>
+                  <th><span>상품 수정일시</span></th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+          </div>
+          <script id="tpl_row2" type="text/template">
+            <tr>
+              <td><!= no !></td>
+              <td><!= col1 !></td>
+              <td><!= col2 !></td>
+              <td><!= col3 !></td>
+              <td><!= col4 !></td>
+              <td><!= col5 !></td>
+              <td><!= col6 !></td>
+              <td><!= col7 !></td>
+              <td><!= col8 !></td>
+              <td><!= col9 !></td>
+            </tr>
+          </script>
+          </div>
+          <div class="pagination">
+            <a href="#" class="btn btn-first">처음</a>
+            <a href="#" class="btn btn-prev">이전</a>
+            <a href="#" class="on">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#">5</a>
+            <a href="#" class="btn btn-next">다음</a>
+            <a href="#" class="btn btn-last">마지막</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="popup-wrap z-anim mfp-hide popup-alert" id="popup-alert1" data-width="410">
+      <div class="popup-inner">
+        <div class="con-area">
+          <p class="msg">변경할 판매지사를 선택해 주세요.</p>
+          <div class="btns-wrap t-center mt24">
+            <span class="btn-base tp2 green lg b-mfp-close"><a href="#">확인</a></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="popup-wrap z-anim mfp-hide popup-confirm" id="popup-confirm" data-width="410">
+      <div class="popup-inner">
+        <div class="con-area">
+          <p class="msg">#{검색한 연동상품ID 출력}의 판매상품 <br />등록을 진행 하시겠습니까?</p>
+          <div class="btns-wrap t-center mt24">
+            <span class="btn-base tp2 lg b-mfp-close"><a href="#">취소</a></span>
+            <span class="btn-base tp2 purple lg b-mfp-close"><a href="#">확인</a></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="popup-wrap z-anim mfp-hide" id="popup-change-state" data-width="410">
+      <div class="popup-inner">
+        <div class="tit-wrap">
+          <p class="tit">상태 변경</p>
+        </div>
+        <div class="con-area">
+          <div class="tb-input-wrap">
+            <table class="tb-input tp2">
+              <colgroup>
+                <col width="90" />
+                <col width="*" />
+              </colgroup>
+              <tbody>
+                <tr>
+                  <th scope="row">등록일자 </th>
+                  <td>
+                    <span class="select-base">
+                      <span class="value"></span>
+                      <select>
+                        <option value="0" selected>중지</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                      </select>
+                    </span>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="btns-wrap t-center mt25">
+            <span class="btn-base tp2 lg green" onclick="validationPopup(); return false;"><a href="#">저장</a></span>
+          </div>
+        </div>
+      </div>
+      <a href="#" class="btn-popup-close" onclick="validationPopup(); return false;"></a>
+    </div><!-- .popup-wrap -->
+  </div><!-- #wrap -->
+  <script>
+    jui.ready(['grid.table'], function (table) {
+      table_1 = table('#table_1', {
+        fields: [null, 'no', 'code', 'branch', 'state', 'period', 'date'],
+        data: [
+          { no: '10', code: 'PRO000005', branch: '<a href="#">기프트쇼약10자</a>', state: '거래중', period:'2024.04.01~2024.07.01', date: '2023.12.01' },
+          { no: '9', code: 'PRO000005', branch: '<a href="#">기프트쇼약10자</a>', state: '거래중', period:'2024.04.01~2024.07.01', date: '2023.12.01' },
+          { no: '8', code: 'PRO000005', branch: '<a href="#">기프트쇼약10자</a>', state: '거래중', period:'2024.04.01~2024.07.01', date: '2023.12.01' },
+          { no: '7', code: 'PRO000005', branch: '<a href="#">기프트쇼약10자</a>', state: '거래중', period:'2024.04.01~2024.07.01', date: '2023.12.01' },
+          { no: '6', code: 'PRO000005', branch: '<a href="#">기프트쇼약10자</a>', state: '거래중', period:'2024.04.01~2024.07.01', date: '2023.12.01' },
+          { no: '5', code: 'PRO000005', branch: '<a href="#">기프트쇼약10자</a>', state: '거래중', period:'2024.04.01~2024.07.01', date: '2023.12.01' },
+          { no: '4', code: 'PRO000005', branch: '<a href="#">기프트쇼약10자</a>', state: '거래중', period:'2024.04.01~2024.07.01', date: '2023.12.01' },
+          { no: '3', code: 'PRO000005', branch: '<a href="#">기프트쇼약10자</a>', state: '거래중', period:'2024.04.01~2024.07.01', date: '2023.12.01' },
+          { no: '2', code: 'PRO000005', branch: '<a href="#">기프트쇼약10자</a>', state: '거래중', period:'2024.04.01~2024.07.01', date: '2023.12.01' },
+          { no: '1', code: 'PRO000005', branch: '<a href="#">기프트쇼약10자</a>', state: '거래중', period:'2024.04.01~2024.07.01', date: '2023.12.01' },
+        ],
+        editRow: ['no', 'code', 'branch'],
+        resize: true,
+        sort: true,
+        event: {
+          // editend: function (row) {
+          //   for (var key in row.data) {
+          //     if (key == 'recipient' && isNaN(row.data[key])) {
+          //       alert('Age must enter a numeric value.');
+          //       return false;
+          //     }
+          //   }
+          // },
+        },
+        tpl: {
+          row: $('#tpl_row').html(),
+        },
+      });
+
+      table_2 = table('#table_2', {
+        fields: [null, 'no', 'col1', 'col2', 'col3', 'col4', 'col5', 'col6', 'col7', 'col8', 'col9'],
+        data: [
+          { no: '3', col1: '사용분발행', col2: '포함', col3: 'B2B', col4: '3 %', col5: '3 %', col6: '4%', col7: '미설정', col8: '이영희(dkwk3)', col9: 'YYYY.MM.DD <br />HH:MM' },
+        ],
+        editRow: ['no', 'col1', 'col2'],
+        resize: true,
+        sort: true,
+        event: {
+          // editend: function (row) {
+          //   for (var key in row.data) {
+          //     if (key == 'recipient' && isNaN(row.data[key])) {
+          //       alert('Age must enter a numeric value.');
+          //       return false;
+          //     }
+          //   }
+          // },
+        },
+        tpl: {
+          row: $('#tpl_row2').html(),
+        },
+      });
+    });
+
+    var Qwpopup = $.urlParam('wpopup');
+    if (Qwpopup == 'popupTransaction') {
+      openWindow('popup_transaction.html', 984, 600);
+    }
+  </script>
+</body>
+
+</html>
+ 

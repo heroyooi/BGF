@@ -51,6 +51,7 @@ body{width:100%;}
 .lnb li.li7 dt::before{background-image:url(../img/icon/lnb/ico-lnb-07.png);}
 .lnb li.li8 dt::before{background-image:url(../img/icon/lnb/ico-lnb-08.png);}
 .lnb li.li9 dt::before{background-image:url(../img/icon/lnb/ico-lnb-09.png);}
+.lnb li.li10 dt::before{background-image:url(../img/icon/lnb/ico-lnb-10.png);}
 
 .lnb li.on.li1 dt::before, .lnb li.active.li1 dt::before{background-image:url(../img/icon/lnb/ico-lnb-01-on.png);}
 .lnb li.on.li2 dt::before, .lnb li.active.li2 dt::before{background-image:url(../img/icon/lnb/ico-lnb-02-on.png);}
@@ -61,6 +62,7 @@ body{width:100%;}
 .lnb li.on.li7 dt::before, .lnb li.active.li7 dt::before{background-image:url(../img/icon/lnb/ico-lnb-07-on.png);}
 .lnb li.on.li8 dt::before, .lnb li.active.li8 dt::before{background-image:url(../img/icon/lnb/ico-lnb-08-on.png);}
 .lnb li.on.li9 dt::before, .lnb li.active.li9 dt::before{background-image:url(../img/icon/lnb/ico-lnb-09-on.png);}
+.lnb li.on.li10 dt::before, .lnb li.active.li10 dt::before{background-image:url(../img/icon/lnb/ico-lnb-10.png);}
 
 .lnb li dd li a{font-size:14px;line-height:16px;font-weight:500;display:block;padding:8px 0 8px 40px;color:#457c67}
 .lnb li dd li.active a,

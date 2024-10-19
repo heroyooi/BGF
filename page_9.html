@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BGF 네트웍스</title>
+  <link rel="stylesheet" href="css/common.css">
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-ui.js"></script>
+  <script src="js/jui-core.js"></script>
+  <script src="js/jui-grid.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/swiper-bundle.min.js"></script>
+  <script src="js/ui.js"></script>
+</head>
+<body class="c-scrollbar jui" id="j-custom">
+  <div id="wrap">
+    <div id="container">
+    <!-- <div id="container" class="ver-collapse"> -->
+      <div class="lnb-wrap c-scrollbar">
+        <h2><a href="#"></a></h2>
+        <ul class="lnb">
+        <!-- <ul class="lnb" data-dp1="1" data-dp2="1"> -->
+          <li class="li1">
+            <dl>
+              <dt><span>기업관리</span></dt>
+              <dd>
+                <ul>
+                  <li><a href="#">공급사관리</a></li>
+                  <li><a href="#">판매처관리</a></li>
+                  <li><a href="#">판매지사관리</a></li>
+                  <li><a href="#">가맹점관리</a></li>
+                </ul>
+              </dd>
+            </dl>
+          </li>
+          <li class="li2">
+            <dl>
+              <dt><span>상품관리</span></dt>
+              <dd>
+                <ul>
+                  <li><a href="#">서브 메뉴</a></li>
+                </ul>
+              </dd>
+            </dl>
+          </li>
+          <li class="li3">
+            <dl>
+              <dt><span>상품권관리</span></dt>
+              <dd>
+                <ul>
+                  <li><a href="#">서브 메뉴</a></li>
+                </ul>
+              </dd>
+            </dl>
+          </li>
+          <li class="li10">
+            <dl>
+              <dt><span>기프트카드 관리</span></dt>
+              <dd>
+                <ul>
+                  <li><a href="#">서브 메뉴</a></li>
+                </ul>
+              </dd>
+            </dl>
+          </li>
+          <li class="li4">
+            <dl>
+              <dt><span>발송관리</span></dt>
+              <dd>
+                <ul>
+                  <li><a href="#">서브 메뉴</a></li>
+                </ul>
+              </dd>
+            </dl>
+          </li>
+          <li class="li5">
+            <dl>
+              <dt><span>상품권조회(CS)</span></dt>
+              <dd>
+                <ul>
+                  <li><a href="#">서브 메뉴</a></li>
+                </ul>
+              </dd>
+            </dl>
+          </li>
+          <li class="li6">
+            <dl>
+              <dt><span>정산관리</span></dt>
+              <dd>
+                <ul>
+                  <li><a href="#">서브 메뉴</a></li>
+                </ul>
+              </dd>
+            </dl>
+          </li>
+          <li class="li7">
+            <dl>
+              <dt><span>통계</span></dt>
+              <dd>
+                <ul>
+                  <li><a href="#">서브 메뉴</a></li>
+                </ul>
+              </dd>
+            </dl>
+          </li>
+          <li class="li8">
+            <dl>
+              <dt><span>시스템관리</span></dt>
+              <dd>
+                <ul>
+                  <li><a href="#">서브 메뉴</a></li>
+                </ul>
+              </dd>
+            </dl>
+          </li>
+          <li class="li9">
+            <dl>
+              <dt><span>로그관리</span></dt>
+              <dd>
+                <ul>
+                  <li><a href="#">서브 메뉴</a></li>
+                </ul>
+              </dd>
+            </dl>
+          </li>
+        </ul>
+        <a href="#" class="btn-arrow"></a>
+      </div><!-- .lnb-wrap -->
+      <div class="content-wrap c-scrollbar">
+        <div class="tit-area">
+          <h3>판매사 관리</h3>
+          <div class="item-wrap">
+            <a href="#" class="mem"><strong>이영희</strong> 님</a>
+            <div class="utils-tip">
+              <ul>
+                <li><a href="#">로그아웃</a></li>
+                <li><a href="#">비밀번호 변경</a></li>
+              </ul>
+            </div>
+          </div>
+        </div><!-- .tit-area -->
+        <div class="con-area">
+          <div class="tb-input-wrap">
+            <table class="tb-input">
+              <colgroup>
+                <col width="12%" />
+                <col width="38%" />
+                <col width="12%" />
+                <col width="*" />
+              </colgroup>
+              <tbody>
+                <tr>
+                  <th scope="row" class="bg">조회 기준일</th>
+                  <td colspan="3">
+                    <div class="input-wrap fix-width">
+                      <span class="s-datepicker">
+                        <input type="text" class="input-base datepicker" />
+                      </span>
+                      <div class="btns-wrap ml10">
+                        <span class="btn-base tp3"><a href="#">검색</a></span>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div><!-- .tb-input-wrap -->
+
+          <div class="echart-area">
+            <div id="lineChart" style="width: 100%; height: 200px;"></div>
+            <div class="legend-area">
+              <ul>
+                <li class="tp1">경영계획</li>
+                <li class="tp2">실적</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="s-tit-area mt20">
+            <h4 class="s-tit">일별 매출 <span>(단위 : 천원)</span></h4>
+          </div>
+          <div class="tb-list-wrap th-bg mt10">
+            <div class="tb-scroll">
+              <table class="tb-list">
+                <colgroup>
+                  <col width="60" />
+                  <col width="90" />
+                  <col width="" />
+                  <col width="" />
+                  <col width="" />
+                  <col width="" />
+                  <col width="" />
+                  <col width="" />
+                  <col width="" />
+                  <col width="" />
+                  <col width="" />
+                  <col width="" />
+                  <col width="" />
+                  <col width="" />
+                </colgroup>
+                <thead>
+                  <tr>
+                    <th scope="col" colspan="2"><span>구분</span></th>
+                    <th scope="col"><span>10/1</span></th>
+                    <th scope="col"><span>10/2</span></th>
+                    <th scope="col"><span>10/3</span></th>
+                    <th scope="col"><span>10/4</span></th>
+                    <th scope="col"><span>10/5</span></th>
+                    <th scope="col"><span>10/6</span></th>
+                    <th scope="col"><span>10/7</span></th>
+                    <th scope="col"><span>소계</span></th>
+                    <th scope="col"><span>10/8</span></th>
+                    <th scope="col"><span>10/9</span></th>
+                    <th scope="col"><span>10/10</span></th>
+                    <th scope="col"><span>10/11</span></th>
+                    <th scope="col"><span>10/12</span></th>
+                    <th scope="col"><span>10/13</span></th>
+                    <th scope="col"><span>10/14</span></th>
+                    <th scope="col"><span>소계</span></th>
+                    <th scope="col"><span>전월비</span></th>
+                    <th scope="col"><span>경영비</span></th>
+                    <th scope="col"><span>전년비</span></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td colspan="2">경영계획</td>
+                    <td>00,000</td>
+                    <td>00,000</td>
+                    <td>00,000</td>
+                    <td>00,000</td>
+                    <td>00,000</td>
+                    <td>00,000</td>
+                    <td>00,000</td>
+                    <td>00,000</td>
+                    <td>00,000</td>
+                    <td>00,000</td>
+                    <td>00,000</td>
+                    <td>00,000</td>
+                    <td>00,000</td>
+                    <td>00,000</td>
+                    <td>00,000</td>
+                    <td>00,000</td>
+                    <td>%</td>
+                    <td>%</td>
+                    <td>%</td>
+                  </tr>
+                  <tr>
+                    <td rowspan="3" class="bb0">실적</td>
+                    <td class="t-right bl">결제수수료</td>
+                    <td>00,000</td>
+                    <td>00,000</td>
+                    <td>00,000</td>
+                    <td>00,000</td>
+                    <td>00,000</td>
+                    <td>00,000</td>
+                    <td>00,000</td>
+                    <td>00,000</td>
+                    <td>00,000</td>
+                    <td>00,000</td>
+                    <td>00,000</td>
+                    <td>00,000</td>
+                    <td>00,000</td>
+                    <td>00,000</td>
+                    <td>00,000</td>
+                    <td>00,000</td>
+                    <td>%</td>
+                    <td>%</td>
+                    <td>%</td>
+                  </tr>
+                  <tr>
+                    <td class="t-right">운영수수료</td>
+                    <td>00,000</td>
+                    <td>00,000</td>
+                    <td>00,000</td>
+                    <td>00,000</td>
+                    <td>00,000</td>
+                    <td>00,000</td>
+                    <td>00,000</td>
+                    <td>00,000</td>
+                    <td>00,000</td>
+                    <td>00,000</td>
+                    <td>00,000</td>
+                    <td>00,000</td>
+                    <td>00,000</td>
+                    <td>00,000</td>
+                    <td>00,000</td>
+                    <td>00,000</td>
+                    <td>%</td>
+                    <td>%</td>
+                    <td>%</td>
+                  </tr>
+                  <tr>
+                    <td class="t-right">낙전</td>
+                    <td>00,000</td>
+                    <td>00,000</td>
+                    <td>00,000</td>
+                    <td>00,000</td>
+                    <td>00,000</td>
+                    <td>00,000</td>
+                    <td>00,000</td>
+                    <td>00,000</td>
+                    <td>00,000</td>
+                    <td>00,000</td>
+                    <td>00,000</td>
+                    <td>00,000</td>
+                    <td>00,000</td>
+                    <td>00,000</td>
+                    <td>00,000</td>
+                    <td>00,000</td>
+                    <td>%</td>
+                    <td>%</td>
+                    <td>%</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div class="s-tit-area mt20">
+            <h4 class="s-tit">누계 매출 <span>(단위 : 천원)</span></h4>
+          </div>
+          <div class="tb-list-wrap th-bg mt10">
+            <div class="tb-scroll">
+              <table class="tb-list">
+                <colgroup>
+                  <col width="150" />
+                  <col width="" />
+                  <col width="" />
+                  <col width="" />
+                  <col width="" />
+                  <col width="" />
+                  <col width="" />
+                  <col width="" />
+                  <col width="" />
+                  <col width="" />
+                  <col width="" />
+                  <col width="" />
+                  <col width="" />
+                  <col width="" />
+                </colgroup>
+                <thead>
+                  <tr>
+                    <th scope="col"><span>구분</span></th>
+                    <th scope="col"><span>1월</span></th>
+                    <th scope="col"><span>2월</span></th>
+                    <th scope="col"><span>3월</span></th>
+                    <th scope="col"><span>4월</span></th>
+                    <th scope="col"><span>5월</span></th>
+                    <th scope="col"><span>6월</span></th>
+                    <th scope="col"><span>7월</span></th>
+                    <th scope="col"><span>8월</span></th>
+                    <th scope="col"><span>9월</span></th>
+                    <th scope="col"><span>10월</span></th>
+                    <th scope="col"><span>11월</span></th>
+                    <th scope="col"><span>12월</span></th>
+                    <th scope="col"><span>합계</span></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>경영계획</td>
+                    <td>00,000</td>
+                    <td>00,000</td>
+                    <td>00,000</td>
+                    <td>00,000</td>
+                    <td>00,000</td>
+                    <td>00,000</td>
+                    <td>00,000</td>
+                    <td>00,000</td>
+                    <td>00,000</td>
+                    <td>00,000</td>
+                    <td>00,000</td>
+                    <td>00,000</td>
+                    <td>00,000</td>
+                  </tr>
+                  <tr>
+                    <td>실적</td>
+                    <td>00,000</td>
+                    <td>00,000</td>
+                    <td>00,000</td>
+                    <td>00,000</td>
+                    <td>00,000</td>
+                    <td>00,000</td>
+                    <td>00,000</td>
+                    <td>00,000</td>
+                    <td>00,000</td>
+                    <td>00,000</td>
+                    <td>00,000</td>
+                    <td>00,000</td>
+                    <td>00,000</td>
+                  </tr>
+                  <tr>
+                    <td>경영비</td>
+                    <td>100.1%</td>
+                    <td>99.4%</td>
+                    <td>99.4%</td>
+                    <td>99.4%</td>
+                    <td>99.4%</td>
+                    <td>99.4%</td>
+                    <td>99.4%</td>
+                    <td>99.4%</td>
+                    <td>99.4%</td>
+                    <td>99.4%</td>
+                    <td>99.4%</td>
+                    <td>99.4%</td>
+                    <td>100.0%</td>
+                  </tr>
+                  <tr>
+                    <td>전율비</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>평균</td>
+                  </tr>
+                  <tr>
+                    <td>전년비</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>평균</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div class="echart-wrap">
+            <div class="echart-area">
+              <div class="echart-tit">권종별 발행액 <span>(당월)</span></div>
+              <div id="doughnutChart1" style="width: 100%; height: 372px;"></div>
+            </div>
+            <div class="echart-area">
+              <div class="echart-tit">판매지사별 발행액 <span>(당월)</span></div>
+              <div id="doughnutChart2" style="width: 100%; height: 372px;"></div>
+            </div>
+          </div>
+
+          <div class="state-wrap tp1">
+            <div class="state-area">
+              <div class="state-tit">전일 낙전 금액 출력</div>
+              <ul class="state-info">
+                <li>
+                  <span class="label">전일 낙전(원)</span>
+                  <span class="price">1,500,500</span>
+                  <span class="tiny">(전전일 낙전 4,450,000)</span>
+                </li>
+                <li>
+                  <span class="label">전일 선불충전금(원)</span>
+                  <span class="price">1,500,500</span>
+                  <span class="tiny">(전전일 선불충전금 4,450,000)</span>
+                </li>
+              </ul>
+            </div>
+            <div class="state-area">
+              <div class="state-tit">판매지사 한도 현황 <span>(만원)</span></div>
+              <div class="tb-input-wrap">
+                <table class="tb-input">
+                  <colgroup>
+                    <col width="16.666%" />
+                    <col width="16.666%" />
+                    <col width="16.666%" />
+                    <col width="16.666%" />
+                    <col width="16.666%" />
+                    <col width="*" />
+                  </colgroup>
+                  <tbody>
+                    <tr>
+                      <th scope="row" class="bg">KB카드</th>
+                      <td class="t-right">[900/1,000]</td>
+                      <th scope="row" class="bg">KB카드</th>
+                      <td class="t-right">[900/1,000]</td>
+                      <th scope="row" class="bg">기업카드업체</th>
+                      <td class="t-right">[900/1,000]</td>
+                    </tr>
+                    <tr>
+                      <th scope="row" class="bg">기업카드업체</th>
+                      <td class="t-right">[900/1,000]</td>
+                      <th scope="row" class="bg">네이버스토어</th>
+                      <td class="t-right">[900/1,000]</td>
+                      <th scope="row" class="bg">네이버스토어</th>
+                      <td class="t-right">[900/1,000]</td>
+                    </tr>
+                    <tr>
+                      <th scope="row" class="bg">하위제휴사명</th>
+                      <td class="t-right">[200/1,000]</td>
+                      <th scope="row" class="bg">하위제휴사명</th>
+                      <td class="t-right">[200/1,000]</td>
+                      <th scope="row" class="bg">KB카드</th>
+                      <td class="t-right">[900/1,000]</td>
+                    </tr>
+                    <tr>
+                      <th scope="row" class="bg">KB카드1</th>
+                      <td class="t-right">[900/1,000]</td>
+                      <th scope="row" class="bg">기업카드업체</th>
+                      <td class="t-right">[600/1,000]</td>
+                      <th scope="row" class="bg">기업카드업체1</th>
+                      <td class="t-right">[600/1,000]</td>
+                    </tr>
+                    <tr>
+                      <th scope="row" class="bg">하위제휴사명..</th>
+                      <td class="t-right">[200/1,000]</td>
+                      <th scope="row" class="bg">하위제휴사명</th>
+                      <td class="t-right">[200/1,000]</td>
+                      <th scope="row" class="bg">KB카드1</th>
+                      <td class="t-right">[900/1,000]</td>
+                    </tr>
+                    <tr>
+                      <th scope="row" class="bg">KB카드1</th>
+                      <td class="t-right">[200/1,000]</td>
+                      <th scope="row" class="bg">기업카드업체</th>
+                      <td class="t-right">[200/1,000]</td>
+                      <th scope="row" class="bg">기업카드업체1</th>
+                      <td class="t-right">[900/1,000]</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div><!-- .tb-input-wrap -->
+            </div>
+          </div>
+
+          
+          
+
+        </div><!-- .con-area -->
+      </div><!-- .content-wrap -->
+    </div><!-- #container -->
+    
+  </div><!-- #wrap -->
+
+  <script>
+    $('#btnChangePopup').on('click', function(e){
+      e.preventDefault();
+      $.magnificPopup.open(getOptions('#popup-change-dinfo'));
+    });
+    jui.ready(['grid.table'], function (table) {
+      table_1 = table('#table_1', {
+        fields: [null, 'no', 'code', 'branch', 'state', 'period', 'date'],
+        data: [
+          { no: '10', code: 'PRO000005', branch: '<a href="#">기프트쇼약10자</a>', state: '거래중', period:'2024.04.01~2024.07.01', date: '2023.12.01' },
+          { no: '9', code: 'PRO000005', branch: '<a href="#">기프트쇼약10자</a>', state: '거래중', period:'2024.04.01~2024.07.01', date: '2023.12.01' },
+          { no: '8', code: 'PRO000005', branch: '<a href="#">기프트쇼약10자</a>', state: '거래중', period:'2024.04.01~2024.07.01', date: '2023.12.01' },
+          { no: '7', code: 'PRO000005', branch: '<a href="#">기프트쇼약10자</a>', state: '거래중', period:'2024.04.01~2024.07.01', date: '2023.12.01' },
+          { no: '6', code: 'PRO000005', branch: '<a href="#">기프트쇼약10자</a>', state: '거래중', period:'2024.04.01~2024.07.01', date: '2023.12.01' },
+          { no: '5', code: 'PRO000005', branch: '<a href="#">기프트쇼약10자</a>', state: '거래중', period:'2024.04.01~2024.07.01', date: '2023.12.01' },
+          { no: '4', code: 'PRO000005', branch: '<a href="#">기프트쇼약10자</a>', state: '거래중', period:'2024.04.01~2024.07.01', date: '2023.12.01' },
+          { no: '3', code: 'PRO000005', branch: '<a href="#">기프트쇼약10자</a>', state: '거래중', period:'2024.04.01~2024.07.01', date: '2023.12.01' },
+          { no: '2', code: 'PRO000005', branch: '<a href="#">기프트쇼약10자</a>', state: '거래중', period:'2024.04.01~2024.07.01', date: '2023.12.01' },
+          { no: '1', code: 'PRO000005', branch: '<a href="#">기프트쇼약10자</a>', state: '거래중', period:'2024.04.01~2024.07.01', date: '2023.12.01' },
+        ],
+        editRow: ['no', 'code', 'branch'],
+        resize: true,
+        sort: true,
+        event: {
+          // editend: function (row) {
+          //   for (var key in row.data) {
+          //     if (key == 'recipient' && isNaN(row.data[key])) {
+          //       alert('Age must enter a numeric value.');
+          //       return false;
+          //     }
+          //   }
+          // },
+        },
+        tpl: {
+          row: $('#tpl_row').html(),
+        },
+      });
+
+      table_2 = table('#table_2', {
+        fields: [null, 'no', 'col1', 'col2', 'col3', 'col4', 'col5', 'col6', 'col7', 'col8', 'col9'],
+        data: [
+          { no: '3', col1: '사용분발행', col2: '포함', col3: 'B2B', col4: '3 %', col5: '3 %', col6: '4%', col7: '미설정', col8: '이영희(dkwk3)', col9: 'YYYY.MM.DD <br />HH:MM' },
+        ],
+        editRow: ['no', 'col1', 'col2'],
+        resize: true,
+        sort: true,
+        event: {
+          // editend: function (row) {
+          //   for (var key in row.data) {
+          //     if (key == 'recipient' && isNaN(row.data[key])) {
+          //       alert('Age must enter a numeric value.');
+          //       return false;
+          //     }
+          //   }
+          // },
+        },
+        tpl: {
+          row: $('#tpl_row2').html(),
+        },
+      });
+    });
+
+    setTimeout(() => {
+      checkInTbScroll('#chk-tb-all'); // ui.js 내부에 정의
+    }, 250);
+
+    function validationPopup() {
+      if (confirm('팝업을 닫으시겠습니까?')) {
+        $.magnificPopup.close();
+      }
+    }
+
+    $(document).on('click', '.popup-dimm', function(){
+      validationPopup();
+    });
+
+    var Qpopup = $.urlParam('popup');
+    var Qwpopup = $.urlParam('wpopup');
+    if (Qpopup) {
+      setTimeout(function(){
+        if (Qpopup == 'changeHistory') {
+          $('[href*=#popup-change-history]').click();
+        } else if (Qpopup === 'alert1') {
+          $.magnificPopup.open(getOptions('#popup-alert1'));
+        } else if (Qpopup === 'changeState') {
+          $.magnificPopup.open(devOptions('#popup-change-state', 'popup-dimm'));
+        }
+      }, 250);
+    }
+    if (Qwpopup == 'franchiseStore') {
+      openWindow('popup_franchise_store.html', 1200, 600);
+    } else if (Qwpopup == 'salesBranch') {
+      openWindow('popup_sales_branch.html', 984, 600);
+    }
+  </script>
+  <script src="js/echarts.min.js"></script>
+  <script src="js/echartOptions.js"></script>
+  <script>
+    var lineChart = echarts.init(document.getElementById('lineChart'));
+    lineChart.setOption(options['line']);
+    window.addEventListener('resize', function () {
+      lineChart.resize();
+    });
+
+    var doughnutChart1 = echarts.init(document.getElementById('doughnutChart1'));
+    doughnutChart1.setOption(options['doughnut1']);
+    window.addEventListener('resize', function () {
+      doughnutChart1.resize();
+    });
+
+    var doughnutChart2 = echarts.init(document.getElementById('doughnutChart2'));
+    doughnutChart2.setOption(options['doughnut2']);
+    window.addEventListener('resize', function () {
+      doughnutChart2.resize();
+    });
+
+    var barStackChart = echarts.init(document.getElementById('barStackChart'));
+    barStackChart.setOption(options['barStack']);
+    window.addEventListener('resize', function () {
+      barStackChart.resize();
+    });
+  </script>
+</body>
+
+</html>
+ 
