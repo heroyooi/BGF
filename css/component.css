@@ -1879,15 +1879,34 @@
   border-bottom: 1px solid #A9C2BD;
   overflow-y: scroll;
 }
+.tb-input-wrap .tb-scroll {
+  width: 100%;
+  max-height: 264px;
+  overflow: auto;
+  border-top: 1px solid #A9C2BD;
+  border-bottom: 1px solid #A9C2BD;
+  overflow-y: scroll;
+}
+.tb-scroll .tb-input > tbody > tr:first-of-type > th,
+.tb-scroll .tb-input > tbody > tr:first-of-type > td {
+  border-top: 0;
+}
+.tb-scroll .tb-input > tbody > tr:last-of-type > th,
+.tb-scroll .tb-input > tbody > tr:last-of-type > td {
+  border-bottom: 0;
+}
 .tb-scroll::-webkit-scrollbar {
   border-radius: 25px;
   background: transparent;
 } 
 .tb-scroll::-webkit-scrollbar-track {
   background: transparent;
-  margin: 42.5px 0 0;
+  
   border-right: 1px solid #A9C2BD;
-} 
+}
+.tb-list-wrap .tb-scroll::-webkit-scrollbar-track {
+  margin: 42.5px 0 0;
+}
 .tb-scroll::-webkit-scrollbar-thumb {
   background: #dadde1;
   border-radius: 25px;
