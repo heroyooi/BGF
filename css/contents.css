@@ -161,11 +161,13 @@
 .paper-area .logo-tit{display:flex;justify-content:center;align-items:center;gap:0 20px;margin-bottom:70px;}
 .paper-area .logo-tit strong{font-size:34px;font-weight:700;color:#000;line-height:48px;}
 .paper-area .cbox{border:1px solid #d1d1d1;font-size:15px;font-weight:400;color:#2c3439;line-height:20px;padding:7px 10px;}
+.paper-area .cbox.ver-text{padding:0;border:0;}
 .paper-area .cbox-list{border-top:1px solid #D1D1D1;border-bottom:1px solid #D1D1D1;padding:20px 0;margin-top:30px;}
 .paper-area .cbox-list > li{display:flex;align-items: center;}
 .paper-area .cbox-list > li .label{flex-shrink:0;padding:10px 30px;font-size:15px;font-weight:700;line-height:18px;color:#20312a;}
 .paper-area .cbox-list > li .cbox-wrap{flex-grow:1;padding:5px 6px;}
 .paper-area .tbox{padding:20px;font-size:15px;color:#2c3439;line-height:20px;border:1px solid #d1d1d1;margin-top:30px;}
+.paper-area .tbox.ver-text{padding:0;border:0;}
 .paper-area .next{font-size:15px;line-height:18px;color:#20312a;text-align:center;margin-top:30px;}
 .paper-area .total-area{align-items:center;}
 .paper-area .total-area .total{color:#20312a;}
