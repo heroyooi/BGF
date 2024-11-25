@@ -182,3 +182,7 @@ body{width:100%;}
 @media screen and (max-height: 670px) {
   #s-container .s-myinfo{display:none;}
 }
+
+@media print {
+  .popup-wrap#print-1 .con-area > .btns-wrap{display:none;}
+}
