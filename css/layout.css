@@ -186,3 +186,17 @@ body{width:100%;}
 @media print {
   .popup-wrap#print-1 .con-area > .btns-wrap{display:none;}
 }
+
+/* mobile */
+#wrap.mobile{margin:0 auto;max-width:720px;background-color:#fff;min-width:initial;}
+#wrap.mobile .header{padding:12px 20px 16px;}
+#wrap.mobile .header h1{width:97.5px;}
+#wrap.mobile .content{padding:15px;background-color:#F0F2F6;}
+#wrap.mobile .content .sub-title{font-size:16px;font-weight:700;line-height:20px;color:#333;margin-bottom:15px;}
+#wrap.mobile .footer{padding:21px 15px;display:flex;justify-content:space-between;align-items:center;}
+#wrap.mobile .footer h2{width:97.5px;}
+#wrap.mobile .footer .inquiry{display:flex;gap:0 5px;}
+#wrap.mobile .footer .inquiry span{font-size:14px;line-height:16px;}
+#wrap.mobile .footer .inquiry .label{font-weight:700;color:#0e0f0e;display:flex;align-items: center;gap:0 5px;}
+#wrap.mobile .footer .inquiry .label::before{content:'';display:block;width:16px;height:16px;background:url(../img/mo/ic_call.svg) 0 0 no-repeat;}
+#wrap.mobile .footer .inquiry .number{font-weight:500;color:#3f4a65;}
