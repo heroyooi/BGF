@@ -191,8 +191,9 @@ body{width:100%;}
 #wrap.mobile{margin:0 auto;max-width:720px;background-color:#fff;min-width:initial;}
 #wrap.mobile .header{padding:12px 20px 16px;}
 #wrap.mobile .header h1{width:97.5px;}
-#wrap.mobile .content{padding:15px;background-color:#F0F2F6;}
-#wrap.mobile .content .sub-title{font-size:16px;font-weight:700;line-height:20px;color:#333;margin-bottom:15px;}
+#wrap.mobile .content{padding:15px 15px 40px;background-color:#F0F2F6;}
+#wrap.mobile .content .sub-title{font-size:16px;font-weight:700;line-height:20px;color:#333;margin-bottom:15px;margin-top:30px;}
+#wrap.mobile .content .sub-title:first-child{margin-top:0;}
 #wrap.mobile .footer{padding:21px 15px;display:flex;justify-content:space-between;align-items:center;}
 #wrap.mobile .footer h2{width:97.5px;}
 #wrap.mobile .footer .inquiry{display:flex;gap:0 5px;}

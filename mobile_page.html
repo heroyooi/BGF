@@ -25,7 +25,7 @@
     <div class="content">
       <p class="sub-title">상품권 정보</p>
       <div class="tb-wrap">
-        <table summary="상품권 정보 요약" class="tb-view">
+        <table summary="상품권 정보 요약" class="tbl-view">
           <colgroup>
             <col width="110px" />
             <col width="*" />
@@ -46,7 +46,48 @@
           </tbody>
         </table>
       </div>
+      <dl class="toggle-info">
+        <dt><span class="gift">교환정보</span></dt>
+        <dd>
+          <ul class="list">
+            <li><span>상품 : </span>컨디션헛개, 컨디션환, 헛개수, 상품명 교환가능</li>
+            <li><span>카테고리 :</span>카테고리명, 카테고리명
+              교환가능</li>
+          </ul>
+        </dd>
+      </dl>
       <p class="sub-title">상품권 상세 사용내역</p>
+      <div class="tb-wrap">
+        <table summary="상품권 정보 요약" class="tbl-list">
+          <colgroup>
+            <col width="40%" />
+            <col width="30%" />
+            <col width="30%" />
+          </colgroup>
+          <thead>
+            <tr>
+              <th scope="col">사용일시</th>
+              <th scope="col">이용매장명</th>
+              <th scope="col">사용금액</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>2024-10-10 11:11:11</td>
+              <td><span class="bold">온라인</span></td>
+              <td class="right"><span class="bold">-1,000</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <dl class="toggle-info">
+        <dt><span class="tip">상품권 이용안내</span></dt>
+        <dd>
+          <ul class="list">
+            <li>이용안내 내역이 엄청 길어서 블라블라 블라블라 내용이 정말 너무 많아요 <br /><br />내용이 엄청 많아요</li>
+          </ul>
+        </dd>
+      </dl>
     </div><!-- .content -->
     <div class="footer">
       <h2><a href=""><img src="img/mo/logo.png" alt="" /></a></h2>
@@ -57,7 +98,17 @@
     </div><!-- .footer -->
   </div><!-- #wrap -->
   <script>
-
+    $(window).on('load resize', function(){
+      $('#wrap.mobile .content').css('min-height', $(window).height() - 102);
+    });
+    $('#wrap.mobile .toggle-info > dt').on('click', function(){
+      if (!$(this).closest('.toggle-info').hasClass('on')) {
+        $(this).closest('.toggle-info').addClass('on');
+      } else { 
+        $(this).closest('.toggle-info').removeClass('on');
+      }
+    });
+    
   </script>
 </body>
 
